@@ -8,11 +8,10 @@ const Layout = ({ children }: LayoutProps) => {
   const location = useLocation();
 
   const navItems = [
-    { path: "/", label: "home" },
-    { path: "/discography", label: "releases" },
-    { path: "/podcasts", label: "podcasts" },
-    { path: "/shop", label: "shop" },
-    { path: "/about", label: "about" },
+    { path: "/", label: "bulletin" },
+    { path: "/catalog", label: "catalog" },
+    { path: "/chronicles", label: "chronicles" },
+    { path: "/shcaa", label: "shcaa" },
   ];
 
   return (
@@ -21,7 +20,7 @@ const Layout = ({ children }: LayoutProps) => {
         <div className="max-w-4xl mx-auto px-4 py-6">
           <nav className="flex items-center justify-between">
             <Link to="/" className="text-xl font-mono font-medium">
-              your_label
+              placidum
             </Link>
             <div className="flex gap-6">
               {navItems.map((item) => (
@@ -43,8 +42,8 @@ const Layout = ({ children }: LayoutProps) => {
       <footer className="border-t border-border mt-20">
         <div className="max-w-4xl mx-auto px-4 py-8">
           <div className="flex justify-between items-center text-sm text-muted-foreground">
-            <p>© 2024 your_label</p>
-            <p>contact@yourlabel.com</p>
+            <p>© 2024 placidum</p>
+            <p>contact@placidum.com</p>
           </div>
         </div>
       </footer>
