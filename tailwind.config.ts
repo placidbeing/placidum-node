@@ -19,7 +19,9 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				'mono': ['JetBrains Mono', 'monospace'],
+				'mono': ['JetBrains Mono', 'Courier New', 'monospace'],
+				'serif': ['Crimson Text', 'Georgia', 'serif'],
+				'sans': ['Inter', 'system-ui', 'sans-serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',

@@ -27,36 +27,44 @@ const Bulletin = () => {
   ];
 
   return (
-    <div className="max-w-4xl mx-auto px-4 py-16">
-      <h1 className="text-3xl font-mono mb-12">Bulletin</h1>
+    <div className="max-w-5xl mx-auto px-6 py-20">
+      <header className="mb-16">
+        <h1 className="text-4xl font-serif mb-4">Field Notes & Observations</h1>
+        <p className="text-muted-foreground max-w-2xl">
+          Documentation of recent activities, specimen discoveries, and taxonomical updates 
+          from the placidum collection.
+        </p>
+      </header>
       
       <div className="space-y-12">
         {news.map((item, index) => (
-          <article key={index} className="border-b border-border pb-8 last:border-b-0">
-            <div className="flex flex-col md:flex-row md:items-start gap-4 md:gap-8">
-              <div className="md:w-32 flex-shrink-0">
-                <time className="text-sm font-mono text-muted-foreground">{item.date}</time>
-                <div className="mt-1">
-                  <span className="text-xs font-mono px-2 py-1 border border-accent text-accent">
+          <article key={index} className="border-l-4 border-accent pl-8 hover:border-primary transition-colors">
+            <div className="grid grid-cols-1 lg:grid-cols-6 gap-6">
+              <div className="lg:col-span-1">
+                <div className="space-y-2">
+                  <time className="specimen-label block w-fit">{item.date}</time>
+                  <span className="specimen-label text-accent border-accent">
                     {item.category}
                   </span>
                 </div>
               </div>
               
-              <div className="flex-1">
-                <h2 className="text-xl font-mono mb-3">{item.title}</h2>
-                <p className="text-muted-foreground leading-relaxed">{item.content}</p>
+              <div className="lg:col-span-5">
+                <h2 className="text-2xl font-serif mb-4 leading-tight">{item.title}</h2>
+                <p className="text-muted-foreground leading-relaxed max-w-3xl">{item.content}</p>
               </div>
             </div>
           </article>
         ))}
       </div>
       
-      <div className="mt-16 text-center">
-        <p className="text-sm text-muted-foreground font-mono">
-          Stay updated: contact@placidum.com
+      <footer className="mt-20 border-2 border-border bg-card p-8 text-center">
+        <h3 className="font-serif text-lg mb-3">Research Updates</h3>
+        <p className="text-sm text-muted-foreground font-mono mb-2">
+          Subscribe to field notes and specimen announcements
         </p>
-      </div>
+        <p className="text-accent font-mono">contact@placidum.com</p>
+      </footer>
     </div>
   );
 };

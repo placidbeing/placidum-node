@@ -15,20 +15,25 @@ const Layout = ({ children }: LayoutProps) => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
-      <header className="border-b border-border">
-        <div className="max-w-4xl mx-auto px-4 py-6">
+    <div className="min-h-screen bg-background text-foreground">
+      <header className="border-b-2 border-border bg-card">
+        <div className="max-w-5xl mx-auto px-6 py-8">
           <nav className="flex items-center justify-between">
-            <Link to="/" className="text-xl font-mono font-medium">
+            <Link to="/" className="text-2xl font-serif font-semibold tracking-wide">
               placidum
+              <span className="block text-xs font-mono text-muted-foreground mt-1">
+                specimen collection
+              </span>
             </Link>
-            <div className="flex gap-6">
+            <div className="flex gap-8">
               {navItems.map((item) => (
                 <Link
                   key={item.path}
                   to={item.path}
-                  className={`text-sm font-mono transition-colors hover:text-accent ${
-                    location.pathname === item.path ? "text-accent" : "text-muted-foreground"
+                  className={`text-sm font-mono uppercase tracking-wider transition-colors hover:text-accent border-b-2 pb-1 ${
+                    location.pathname === item.path 
+                      ? "text-accent border-accent" 
+                      : "text-muted-foreground border-transparent"
                   }`}
                 >
                   {item.label}
@@ -39,11 +44,24 @@ const Layout = ({ children }: LayoutProps) => {
         </div>
       </header>
       <main>{children}</main>
-      <footer className="border-t border-border mt-20">
-        <div className="max-w-4xl mx-auto px-4 py-8">
-          <div className="flex justify-between items-center text-sm text-muted-foreground">
-            <p>© 2024 placidum</p>
-            <p>contact@placidum.com</p>
+      <footer className="border-t-2 border-border mt-24 bg-card">
+        <div className="max-w-5xl mx-auto px-6 py-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+              <h3 className="font-serif text-lg mb-3">Contact</h3>
+              <p className="text-sm font-mono text-muted-foreground">contact@placidum.com</p>
+            </div>
+            <div>
+              <h3 className="font-serif text-lg mb-3">Classification</h3>
+              <p className="text-sm font-mono text-muted-foreground">Kingdom: Electronica</p>
+              <p className="text-sm font-mono text-muted-foreground">Order: Minimalia</p>
+            </div>
+            <div>
+              <p className="text-sm font-mono text-muted-foreground">© 2024 placidum herbarium</p>
+              <p className="text-xs font-mono text-muted-foreground mt-2">
+                Specimens preserved for study
+              </p>
+            </div>
           </div>
         </div>
       </footer>

@@ -47,76 +47,117 @@ const Catalog = () => {
   ];
 
   return (
-    <div className="max-w-4xl mx-auto px-4 py-16">
-      <h1 className="text-3xl font-mono mb-8">Catalog</h1>
-      
-      <div className="mb-12">
-        <p className="text-muted-foreground mb-4">
-          All releases available through Bandcamp. Worldwide shipping for physical formats.
+    <div className="max-w-6xl mx-auto px-6 py-20">
+      <div className="mb-16">
+        <h1 className="text-4xl font-serif mb-4">Specimen Catalog</h1>
+        <p className="text-muted-foreground font-mono mb-6 max-w-2xl">
+          A curated collection of electronic specimens, each entry documented and preserved for study. 
+          All specimens available through Bandcamp with worldwide distribution.
         </p>
-        <a 
-          href="#" 
-          className="text-accent hover:underline font-mono"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Visit placidum on Bandcamp →
-        </a>
+        <div className="border-l-2 border-accent pl-6">
+          <p className="font-mono text-sm text-muted-foreground mb-2">Collection Access</p>
+          <a 
+            href="#" 
+            className="text-accent hover:underline font-mono underline decoration-dotted"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            placidum.bandcamp.com →
+          </a>
+        </div>
       </div>
 
-      <div className="space-y-12">
+      <div className="space-y-16">
         {releases.map((release) => (
-          <div key={release.catalog} className="border-b border-border pb-12 last:border-b-0">
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-8">
-              {/* Album Cover */}
-              <div className="aspect-square bg-muted border border-border"></div>
-              
-              {/* Release Info */}
-              <div className="md:col-span-2 space-y-3">
-                <p className="text-sm font-mono text-muted-foreground">{release.catalog}</p>
-                <h2 className="text-xl font-mono">{release.artist}</h2>
-                <h3 className="text-lg text-muted-foreground">{release.title}</h3>
-                <p className="text-sm text-muted-foreground">{release.description}</p>
-                <div className="text-sm text-muted-foreground space-y-1">
-                  <p>{release.format}</p>
-                  <p>{release.year}</p>
+          <article key={release.catalog} className="border-2 border-border bg-card p-8 hover:shadow-lg transition-shadow">
+            <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
+              {/* Specimen Image */}
+              <div className="lg:col-span-2">
+                <div className="aspect-square bg-muted border-2 border-border relative">
+                  <div className="absolute bottom-4 right-4">
+                    <span className="specimen-label">{release.catalog}</span>
+                  </div>
                 </div>
               </div>
               
-              {/* Purchase Info */}
-              <div className="flex flex-col gap-3">
-                <span className={`text-xs font-mono px-2 py-1 border w-fit ${
-                  release.status === "Available" 
-                    ? "border-accent text-accent" 
-                    : "border-muted-foreground text-muted-foreground"
-                }`}>
-                  {release.status}
-                </span>
-                <div className="text-sm font-mono">
-                  <p className="text-muted-foreground mb-1">Price:</p>
-                  <p>${release.price}</p>
+              {/* Taxonomical Classification */}
+              <div className="lg:col-span-2 space-y-4">
+                <div className="border-b border-border pb-4">
+                  <h2 className="text-2xl font-serif mb-2">{release.artist}</h2>
+                  <h3 className="text-lg font-serif italic text-muted-foreground mb-3">{release.title}</h3>
+                  <p className="text-sm leading-relaxed">{release.description}</p>
                 </div>
-                <a 
-                  href={release.bandcampUrl}
-                  className="text-sm font-mono text-accent hover:underline"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Buy on Bandcamp →
-                </a>
+                
+                <div className="space-y-3 font-mono text-sm">
+                  <div className="grid grid-cols-2 gap-4">
+                    <div>
+                      <span className="text-muted-foreground">Format:</span>
+                      <p className="classification">{release.format}</p>
+                    </div>
+                    <div>
+                      <span className="text-muted-foreground">Year:</span>
+                      <p className="classification">{release.year}</p>
+                    </div>
+                  </div>
+                  <div>
+                    <span className="text-muted-foreground">Catalog No.:</span>
+                    <p className="classification">{release.catalog}</p>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Acquisition Info */}
+              <div className="space-y-4">
+                <div className="border border-border p-4 bg-secondary/50">
+                  <div className="text-xs font-mono text-muted-foreground uppercase tracking-wider mb-2">Status</div>
+                  <span className={`specimen-label ${
+                    release.status === "Available" 
+                      ? "text-accent border-accent" 
+                      : "text-muted-foreground border-muted-foreground"
+                  }`}>
+                    {release.status}
+                  </span>
+                </div>
+                
+                <div className="space-y-2">
+                  <div className="text-xs font-mono text-muted-foreground uppercase tracking-wider">Acquisition</div>
+                  <div className="font-mono text-sm">
+                    <p className="text-muted-foreground">Price:</p>
+                    <p className="font-medium">${release.price}</p>
+                  </div>
+                  <a 
+                    href={release.bandcampUrl}
+                    className="inline-block text-sm font-mono text-accent hover:underline underline decoration-dotted mt-2"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Acquire specimen →
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
+          </article>
         ))}
       </div>
 
-      <div className="mt-16 border border-border p-6">
-        <h2 className="text-xl font-mono mb-4">Demo Submissions</h2>
-        <div className="text-sm text-muted-foreground space-y-2">
-          <p>• Send max 3 tracks via email</p>
-          <p>• Include brief artist bio and track info</p>
-          <p>• We listen to everything, responses within 4 weeks</p>
-          <p>• contact@placidum.com</p>
+      {/* Submission Guidelines */}
+      <div className="mt-20 border-2 border-border bg-card p-8">
+        <h2 className="text-2xl font-serif mb-6">Specimen Submission Protocol</h2>
+        <div className="grid md:grid-cols-2 gap-8">
+          <div>
+            <h3 className="font-mono text-sm uppercase tracking-wider text-muted-foreground mb-3">Requirements</h3>
+            <div className="space-y-2 text-sm">
+              <p>• Maximum 3 specimens per submission</p>
+              <p>• Include detailed taxonomical information</p>
+              <p>• Provide artist classification and specimen provenance</p>
+              <p>• All submissions reviewed within 4 weeks</p>
+            </div>
+          </div>
+          <div>
+            <h3 className="font-mono text-sm uppercase tracking-wider text-muted-foreground mb-3">Contact</h3>
+            <p className="font-mono text-accent">contact@placidum.com</p>
+            <p className="text-sm text-muted-foreground mt-2">Include "SPECIMEN SUBMISSION" in subject line</p>
+          </div>
         </div>
       </div>
     </div>
