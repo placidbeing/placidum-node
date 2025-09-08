@@ -29,7 +29,7 @@ const Bulletin = () => {
   return (
     <div className="max-w-5xl mx-auto px-6 py-20">
       <header className="mb-16">
-        <h1 className="text-4xl font-serif mb-4">Field Notes & Observations</h1>
+        <h1 className="text-4xl font-garamond mb-4">Field Notes & Observations</h1>
         <p className="text-muted-foreground max-w-2xl">
           Documentation of recent activities, specimen discoveries, and taxonomical updates 
           from the placidum collection.
@@ -63,7 +63,7 @@ const Bulletin = () => {
         <p className="text-sm text-muted-foreground font-mono mb-2">
           Subscribe to field notes and specimen announcements
         </p>
-        <p className="text-accent font-mono">contact@placidum.com</p>
+        <p className="text-accent" style={{ fontFamily: 'cursive' }}>sacha@placidum.com</p>
       </footer>
     </div>
   );

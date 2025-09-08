@@ -39,7 +39,7 @@ const Shcaa = () => {
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-16">
-      <h1 className="text-3xl font-mono mb-8">shcaa</h1>
+      <h1 className="text-4xl font-garamond mb-8">Shcaa</h1>
       
       <div className="mb-16">
         <p className="text-muted-foreground leading-relaxed mb-6">
@@ -116,7 +116,7 @@ const Shcaa = () => {
           <p>• Available for live performances</p>
           <p>• Open to remix and collaboration projects</p>
           <p>• Technical rider available upon request</p>
-          <p>• contact@placidum.com</p>
+          <p>• sacha@placidum.com</p>
         </div>
       </div>
     </div>
