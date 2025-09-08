@@ -8,7 +8,7 @@ const Catalog = () => {
       year: "2024",
       status: "Available",
       price: "7.00",
-      bandcampUrl: "#",
+      bandcampUrl: "https://placidum.bandcamp.com/album/hearts",
       description: "Delicate electronic textures exploring themes of vulnerability and connection.",
       tracks: [
         "Pleading for The Grand Illusion",
@@ -23,7 +23,7 @@ const Catalog = () => {
       year: "2024", 
       status: "Available",
       price: "10.00 / 25.00",
-      bandcampUrl: "#",
+      bandcampUrl: "https://placidum.bandcamp.com/album/golconde",
       description: "An exploration of architectural minimalism through rhythmic sequences and spatial arrangements.",
       tracks: [
         "Polokus",
@@ -47,7 +47,7 @@ const Catalog = () => {
       year: "2024",
       status: "Available", 
       price: "5.00",
-      bandcampUrl: "#",
+      bandcampUrl: "https://placidum.bandcamp.com/album/soft-signs",
       description: "Minimal ambient explorations focusing on subtle environmental textures.",
       tracks: [
         "Soft Signs",
@@ -62,7 +62,7 @@ const Catalog = () => {
       year: "2024",
       status: "Available",
       price: "8.00 / 15.00", 
-      bandcampUrl: "#",
+      bandcampUrl: "https://placidum.bandcamp.com/album/nocturnal-solutions",
       description: "Deep techno meditations on existence and extinction in aquatic environments.",
       tracks: [
         "Nocturnal Solutions",
@@ -80,7 +80,7 @@ const Catalog = () => {
       year: "2024",
       status: "Available",
       price: "7.00",
-      bandcampUrl: "#",
+      bandcampUrl: "https://placidum.bandcamp.com/album/interior-rooms",
       description: "Intimate electronic compositions mapping internal emotional landscapes.",
       tracks: [
         "For the Wind",
@@ -98,7 +98,7 @@ const Catalog = () => {
       year: "2024",
       status: "Available",
       price: "9.00 / 23.00",
-      bandcampUrl: "#",
+      bandcampUrl: "https://placidum.bandcamp.com/album/neptune",
       description: "Celestial ambient techno journey through frozen planetary reliefs.",
       tracks: [
         "Her Conscious Drift to Neptune's Frozen Reliefs",
@@ -115,7 +115,7 @@ const Catalog = () => {
       year: "2024",
       status: "Available",
       price: "6.00",
-      bandcampUrl: "#",
+      bandcampUrl: "https://placidum.bandcamp.com/album/beautiful-situation",
       description: "Nocturnal electronic narratives exploring themes of transition and memory.",
       tracks: [
         "Bind (night transfer)",
@@ -135,7 +135,7 @@ const Catalog = () => {
         <div className="border-l-2 border-accent pl-6">
           <p className="font-mono text-sm text-muted-foreground mb-2">Collection Access</p>
           <a 
-            href="#" 
+            href="https://placidum.bandcamp.com" 
             className="text-accent hover:underline font-mono underline decoration-dotted"
             target="_blank"
             rel="noopener noreferrer"
@@ -223,8 +223,20 @@ const Catalog = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Acquire specimen →
+                    Listen / Buy on Bandcamp →
                   </a>
+                  
+                  {/* Bandcamp Embed Preview */}
+                  <div className="mt-4 p-4 bg-muted/50 border border-border">
+                    <iframe 
+                      style={{ border: 0, width: '100%', height: '120px' }} 
+                      src={`${release.bandcampUrl.replace('/album/', '/EmbeddedPlayer/album=')}}/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/`}
+                      seamless
+                      title={`${release.artist} - ${release.title}`}
+                    >
+                      <a href={release.bandcampUrl}>{release.title} by {release.artist}</a>
+                    </iframe>
+                  </div>
                 </div>
               </div>
             </div>

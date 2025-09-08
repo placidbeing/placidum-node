@@ -8,24 +8,27 @@ const Chronicles = () => {
       description: "Exploring how minimal artists create immersive environments through texture and spatial arrangement.",
       guests: ["Field Studies", "Ambient Collective"],
       audioUrl: "#",
+      podcast: "Silent Spectator"
     },
     {
       episode: "002", 
       title: "Rhythmic Minimalism",
       date: "2024.11.15",
       duration: "38:47",
-      description: "A deep dive into the role of rhythm in minimal electronic music with shcaa.",
-      guests: ["shcaa"],
+      description: "A deep dive into the role of rhythm in minimal electronic music with Shcaa.",
+      guests: ["Shcaa"],
       audioUrl: "#",
+      podcast: "Preface"
     },
     {
       episode: "001",
       title: "Label Foundations", 
       date: "2024.10.20",
       duration: "42:18",
-      description: "The inaugural episode discussing the vision behind placidum and the minimal electronic scene.",
+      description: "The inaugural episode discussing the vision behind Placidum and the minimal electronic scene.",
       guests: [],
       audioUrl: "#",
+      podcast: "Preface"
     },
   ];
 
@@ -35,8 +38,9 @@ const Chronicles = () => {
       
       <div className="mb-12">
         <p className="text-muted-foreground mb-4">
-          Monthly deep dives into the creative process, featuring label artists and 
-          explorations of minimal electronic music culture.
+          Two podcast series exploring electronic music culture: <em>Preface</em> focuses on 
+          foundational conversations, while <em>Silent Spectator</em> examines the creative process 
+          through deep listening sessions.
         </p>
         <p className="text-sm text-muted-foreground">
           Available on all major podcast platforms
@@ -53,6 +57,9 @@ const Chronicles = () => {
               {/* Episode Info */}
               <div className="flex-1 space-y-3">
                 <div className="flex items-center gap-3">
+                  <span className="specimen-label text-accent border-accent">
+                    {episode.podcast}
+                  </span>
                   <span className="text-sm font-mono text-muted-foreground">
                     Episode {episode.episode}
                   </span>
