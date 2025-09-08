@@ -20,9 +20,9 @@ const Layout = ({ children }: LayoutProps) => {
         <div className="max-w-5xl mx-auto px-6 py-8">
           <nav className="flex items-center justify-between">
             <Link to="/" className="text-2xl font-serif font-semibold tracking-wide">
-              placidum
-              <span className="block text-xs font-mono text-muted-foreground mt-1">
-                specimen collection
+              Placidum
+              <span className="block text-xs font-serif italic text-muted-foreground mt-1" style={{ fontFamily: 'cursive' }}>
+                Observationes circa Impressionum Naturam
               </span>
             </Link>
             <div className="flex gap-8">
@@ -49,17 +49,16 @@ const Layout = ({ children }: LayoutProps) => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
               <h3 className="font-serif text-lg mb-3">Contact</h3>
-              <p className="text-sm font-mono text-muted-foreground">contact@placidum.com</p>
+              <p className="text-sm text-muted-foreground" style={{ fontFamily: 'cursive' }}>sacha@placidum.com</p>
             </div>
             <div>
-              <h3 className="font-serif text-lg mb-3">Classification</h3>
-              <p className="text-sm font-mono text-muted-foreground">Kingdom: Electronica</p>
-              <p className="text-sm font-mono text-muted-foreground">Order: Minimalia</p>
+              <h3 className="font-serif text-lg mb-3">Archives</h3>
+              <p className="text-sm text-muted-foreground" style={{ fontFamily: 'cursive' }}>Est. MMXXIV</p>
             </div>
             <div>
-              <p className="text-sm font-mono text-muted-foreground">© 2024 placidum herbarium</p>
-              <p className="text-xs font-mono text-muted-foreground mt-2">
-                Specimens preserved for study
+              <p className="text-sm text-muted-foreground" style={{ fontFamily: 'cursive' }}>© 2024 Placidum</p>
+              <p className="text-xs text-muted-foreground mt-2" style={{ fontFamily: 'cursive' }}>
+                Impressions preserved for posterity
               </p>
             </div>
           </div>

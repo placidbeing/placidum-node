@@ -49,7 +49,7 @@ const Catalog = () => {
   return (
     <div className="max-w-6xl mx-auto px-6 py-20">
       <div className="mb-16">
-        <h1 className="text-4xl font-serif mb-4">Specimen Catalog</h1>
+        <h1 className="text-4xl font-serif mb-4">Catalog</h1>
         <p className="text-muted-foreground font-mono mb-6 max-w-2xl">
           A curated collection of electronic specimens, each entry documented and preserved for study. 
           All specimens available through Bandcamp with worldwide distribution.
@@ -155,7 +155,7 @@ const Catalog = () => {
           </div>
           <div>
             <h3 className="font-mono text-sm uppercase tracking-wider text-muted-foreground mb-3">Contact</h3>
-            <p className="font-mono text-accent">contact@placidum.com</p>
+            <p className="text-accent" style={{ fontFamily: 'cursive' }}>sacha@placidum.com</p>
             <p className="text-sm text-muted-foreground mt-2">Include "SPECIMEN SUBMISSION" in subject line</p>
           </div>
         </div>
