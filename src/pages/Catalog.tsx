@@ -1,48 +1,126 @@
 const Catalog = () => {
   const releases = [
     {
-      catalog: "PLC001",
-      artist: "Various Artists",
-      title: "Inaugural Compilation",
-      format: "Digital / Vinyl",
+      catalog: "PLUM1",
+      artist: "Ain°",
+      title: "Hearts",
+      format: "Digital",
       year: "2024",
       status: "Available",
-      price: "12.00 / 25.00",
+      price: "7.00",
       bandcampUrl: "#",
-      description: "The first release introducing the placidum sound palette.",
+      description: "Delicate electronic textures exploring themes of vulnerability and connection.",
+      tracks: [
+        "Pleading for The Grand Illusion",
+        "Up There, Bowls Are Spinning, Hands, Fragile"
+      ]
     },
     {
-      catalog: "PLC002",
-      artist: "shcaa",
-      title: "Minimal Sequences",
-      format: "Digital / Cassette",
+      catalog: "PLUM2",
+      artist: "Shcaa",
+      title: "Golconde",
+      format: "Digital / Vinyl",
       year: "2024", 
       status: "Available",
-      price: "8.00 / 15.00",
+      price: "10.00 / 25.00",
       bandcampUrl: "#",
-      description: "Rhythmic explorations in minimal electronic music.",
+      description: "An exploration of architectural minimalism through rhythmic sequences and spatial arrangements.",
+      tracks: [
+        "Polokus",
+        "Kohinor", 
+        "Scaphandrier",
+        "Mimèsis",
+        "Vesavi",
+        "Darya",
+        "Borneo",
+        "Formosa",
+        "Orloff",
+        "Kert",
+        "The Sky Was Pearl Grey (bonus track)"
+      ]
     },
     {
-      catalog: "PLC003",
-      artist: "Field Studies",
-      title: "Urban Ambient EP",
+      catalog: "PLUM3",
+      artist: "Shcaa",
+      title: "Soft Signs",
       format: "Digital",
       year: "2024",
       status: "Available", 
-      price: "6.00",
+      price: "5.00",
       bandcampUrl: "#",
-      description: "Environmental recordings transformed into ambient compositions.",
+      description: "Minimal ambient explorations focusing on subtle environmental textures.",
+      tracks: [
+        "Soft Signs",
+        "Soft Signs, air"
+      ]
     },
     {
-      catalog: "PLC004",
-      artist: "Various Artists",
-      title: "Ambient Studies",
+      catalog: "PLUM4",
+      artist: "Nocturnal Solutions",
+      title: "Nocturnal Solutions",
+      format: "Digital / Cassette",
+      year: "2024",
+      status: "Available",
+      price: "8.00 / 15.00", 
+      bandcampUrl: "#",
+      description: "Deep techno meditations on existence and extinction in aquatic environments.",
+      tracks: [
+        "Nocturnal Solutions",
+        "Ocean (Existence)",
+        "Cave (Extinction)", 
+        "Ocean (Club)",
+        "Ocean (EEE)"
+      ]
+    },
+    {
+      catalog: "PLUM5",
+      artist: "Ain°",
+      title: "Interior Rooms",
+      format: "Digital",
+      year: "2024",
+      status: "Available",
+      price: "7.00",
+      bandcampUrl: "#",
+      description: "Intimate electronic compositions mapping internal emotional landscapes.",
+      tracks: [
+        "For the Wind",
+        "Sanatoria",
+        "Aquamentus",
+        "Gin Dakota",
+        "Java, Java"
+      ]
+    },
+    {
+      catalog: "PLUM6",
+      artist: "Shcaa",
+      title: "Neptune",
       format: "Digital / Vinyl",
       year: "2024",
-      status: "Pre-order",
-      price: "10.00 / 28.00", 
+      status: "Available",
+      price: "9.00 / 23.00",
       bandcampUrl: "#",
-      description: "Eight artists exploring the boundaries of ambient music.",
+      description: "Celestial ambient techno journey through frozen planetary reliefs.",
+      tracks: [
+        "Her Conscious Drift to Neptune's Frozen Reliefs",
+        "Leviatano",
+        "Where Have We Met?",
+        "Neptune"
+      ]
+    },
+    {
+      catalog: "PLUM7",
+      artist: "Shcaa", 
+      title: "Beautiful Situation",
+      format: "Digital",
+      year: "2024",
+      status: "Available",
+      price: "6.00",
+      bandcampUrl: "#",
+      description: "Nocturnal electronic narratives exploring themes of transition and memory.",
+      tracks: [
+        "Bind (night transfer)",
+        "Horses (coal song)"
+      ]
     },
   ];
 
@@ -88,20 +166,34 @@ const Catalog = () => {
                   <p className="text-sm leading-relaxed">{release.description}</p>
                 </div>
                 
-                <div className="space-y-3 font-mono text-sm">
-                  <div className="grid grid-cols-2 gap-4">
-                    <div>
-                      <span className="text-muted-foreground">Format:</span>
-                      <p className="classification">{release.format}</p>
+                <div className="space-y-4">
+                  <div className="space-y-3 font-mono text-sm">
+                    <div className="grid grid-cols-2 gap-4">
+                      <div>
+                        <span className="text-muted-foreground">Format:</span>
+                        <p className="classification">{release.format}</p>
+                      </div>
+                      <div>
+                        <span className="text-muted-foreground">Year:</span>
+                        <p className="classification">{release.year}</p>
+                      </div>
                     </div>
                     <div>
-                      <span className="text-muted-foreground">Year:</span>
-                      <p className="classification">{release.year}</p>
+                      <span className="text-muted-foreground">Catalog No.:</span>
+                      <p className="classification">{release.catalog}</p>
                     </div>
                   </div>
-                  <div>
-                    <span className="text-muted-foreground">Catalog No.:</span>
-                    <p className="classification">{release.catalog}</p>
+                  
+                  {/* Track Listing */}
+                  <div className="border-t border-border pt-4">
+                    <span className="text-muted-foreground text-sm font-mono">Tracklist:</span>
+                    <ol className="mt-2 space-y-1 text-sm font-mono">
+                      {release.tracks.map((track, index) => (
+                        <li key={index} className="text-muted-foreground">
+                          {String(index + 1).padStart(2, '0')}. {track}
+                        </li>
+                      ))}
+                    </ol>
                   </div>
                 </div>
               </div>
