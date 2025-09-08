@@ -1,18 +1,86 @@
 const Catalog = () => {
   const releases = [
     {
-      catalog: "PLUM1",
+      catalog: "PLUM7",
+      artist: "Shcaa", 
+      title: "Beautiful Situation",
+      format: "Digital",
+      year: "2024",
+      status: "Available",
+      price: "6.00",
+      bandcampUrl: "https://placidum.bandcamp.com/album/beautiful-situation",
+      description: "Nocturnal electronic narratives exploring themes of transition and memory.",
+      tracks: [
+        "Bind (night transfer)",
+        "Horses (coal song)"
+      ]
+    },
+    {
+      catalog: "PLUM6",
+      artist: "Shcaa",
+      title: "Neptune",
+      format: "Digital / Vinyl",
+      year: "2024",
+      status: "Available",
+      price: "9.00 / 23.00",
+      bandcampUrl: "https://placidum.bandcamp.com/album/neptune",
+      description: "Celestial ambient techno journey through frozen planetary reliefs.",
+      tracks: [
+        "Her Conscious Drift to Neptune's Frozen Reliefs",
+        "Leviatano",
+        "Where Have We Met?",
+        "Neptune"
+      ]
+    },
+    {
+      catalog: "PLUM5",
       artist: "Ain°",
-      title: "Hearts",
+      title: "Interior Rooms",
       format: "Digital",
       year: "2024",
       status: "Available",
       price: "7.00",
-      bandcampUrl: "https://placidum.bandcamp.com/album/hearts",
-      description: "Delicate electronic textures exploring themes of vulnerability and connection.",
+      bandcampUrl: "https://placidum.bandcamp.com/album/interior-rooms",
+      description: "Intimate electronic compositions mapping internal emotional landscapes.",
       tracks: [
-        "Pleading for The Grand Illusion",
-        "Up There, Bowls Are Spinning, Hands, Fragile"
+        "For the Wind",
+        "Sanatoria",
+        "Aquamentus",
+        "Gin Dakota",
+        "Java, Java"
+      ]
+    },
+    {
+      catalog: "PLUM4",
+      artist: "Nocturnal Solutions",
+      title: "Nocturnal Solutions",
+      format: "Digital / Cassette",
+      year: "2024",
+      status: "Available",
+      price: "8.00 / 15.00", 
+      bandcampUrl: "https://placidum.bandcamp.com/album/nocturnal-solutions",
+      description: "Deep techno meditations on existence and extinction in aquatic environments.",
+      tracks: [
+        "Nocturnal Solutions",
+        "Ocean (Existence)",
+        "Cave (Extinction)", 
+        "Ocean (Club)",
+        "Ocean (EEE)"
+      ]
+    },
+    {
+      catalog: "PLUM3",
+      artist: "Shcaa",
+      title: "Soft Signs",
+      format: "Digital",
+      year: "2024",
+      status: "Available", 
+      price: "5.00",
+      bandcampUrl: "https://placidum.bandcamp.com/album/soft-signs",
+      description: "Minimal ambient explorations focusing on subtle environmental textures.",
+      tracks: [
+        "Soft Signs",
+        "Soft Signs, air"
       ]
     },
     {
@@ -40,86 +108,18 @@ const Catalog = () => {
       ]
     },
     {
-      catalog: "PLUM3",
-      artist: "Shcaa",
-      title: "Soft Signs",
-      format: "Digital",
-      year: "2024",
-      status: "Available", 
-      price: "5.00",
-      bandcampUrl: "https://placidum.bandcamp.com/album/soft-signs",
-      description: "Minimal ambient explorations focusing on subtle environmental textures.",
-      tracks: [
-        "Soft Signs",
-        "Soft Signs, air"
-      ]
-    },
-    {
-      catalog: "PLUM4",
-      artist: "Nocturnal Solutions",
-      title: "Nocturnal Solutions",
-      format: "Digital / Cassette",
-      year: "2024",
-      status: "Available",
-      price: "8.00 / 15.00", 
-      bandcampUrl: "https://placidum.bandcamp.com/album/nocturnal-solutions",
-      description: "Deep techno meditations on existence and extinction in aquatic environments.",
-      tracks: [
-        "Nocturnal Solutions",
-        "Ocean (Existence)",
-        "Cave (Extinction)", 
-        "Ocean (Club)",
-        "Ocean (EEE)"
-      ]
-    },
-    {
-      catalog: "PLUM5",
+      catalog: "PLUM1",
       artist: "Ain°",
-      title: "Interior Rooms",
+      title: "Hearts",
       format: "Digital",
       year: "2024",
       status: "Available",
       price: "7.00",
-      bandcampUrl: "https://placidum.bandcamp.com/album/interior-rooms",
-      description: "Intimate electronic compositions mapping internal emotional landscapes.",
+      bandcampUrl: "https://placidum.bandcamp.com/album/hearts",
+      description: "Delicate electronic textures exploring themes of vulnerability and connection.",
       tracks: [
-        "For the Wind",
-        "Sanatoria",
-        "Aquamentus",
-        "Gin Dakota",
-        "Java, Java"
-      ]
-    },
-    {
-      catalog: "PLUM6",
-      artist: "Shcaa",
-      title: "Neptune",
-      format: "Digital / Vinyl",
-      year: "2024",
-      status: "Available",
-      price: "9.00 / 23.00",
-      bandcampUrl: "https://placidum.bandcamp.com/album/neptune",
-      description: "Celestial ambient techno journey through frozen planetary reliefs.",
-      tracks: [
-        "Her Conscious Drift to Neptune's Frozen Reliefs",
-        "Leviatano",
-        "Where Have We Met?",
-        "Neptune"
-      ]
-    },
-    {
-      catalog: "PLUM7",
-      artist: "Shcaa", 
-      title: "Beautiful Situation",
-      format: "Digital",
-      year: "2024",
-      status: "Available",
-      price: "6.00",
-      bandcampUrl: "https://placidum.bandcamp.com/album/beautiful-situation",
-      description: "Nocturnal electronic narratives exploring themes of transition and memory.",
-      tracks: [
-        "Bind (night transfer)",
-        "Horses (coal song)"
+        "Pleading for The Grand Illusion",
+        "Up There, Bowls Are Spinning, Hands, Fragile"
       ]
     },
   ];
