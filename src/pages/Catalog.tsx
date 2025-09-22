@@ -127,7 +127,7 @@ const Catalog = () => {
   return (
     <div className="max-w-6xl mx-auto px-6 py-20">
       <div className="mb-16">
-        <h1 className="text-4xl font-garamond mb-4">Catalog</h1>
+        <h1 className="text-4xl font-garamond mb-4">catalogue</h1>
         <p className="text-muted-foreground font-mono mb-6 max-w-2xl">
           A curated collection of electronic specimens, each entry documented and preserved for study. 
           All specimens available through Bandcamp with worldwide distribution.
