@@ -23,6 +23,7 @@ export default {
 				'serif': ['Crimson Text', 'Georgia', 'serif'],
 				'garamond': ['EB Garamond', 'Georgia', 'serif'],
 				'sans': ['Inter', 'system-ui', 'sans-serif'],
+				'typewriter': ['Special Elite', 'Courier New', 'monospace'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
