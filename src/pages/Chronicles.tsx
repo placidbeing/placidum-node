@@ -34,7 +34,7 @@ const Chronicles = () => {
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-16">
-      <h1 className="text-4xl font-typewriter mb-8 tracking-wider">chronicles</h1>
+      <h1 className="text-4xl font-garamond mb-8">Chronicles</h1>
       
       <div className="mb-12">
         <p className="text-muted-foreground mb-4">

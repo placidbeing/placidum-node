@@ -39,7 +39,7 @@ const Shcaa = () => {
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-16">
-      <h1 className="text-4xl font-typewriter mb-8 tracking-wider">shcaa</h1>
+      <h1 className="text-4xl font-garamond mb-8">Shcaa</h1>
       
       <div className="mb-16">
         <p className="text-muted-foreground leading-relaxed mb-6">

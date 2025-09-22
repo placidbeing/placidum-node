@@ -29,7 +29,7 @@ const Bulletin = () => {
   return (
     <div className="max-w-5xl mx-auto px-6 py-20">
       <header className="mb-16">
-        <h1 className="text-4xl font-typewriter mb-4 tracking-wider">bulletin</h1>
+        <h1 className="text-4xl font-garamond mb-4">Field Notes & Observations</h1>
         <p className="text-muted-foreground max-w-2xl">
           Documentation of recent activities, specimen discoveries, and taxonomical updates 
           from the placidum collection.
