@@ -30,7 +30,7 @@ const Layout = ({ children }: LayoutProps) => {
                 <Link
                   key={item.path}
                   to={item.path}
-                  className={`text-sm font-mono uppercase tracking-wider transition-colors hover:text-accent border-b-2 pb-1 ${
+                  className={`text-sm font-serif lowercase tracking-wide transition-colors hover:text-accent border-b-2 pb-1 ${
                     location.pathname === item.path 
                       ? "text-accent border-accent" 
                       : "text-muted-foreground border-transparent"
