@@ -1,9 +1,18 @@
+import beautifulSituationCover from "@/assets/Beautiful_Situation_Cover_LD.jpg";
+import neptuneCover from "@/assets/Midnight_Test5_proc_desat.jpg";
+import interiorRoomsCover from "@/assets/IR_Cover.jpg";
+import softSignsCover from "@/assets/soft_signs_is_LD.jpg";
+import golcondeCover from "@/assets/Golconde_Cover.png";
+import heartsCover from "@/assets/placid_I_HEARTS_naked.jpg";
+import latitudesCover from "@/assets/LATITUDES_naked.png";
+
 const Catalog = () => {
   const releases = [
     {
       catalog: "PLUM7",
       artist: "Shcaa", 
       title: "Beautiful Situation",
+      artwork: beautifulSituationCover,
       format: "Digital",
       year: "2024",
       status: "Available",
@@ -19,6 +28,7 @@ const Catalog = () => {
       catalog: "PLUM6",
       artist: "Shcaa",
       title: "Neptune",
+      artwork: neptuneCover,
       format: "Digital / Vinyl",
       year: "2024",
       status: "Available",
@@ -36,6 +46,7 @@ const Catalog = () => {
       catalog: "PLUM5",
       artist: "Ain°",
       title: "Interior Rooms",
+      artwork: interiorRoomsCover,
       format: "Digital",
       year: "2024",
       status: "Available",
@@ -54,6 +65,7 @@ const Catalog = () => {
       catalog: "PLUM4",
       artist: "Nocturnal Solutions",
       title: "Nocturnal Solutions",
+      artwork: latitudesCover,
       format: "Digital / Cassette",
       year: "2024",
       status: "Available",
@@ -72,6 +84,7 @@ const Catalog = () => {
       catalog: "PLUM3",
       artist: "Shcaa",
       title: "Soft Signs",
+      artwork: softSignsCover,
       format: "Digital",
       year: "2024",
       status: "Available", 
@@ -87,6 +100,7 @@ const Catalog = () => {
       catalog: "PLUM2",
       artist: "Shcaa",
       title: "Golconde",
+      artwork: golcondeCover,
       format: "Digital / Vinyl",
       year: "2024", 
       status: "Available",
@@ -111,6 +125,7 @@ const Catalog = () => {
       catalog: "PLUM1",
       artist: "Ain°",
       title: "Hearts",
+      artwork: heartsCover,
       format: "Digital",
       year: "2024",
       status: "Available",
@@ -151,9 +166,14 @@ const Catalog = () => {
             <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
               {/* Specimen Image */}
               <div className="lg:col-span-2">
-                <div className="aspect-square bg-muted border-2 border-border relative">
+                <div className="aspect-square bg-muted border-2 border-border relative overflow-hidden">
+                  <img 
+                    src={release.artwork} 
+                    alt={`${release.artist} - ${release.title} album cover`}
+                    className="w-full h-full object-cover"
+                  />
                   <div className="absolute bottom-4 right-4">
-                    <span className="specimen-label">{release.catalog}</span>
+                    <span className="specimen-label bg-background/80 backdrop-blur-sm">{release.catalog}</span>
                   </div>
                 </div>
               </div>
