@@ -2,39 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Minimalist 90s-inspired music label design system */
+/* Leonardo da Vinci journal-inspired design system */
 
 @layer base {
   :root {
-    --background: 48 15% 97%;
-    --foreground: 30 25% 8%;
+    /* Parchment background with subtle warmth */
+    --background: 45 15% 98%;
+    --foreground: 25 30% 5%;
 
-    --card: 45 20% 95%;
-    --card-foreground: 30 25% 12%;
+    /* Card surfaces like aged paper */
+    --card: 42 18% 96%;
+    --card-foreground: 25 25% 8%;
 
-    --popover: 45 20% 95%;
-    --popover-foreground: 30 25% 8%;
+    --popover: 42 18% 96%;
+    --popover-foreground: 25 25% 8%;
 
-    --primary: 30 35% 15%;
-    --primary-foreground: 48 15% 97%;
+    /* Deep ink tones */
+    --primary: 25 35% 12%;
+    --primary-foreground: 45 15% 98%;
 
-    --secondary: 42 18% 88%;
-    --secondary-foreground: 30 25% 15%;
+    /* Subtle graphite tones */
+    --secondary: 40 12% 85%;
+    --secondary-foreground: 25 25% 15%;
 
-    --muted: 42 15% 90%;
-    --muted-foreground: 30 15% 45%;
+    /* Faded sketch tones */
+    --muted: 40 10% 88%;
+    --muted-foreground: 25 12% 50%;
 
-    --accent: 160 30% 25%;
-    --accent-foreground: 48 15% 97%;
+    /* Muted sienna accent - like old ink */
+    --accent: 20 25% 35%;
+    --accent-foreground: 45 15% 98%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 42 12% 82%;
-    --input: 42 12% 82%;
-    --ring: 160 30% 25%;
+    /* Subtle lines like drawn margins */
+    --border: 40 8% 78%;
+    --input: 40 8% 78%;
+    --ring: 20 25% 35%;
 
-    --radius: 0.25rem;
+    --radius: 0.125rem;
+
+    /* Journal-specific variables */
+    --parchment: 45 20% 97%;
+    --ink: 25 35% 8%;
+    --graphite: 25 8% 45%;
+    --margin: 20 15% 70%;
 
     --sidebar-background: 0 0% 98%;
 
@@ -100,28 +113,155 @@
   body {
     @apply bg-background text-foreground;
     font-family: 'Crimson Text', 'Georgia', serif;
-    line-height: 1.7;
+    line-height: 1.65;
     font-size: 16px;
+    background-image: 
+      radial-gradient(circle at 1px 1px, hsl(var(--graphite) / 0.05) 1px, transparent 0);
+    background-size: 20px 20px;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-serif font-normal;
-    letter-spacing: -0.02em;
+    @apply font-garamond font-normal;
+    letter-spacing: -0.015em;
+    line-height: 1.3;
   }
 
-  .specimen-label {
-    @apply font-mono text-xs uppercase tracking-wider;
-    border: 1px solid hsl(var(--border));
-    background: hsl(var(--card));
-    padding: 0.25rem 0.5rem;
+  /* Journal-inspired typography hierarchy */
+  h1 {
+    @apply text-3xl;
+    font-variant: small-caps;
+    letter-spacing: 0.05em;
   }
 
-  .classification {
-    @apply font-mono text-sm;
+  h2 {
+    @apply text-xl;
     font-style: italic;
   }
 
+  h3 {
+    @apply text-lg;
+    text-transform: lowercase;
+    font-variant: small-caps;
+  }
+
+  /* Journal-specific styles */
+  .folio-number {
+    @apply font-mono text-xs;
+    font-variant: small-caps;
+    letter-spacing: 0.1em;
+    color: hsl(var(--graphite));
+  }
+
+  .marginalia {
+    @apply font-mono text-xs text-muted-foreground;
+    font-style: italic;
+    position: relative;
+  }
+
+  .marginalia::before {
+    content: "⸻ ";
+    opacity: 0.5;
+  }
+
+  /* Sketch-like containers */
+  .journal-entry {
+    position: relative;
+    background: hsl(var(--parchment));
+    border: none;
+    box-shadow: 
+      inset 0 0 0 1px hsl(var(--border) / 0.3),
+      0 2px 8px hsl(var(--graphite) / 0.1);
+  }
+
+  /* Asymmetrical grid helpers */
+  .notebook-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  .notebook-grid-wide {
+    grid-template-columns: 1fr 3fr;
+    gap: 3rem;
+  }
+
+  /* Interactive annotations */
+  .annotation-hover {
+    position: relative;
+    cursor: help;
+  }
+
+  .annotation-hover::after {
+    content: attr(data-annotation);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: hsl(var(--popover));
+    border: 1px solid hsl(var(--border));
+    padding: 0.5rem;
+    font-size: 0.75rem;
+    font-family: 'JetBrains Mono', monospace;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 10;
+  }
+
+  .annotation-hover:hover::after {
+    opacity: 1;
+  }
+
+  /* Ink-like link effects */
   a {
-    @apply transition-colors hover:text-accent;
+    @apply transition-all duration-300;
+    position: relative;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: hsl(var(--accent));
+  }
+
+  /* Underline animation like ink spreading */
+  .ink-underline {
+    position: relative;
+  }
+
+  .ink-underline::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: hsl(var(--accent));
+    transition: width 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  .ink-underline:hover::after {
+    width: 100%;
+  }
+
+  /* Fragment-style content blocks */
+  .fragment {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: hsl(var(--card) / 0.6);
+    border-left: 2px solid hsl(var(--accent) / 0.3);
+    position: relative;
+  }
+
+  .fragment::before {
+    content: "⸻";
+    position: absolute;
+    top: 0.5rem;
+    left: -0.5rem;
+    color: hsl(var(--accent) / 0.5);
+    font-size: 0.75rem;
   }
 }

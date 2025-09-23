@@ -21,8 +21,13 @@ export default {
 			fontFamily: {
 				'mono': ['JetBrains Mono', 'Courier New', 'monospace'],
 				'serif': ['Crimson Text', 'Georgia', 'serif'],
-				'garamond': ['EB Garamond', 'Georgia', 'serif'],
+				'garamond': ['EB Garamond', 'Crimson Text', 'Georgia', 'serif'],
 				'sans': ['Inter', 'system-ui', 'sans-serif'],
+			},
+			fontSize: {
+				'journal-sm': ['0.875rem', { lineHeight: '1.5', letterSpacing: '0.025em' }],
+				'journal-base': ['1rem', { lineHeight: '1.65', letterSpacing: '0.015em' }],
+				'journal-lg': ['1.125rem', { lineHeight: '1.5', letterSpacing: '0.01em' }],
 			},
 			colors: {
 				border: 'hsl(var(--border))',

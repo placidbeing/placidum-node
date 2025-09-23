@@ -140,71 +140,75 @@ const Catalog = () => {
   ];
 
   return (
-    <div className="max-w-6xl mx-auto px-6 py-20">
-      <div className="mb-16">
-        <h1 className="text-4xl font-garamond mb-4">catalogue</h1>
-        <p className="text-muted-foreground font-mono mb-6 max-w-2xl">
-          A curated collection of electronic specimens, each entry documented and preserved for study. 
-          All specimens available through Bandcamp with worldwide distribution.
-        </p>
-        <div className="border-l-2 border-accent pl-6">
-          <p className="font-mono text-sm text-muted-foreground mb-2">Collection Access</p>
-          <a 
-            href="https://placidum.bandcamp.com" 
-            className="text-accent hover:underline font-mono underline decoration-dotted"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            placidum.bandcamp.com →
-          </a>
-        </div>
+    <div className="notebook-grid py-20">
+      <div className="marginalia">
+        <span className="folio-number">Catalogus</span>
       </div>
+      <div>
+        <div className="mb-16">
+          <h1>catalogue</h1>
+          <div className="fragment">
+            <p className="font-mono mb-6 max-w-2xl">
+              A curated collection of electronic specimens, each entry documented and preserved for study. 
+              All specimens available through Bandcamp with worldwide distribution.
+            </p>
+            <div className="marginalia">
+              Collection Access: <a 
+                href="https://placidum.bandcamp.com" 
+                className="ink-underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                placidum.bandcamp.com
+              </a>
+            </div>
+          </div>
+        </div>
 
-      <div className="space-y-16">
-        {releases.map((release) => (
-          <article key={release.catalog} className="bg-card p-8">
-            <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
-              {/* Specimen Image */}
-              <div className="lg:col-span-2">
-                <div className="aspect-square bg-muted relative overflow-hidden">
-                  <img 
-                    src={release.artwork} 
-                    alt={`${release.artist} - ${release.title} album cover`}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
-              
-              {/* Taxonomical Classification */}
-              <div className="lg:col-span-2 space-y-4">
-                <div className="border-b border-border pb-4">
-                  <h2 className="text-2xl font-serif mb-2">{release.artist}</h2>
-                  <h3 className="text-lg font-serif italic text-muted-foreground mb-3">{release.title}</h3>
-                  <p className="text-sm leading-relaxed">{release.description}</p>
+        <div className="space-y-24">
+          {releases.map((release) => (
+            <article key={release.catalog} className="journal-entry p-8">
+              <div className="notebook-grid-wide">
+                {/* Specimen Image */}
+                <div>
+                  <div 
+                    className="aspect-square bg-muted relative overflow-hidden annotation-hover"
+                    data-annotation={`${release.catalog} - ${release.year}`}
+                  >
+                    <img 
+                      src={release.artwork} 
+                      alt={`${release.artist} - ${release.title} album cover`}
+                      className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                    />
+                  </div>
                 </div>
                 
-                <div className="space-y-4">
-                  <div className="space-y-3 font-mono text-sm">
-                    <div className="grid grid-cols-2 gap-4">
+                {/* Taxonomical Classification */}
+                <div className="space-y-6">
+                  <div className="fragment">
+                    <div className="flex items-baseline gap-4 mb-4">
+                      <span className="folio-number">{release.catalog}</span>
                       <div>
-                        <span className="text-muted-foreground">Format:</span>
-                        <p className="classification">{release.format}</p>
-                      </div>
-                      <div>
-                        <span className="text-muted-foreground">Year:</span>
-                        <p className="classification">{release.year}</p>
+                        <h2>{release.artist}</h2>
+                        <h3 className="italic text-muted-foreground">{release.title}</h3>
                       </div>
                     </div>
-                    <div>
-                      <span className="text-muted-foreground">Catalog No.:</span>
-                      <p className="classification">{release.catalog}.</p>
+                    <p className="leading-relaxed mb-4">{release.description}</p>
+                  </div>
+                  
+                  <div className="notebook-grid" style={{ gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+                    <div className="marginalia">
+                      Format: {release.format}
+                    </div>
+                    <div className="marginalia">
+                      Year: {release.year}
                     </div>
                   </div>
                   
                   {/* Track Listing */}
-                  <div className="border-t border-border pt-4">
-                    <span className="text-muted-foreground text-sm font-mono">Tracklist:</span>
-                    <ol className="mt-2 space-y-1 text-sm font-sans">
+                  <div className="fragment">
+                    <div className="marginalia mb-3">Tracklist:</div>
+                    <ol className="space-y-1 font-mono text-sm">
                       {release.tracks.map((track, index) => (
                         <li key={index} className="text-muted-foreground">
                           {String(index + 1).padStart(2, '0')}. {track}
@@ -212,55 +216,42 @@ const Catalog = () => {
                       ))}
                     </ol>
                   </div>
-                </div>
-              </div>
-              
-              {/* Acquisition Info */}
-              <div className="space-y-4">
-                <div className="p-4 bg-secondary/50">
-                  <div className="text-xs font-mono text-muted-foreground uppercase tracking-wider mb-2">Status</div>
-                  <span className={`specimen-label ${
-                    release.status === "Available" 
-                      ? "text-accent border-accent" 
-                      : "text-muted-foreground border-muted-foreground"
-                  }`}>
-                    {release.status}
-                  </span>
-                </div>
-                
-                <div className="space-y-2">
-                  <div className="text-xs font-mono text-muted-foreground uppercase tracking-wider">Acquisition</div>
-                  <div className="font-mono text-sm">
-                    <p className="text-muted-foreground">Price:</p>
-                    <p className="font-medium">${release.price}</p>
-                  </div>
-                  <a 
-                    href={release.bandcampUrl}
-                    className="inline-block text-sm font-mono text-accent hover:underline underline decoration-dotted mt-2"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Listen / Buy on Bandcamp →
-                  </a>
-                  
-                  {/* Bandcamp Embed Preview */}
-                  <div className="mt-4 p-4 bg-muted/50">
-                    <iframe 
-                      style={{ border: 0, width: '100%', height: '120px' }} 
-                      src={`${release.bandcampUrl.replace('/album/', '/EmbeddedPlayer/album=')}}/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/`}
-                      seamless
-                      title={`${release.artist} - ${release.title}`}
-                    >
-                      <a href={release.bandcampUrl}>{release.title} by {release.artist}</a>
-                    </iframe>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </article>
-        ))}
-      </div>
 
+                  {/* Acquisition Info */}
+                  <div className="fragment">
+                    <div className="marginalia mb-2">Status: {release.status}</div>
+                    <div className="marginalia mb-4">Price: ${release.price}</div>
+                    
+                    <a 
+                      href={release.bandcampUrl}
+                      className="ink-underline font-mono text-sm"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Listen / Buy on Bandcamp
+                    </a>
+                    
+                    {/* Bandcamp Embed Preview */}
+                    <div className="mt-6 p-4 bg-muted/30">
+                      <iframe 
+                        style={{ border: 0, width: '100%', height: '120px' }} 
+                        src={`${release.bandcampUrl.replace('/album/', '/EmbeddedPlayer/album=')}}/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/`}
+                        seamless
+                        title={`${release.artist} - ${release.title}`}
+                      >
+                        <a href={release.bandcampUrl}>{release.title} by {release.artist}</a>
+                      </iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+      <div className="marginalia">
+        <span className="folio-number">Collection Complete</span>
+      </div>
     </div>
   );
 };

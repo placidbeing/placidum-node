@@ -16,24 +16,29 @@ const Layout = ({ children }: LayoutProps) => {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <header className="border-b-2 border-border bg-card">
-        <div className="max-w-5xl mx-auto px-6 py-8">
-          <nav className="flex items-center justify-between">
-            <Link to="/" className="text-2xl font-serif font-semibold tracking-wide">
-              Placidum
-              <span className="block text-xs font-serif italic text-muted-foreground mt-1" style={{ fontFamily: 'cursive' }}>
+      <header className="journal-entry">
+        <div className="notebook-grid">
+          <div className="marginalia">
+            <span className="folio-number">Index</span>
+          </div>
+          <nav className="flex items-center justify-between py-8">
+            <Link to="/" className="ink-underline">
+              <h1 className="text-2xl font-garamond tracking-wide">
+                Placidum
+              </h1>
+              <div className="marginalia mt-1">
                 Observationes circa Impressionum Naturam
-              </span>
+              </div>
             </Link>
             <div className="flex gap-8">
               {navItems.map((item) => (
                 <Link
                   key={item.path}
                   to={item.path}
-                  className={`text-sm font-serif lowercase tracking-wide transition-colors hover:text-accent border-b-2 pb-1 ${
+                  className={`ink-underline font-mono text-sm lowercase tracking-wide ${
                     location.pathname === item.path 
-                      ? "text-accent border-accent" 
-                      : "text-muted-foreground border-transparent"
+                      ? "text-accent font-medium" 
+                      : "text-muted-foreground"
                   }`}
                 >
                   {item.label}
@@ -41,26 +46,37 @@ const Layout = ({ children }: LayoutProps) => {
               ))}
             </div>
           </nav>
+          <div className="marginalia text-right">
+            <span className="folio-number">MMXXIV</span>
+          </div>
         </div>
       </header>
       <main>{children}</main>
-      <footer className="border-t-2 border-border mt-24 bg-card">
-        <div className="max-w-5xl mx-auto px-6 py-12">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div>
-              <h3 className="font-serif text-lg mb-3">Contact</h3>
-              <p className="text-sm text-muted-foreground" style={{ fontFamily: 'cursive' }}>sacha@placidum.com</p>
+      <footer className="journal-entry mt-24">
+        <div className="notebook-grid">
+          <div className="marginalia">
+            <span className="folio-number">Contact</span>
+          </div>
+          <div className="py-12">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="fragment">
+                <h3>Correspondence</h3>
+                <p className="marginalia">sacha@placidum.com</p>
+              </div>
+              <div className="fragment">
+                <h3>Archives</h3>
+                <p className="marginalia">Est. MMXXIV</p>
+              </div>
+              <div className="fragment">
+                <p className="marginalia">© 2024 Placidum</p>
+                <p className="marginalia mt-2">
+                  Impressions preserved for posterity
+                </p>
+              </div>
             </div>
-            <div>
-              <h3 className="font-serif text-lg mb-3">Archives</h3>
-              <p className="text-sm text-muted-foreground" style={{ fontFamily: 'cursive' }}>Est. MMXXIV</p>
-            </div>
-            <div>
-              <p className="text-sm text-muted-foreground" style={{ fontFamily: 'cursive' }}>© 2024 Placidum</p>
-              <p className="text-xs text-muted-foreground mt-2" style={{ fontFamily: 'cursive' }}>
-                Impressions preserved for posterity
-              </p>
-            </div>
+          </div>
+          <div className="marginalia">
+            <span className="folio-number">Finis</span>
           </div>
         </div>
       </footer>
