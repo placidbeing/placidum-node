@@ -157,6 +157,11 @@
     color: hsl(var(--iron-oxide));
   }
 
+  /* Leonardo folio typography */
+  .text-ink {
+    color: hsl(var(--ink));
+  }
+
   .marginalia {
     @apply font-mono text-xs text-muted-foreground;
     font-style: italic;

@@ -22,6 +22,7 @@ export default {
 				'mono': ['JetBrains Mono', 'Courier New', 'monospace'],
 				'serif': ['Crimson Text', 'Georgia', 'serif'],
 				'garamond': ['EB Garamond', 'Crimson Text', 'Georgia', 'serif'],
+				'cormorant': ['Cormorant Garamond', 'EB Garamond', 'Georgia', 'serif'],
 				'sans': ['Inter', 'system-ui', 'sans-serif'],
 			},
 			fontSize: {

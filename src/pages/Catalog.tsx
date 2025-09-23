@@ -10,146 +10,120 @@ const Catalog = () => {
   const releases = [
     {
       catalog: "PLUM7.",
+      catalogFormatted: "PLUM7. _BEAUTIFUL-SITUATION.2025.03",
       artist: "Situation",
       title: "Beautiful Situation",
       artwork: beautifulSituationCover,
-      format: "DGT",
-      year: "2025.03",
-      status: "Available",
-      price: "VAL.0010",
-      marginNote: "Digital Release, Spring 2025",
+      totalDuration: "13 min. 36 sec.",
+      technicalSpecs: "scriptum ad 96 milia vibrationes / 24 puncta claritatis",
       bandcampUrl: "https://placidum.bandcamp.com/album/beautiful-situation",
-      description: "seventh release captures ephemeral moments through processed acoustic instruments.",
       tracks: [
-        "1. Bind (night transfer)",
-        "2. Horses (coal song)"
+        { title: "Bind (night transfer)", duration: "6 min. 59 sec.", gloss: "vinculum nocturnum" },
+        { title: "Horses (coal song)", duration: "6 min. 37 sec.", gloss: "equus carbonis" }
       ]
     },
     {
       catalog: "PLUM6.",
+      catalogFormatted: "PLUM6. _NEPTUNE.2024.03",
       artist: "Neptune",
       title: "Neptune",
       artwork: neptuneCover,
-      format: "VNL",
-      year: "2024.03",
-      status: "Available",
-      price: "VAL.0015",
-      marginNote: "Dubplates, Spring 2024",
+      totalDuration: "21 min. 31 sec.",
+      technicalSpecs: "sonus captus ad 48 milia vibrationes / 24 partes subtilissimae",
       bandcampUrl: "https://placidum.bandcamp.com/album/neptune",
-      description: "sixth release journeys through oceanic depths with immersive soundscapes.",
       tracks: [
-        "1. Her Conscious Drift to Neptune's Frozen Reliefs",
-        "2. Leviatano",
-        "3. Where Have We Met?",
-        "4. Neptune"
+        { title: "Her Conscious Drift to Neptune's Frozen Reliefs", duration: "6 min. 38 sec.", gloss: "tractus unitatis" },
+        { title: "Leviatano", duration: "6 min. 00 sec.", gloss: "sonus profundus" },
+        { title: "Where Have We Met?", duration: "5 min. 17 sec.", gloss: "motus memoriae" },
+        { title: "Neptune", duration: "3 min. 35 sec.", gloss: "imago aquarum" }
       ]
     },
     {
       catalog: "PLUM5.",
+      catalogFormatted: "PLUM5. _INTERIOR-ROOMS.2023.06",
       artist: "Interior",
       title: "Interior Rooms",
       artwork: interiorRoomsCover,
-      format: "CS",
-      year: "2023.06",
-      status: "Available",
-      price: "VAL.0012",
-      marginNote: "Cassette Edition, Summer 2023",
+      totalDuration: "27 min. 36 sec.",
+      technicalSpecs: "memoria impressa ad 48 milia vibrationes / 24 gradus artis",
       bandcampUrl: "https://placidum.bandcamp.com/album/interior-rooms",
-      description: "fifth release explores intimate spaces through field recordings and processed electronics.",
       tracks: [
-        "1. For the Wind",
-        "2. Sanatoria",
-        "3. Aquamentus",
-        "4. Gin Dakota",
-        "5. Java, Java"
+        { title: "For the Wind", duration: "5 min. 46 sec.", gloss: "pro vento" },
+        { title: "Sanatoria", duration: "5 min. 30 sec.", gloss: "cura animae" },
+        { title: "Aquamentus", duration: "7 min. 33 sec.", gloss: "aqua figurata" },
+        { title: "Gin Dakota", duration: "3 min. 26 sec.", gloss: "poculum occidens" },
+        { title: "Java, Java", duration: "5 min. 19 sec.", gloss: "iter aromatum" }
       ]
     },
     {
       catalog: "PLUM4.",
+      catalogFormatted: "PLUM4. _NOCTURNAL-SOLUTIONS.2023.03",
       artist: "Midnight",
       title: "Nocturnal Solutions",
       artwork: nocturnalSolutionsCover,
-      format: "CS",
-      year: "2023.02",
-      status: "Available",
-      price: "VAL.0012",
-      marginNote: "Limited Cassette, Winter 2023",
+      totalDuration: "40 min. 32 sec.",
+      technicalSpecs: "figura soni: 48 milia vibrationes / 24 rationes artis",
       bandcampUrl: "https://placidum.bandcamp.com/album/nocturnal-solutions",
-      description: "fourth release delves into nocturnal ambient territories with subtle industrial influences.",
       tracks: [
-        "1. Nocturnal Solutions",
-        "2. Ocean (Existence)",
-        "3. Cave (Extinction)", 
-        "4. Ocean (Club)",
-        "5. Ocean (EEE)"
+        { title: "Nocturnal Solutions", duration: "6 min. 48 sec.", gloss: "solutio tenebrarum" },
+        { title: "Ocean (Existence)", duration: "6 min. 39 sec.", gloss: "mare existentiae" },
+        { title: "Cave (Extinction)", duration: "6 min. 01 sec.", gloss: "antrum exstinctum" },
+        { title: "Ocean (Club)", duration: "10 min. 48 sec.", gloss: "mare concursus" },
+        { title: "Ocean (EEE)", duration: "10 min. 14 sec.", gloss: "mare electricae" }
       ]
     },
     {
       catalog: "PLUM3.",
+      catalogFormatted: "PLUM3. _SOFT-SIGNS.2022.08",
       artist: "Shcaa",
       title: "Soft Signs",
       artwork: softSignsCover,
-      format: "VNL",
-      year: "2022.09",
-      status: "Available",
-      price: "VAL.0015",
-      marginNote: "Limited Edition, Autumn 2022",
+      totalDuration: "19 min. 48 sec.",
+      technicalSpecs: "auditus servatus ad 48 milia vibrationes / 24 lineae subtilitatis",
       bandcampUrl: "https://placidum.bandcamp.com/album/soft-signs",
-      description: "third release explores the intersection of ambient textures and subtle rhythmic patterns.",
       tracks: [
-        "1. Soft Signs",
-        "2. Soft Signs, air"
+        { title: "Soft Signs", duration: "14 min. 29 sec.", gloss: "signa mollia" },
+        { title: "Signs, air", duration: "5 min. 18 sec.", gloss: "signa aeris" }
       ]
     },
     {
       catalog: "PLUM2.",
+      catalogFormatted: "PLUM2. _GOLCONDE.2019.09",
       artist: "Shcaa",
       title: "Golconde",
       artwork: golcondeCover,
-      format: "VNL",
-      year: "2019.04",
-      status: "Available",
-      price: "VAL.0018",
-      marginNote: "Vinyl Edition, Spring 2019",
+      totalDuration: "52 min. 54 sec.",
+      technicalSpecs: "sonus captus ad 44,1 milia vibrationes / 24 partes subtilissimae",
       bandcampUrl: "https://placidum.bandcamp.com/album/golconde",
-      description: "second release ventures into architectural minimalism through rhythmic sequences and spatial arrangements.",
       tracks: [
-        "1. Polokus",
-        "2. Kohinor", 
-        "3. Scaphandrier",
-        "4. Mimèsis",
-        "5. Vesavi",
-        "6. Darya",
-        "7. Borneo",
-        "8. Formosa",
-        "9. Orloff",
-        "10. Kert",
-        "11. The Sky Was Pearl Grey (bonus track)"
+        { title: "Polokus", duration: "4 min. 45 sec.", gloss: "figura somnii" },
+        { title: "Kohinor", duration: "4 min. 29 sec.", gloss: "lapis clarus" },
+        { title: "Scaphandrier", duration: "6 min. 05 sec.", gloss: "homo sub aqua" },
+        { title: "Mimèsis", duration: "3 min. 15 sec.", gloss: "ars similitudinis" },
+        { title: "Vesavi", duration: "2 min. 45 sec.", gloss: "ignis montis" },
+        { title: "Darya", duration: "1 min. 55 sec.", gloss: "vox arcana" },
+        { title: "Borneo", duration: "3 min. 47 sec.", gloss: "insula viridis" },
+        { title: "Formosa", duration: "1 min. 24 sec.", gloss: "figura pulchra" },
+        { title: "Orloff", duration: "2 min. 54 sec.", gloss: "gemma alba" },
+        { title: "Kert", duration: "5 min. 42 sec.", gloss: "via orientis" },
+        { title: "The Sky Was Pearl Grey", duration: "11 min. 01 sec.", gloss: "caelum cinereum" }
       ]
     },
     {
       catalog: "PLUM1.",
+      catalogFormatted: "PLUM1. _HEARTS.2018.06",
       artist: "Ain°",
       title: "Hearts",
       artwork: heartsCover,
-      format: "DGT",
-      year: "2018.09",
-      status: "Available",
-      price: "VAL.0010",
-      marginNote: "Digital Only, Autumn 2018",
+      totalDuration: "55 min. 50 sec.",
+      technicalSpecs: "scriptura ad 44,1 milia vibrationes / 16 partes tenuitatis",
       bandcampUrl: "https://placidum.bandcamp.com/album/hearts",
-      description: "debut release explores delicate electronic textures and themes of vulnerability and connection.",
       tracks: [
-        "1. Pleading for The Grand Illusion",
-        "2. Up There, Bowls Are Spinning, Hands, Fragile"
+        { title: "Pleading for The Grand Illusion", duration: "22 min. 56 sec.", gloss: "illusio magna" },
+        { title: "Up There, Bowls Are Spinning, Hands, Fragile", duration: "32 min. 54 sec.", gloss: "manus fragiles" }
       ]
     }
   ];
-
-  const generateFilenameLine = (release: any) => {
-    const titleFormatted = release.title.toUpperCase().replace(/\s+/g, '-');
-    return `${release.catalog} _${titleFormatted}.${release.format}.${release.year}`;
-  };
 
   return (
     <div className="notebook-grid py-20">
@@ -158,11 +132,13 @@ const Catalog = () => {
       </div>
       <div>
         <div className="mb-16">
-          <h1>catalogue</h1>
+          <h1 className="font-cormorant text-4xl font-bold mb-6" style={{ fontVariant: 'small-caps', letterSpacing: '0.1em' }}>
+            Archive of Digital Folios
+          </h1>
           <div className="fragment">
-            <p className="font-mono mb-6 max-w-2xl">
-              A curated collection of electronic specimens, each entry documented and preserved for study. 
-              All specimens available through Bandcamp with worldwide distribution.
+            <p className="font-cormorant text-lg leading-relaxed mb-6 max-w-2xl">
+              A collection of sound documented as Leonardo would inscribe music in his notebooks—each release 
+              catalogued with precise measurements and poetic observations.
             </p>
             <div className="marginalia">
               Collection Access: <a 
@@ -181,79 +157,76 @@ const Catalog = () => {
           {releases.map((release) => (
             <article key={release.catalog} className="journal-entry p-8">
               <div className="notebook-grid-wide">
-                {/* Specimen Image */}
+                {/* Folio Image */}
                 <div>
                   <div 
                     className="aspect-square bg-muted relative overflow-hidden annotation-hover"
-                    data-annotation={`${release.catalog} - ${release.year}`}
+                    data-annotation={`${release.catalog} - ${release.totalDuration}`}
                   >
                     <img 
                       src={release.artwork} 
-                      alt={`${release.artist} - ${release.title} album cover`}
+                      alt={`${release.artist} - ${release.title} folio illustration`}
                       className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                     />
                   </div>
                 </div>
                 
-                {/* Abstract Folio Indexing */}
+                {/* Folio Content */}
                 <div className="space-y-6">
                   <div className="fragment">
-                    {/* Catalog Number - Prominent */}
+                    {/* Catalog Number - Bold Serif */}
                     <div className="mb-6">
-                      <span className="folio-number text-2xl">{release.catalog}</span>
-                      <h2 className="mt-2">{release.title}</h2>
+                      <span className="font-cormorant text-3xl font-bold text-ink" style={{ letterSpacing: '0.05em' }}>
+                        {release.catalog}
+                      </span>
+                      <h2 className="font-cormorant text-xl italic mt-2 text-ink">
+                        {release.title}
+                      </h2>
                     </div>
                     
-                    {/* File-Name Line */}
-                    <div className="font-mono text-sm mb-2 text-muted-foreground">
-                      {generateFilenameLine(release)}
+                    {/* Leonardo-style Metadata */}
+                    <div className="mb-6 space-y-2">
+                      <div className="font-cormorant italic text-base text-muted-foreground" style={{ letterSpacing: '0.1em' }}>
+                        tempus totius operis: {release.totalDuration}
+                      </div>
+                      <div className="font-cormorant italic text-sm text-muted-foreground" style={{ letterSpacing: '0.05em' }}>
+                        {release.technicalSpecs}
+                      </div>
                     </div>
-                    
-                    {/* Value Line */}
-                    <div className="font-mono text-sm mb-4 text-iron-oxide">
-                      {release.price}
-                    </div>
-                    
-                    <p className="leading-relaxed mb-4">{release.description}</p>
                   </div>
                   
-                  {/* Tracklist - Readable, Poetic */}
+                  {/* Tracklist - Leonardo Style */}
                   <div className="fragment">
-                    <div className="marginalia mb-3">Tracklist:</div>
-                    <div className="space-y-1">
+                    <div className="space-y-3">
                       {release.tracks.map((track, index) => (
-                        <div key={index} className="text-foreground font-serif">
-                          {track}
+                        <div key={index} className="text-ink">
+                          <span className="font-cormorant text-lg leading-relaxed">
+                            {track.title}, {track.duration} 
+                          </span>
+                          <span className="font-cormorant italic text-sm text-muted-foreground ml-2" style={{ opacity: 0.7 }}>
+                            ({track.gloss})
+                          </span>
                         </div>
                       ))}
                     </div>
                   </div>
 
-                  {/* Margin Notes */}
-                  {release.marginNote && (
-                    <div className="marginalia italic text-sm">
-                      {release.marginNote}
-                    </div>
-                  )}
-
                   {/* Acquisition Info */}
                   <div className="fragment">
-                    <div className="marginalia mb-2">Status: {release.status}</div>
-                    
                     <a 
                       href={release.bandcampUrl}
-                      className="ink-underline font-mono text-sm"
+                      className="ink-underline font-cormorant text-base"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Listen / Buy on Bandcamp
+                      Listen / Acquire Folio
                     </a>
                     
-                    {/* Bandcamp Embed Preview */}
+                    {/* Bandcamp Embed */}
                     <div className="mt-6 p-4 bg-muted/30">
                       <iframe 
                         style={{ border: 0, width: '100%', height: '120px' }} 
-                        src={`${release.bandcampUrl.replace('/album/', '/EmbeddedPlayer/album=')}}/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/`}
+                        src={`${release.bandcampUrl.replace('/album/', '/EmbeddedPlayer/album=')}}/size=large/bgcol=faf9f5/linkcol=2e4a7d/tracklist=false/artwork=small/transparent=true/`}
                         seamless
                         title={`${release.artist} - ${release.title}`}
                       >
@@ -268,7 +241,7 @@ const Catalog = () => {
         </div>
       </div>
       <div className="marginalia">
-        <span className="folio-number">Collection Complete</span>
+        <span className="folio-number">Codex Complete</span>
       </div>
     </div>
   );
