@@ -7,6 +7,7 @@ import heartsCover from "@/assets/placid_I_HEARTS_naked.jpg";
 import nocturnalSolutionsCover from "@/assets/Nocturnal_Solutions_Cover.jpg";
 
 const Catalog = () => {
+  // Fixed bandcamp embed rendering
   const releases = [
     {
       catalog: "PLUM7.",
