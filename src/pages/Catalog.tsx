@@ -4,7 +4,7 @@ import interiorRoomsCover from "@/assets/IR_Cover.jpg";
 import softSignsCover from "@/assets/soft_signs_is_LD.jpg";
 import golcondeCover from "@/assets/Golconde_Cover.png";
 import heartsCover from "@/assets/placid_I_HEARTS_naked.jpg";
-import latitudesCover from "@/assets/LATITUDES_naked.png";
+import nocturnalSolutionsCover from "@/assets/Nocturnal_Solutions_Cover.jpg";
 
 const Catalog = () => {
   const releases = [
@@ -14,7 +14,7 @@ const Catalog = () => {
       title: "Beautiful Situation",
       artwork: beautifulSituationCover,
       format: "Digital",
-      year: "2024",
+      year: "2025",
       status: "Available",
       price: "6.00",
       bandcampUrl: "https://placidum.bandcamp.com/album/beautiful-situation",
@@ -48,7 +48,7 @@ const Catalog = () => {
       title: "Interior Rooms",
       artwork: interiorRoomsCover,
       format: "Digital",
-      year: "2024",
+      year: "2023",
       status: "Available",
       price: "7.00",
       bandcampUrl: "https://placidum.bandcamp.com/album/interior-rooms",
@@ -65,9 +65,9 @@ const Catalog = () => {
       catalog: "PLUM4",
       artist: "Nocturnal Solutions",
       title: "Nocturnal Solutions",
-      artwork: latitudesCover,
+      artwork: nocturnalSolutionsCover,
       format: "Digital / Cassette",
-      year: "2024",
+      year: "2023",
       status: "Available",
       price: "8.00 / 15.00", 
       bandcampUrl: "https://placidum.bandcamp.com/album/nocturnal-solutions",
@@ -86,7 +86,7 @@ const Catalog = () => {
       title: "Soft Signs",
       artwork: softSignsCover,
       format: "Digital",
-      year: "2024",
+      year: "2022",
       status: "Available", 
       price: "5.00",
       bandcampUrl: "https://placidum.bandcamp.com/album/soft-signs",
@@ -102,7 +102,7 @@ const Catalog = () => {
       title: "Golconde",
       artwork: golcondeCover,
       format: "Digital / Vinyl",
-      year: "2024", 
+      year: "2019",
       status: "Available",
       price: "10.00 / 25.00",
       bandcampUrl: "https://placidum.bandcamp.com/album/golconde",
@@ -127,7 +127,7 @@ const Catalog = () => {
       title: "Hearts",
       artwork: heartsCover,
       format: "Digital",
-      year: "2024",
+      year: "2018",
       status: "Available",
       price: "7.00",
       bandcampUrl: "https://placidum.bandcamp.com/album/hearts",
@@ -172,9 +172,6 @@ const Catalog = () => {
                     alt={`${release.artist} - ${release.title} album cover`}
                     className="w-full h-full object-cover"
                   />
-                  <div className="absolute bottom-4 right-4">
-                    <span className="specimen-label bg-background/80 backdrop-blur-sm">{release.catalog}</span>
-                  </div>
                 </div>
               </div>
               
