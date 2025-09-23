@@ -6,48 +6,52 @@
 
 @layer base {
   :root {
-    /* Parchment background with subtle warmth */
-    --background: 45 15% 98%;
-    --foreground: 25 30% 5%;
+    /* Leonardo da Vinci Journal Palette */
+    
+    /* Parchment White #FAF9F5 */
+    --background: 45 30% 97%;
+    --foreground: 0 0% 4%;
 
-    /* Card surfaces like aged paper */
-    --card: 42 18% 96%;
-    --card-foreground: 25 25% 8%;
+    /* Card surfaces - slightly darker parchment */
+    --card: 45 25% 95%;
+    --card-foreground: 0 0% 4%;
 
-    --popover: 42 18% 96%;
-    --popover-foreground: 25 25% 8%;
+    --popover: 45 25% 95%;
+    --popover-foreground: 0 0% 4%;
 
-    /* Deep ink tones */
-    --primary: 25 35% 12%;
-    --primary-foreground: 45 15% 98%;
+    /* Deep Ink Black #0A0A0A */
+    --primary: 0 0% 4%;
+    --primary-foreground: 45 30% 97%;
 
-    /* Subtle graphite tones */
-    --secondary: 40 12% 85%;
-    --secondary-foreground: 25 25% 15%;
+    /* Graphite tones for secondary elements */
+    --secondary: 0 0% 85%;
+    --secondary-foreground: 0 0% 4%;
 
-    /* Faded sketch tones */
-    --muted: 40 10% 88%;
-    --muted-foreground: 25 12% 50%;
+    /* Muted graphite for annotations */
+    --muted: 0 0% 88%;
+    --muted-foreground: 0 0% 42%;
 
-    /* Muted sienna accent - like old ink */
-    --accent: 20 25% 35%;
-    --accent-foreground: 45 15% 98%;
+    /* Iron Oxide Red #8C3B2A - for highlights/hover */
+    --accent: 10 54% 36%;
+    --accent-foreground: 45 30% 97%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
     /* Subtle lines like drawn margins */
-    --border: 40 8% 78%;
-    --input: 40 8% 78%;
-    --ring: 20 25% 35%;
+    --border: 0 0% 80%;
+    --input: 0 0% 80%;
+    --ring: 10 54% 36%;
 
     --radius: 0.125rem;
 
-    /* Journal-specific variables */
-    --parchment: 45 20% 97%;
-    --ink: 25 35% 8%;
-    --graphite: 25 8% 45%;
-    --margin: 20 15% 70%;
+    /* Da Vinci Journal Colors */
+    --parchment: 45 30% 97%;        /* #FAF9F5 */
+    --ink: 0 0% 4%;                 /* #0A0A0A */
+    --graphite: 0 0% 42%;           /* #6A6A6A */
+    --ultramarine: 219 46% 34%;     /* #2E4A7D */
+    --verdigris: 139 20% 30%;       /* #3D5C47 */
+    --iron-oxide: 10 54% 36%;       /* #8C3B2A */
 
     --sidebar-background: 0 0% 98%;
 
@@ -115,9 +119,10 @@
     font-family: 'Crimson Text', 'Georgia', serif;
     line-height: 1.65;
     font-size: 16px;
+    background-color: hsl(var(--parchment));
     background-image: 
-      radial-gradient(circle at 1px 1px, hsl(var(--graphite) / 0.05) 1px, transparent 0);
-    background-size: 20px 20px;
+      radial-gradient(circle at 1px 1px, hsl(var(--graphite) / 0.08) 1px, transparent 0);
+    background-size: 24px 24px;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -149,7 +154,7 @@
     @apply font-mono text-xs;
     font-variant: small-caps;
     letter-spacing: 0.1em;
-    color: hsl(var(--graphite));
+    color: hsl(var(--iron-oxide));
   }
 
   .marginalia {
@@ -221,10 +226,11 @@
     @apply transition-all duration-300;
     position: relative;
     text-decoration: none;
+    color: hsl(var(--ultramarine));
   }
 
   a:hover {
-    color: hsl(var(--accent));
+    color: hsl(var(--iron-oxide));
   }
 
   /* Underline animation like ink spreading */
@@ -239,7 +245,7 @@
     left: 0;
     width: 0;
     height: 1px;
-    background: hsl(var(--accent));
+    background: hsl(var(--iron-oxide));
     transition: width 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   }
 
@@ -252,7 +258,7 @@
     margin: 2rem 0;
     padding: 1.5rem;
     background: hsl(var(--card) / 0.6);
-    border-left: 2px solid hsl(var(--accent) / 0.3);
+    border-left: 2px solid hsl(var(--verdigris) / 0.4);
     position: relative;
   }
 
@@ -261,7 +267,7 @@
     position: absolute;
     top: 0.5rem;
     left: -0.5rem;
-    color: hsl(var(--accent) / 0.5);
+    color: hsl(var(--verdigris) / 0.6);
     font-size: 0.75rem;
   }
 }
