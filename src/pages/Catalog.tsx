@@ -9,135 +9,147 @@ import nocturnalSolutionsCover from "@/assets/Nocturnal_Solutions_Cover.jpg";
 const Catalog = () => {
   const releases = [
     {
-      catalog: "PLUM7",
-      artist: "Shcaa", 
+      catalog: "PLUM7.",
+      artist: "Situation",
       title: "Beautiful Situation",
       artwork: beautifulSituationCover,
-      format: "Digital",
-      year: "2025",
+      format: "DGT",
+      year: "2025.03",
       status: "Available",
-      price: "6.00",
+      price: "VAL.0010",
+      marginNote: "Digital Release, Spring 2025",
       bandcampUrl: "https://placidum.bandcamp.com/album/beautiful-situation",
-      description: "Nocturnal electronic narratives exploring themes of transition and memory.",
+      description: "seventh release captures ephemeral moments through processed acoustic instruments.",
       tracks: [
-        "Bind (night transfer)",
-        "Horses (coal song)"
+        "1. Bind (night transfer)",
+        "2. Horses (coal song)"
       ]
     },
     {
-      catalog: "PLUM6",
-      artist: "Shcaa",
+      catalog: "PLUM6.",
+      artist: "Neptune",
       title: "Neptune",
       artwork: neptuneCover,
-      format: "Digital / Vinyl",
-      year: "2024",
+      format: "VNL",
+      year: "2024.03",
       status: "Available",
-      price: "9.00 / 23.00",
+      price: "VAL.0015",
+      marginNote: "Dubplates, Spring 2024",
       bandcampUrl: "https://placidum.bandcamp.com/album/neptune",
-      description: "Celestial ambient techno journey through frozen planetary reliefs.",
+      description: "sixth release journeys through oceanic depths with immersive soundscapes.",
       tracks: [
-        "Her Conscious Drift to Neptune's Frozen Reliefs",
-        "Leviatano",
-        "Where Have We Met?",
-        "Neptune"
+        "1. Her Conscious Drift to Neptune's Frozen Reliefs",
+        "2. Leviatano",
+        "3. Where Have We Met?",
+        "4. Neptune"
       ]
     },
     {
-      catalog: "PLUM5",
-      artist: "Ain°",
+      catalog: "PLUM5.",
+      artist: "Interior",
       title: "Interior Rooms",
       artwork: interiorRoomsCover,
-      format: "Digital",
-      year: "2023",
+      format: "CS",
+      year: "2023.06",
       status: "Available",
-      price: "7.00",
+      price: "VAL.0012",
+      marginNote: "Cassette Edition, Summer 2023",
       bandcampUrl: "https://placidum.bandcamp.com/album/interior-rooms",
-      description: "Intimate electronic compositions mapping internal emotional landscapes.",
+      description: "fifth release explores intimate spaces through field recordings and processed electronics.",
       tracks: [
-        "For the Wind",
-        "Sanatoria",
-        "Aquamentus",
-        "Gin Dakota",
-        "Java, Java"
+        "1. For the Wind",
+        "2. Sanatoria",
+        "3. Aquamentus",
+        "4. Gin Dakota",
+        "5. Java, Java"
       ]
     },
     {
-      catalog: "PLUM4",
-      artist: "Nocturnal Solutions",
+      catalog: "PLUM4.",
+      artist: "Midnight",
       title: "Nocturnal Solutions",
       artwork: nocturnalSolutionsCover,
-      format: "Digital / Cassette",
-      year: "2023",
+      format: "CS",
+      year: "2023.02",
       status: "Available",
-      price: "8.00 / 15.00", 
+      price: "VAL.0012",
+      marginNote: "Limited Cassette, Winter 2023",
       bandcampUrl: "https://placidum.bandcamp.com/album/nocturnal-solutions",
-      description: "Deep techno meditations on existence and extinction in aquatic environments.",
+      description: "fourth release delves into nocturnal ambient territories with subtle industrial influences.",
       tracks: [
-        "Nocturnal Solutions",
-        "Ocean (Existence)",
-        "Cave (Extinction)", 
-        "Ocean (Club)",
-        "Ocean (EEE)"
+        "1. Nocturnal Solutions",
+        "2. Ocean (Existence)",
+        "3. Cave (Extinction)", 
+        "4. Ocean (Club)",
+        "5. Ocean (EEE)"
       ]
     },
     {
-      catalog: "PLUM3",
+      catalog: "PLUM3.",
       artist: "Shcaa",
       title: "Soft Signs",
       artwork: softSignsCover,
-      format: "Digital",
-      year: "2022",
-      status: "Available", 
-      price: "5.00",
+      format: "VNL",
+      year: "2022.09",
+      status: "Available",
+      price: "VAL.0015",
+      marginNote: "Limited Edition, Autumn 2022",
       bandcampUrl: "https://placidum.bandcamp.com/album/soft-signs",
-      description: "Minimal ambient explorations focusing on subtle environmental textures.",
+      description: "third release explores the intersection of ambient textures and subtle rhythmic patterns.",
       tracks: [
-        "Soft Signs",
-        "Soft Signs, air"
+        "1. Soft Signs",
+        "2. Soft Signs, air"
       ]
     },
     {
-      catalog: "PLUM2",
+      catalog: "PLUM2.",
       artist: "Shcaa",
       title: "Golconde",
       artwork: golcondeCover,
-      format: "Digital / Vinyl",
-      year: "2019",
+      format: "VNL",
+      year: "2019.04",
       status: "Available",
-      price: "10.00 / 25.00",
+      price: "VAL.0018",
+      marginNote: "Vinyl Edition, Spring 2019",
       bandcampUrl: "https://placidum.bandcamp.com/album/golconde",
-      description: "An exploration of architectural minimalism through rhythmic sequences and spatial arrangements.",
+      description: "second release ventures into architectural minimalism through rhythmic sequences and spatial arrangements.",
       tracks: [
-        "Polokus",
-        "Kohinor", 
-        "Scaphandrier",
-        "Mimèsis",
-        "Vesavi",
-        "Darya",
-        "Borneo",
-        "Formosa",
-        "Orloff",
-        "Kert",
-        "The Sky Was Pearl Grey (bonus track)"
+        "1. Polokus",
+        "2. Kohinor", 
+        "3. Scaphandrier",
+        "4. Mimèsis",
+        "5. Vesavi",
+        "6. Darya",
+        "7. Borneo",
+        "8. Formosa",
+        "9. Orloff",
+        "10. Kert",
+        "11. The Sky Was Pearl Grey (bonus track)"
       ]
     },
     {
-      catalog: "PLUM1",
+      catalog: "PLUM1.",
       artist: "Ain°",
       title: "Hearts",
       artwork: heartsCover,
-      format: "Digital",
-      year: "2018",
+      format: "DGT",
+      year: "2018.09",
       status: "Available",
-      price: "7.00",
+      price: "VAL.0010",
+      marginNote: "Digital Only, Autumn 2018",
       bandcampUrl: "https://placidum.bandcamp.com/album/hearts",
-      description: "Delicate electronic textures exploring themes of vulnerability and connection.",
+      description: "debut release explores delicate electronic textures and themes of vulnerability and connection.",
       tracks: [
-        "Pleading for The Grand Illusion",
-        "Up There, Bowls Are Spinning, Hands, Fragile"
+        "1. Pleading for The Grand Illusion",
+        "2. Up There, Bowls Are Spinning, Hands, Fragile"
       ]
-    },
+    }
   ];
+
+  const generateFilenameLine = (release: any) => {
+    const titleFormatted = release.title.toUpperCase().replace(/\s+/g, '-');
+    return `${release.catalog} _${titleFormatted}.${release.format}.${release.year}`;
+  };
 
   return (
     <div className="notebook-grid py-20">
@@ -183,44 +195,50 @@ const Catalog = () => {
                   </div>
                 </div>
                 
-                {/* Taxonomical Classification */}
+                {/* Abstract Folio Indexing */}
                 <div className="space-y-6">
                   <div className="fragment">
-                    <div className="flex items-baseline gap-4 mb-4">
-                      <span className="folio-number">{release.catalog}</span>
-                      <div>
-                        <h2>{release.artist}</h2>
-                        <h3 className="italic text-muted-foreground">{release.title}</h3>
-                      </div>
+                    {/* Catalog Number - Prominent */}
+                    <div className="mb-6">
+                      <span className="folio-number text-2xl">{release.catalog}</span>
+                      <h2 className="mt-2">{release.title}</h2>
                     </div>
+                    
+                    {/* File-Name Line */}
+                    <div className="font-mono text-sm mb-2 text-muted-foreground">
+                      {generateFilenameLine(release)}
+                    </div>
+                    
+                    {/* Value Line */}
+                    <div className="font-mono text-sm mb-4 text-iron-oxide">
+                      {release.price}
+                    </div>
+                    
                     <p className="leading-relaxed mb-4">{release.description}</p>
                   </div>
                   
-                  <div className="notebook-grid" style={{ gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
-                    <div className="marginalia">
-                      Format: {release.format}
-                    </div>
-                    <div className="marginalia">
-                      Year: {release.year}
-                    </div>
-                  </div>
-                  
-                  {/* Track Listing */}
+                  {/* Tracklist - Readable, Poetic */}
                   <div className="fragment">
                     <div className="marginalia mb-3">Tracklist:</div>
-                    <ol className="space-y-1 font-mono text-sm">
+                    <div className="space-y-1">
                       {release.tracks.map((track, index) => (
-                        <li key={index} className="text-muted-foreground">
-                          {String(index + 1).padStart(2, '0')}. {track}
-                        </li>
+                        <div key={index} className="text-foreground font-serif">
+                          {track}
+                        </div>
                       ))}
-                    </ol>
+                    </div>
                   </div>
+
+                  {/* Margin Notes */}
+                  {release.marginNote && (
+                    <div className="marginalia italic text-sm">
+                      {release.marginNote}
+                    </div>
+                  )}
 
                   {/* Acquisition Info */}
                   <div className="fragment">
                     <div className="marginalia mb-2">Status: {release.status}</div>
-                    <div className="marginalia mb-4">Price: ${release.price}</div>
                     
                     <a 
                       href={release.bandcampUrl}
