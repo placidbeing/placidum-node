@@ -174,12 +174,12 @@ const Catalog = () => {
                 {/* Folio Content */}
                 <div className="space-y-6">
                   <div className="fragment">
-                    {/* Catalog Number - Bold Serif */}
+                    {/* Full Formatted Metadata - Iron Oxide Color */}
                     <div className="mb-6">
-                      <span className="font-cormorant text-3xl font-bold text-ink" style={{ letterSpacing: '0.05em' }}>
-                        {release.catalog}
-                      </span>
-                      <h2 className="font-cormorant text-xl italic mt-2 text-ink">
+                      <div className="font-mono text-sm mb-2 text-iron-oxide" style={{ letterSpacing: '0.05em' }}>
+                        {release.catalogFormatted}
+                      </div>
+                      <h2 className="font-cormorant text-xl italic text-ink">
                         {release.title}
                       </h2>
                     </div>
