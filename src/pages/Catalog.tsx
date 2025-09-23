@@ -1,5 +1,5 @@
 import beautifulSituationCover from "@/assets/Beautiful_Situation_Cover_LD.jpg";
-import neptuneCover from "@/assets/Midnight_Test5_proc_desat.jpg";
+import neptuneCover from "@/assets/Neptune_Cover.jpg";
 import interiorRoomsCover from "@/assets/IR_Cover.jpg";
 import softSignsCover from "@/assets/soft_signs_is_LD.jpg";
 import golcondeCover from "@/assets/Golconde_Cover.png";
@@ -162,11 +162,11 @@ const Catalog = () => {
 
       <div className="space-y-16">
         {releases.map((release) => (
-          <article key={release.catalog} className="border-2 border-border bg-card p-8 hover:shadow-lg transition-shadow">
+          <article key={release.catalog} className="bg-card p-8">
             <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
               {/* Specimen Image */}
               <div className="lg:col-span-2">
-                <div className="aspect-square bg-muted border-2 border-border relative overflow-hidden">
+                <div className="aspect-square bg-muted relative overflow-hidden">
                   <img 
                     src={release.artwork} 
                     alt={`${release.artist} - ${release.title} album cover`}
@@ -200,14 +200,14 @@ const Catalog = () => {
                     </div>
                     <div>
                       <span className="text-muted-foreground">Catalog No.:</span>
-                      <p className="classification">{release.catalog}</p>
+                      <p className="classification">{release.catalog}.</p>
                     </div>
                   </div>
                   
                   {/* Track Listing */}
                   <div className="border-t border-border pt-4">
                     <span className="text-muted-foreground text-sm font-mono">Tracklist:</span>
-                    <ol className="mt-2 space-y-1 text-sm font-mono">
+                    <ol className="mt-2 space-y-1 text-sm font-sans">
                       {release.tracks.map((track, index) => (
                         <li key={index} className="text-muted-foreground">
                           {String(index + 1).padStart(2, '0')}. {track}
@@ -220,7 +220,7 @@ const Catalog = () => {
               
               {/* Acquisition Info */}
               <div className="space-y-4">
-                <div className="border border-border p-4 bg-secondary/50">
+                <div className="p-4 bg-secondary/50">
                   <div className="text-xs font-mono text-muted-foreground uppercase tracking-wider mb-2">Status</div>
                   <span className={`specimen-label ${
                     release.status === "Available" 
@@ -247,7 +247,7 @@ const Catalog = () => {
                   </a>
                   
                   {/* Bandcamp Embed Preview */}
-                  <div className="mt-4 p-4 bg-muted/50 border border-border">
+                  <div className="mt-4 p-4 bg-muted/50">
                     <iframe 
                       style={{ border: 0, width: '100%', height: '120px' }} 
                       src={`${release.bandcampUrl.replace('/album/', '/EmbeddedPlayer/album=')}}/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/`}
@@ -264,26 +264,6 @@ const Catalog = () => {
         ))}
       </div>
 
-      {/* Submission Guidelines */}
-      <div className="mt-20 border-2 border-border bg-card p-8">
-        <h2 className="text-2xl font-serif mb-6">Specimen Submission Protocol</h2>
-        <div className="grid md:grid-cols-2 gap-8">
-          <div>
-            <h3 className="font-mono text-sm uppercase tracking-wider text-muted-foreground mb-3">Requirements</h3>
-            <div className="space-y-2 text-sm">
-              <p>• Maximum 3 specimens per submission</p>
-              <p>• Include detailed taxonomical information</p>
-              <p>• Provide artist classification and specimen provenance</p>
-              <p>• All submissions reviewed within 4 weeks</p>
-            </div>
-          </div>
-          <div>
-            <h3 className="font-mono text-sm uppercase tracking-wider text-muted-foreground mb-3">Contact</h3>
-            <p className="text-accent" style={{ fontFamily: 'cursive' }}>sacha@placidum.com</p>
-            <p className="text-sm text-muted-foreground mt-2">Include "SPECIMEN SUBMISSION" in subject line</p>
-          </div>
-        </div>
-      </div>
     </div>
   );
 };
