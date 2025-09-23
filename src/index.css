@@ -233,7 +233,9 @@
     color: hsl(var(--iron-oxide));
   }
 
-  /* Underline animation like ink spreading */
+  .text-iron-oxide {
+    color: hsl(var(--iron-oxide));
+  }
   .ink-underline {
     position: relative;
   }
