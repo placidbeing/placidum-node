@@ -49,10 +49,10 @@ const Chronicles = () => {
 
       <div className="space-y-12">
         {episodes.map((episode) => (
-          <div key={episode.episode} className="border border-border p-6">
+          <div key={episode.episode} className="fragment py-6">
             <div className="flex flex-col md:flex-row md:items-start gap-6">
               {/* Episode Artwork Placeholder */}
-              <div className="w-full md:w-32 aspect-square bg-muted border border-border flex-shrink-0"></div>
+              <div className="w-full md:w-32 aspect-square bg-muted flex-shrink-0"></div>
               
               {/* Episode Info */}
               <div className="flex-1 space-y-3">
@@ -87,7 +87,7 @@ const Chronicles = () => {
                 )}
                 
                 {/* Simple Audio Player Placeholder */}
-                <div className="mt-4 p-3 bg-muted border border-border">
+                <div className="mt-4 p-3 bg-muted">
                   <div className="flex items-center justify-between">
                     <button className="text-sm font-mono text-accent hover:underline">
                       ▶ Play Episode

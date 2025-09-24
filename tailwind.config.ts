@@ -20,9 +20,9 @@ export default {
 		extend: {
 			fontFamily: {
 				'mono': ['JetBrains Mono', 'Courier New', 'monospace'],
-				'serif': ['Crimson Text', 'Georgia', 'serif'],
-				'garamond': ['EB Garamond', 'Crimson Text', 'Georgia', 'serif'],
-				'cormorant': ['Cormorant Garamond', 'EB Garamond', 'Georgia', 'serif'],
+				'serif': ['Inter', 'system-ui', 'sans-serif'],
+				'garamond': ['Inter', 'system-ui', 'sans-serif'],
+				'cormorant': ['Inter', 'system-ui', 'sans-serif'],
 				'sans': ['Inter', 'system-ui', 'sans-serif'],
 			},
 			fontSize: {
