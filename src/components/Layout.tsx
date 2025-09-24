@@ -8,10 +8,10 @@ const Layout = ({ children }: LayoutProps) => {
   const location = useLocation();
 
   const navItems = [
-    { path: "/", label: "bulletin" },
-    { path: "/catalog", label: "catalogue" },
-    { path: "/chronicles", label: "chronicles" },
-    { path: "/shcaa", label: "shcaa" },
+    { path: "/", label: "notes" },
+    { path: "/catalog", label: "corpus" },
+    { path: "/chronicles", label: "speculations" },
+    { path: "/shcaa", label: "principles" },
   ];
 
   return (
@@ -35,7 +35,7 @@ const Layout = ({ children }: LayoutProps) => {
                 <Link
                   key={item.path}
                   to={item.path}
-                  className={`ink-underline font-mono text-sm lowercase tracking-wide ${
+                  className={`ink-underline font-garamond text-sm lowercase tracking-wide ${
                     location.pathname === item.path 
                       ? "text-accent font-medium" 
                       : "text-muted-foreground"

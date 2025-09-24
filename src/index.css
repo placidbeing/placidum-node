@@ -70,6 +70,10 @@
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
+  .border-verdigris\/40 {
+    border-color: hsl(var(--verdigris) / 0.4);
+  }
+
   .dark {
     --background: 30 15% 8%;
     --foreground: 48 12% 88%;

@@ -44,7 +44,7 @@ const Bulletin = () => {
         
         <div className="space-y-16">
           {news.map((item, index) => (
-            <article key={index} className="journal-entry p-8">
+            <article key={index} className="relative py-8 border-l-2 border-verdigris/40 pl-8">
               <div className="notebook-grid-wide">
                 <div className="marginalia">
                   <div className="folio-number">{item.date}</div>

@@ -49,7 +49,7 @@ const Chronicles = () => {
 
       <div className="space-y-12">
         {episodes.map((episode) => (
-          <div key={episode.episode} className="border border-border p-6">
+          <div key={episode.episode} className="relative py-6 border-l-2 border-verdigris/40 pl-8">
             <div className="flex flex-col md:flex-row md:items-start gap-6">
               {/* Episode Artwork Placeholder */}
               <div className="w-full md:w-32 aspect-square bg-muted border border-border flex-shrink-0"></div>
