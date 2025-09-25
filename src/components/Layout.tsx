@@ -33,47 +33,58 @@ const Layout = ({ children }: LayoutProps) => {
         <span className="folio-number">MMXXIV</span>
       </div>
       
-      <header className="safe-area journal-entry pt-16 pb-8">
-        <div className="wrap text-center">
-          <div className="marginalia text-sm mb-2">
-            Observationes circa Impressionum Naturam
+      <header className="safe-area pt-16 pb-12">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="flex flex-col items-center space-y-6">
+            {/* Main Title */}
+            <Link to="/" className="ink-underline inline-block">
+              <h1 className="text-4xl md:text-5xl font-garamond tracking-wide text-center text-ultramarine">
+                Placidum
+              </h1>
+            </Link>
+            
+            {/* Subtitle */}
+            <div className="text-center">
+              <p className="text-sm md:text-base font-garamond italic text-muted-foreground">
+                Observationes circa Impressionum Naturam
+              </p>
+            </div>
+
+            {/* Mobile Menu Toggle */}
+            <button 
+              className="md:hidden nav-toggle font-garamond text-sm bg-accent text-accent-foreground px-4 py-2 rounded" 
+              aria-expanded={isNavOpen} 
+              aria-controls="site-nav"
+              onClick={toggleNav}
+            >
+              Menu
+            </button>
+
+            {/* Navigation */}
+            <nav 
+              id="site-nav" 
+              className="nav w-full" 
+              data-open={isNavOpen}
+            >
+              <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-8">
+                {navItems.map((item) => (
+                  <Link
+                    key={item.path}
+                    to={item.path}
+                    className={`ink-underline font-garamond text-sm md:text-base lowercase tracking-wide transition-colors ${
+                      location.pathname === item.path 
+                        ? "text-accent font-medium" 
+                        : "text-muted-foreground hover:text-accent"
+                    }`}
+                    onClick={() => setIsNavOpen(false)}
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
+            </nav>
           </div>
-          <Link to="/" className="ink-underline inline-block">
-            <h1 className="text-3xl font-garamond tracking-wide">
-              Placidum
-            </h1>
-          </Link>
-          <button 
-            className="nav-toggle font-garamond text-sm" 
-            aria-expanded={isNavOpen} 
-            aria-controls="site-nav"
-            onClick={toggleNav}
-          >
-            Menu
-          </button>
         </div>
-        <nav 
-          id="site-nav" 
-          className="nav wrap text-center mt-8" 
-          data-open={isNavOpen}
-        >
-          <div className="flex flex-wrap justify-center gap-8">
-            {navItems.map((item) => (
-              <Link
-                key={item.path}
-                to={item.path}
-                className={`ink-underline font-garamond text-sm lowercase tracking-wide ${
-                  location.pathname === item.path 
-                    ? "text-accent font-medium" 
-                    : "text-muted-foreground"
-                }`}
-                onClick={() => setIsNavOpen(false)}
-              >
-                {item.label}
-              </Link>
-            ))}
-          </div>
-        </nav>
       </header>
       <main>{children}</main>
       <footer className="safe-area wrap stack journal-entry mt-24">

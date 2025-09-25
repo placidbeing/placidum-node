@@ -56,8 +56,8 @@ img, video, iframe { max-width: 100%; height: auto; }
 .nav { display: none; }
 .nav[data-open="true"] { display: block; }
 @media (min-width: 768px) {
-  .nav-toggle { display: none; }
-  .nav { display: flex !important; gap: var(--space); }
+  .nav-toggle { display: none !important; }
+  .nav { display: block !important; }
 }
 
 /* ===== iOS safe-area padding ===== */
@@ -337,6 +337,10 @@ div[style*="width:"], div[style*="left:"], div[style*="right:"] {
 
   .text-ochre {
     color: hsl(var(--ochre));
+  }
+
+  .text-ultramarine {
+    color: hsl(var(--ultramarine));
   }
 
   .marginalia {
