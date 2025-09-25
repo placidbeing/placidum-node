@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+
 /* ===== Base & Reset ===== */
 html {
   box-sizing: border-box;
@@ -172,6 +174,10 @@ div[style*="width:"], div[style*="left:"], div[style*="right:"] {
     --iron-oxide: 18 62% 43%;       /* Burnt sienna #b3532a */
     --sepia: 25 45% 25%;            /* Sepia ink #5c3a21 */
     --ochre: 35 55% 48%;            /* Earthy ochre #a66a2c */
+    
+    /* Typography - Handwritten manifesto style */
+    --font-handwritten: 'Kalam', cursive;
+    --text-manifesto: var(--iron-oxide);
 
     --sidebar-background: 0 0% 98%;
 
@@ -447,5 +453,14 @@ div[style*="width:"], div[style*="left:"], div[style*="right:"] {
     left: -0.5rem;
     color: hsl(var(--verdigris) / 0.6);
     font-size: 0.75rem;
+  }
+  
+  /* Handwritten manifesto styles */
+  .font-handwritten {
+    font-family: var(--font-handwritten);
+  }
+
+  .text-manifesto {
+    color: hsl(var(--text-manifesto));
   }
 }

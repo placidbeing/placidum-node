@@ -1,58 +1,79 @@
+import prefaceCover from "@/assets/Preface_Duchamp.jpg";
+import chapterICover from "@/assets/Chapter_I_Klee.jpg";
+
 const Chronicles = () => {
   const episodes = [
     {
       episode: "003",
-      title: "Texture & Space",
+      title: "Chapter 2: Resonance Fields",
       date: "2024.12.10",
       duration: "45:32",
       description: "Exploring how minimal artists create immersive environments through texture and spatial arrangement.",
       guests: ["Field Studies", "Ambient Collective"],
       audioUrl: "#",
-      podcast: "Silent Spectator"
+      podcast: "Silent Spectator",
+      artwork: null // No artwork yet
     },
     {
       episode: "002", 
-      title: "Rhythmic Minimalism",
+      title: "Chapter I: A Silent Spectator",
       date: "2024.11.15",
       duration: "38:47",
       description: "A deep dive into the role of rhythm in minimal electronic music with Shcaa.",
       guests: ["Shcaa"],
       audioUrl: "#",
-      podcast: "Preface"
+      podcast: "Silent Spectator",
+      artwork: chapterICover
     },
     {
       episode: "001",
-      title: "Label Foundations", 
+      title: "Preface", 
       date: "2024.10.20",
       duration: "42:18",
       description: "The inaugural episode discussing the vision behind Placidum and the minimal electronic scene.",
       guests: [],
       audioUrl: "#",
-      podcast: "Preface"
+      podcast: "Preface",
+      artwork: prefaceCover
     },
   ];
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-16">
-      <h1 className="text-4xl font-garamond mb-8">chronicles</h1>
-      
-      <div className="mb-12">
-        <p className="text-muted-foreground mb-4">
-          Two podcast series exploring electronic music culture: <em>Preface</em> focuses on 
-          foundational conversations, while <em>Silent Spectator</em> examines the creative process 
-          through deep listening sessions.
-        </p>
-        <p className="text-sm text-muted-foreground">
-          Available on all major podcast platforms
-        </p>
+      <div className="mb-16">
+        <h1 className="font-cormorant text-4xl font-bold mb-6 codex-title" style={{ fontVariant: 'small-caps', letterSpacing: '0.1em' }}>
+          Phonic Chronicles
+        </h1>
+        <div className="fragment">
+          <p className="font-cormorant text-lg leading-relaxed mb-6 max-w-2xl">
+            Two podcast series exploring electronic music culture: <em>Preface</em> focuses on 
+            foundational conversations, while <em>Silent Spectator</em> examines the creative process 
+            through deep listening sessions.
+          </p>
+          <div className="marginalia">
+            Available on all major podcast platforms
+          </div>
+        </div>
       </div>
 
       <div className="space-y-12">
         {episodes.map((episode) => (
           <div key={episode.episode} className="relative py-6 border-l-2 border-verdigris/40 pl-8">
             <div className="flex flex-col md:flex-row md:items-start gap-6">
-              {/* Episode Artwork Placeholder */}
-              <div className="w-full md:w-32 aspect-square bg-muted border border-border flex-shrink-0"></div>
+              {/* Episode Artwork */}
+              <div className="w-full md:w-32 aspect-square bg-muted border border-border flex-shrink-0">
+                {episode.artwork ? (
+                  <img 
+                    src={episode.artwork} 
+                    alt={`${episode.title} episode artwork`}
+                    className="w-full h-full object-cover"
+                  />
+                ) : (
+                  <div className="w-full h-full flex items-center justify-center text-xs text-muted-foreground">
+                    Artwork TBD
+                  </div>
+                )}
+              </div>
               
               {/* Episode Info */}
               <div className="flex-1 space-y-3">

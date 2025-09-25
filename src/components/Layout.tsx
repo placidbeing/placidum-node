@@ -12,7 +12,7 @@ const Layout = ({ children }: LayoutProps) => {
   const navItems = [
     { path: "/", label: "notes" },
     { path: "/catalog", label: "corpus" },
-    { path: "/chronicles", label: "speculations" },
+    { path: "/chronicles", label: "phonic chronicles" },
     { path: "/shcaa", label: "principles" },
   ];
 
@@ -22,13 +22,18 @@ const Layout = ({ children }: LayoutProps) => {
 
   return (
     <div className="min-screen bg-background text-foreground">
-      <header className="navbar safe-area journal-entry">
-        <div className="wrap row between center">
-          <Link to="/" className="ink-underline">
-            <h1 className="text-2xl font-garamond tracking-wide">
+      {/* Index reference at top left */}
+      <div className="fixed top-4 left-4 z-50">
+        <span className="font-garamond text-xs text-muted-foreground tracking-wide">Index</span>
+      </div>
+      
+      <header className="safe-area journal-entry pt-16 pb-8">
+        <div className="wrap text-center">
+          <Link to="/" className="ink-underline inline-block">
+            <h1 className="text-3xl font-garamond tracking-wide mb-2">
               Placidum
             </h1>
-            <div className="marginalia mt-1 hidden md:block">
+            <div className="marginalia text-sm">
               Observationes circa Impressionum Naturam
             </div>
           </Link>
@@ -43,23 +48,25 @@ const Layout = ({ children }: LayoutProps) => {
         </div>
         <nav 
           id="site-nav" 
-          className="nav wrap stack" 
+          className="nav wrap text-center mt-6" 
           data-open={isNavOpen}
         >
-          {navItems.map((item) => (
-            <Link
-              key={item.path}
-              to={item.path}
-              className={`ink-underline font-garamond text-sm lowercase tracking-wide ${
-                location.pathname === item.path 
-                  ? "text-accent font-medium" 
-                  : "text-muted-foreground"
-              }`}
-              onClick={() => setIsNavOpen(false)}
-            >
-              {item.label}
-            </Link>
-          ))}
+          <div className="flex flex-wrap justify-center gap-6">
+            {navItems.map((item) => (
+              <Link
+                key={item.path}
+                to={item.path}
+                className={`ink-underline font-garamond text-sm lowercase tracking-wide ${
+                  location.pathname === item.path 
+                    ? "text-accent font-medium" 
+                    : "text-muted-foreground"
+                }`}
+                onClick={() => setIsNavOpen(false)}
+              >
+                {item.label}
+              </Link>
+            ))}
+          </div>
         </nav>
         <div className="marginalia text-right hidden md:block">
           <span className="folio-number">MMXXIV</span>

@@ -1,123 +1,109 @@
 const Shcaa = () => {
-  const releases = [
-    {
-      catalog: "PLC002",
-      title: "Minimal Sequences",
-      year: "2024",
-      format: "Digital / Cassette", 
-      bandcampUrl: "#",
-    },
-    {
-      catalog: "PLC005",
-      title: "Rhythmic Studies EP",
-      year: "2024",
-      format: "Digital",
-      bandcampUrl: "#",
-    },
-  ];
-
-  const liveShows = [
-    {
-      date: "2024.12.22",
-      venue: "Minimal Electronic Festival",
-      location: "Berlin",
-      status: "Upcoming",
-    },
-    {
-      date: "2024.11.15", 
-      venue: "Club Undefined",
-      location: "Amsterdam",
-      status: "Completed",
-    },
-    {
-      date: "2024.10.08",
-      venue: "Electronic Sundays",
-      location: "London",
-      status: "Completed", 
-    },
-  ];
-
   return (
-    <div className="max-w-4xl mx-auto px-4 py-16">
-      <h1 className="text-4xl font-garamond mb-8">shcaa</h1>
-      
-      <div className="mb-16">
-        <p className="text-muted-foreground leading-relaxed mb-6">
-          Personal explorations in minimal electronic music, focusing on rhythmic patterns 
-          and textural soundscapes. Based between analog and digital processes, creating 
-          hypnotic sequences for focused listening and dance floor environments.
-        </p>
-        <p className="text-muted-foreground">
-          Available for live performances and collaborations.
-        </p>
-      </div>
+    <div className="max-w-3xl mx-auto px-4 py-16 font-handwritten">
+      <div className="space-y-16">
+        {/* Chapter I: Placidum */}
+        <section className="text-manifesto space-y-6">
+          <h1 className="text-3xl font-bold mb-8 text-accent" style={{ fontFamily: 'Kalam, cursive' }}>
+            I. Placidum
+          </h1>
+          <p className="leading-loose text-lg">
+            In the quietude of digital spaces, we find ourselves confronting the eternal question of presence. What does it mean to be placid in an age of constant acceleration? The name itself—Placidum—carries within it the weight of contemplation, the necessity of pause, the revolutionary act of stillness.
+          </p>
+          <p className="leading-loose text-lg">
+            We have witnessed the collapse of attention, the fragmentation of listening, the commodification of silence itself. Yet here, in this manifesto of sound, we propose a different trajectory. Not the violent disruption of noise, but the subtle insurgency of patience. Not the conquest of frequency, but the cultivation of depth.
+          </p>
+          <p className="leading-loose text-lg">
+            The digital realm, in its infinite capacity for reproduction, has paradoxically created scarcity—scarcity of genuine encounter, of transformative listening, of the kind of presence that changes us from within. Placidum emerges as a response to this scarcity, not through abundance, but through precision.
+          </p>
+          <p className="leading-loose text-lg">
+            Each release becomes a meditation, each track a prayer whispered into the void of binary code. We are not creating entertainment; we are crafting instruments for consciousness, tools for the archaeology of the present moment.
+          </p>
+          <p className="leading-loose text-lg">
+            The placid surface conceals depths. Like still water that reflects the sky while harboring entire ecosystems beneath, our approach to minimal electronic music seeks to create spaces where the listener can encounter their own reflection, their own depths, their own capacity for presence.
+          </p>
+        </section>
 
-      {/* Releases */}
-      <section className="mb-16">
-        <h2 className="text-xl font-mono mb-8">Releases</h2>
-        <div className="space-y-8">
-          {releases.map((release) => (
-            <div key={release.catalog} className="border-b border-border pb-8 last:border-b-0">
-              <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-8">
-                <div className="aspect-square bg-muted border border-border"></div>
-                
-                <div className="md:col-span-2 space-y-2">
-                  <p className="text-sm font-mono text-muted-foreground">{release.catalog}</p>
-                  <h3 className="text-lg font-mono">{release.title}</h3>
-                  <p className="text-sm text-muted-foreground">{release.format}</p>
-                  <p className="text-sm text-muted-foreground">{release.year}</p>
-                </div>
-                
-                <div className="flex flex-col justify-start">
-                  <a 
-                    href={release.bandcampUrl}
-                    className="text-sm font-mono text-accent hover:underline"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Listen / Buy →
-                  </a>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
+        {/* Chapter II: Consensus Sensuum */}
+        <section className="text-manifesto space-y-6">
+          <h2 className="text-3xl font-bold mb-8 text-accent" style={{ fontFamily: 'Kalam, cursive' }}>
+            II. Consensus Sensuum
+          </h2>
+          <p className="leading-loose text-lg">
+            The consensus of the senses—this is where transformation begins. In a world increasingly mediated by screens, by interfaces, by the tyranny of the visual, we insist upon the primacy of sonic encounter. Not merely hearing, but listening as an embodied practice.
+          </p>
+          <p className="leading-loose text-lg">
+            The ear, unlike the eye, cannot close. It remains perpetually open, vulnerable, receptive. This vulnerability becomes our strength, our path toward authentic encounter with otherness. When we listen deeply, we do not merely receive sound waves; we participate in the creation of meaning itself.
+          </p>
+          <p className="leading-loose text-lg">
+            Consensus sensuum requires the abandonment of the individual ego in favor of collective resonance. The DJ booth becomes a confessional, the dancefloor a laboratory for empathy. We are not seeking to impose our vision upon others, but to create conditions where genuine communion becomes possible.
+          </p>
+          <p className="leading-loose text-lg">
+            The minimal approach serves this purpose: by stripping away the excessive, the decorative, the merely clever, we create space for the essential to emerge. Like a Japanese tea ceremony, every element must earn its place through necessity, through its contribution to the whole.
+          </p>
+          <p className="leading-loose text-lg">
+            This is why we resist the temptation of spectacle, of visual excess, of the carnival of late capitalism. Our performances are rituals of attention, ceremonies of presence. The technology serves the human, not the reverse.
+          </p>
+          <p className="leading-loose text-lg">
+            In the consensus of the senses, hierarchy dissolves. Producer and listener, performer and audience, creator and receiver—these distinctions become fluid, permeable. We are all participants in the emergence of meaning, all collaborators in the construction of momentary utopias.
+          </p>
+        </section>
 
-      {/* Live Shows */}
-      <section className="mb-16">
-        <h2 className="text-xl font-mono mb-8">Live Shows</h2>
-        <div className="space-y-4">
-          {liveShows.map((show, index) => (
-            <div key={index} className="flex flex-col md:flex-row md:items-center justify-between border-b border-border pb-4 last:border-b-0">
-              <div className="space-y-1">
-                <p className="font-mono">{show.venue}</p>
-                <p className="text-sm text-muted-foreground">{show.location}</p>
-              </div>
-              <div className="flex flex-col md:items-end space-y-1">
-                <p className="text-sm font-mono">{show.date}</p>
-                <span className={`text-xs font-mono px-2 py-1 border w-fit ${
-                  show.status === "Upcoming" 
-                    ? "border-accent text-accent" 
-                    : "border-muted-foreground text-muted-foreground"
-                }`}>
-                  {show.status}
-                </span>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
+        {/* Chapter III: Shcaa */}
+        <section className="text-manifesto space-y-6">
+          <h2 className="text-3xl font-bold mb-8 text-accent" style={{ fontFamily: 'Kalam, cursive' }}>
+            III. Shcaa
+          </h2>
+          <p className="leading-loose text-lg">
+            The name emerges from the necessity of anonymity, from the recognition that the ego is the enemy of transcendence. Shcaa is not a person but a process, not an identity but an approach, not a brand but a practice.
+          </p>
+          <p className="leading-loose text-lg">
+            In the tradition of mystics who abandon their given names, of artists who work behind veils, of revolutionaries who operate in shadows, Shcaa represents the dissolution of the self in service of something larger. The music does not belong to anyone; it emerges from the collective unconscious, from the shared repository of human longing.
+          </p>
+          <p className="leading-loose text-lg">
+            The aesthetic is one of precision without perfectionism, of craft without craftiness. Every element is chosen not for its individual brilliance but for its contribution to the whole. We are building cathedrals of sound, not monuments to ourselves.
+          </p>
+          <p className="leading-loose text-lg">
+            The live performance becomes a laboratory for presence. Without the safety net of recorded perfection, each moment becomes an opportunity for genuine encounter with uncertainty, with spontaneity, with the irreducible mystery of real-time creation.
+          </p>
+          <p className="leading-loose text-lg">
+            Shcaa operates in the liminal spaces—between genres, between territories, between the conscious and unconscious, between the individual and collective. These are the fertile regions where new possibilities can emerge, where the unexpected can unfold.
+          </p>
+          <p className="leading-loose text-lg">
+            We reject the commodification of creativity, the reduction of art to content, of experience to product. Each release is an offering, each performance a gift. The economic becomes secondary to the essential, the commercial to the sacred.
+          </p>
+        </section>
 
-      {/* Contact */}
-      <div className="border border-border p-6">
-        <h2 className="text-xl font-mono mb-4">Bookings & Collaborations</h2>
-        <div className="text-sm text-muted-foreground space-y-2">
-          <p>• Available for live performances</p>
-          <p>• Open to remix and collaboration projects</p>
-          <p>• Technical rider available upon request</p>
-          <p>• sacha@placidum.com</p>
-        </div>
+        {/* Chapter IV: Musica Imaginum */}
+        <section className="text-manifesto space-y-6">
+          <h2 className="text-3xl font-bold mb-8 text-accent" style={{ fontFamily: 'Kalam, cursive' }}>
+            IV. Musica Imaginum
+          </h2>
+          <p className="leading-loose text-lg">
+            The music of images—this is our ultimate aspiration. To create sound that generates vision, frequency that produces revelation, rhythm that induces transformation. We are not merely arranging notes; we are crafting doors to other dimensions.
+          </p>
+          <p className="leading-loose text-lg">
+            Every track becomes a codex, a manuscript written in the language of vibration. Like medieval illuminators who embedded sacred geometry into their letterforms, we embed consciousness into our waveforms. The listener becomes reader, decoder, participant in an ancient conversation between matter and spirit.
+          </p>
+          <p className="leading-loose text-lg">
+            The minimal aesthetic serves this alchemical purpose: by reducing the complexity of surface elements, we amplify the potency of the essential ones. Like a laser that focuses scattered light into coherent beam, we focus scattered attention into transformative encounter.
+          </p>
+          <p className="leading-loose text-lg">
+            We understand that in the digital age, the image has become the dominant mode of communication. Yet we insist upon the primacy of the sonic, upon music's unique capacity to bypass the analytical mind and speak directly to the body, to the nervous system, to the depths of memory and desire.
+          </p>
+          <p className="leading-loose text-lg">
+            Musica imaginum represents the synthesis of the ancient and futuristic, the technological and mystical, the individual and universal. We are using the most advanced tools of our time to recover the most ancient practices of consciousness.
+          </p>
+          <p className="leading-loose text-lg">
+            The dancefloor becomes temple, the mix becomes ritual, the track becomes prayer. This is not metaphor but literal truth: we are engaged in sacred work, using sound as medicine, rhythm as technology for collective healing.
+          </p>
+          <p className="leading-loose text-lg">
+            In the end, we seek to create music that creates us—sounds that transform the listener even as the listener transforms them. This is the deepest meaning of musica imaginum: the recognition that consciousness and cosmos are not separate, that the inner and outer worlds mirror each other, that by changing the quality of our attention, we change the quality of reality itself.
+          </p>
+          <p className="leading-loose text-lg">
+            Let this manifesto serve not as dogma but as invitation, not as conclusion but as beginning. The work continues, the practice deepens, the mystery unfolds. In the consensus of the senses, in the placid depths of attention, in the anonymous space of true creativity, we find our way home.
+          </p>
+        </section>
       </div>
     </div>
   );

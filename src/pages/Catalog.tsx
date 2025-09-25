@@ -156,7 +156,7 @@ const Catalog = () => {
 
         <div className="space-y-24">
           {releases.map((release) => (
-            <article key={release.catalog} className="journal-entry p-8">
+            <article key={release.catalog} className="py-8">
               <div className="notebook-grid-wide">
                 {/* Folio Image */}
                 <div>
