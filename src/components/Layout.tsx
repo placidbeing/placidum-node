@@ -1,5 +1,4 @@
 import { Link, useLocation } from "react-router-dom";
-import { useState } from "react";
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -7,7 +6,6 @@ interface LayoutProps {
 
 const Layout = ({ children }: LayoutProps) => {
   const location = useLocation();
-  const [isNavOpen, setIsNavOpen] = useState(false);
 
   const navItems = [
     { path: "/", label: "notes" },
@@ -16,80 +14,70 @@ const Layout = ({ children }: LayoutProps) => {
     { path: "/shcaa", label: "principles" },
   ];
 
-  const toggleNav = () => {
-    setIsNavOpen(!isNavOpen);
-  };
-
   return (
-    <div className="min-screen bg-background text-foreground">
-      <header className="navbar safe-area journal-entry">
-        <div className="wrap row between center">
-          <Link to="/" className="ink-underline">
-            <h1 className="text-2xl font-garamond tracking-wide">
-              Placidum
-            </h1>
-            <div className="marginalia mt-1 hidden md:block">
-              Observationes circa Impressionum Naturam
-            </div>
-          </Link>
-          <button 
-            className="nav-toggle font-garamond text-sm" 
-            aria-expanded={isNavOpen} 
-            aria-controls="site-nav"
-            onClick={toggleNav}
-          >
-            Menu
-          </button>
-        </div>
-        <nav 
-          id="site-nav" 
-          className="nav wrap stack" 
-          data-open={isNavOpen}
-        >
-          {navItems.map((item) => (
-            <Link
-              key={item.path}
-              to={item.path}
-              className={`ink-underline font-garamond text-sm lowercase tracking-wide ${
-                location.pathname === item.path 
-                  ? "text-accent font-medium" 
-                  : "text-muted-foreground"
-              }`}
-              onClick={() => setIsNavOpen(false)}
-            >
-              {item.label}
+    <div className="min-h-screen bg-background text-foreground">
+      <header className="journal-entry">
+        <div className="notebook-grid">
+          <div className="marginalia">
+            <span className="folio-number">Index</span>
+          </div>
+          <nav className="flex items-center justify-between py-8">
+            <Link to="/" className="ink-underline">
+              <h1 className="text-2xl font-garamond tracking-wide">
+                Placidum
+              </h1>
+              <div className="marginalia mt-1">
+                Observationes circa Impressionum Naturam
+              </div>
             </Link>
-          ))}
-        </nav>
-        <div className="marginalia text-right hidden md:block">
-          <span className="folio-number">MMXXIV</span>
+            <div className="flex gap-8">
+              {navItems.map((item) => (
+                <Link
+                  key={item.path}
+                  to={item.path}
+                  className={`ink-underline font-garamond text-sm lowercase tracking-wide ${
+                    location.pathname === item.path 
+                      ? "text-accent font-medium" 
+                      : "text-muted-foreground"
+                  }`}
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </div>
+          </nav>
+          <div className="marginalia text-right">
+            <span className="folio-number">MMXXIV</span>
+          </div>
         </div>
       </header>
       <main>{children}</main>
-      <footer className="safe-area wrap stack journal-entry mt-24">
-        <div className="marginalia">
-          <span className="folio-number">Contact</span>
-        </div>
-        <div className="py-12">
-          <div className="grid cols-3 gap-8">
-            <div className="fragment">
-              <h3>Correspondence</h3>
-              <p className="marginalia">sacha@placidum.com</p>
-            </div>
-            <div className="fragment">
-              <h3>Archives</h3>
-              <p className="marginalia">Est. MMXXIV</p>
-            </div>
-            <div className="fragment">
-              <p className="marginalia">© 2024 Placidum</p>
-              <p className="marginalia mt-2">
-                Impressions preserved for posterity
-              </p>
+      <footer className="journal-entry mt-24">
+        <div className="notebook-grid">
+          <div className="marginalia">
+            <span className="folio-number">Contact</span>
+          </div>
+          <div className="py-12">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="fragment">
+                <h3>Correspondence</h3>
+                <p className="marginalia">sacha@placidum.com</p>
+              </div>
+              <div className="fragment">
+                <h3>Archives</h3>
+                <p className="marginalia">Est. MMXXIV</p>
+              </div>
+              <div className="fragment">
+                <p className="marginalia">© 2024 Placidum</p>
+                <p className="marginalia mt-2">
+                  Impressions preserved for posterity
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="marginalia">
-          <span className="folio-number">Finis</span>
+          <div className="marginalia">
+            <span className="folio-number">Finis</span>
+          </div>
         </div>
       </footer>
     </div>
