@@ -68,10 +68,44 @@
     --sidebar-border: 220 13% 91%;
 
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Codex Veil Effect */
+    --veil-color: #ebd9a6;   /* Codex Yellow */
+    --veil-opacity: 0.32;    /* adjust 0–0.5 for strength */
   }
 
   .border-verdigris\/40 {
     border-color: hsl(var(--verdigris) / 0.4);
+  }
+
+  /* Global parchment veil */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: var(--veil-color);
+    mix-blend-mode: multiply;  /* creates warm tint instead of flat overlay */
+    opacity: var(--veil-opacity);
+    pointer-events: none;      /* doesn't block clicks */
+    z-index: 9999;
+  }
+
+  /* Optional vignette for extra depth */
+  body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(120% 120% at 50% -10%,
+      transparent 40%, rgba(0,0,0,.07) 100%);
+    mix-blend-mode: multiply;
+    pointer-events: none;
+    z-index: 10000;
+  }
+
+  /* Opt-out: wrap images/embeds in .no-tint to keep original colors */
+  .no-tint {
+    position: relative;
+    isolation: isolate;  /* prevents veil blending on this element */
   }
 
   .dark {
