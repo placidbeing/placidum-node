@@ -5,36 +5,45 @@ const Chronicles = () => {
   const episodes = [
     {
       episode: "003",
-      title: "Chapter 2: Resonance Fields",
-      date: "2024.12.10",
+      title: "II: Resonance Fields",
+      latinTitle: "Campus Resonantiae",
+      date: "Adi 10 di decembre 2024",
       duration: "45:32",
-      description: "Exploring how minimal artists create immersive environments through texture and spatial arrangement.",
-      guests: ["Field Studies", "Ambient Collective"],
+      quote: "In silence, all sounds converge.",
       audioUrl: "#",
-      podcast: "Silent Spectator",
       artwork: null // No artwork yet
     },
     {
       episode: "002", 
-      title: "Chapter I: A Silent Spectator",
-      date: "2024.11.15",
-      duration: "38:47",
-      description: "A deep dive into the role of rhythm in minimal electronic music with Shcaa.",
-      guests: ["Shcaa"],
+      title: "I: A Silent Spectator",
+      latinTitle: "Spectator Silentis",
+      date: "Adi 9 d'agosto 2016",
+      duration: "42:22",
+      quote: "Give me that man That is not passion's slave and I will wear him In my heart's core, ay, in my heart of heart, As I do thee.",
       audioUrl: "#",
-      podcast: "Silent Spectator",
-      artwork: chapterICover
+      artwork: chapterICover,
+      artworkMeta: {
+        title: "Ad Parnassum",
+        artist: "Paul Klee", 
+        year: "1932",
+        medium: "Oil and casein on canvas"
+      }
     },
     {
       episode: "001",
       title: "Preface", 
-      date: "2024.10.20",
-      duration: "42:18",
-      description: "The inaugural episode discussing the vision behind Placidum and the minimal electronic scene.",
-      guests: [],
+      latinTitle: "Praefatio",
+      date: "Adi 22 di decembre 2012",
+      duration: "01:01:55",
+      quote: "The wind has stopped.",
       audioUrl: "#",
-      podcast: "Preface",
-      artwork: prefaceCover
+      artwork: prefaceCover,
+      artworkMeta: {
+        title: "The Passage from Virgin to Bride",
+        artist: "Marcel Duchamp",
+        year: "1912", 
+        medium: "Oil on canvas"
+      }
     },
   ];
 
@@ -45,70 +54,63 @@ const Chronicles = () => {
           Phonic Chronicles
         </h1>
         <div className="fragment">
-          <p className="font-cormorant text-lg leading-relaxed mb-6 max-w-2xl">
-            Two podcast series exploring electronic music culture: <em>Preface</em> focuses on 
-            foundational conversations, while <em>Silent Spectator</em> examines the creative process 
-            through deep listening sessions.
+          <p className="font-cormorant text-lg leading-relaxed mb-6 max-w-2xl italic">
+            Sonic meditations on the nature of listening and creation.
           </p>
-          <div className="marginalia">
-            Available on all major podcast platforms
-          </div>
         </div>
       </div>
 
       <div className="space-y-12">
         {episodes.map((episode) => (
-          <div key={episode.episode} className="relative py-6 border-l-2 border-verdigris/40 pl-8">
-            <div className="flex flex-col md:flex-row md:items-start gap-6">
+          <div key={episode.episode} className="relative py-8 border-l-2 border-verdigris/40 pl-8">
+            <div className="flex flex-col md:flex-row md:items-start gap-8">
               {/* Episode Artwork */}
-              <div className="w-full md:w-32 aspect-square bg-muted border border-border flex-shrink-0">
-                {episode.artwork ? (
-                  <img 
-                    src={episode.artwork} 
-                    alt={`${episode.title} episode artwork`}
-                    className="w-full h-full object-cover"
-                  />
-                ) : (
-                  <div className="w-full h-full flex items-center justify-center text-xs text-muted-foreground">
-                    Artwork TBD
+              <div className="w-full md:w-48 flex-shrink-0">
+                <div className="aspect-square bg-muted border border-border mb-4">
+                  {episode.artwork ? (
+                    <img 
+                      src={episode.artwork} 
+                      alt={`${episode.title} episode artwork`}
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    <div className="w-full h-full flex items-center justify-center text-xs text-muted-foreground">
+                      Artwork TBD
+                    </div>
+                  )}
+                </div>
+                
+                {/* Artwork Metadata */}
+                {episode.artworkMeta && (
+                  <div className="space-y-1">
+                    <p className="text-xs font-mono text-muted-foreground uppercase tracking-wide">
+                      {episode.artworkMeta.title}
+                    </p>
+                    <p className="text-xs text-muted-foreground">
+                      {episode.artworkMeta.artist}, {episode.artworkMeta.year}
+                    </p>
+                    <p className="text-xs text-muted-foreground italic">
+                      {episode.artworkMeta.medium}
+                    </p>
                   </div>
                 )}
               </div>
               
               {/* Episode Info */}
-              <div className="flex-1 space-y-3">
-                <div className="flex items-center gap-3">
-                  <span className="specimen-label text-accent border-accent">
-                    {episode.podcast}
-                  </span>
-                  <span className="text-sm font-mono text-muted-foreground">
-                    Episode {episode.episode}
-                  </span>
-                  <span className="text-sm font-mono text-muted-foreground">
-                    {episode.duration}
-                  </span>
+              <div className="flex-1 space-y-4">
+                <div className="space-y-2">
+                  <p className="text-sm font-mono text-muted-foreground">{episode.date}</p>
+                  <h2 className="text-2xl font-serif font-light tracking-wide">{episode.title}</h2>
+                  <p className="text-sm font-mono text-accent italic">{episode.latinTitle}</p>
+                  <p className="text-sm font-mono text-muted-foreground">{episode.duration}</p>
                 </div>
                 
-                <h2 className="text-xl font-mono">{episode.title}</h2>
-                <p className="text-sm text-muted-foreground">{episode.date}</p>
-                
-                <p className="text-muted-foreground leading-relaxed">
-                  {episode.description}
-                </p>
-                
-                {episode.guests.length > 0 && (
-                  <div>
-                    <p className="text-sm font-mono text-muted-foreground mb-1">
-                      Guests:
-                    </p>
-                    <p className="text-sm">
-                      {episode.guests.join(", ")}
-                    </p>
-                  </div>
-                )}
+                <blockquote className="text-muted-foreground leading-relaxed italic border-l-2 border-accent/30 pl-4">
+                  "{episode.quote}"
+                </blockquote>
                 
                 {/* Simple Audio Player Placeholder */}
-                <div className="mt-4 p-3 bg-muted border border-border">
+                <div className="mt-6 p-4 bg-muted border border-border">
                   <div className="flex items-center justify-between">
                     <button className="text-sm font-mono text-accent hover:underline">
                       ▶ Play Episode

@@ -24,18 +24,24 @@ const Layout = ({ children }: LayoutProps) => {
     <div className="min-screen bg-background text-foreground">
       {/* Index reference at top left */}
       <div className="fixed top-4 left-4 z-50">
-        <span className="font-garamond text-xs text-muted-foreground tracking-wide">Index</span>
+        <span className="font-garamond text-xs text-iron-oxide tracking-wide">Index</span>
+        <span className="block w-8 h-px bg-iron-oxide mt-1"></span>
+      </div>
+      
+      {/* MMXXIV at top right */}
+      <div className="fixed top-4 right-4 z-50 hidden md:block">
+        <span className="folio-number">MMXXIV</span>
       </div>
       
       <header className="safe-area journal-entry pt-16 pb-8">
         <div className="wrap text-center">
+          <div className="marginalia text-sm mb-2">
+            Observationes circa Impressionum Naturam
+          </div>
           <Link to="/" className="ink-underline inline-block">
-            <h1 className="text-3xl font-garamond tracking-wide mb-2">
+            <h1 className="text-3xl font-garamond tracking-wide">
               Placidum
             </h1>
-            <div className="marginalia text-sm">
-              Observationes circa Impressionum Naturam
-            </div>
           </Link>
           <button 
             className="nav-toggle font-garamond text-sm" 
@@ -48,10 +54,10 @@ const Layout = ({ children }: LayoutProps) => {
         </div>
         <nav 
           id="site-nav" 
-          className="nav wrap text-center mt-6" 
+          className="nav wrap text-center mt-8" 
           data-open={isNavOpen}
         >
-          <div className="flex flex-wrap justify-center gap-6">
+          <div className="flex flex-wrap justify-center gap-8">
             {navItems.map((item) => (
               <Link
                 key={item.path}
@@ -68,9 +74,6 @@ const Layout = ({ children }: LayoutProps) => {
             ))}
           </div>
         </nav>
-        <div className="marginalia text-right hidden md:block">
-          <span className="folio-number">MMXXIV</span>
-        </div>
       </header>
       <main>{children}</main>
       <footer className="safe-area wrap stack journal-entry mt-24">

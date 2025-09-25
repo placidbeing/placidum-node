@@ -418,6 +418,10 @@ div[style*="width:"], div[style*="left:"], div[style*="right:"] {
   .text-iron-oxide {
     color: hsl(var(--iron-oxide));
   }
+
+  .bg-iron-oxide {
+    background-color: hsl(var(--iron-oxide));
+  }
   .ink-underline {
     position: relative;
   }
