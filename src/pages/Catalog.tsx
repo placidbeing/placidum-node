@@ -133,7 +133,7 @@ const Catalog = () => {
       </div>
       <div>
         <div className="mb-16">
-          <h1 className="font-cormorant text-4xl font-bold mb-6" style={{ fontVariant: 'small-caps', letterSpacing: '0.1em' }}>
+          <h1 className="font-cormorant text-4xl font-bold mb-6 codex-title" style={{ fontVariant: 'small-caps', letterSpacing: '0.1em' }}>
             Archive of Digital Folios
           </h1>
           <div className="fragment">

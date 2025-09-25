@@ -6,52 +6,54 @@
 
 @layer base {
   :root {
-    /* Leonardo da Vinci Journal Palette */
+    /* Codex-Inspired Palette */
     
-    /* Parchment White #FAF9F5 */
-    --background: 45 30% 97%;
-    --foreground: 0 0% 4%;
+    /* Warm Parchment Background #f5f0e1 */
+    --background: 42 35% 93%;
+    --foreground: 25 25% 15%;
 
-    /* Card surfaces - slightly darker parchment */
-    --card: 45 25% 95%;
-    --card-foreground: 0 0% 4%;
+    /* Card surfaces - aged parchment */
+    --card: 40 30% 90%;
+    --card-foreground: 25 25% 15%;
 
-    --popover: 45 25% 95%;
-    --popover-foreground: 0 0% 4%;
+    --popover: 40 30% 90%;
+    --popover-foreground: 25 25% 15%;
 
-    /* Deep Ink Black #0A0A0A */
-    --primary: 0 0% 4%;
-    --primary-foreground: 45 30% 97%;
+    /* Dark Brown Ink */
+    --primary: 25 25% 15%;
+    --primary-foreground: 42 35% 93%;
 
-    /* Graphite tones for secondary elements */
-    --secondary: 0 0% 85%;
-    --secondary-foreground: 0 0% 4%;
+    /* Warm secondary tones */
+    --secondary: 38 20% 80%;
+    --secondary-foreground: 25 25% 15%;
 
-    /* Muted graphite for annotations */
-    --muted: 0 0% 88%;
-    --muted-foreground: 0 0% 42%;
+    /* Muted warm tones */
+    --muted: 40 15% 85%;
+    --muted-foreground: 30 15% 45%;
 
-    /* Iron Oxide Red #8C3B2A - for highlights/hover */
-    --accent: 10 54% 36%;
-    --accent-foreground: 45 30% 97%;
+    /* Burnt Sienna Accent #b3532a */
+    --accent: 18 62% 43%;
+    --accent-foreground: 42 35% 93%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    /* Subtle lines like drawn margins */
-    --border: 0 0% 80%;
-    --input: 0 0% 80%;
-    --ring: 10 54% 36%;
+    /* Sepia ink lines #5c3a21 */
+    --border: 25 45% 25%;
+    --input: 25 45% 25%;
+    --ring: 18 62% 43%;
 
     --radius: 0.125rem;
 
-    /* Da Vinci Journal Colors */
-    --parchment: 45 30% 97%;        /* #FAF9F5 */
-    --ink: 0 0% 4%;                 /* #0A0A0A */
-    --graphite: 0 0% 42%;           /* #6A6A6A */
-    --ultramarine: 219 46% 34%;     /* #2E4A7D */
-    --verdigris: 139 20% 30%;       /* #3D5C47 */
-    --iron-oxide: 10 54% 36%;       /* #8C3B2A */
+    /* Codex Color Palette */
+    --parchment: 42 35% 93%;        /* #f5f0e1 */
+    --ink: 25 25% 15%;              /* Dark brown ink */
+    --graphite: 30 15% 45%;         /* Warm graphite */
+    --ultramarine: 219 46% 34%;     /* Keep for contrast */
+    --verdigris: 139 20% 30%;       /* Keep for green accents */
+    --iron-oxide: 18 62% 43%;       /* Burnt sienna #b3532a */
+    --sepia: 25 45% 25%;            /* Sepia ink #5c3a21 */
+    --ochre: 35 55% 48%;            /* Earthy ochre #a66a2c */
 
     --sidebar-background: 0 0% 98%;
 
@@ -69,9 +71,9 @@
 
     --sidebar-ring: 217.2 91.2% 59.8%;
 
-    /* Codex Veil Effect */
-    --veil-color: #ebd9a6;   /* Codex Yellow */
-    --veil-opacity: 0.32;    /* adjust 0–0.5 for strength */
+    /* Codex Veil Effect - warmer tones */
+    --veil-color: #f0ddb8;   /* Warmer codex yellow matching new palette */
+    --veil-opacity: 0.28;    /* slightly less opacity for warmer base */
   }
 
   .border-verdigris\/40 {
@@ -195,9 +197,22 @@
     color: hsl(var(--iron-oxide));
   }
 
+  /* Codex section titles with warm ochre */
+  .codex-title {
+    color: hsl(var(--ochre));
+  }
+
   /* Leonardo folio typography */
   .text-ink {
     color: hsl(var(--ink));
+  }
+
+  .text-sepia {
+    color: hsl(var(--sepia));
+  }
+
+  .text-ochre {
+    color: hsl(var(--ochre));
   }
 
   .marginalia {
