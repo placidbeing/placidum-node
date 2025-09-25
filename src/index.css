@@ -2,6 +2,124 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ===== Base & Reset ===== */
+html {
+  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%; /* prevent iOS auto-zooming text */
+}
+*, *::before, *::after { box-sizing: inherit; }
+html, body { margin: 0; padding: 0; overflow-x: hidden; }
+img, svg, video, canvas, audio, iframe { display: block; max-width: 100%; height: auto; }
+picture { display: block; }
+a { color: inherit; text-decoration: none; }
+button, input, select, textarea { font: inherit; color: inherit; }
+:root { color-scheme: light dark; }
+
+/* ===== Typography that scales ===== */
+:root {
+  --step: clamp(1rem, 2.2vw, 1.125rem); /* base font scaling */
+  --space: clamp(12px, 2.2vw, 20px);    /* global spacing unit */
+  --wrap: min(1100px, 92vw);            /* max readable width */
+}
+
+/* ===== Container & layout utilities ===== */
+.wrap { width: var(--wrap); margin-inline: auto; padding-inline: var(--space); }
+.stack > * + * { margin-top: var(--space); }
+
+/* Grid that collapses on mobile */
+.grid { display: grid; gap: var(--space); grid-template-columns: 1fr; }
+@media (min-width: 768px) { .grid.cols-2 { grid-template-columns: 1fr 1fr; } }
+@media (min-width: 1024px){ .grid.cols-3 { grid-template-columns: 1fr 1fr 1fr; } }
+
+/* Flex helpers */
+.row { display: flex; gap: var(--space); flex-wrap: wrap; align-items: flex-start; }
+.row.center { align-items: center; }
+.row.between { justify-content: space-between; }
+
+/* ===== Images & embeds ===== */
+.responsive-media { position: relative; width: 100%; }
+.responsive-media.r16x9 { padding-top: 56.25%; }
+.responsive-media.r1x1  { padding-top: 100%; }
+.responsive-media > iframe,
+.responsive-media > video {
+  position: absolute; inset: 0; width: 100%; height: 100%; border: 0;
+}
+
+/* Global media safety */
+img, video, iframe { max-width: 100%; height: auto; }
+
+/* ===== Navigation (mobile-first) ===== */
+.navbar { position: sticky; top: 0; z-index: 50; background: inherit; }
+.nav-toggle { display: inline-flex; align-items: center; gap: .5rem; }
+.nav { display: none; }
+.nav[data-open="true"] { display: block; }
+@media (min-width: 768px) {
+  .nav-toggle { display: none; }
+  .nav { display: flex !important; gap: var(--space); }
+}
+
+/* ===== iOS safe-area padding ===== */
+.safe-area {
+  padding-left:  calc(var(--space) + env(safe-area-inset-left));
+  padding-right: calc(var(--space) + env(safe-area-inset-right));
+  padding-bottom: calc(var(--space) + env(safe-area-inset-bottom));
+}
+
+/* ===== 100vh fix on iOS Safari ===== */
+.min-screen { min-height: 100dvh; } /* modern dynamic viewport */
+@supports (-webkit-touch-callout: none) {
+  .min-screen { min-height: -webkit-fill-available; }
+}
+
+/* ===== Fixed/sticky elements sanity ===== */
+header, .header { position: sticky; top: 0; }
+.fixed { position: fixed; }
+@media (max-width: 767px) {
+  .fixed { position: static; } /* avoid mobile overflow from desktop-fixed blocks */
+}
+
+/* ===== Kill common overflow bugs ===== */
+* { max-width: 100%; }
+.table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.no-overflow { overflow: hidden; }
+
+/* ===== Form and inputs ===== */
+input, select, textarea { font-size: 16px; } /* ≥16px prevents iOS zoom */
+input[type="email"] { caret-color: currentColor; }
+input[type="tel"]   { caret-color: currentColor; }
+label { display: block; margin-bottom: .5rem; }
+button { cursor: pointer; }
+
+/* ===== Common Lovable "desktop-locked" fixes ===== */
+[class*="container"], .container, .section {
+  width: 100%;
+  max-width: var(--wrap);
+  margin-inline: auto;
+  padding-inline: var(--space);
+}
+
+[class*="container"], .container, .section, .panel, .card {
+  min-width: 0 !important;
+}
+
+.abs, .absolute, [style*="position: absolute"] {
+  position: static !important;
+  inset: auto !important;
+  transform: none !important;
+}
+
+img[style*="width:"], img[style*="left:"], img[style*="right:"],
+div[style*="width:"], div[style*="left:"], div[style*="right:"] {
+  max-width: 100% !important; left: auto !important; right: auto !important;
+}
+
+/* ===== Optional dark mode support ===== */
+@media (prefers-color-scheme: dark) {
+  body { background: #0b0b0b; color: #eaeaea; }
+  .card { background: #151515; }
+  a:hover { opacity: .85; }
+}
+
 /* Leonardo da Vinci journal-inspired design system */
 
 @layer base {
