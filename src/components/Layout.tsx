@@ -19,7 +19,6 @@ const Layout = ({ children }: LayoutProps) => {
       
       <header className="site-header">
         <div className="topline">
-          <div className="header-index">Index</div>
           <nav className="main-menu" aria-label="Primary">
             {navItems.map((item) => (
               <Link
@@ -50,23 +49,23 @@ const Layout = ({ children }: LayoutProps) => {
         </div>
       </header>
       <main>{children}</main>
-      <footer className="safe-area wrap stack journal-entry mt-24">
+      <footer className="safe-area wrap stack mt-24">
         <div className="marginalia">
-          <span className="folio-number">Contact</span>
+          <span className="folio-number text-2xl">Contact</span>
         </div>
         <div className="py-12">
           <div className="grid cols-3 gap-8">
             <div>
-              <h3>Correspondence</h3>
-              <p className="marginalia">sacha@placidum.com</p>
+              <h3 className="text-xl">Correspondence</h3>
+              <p className="marginalia text-ultramarine">sacha@placidum.com</p>
             </div>
             <div>
-              <h3>Archives</h3>
-              <p className="marginalia">Est. MMXXIV</p>
+              <h3 className="text-xl">Archives</h3>
+              <p className="marginalia text-ultramarine">Est. MMXXIV</p>
             </div>
             <div>
-              <p className="marginalia">© 2024 Placidum</p>
-              <p className="marginalia mt-2">
+              <p className="marginalia text-ultramarine">© 2024 Placidum</p>
+              <p className="marginalia mt-2 text-ultramarine">
                 Impressions preserved for posterity
               </p>
             </div>
