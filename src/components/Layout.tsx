@@ -56,15 +56,18 @@ const Layout = ({ children }: LayoutProps) => {
         </div>
         <div className="py-12">
           <div className="grid cols-3 gap-8">
-            <div className="fragment">
+            <div className="relative">
+              <div className="contact-geometric-form correspondence-form"></div>
               <h3>Correspondence</h3>
               <p className="marginalia">sacha@placidum.com</p>
             </div>
-            <div className="fragment">
+            <div className="relative">
+              <div className="contact-geometric-form archives-form"></div>
               <h3>Archives</h3>
               <p className="marginalia">Est. MMXXIV</p>
             </div>
-            <div className="fragment">
+            <div className="relative">
+              <div className="contact-geometric-form copyrights-form"></div>
               <p className="marginalia">© 2024 Placidum</p>
               <p className="marginalia mt-2">
                 Impressions preserved for posterity
