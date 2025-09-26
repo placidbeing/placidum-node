@@ -696,3 +696,18 @@ div[style*="width:"], div[style*="left:"], div[style*="right:"] {
     height: 50%;
   }
 }
+
+/* Corpus/Catalog mobile layout improvements */
+@media (max-width: 768px) {
+  .notebook-grid {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+  
+  /* Make artwork full width on mobile like speculations */
+  .catalog-artwork {
+    max-width: none !important;
+    width: 100% !important;
+    margin: 0 !important;
+  }
+}

@@ -131,7 +131,7 @@ const Catalog = () => {
       <div className="marginalia">
       </div>
       <div>
-        <div className="mb-16 text-right">
+        <div className="mb-16 text-left">
           <h1 className="font-cormorant text-4xl font-bold mb-6 codex-title" style={{ fontVariant: 'small-caps', letterSpacing: '0.1em' }}>
             Archive of Digital Folios
           </h1>
@@ -156,11 +156,11 @@ const Catalog = () => {
         <div className="space-y-24">
           {releases.map((release) => (
             <article key={release.catalog} className="py-8">
-              <div className="notebook-grid-wide">
-                {/* Folio Image */}
-                <div>
+              <div className="flex flex-col space-y-8">
+                {/* Folio Image - Full width on mobile */}
+                <div className="w-full">
                   <div 
-                    className="aspect-square bg-muted relative overflow-hidden annotation-hover"
+                    className="catalog-artwork aspect-square bg-muted relative overflow-hidden annotation-hover max-w-md mx-auto md:mx-0"
                     data-annotation={`${release.catalog} - ${release.totalDuration}`}
                   >
                     <img 
@@ -171,8 +171,8 @@ const Catalog = () => {
                   </div>
                 </div>
                 
-                {/* Folio Content */}
-                <div className="space-y-6">
+                {/* Folio Content - Below image */}
+                <div className="space-y-6 max-w-2xl">
                   <div className="fragment">
                     {/* Full Formatted Metadata - Iron Oxide Color */}
                     <div className="mb-6">
@@ -224,6 +224,7 @@ const Catalog = () => {
         </div>
       </div>
       <div className="marginalia">
+        <span className="folio-number">Codex Complete</span>
       </div>
     </div>
   );
