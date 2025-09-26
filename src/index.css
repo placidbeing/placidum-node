@@ -473,36 +473,33 @@ div[style*="width:"], div[style*="left:"], div[style*="right:"] {
   }
 }
 
-/* === DESKTOP: lock to reference === */
-@media (min-width: 1024px) {
+/* ===== DESKTOP: lock to reference ===== */
+@media (min-width:1024px){
   :root{
-    --logo-size: 48px;         /* PLACIDUM size on desktop (matches reference) */
-    --motto-size: 18px;
-    --menu-size: 18px;
-    --gutter: 56px;
-    --index-rule-len: 40px;
-    --index-rule-thick: 2px;
-    --index-rule-offset-y: 0px; /* tweak ±1–2px if needed */
+    --logo-size:48px;
+    --motto-size:18px;
+    --menu-size:18px;
+    --gutter:56px;
+    --menu-gap:40px;
+    --index-rule-len:40px;
+    --index-rule-thick:2px;
+    --index-rule-offset-y:0px;
   }
 
   .site-header{
-    display:grid;
-    grid-template-columns: 1fr auto 1fr;
-    grid-template-areas:
-      "index  menu  year"
-      "logo   logo  logo";
-    align-items:center;
-    padding: 18px var(--gutter) 0;
-    max-width: 100%;
-    margin: 0 auto;
+    padding:18px var(--gutter) 0;
   }
 
-  /* Left anchor: "Index" + small rule */
+  .topline{
+    display:grid;
+    grid-template-columns:1fr auto 1fr;
+    align-items:center;
+  }
+
   .header-index{
-    grid-area:index;
     justify-self:start;
     display:inline-flex;
-    align-items:center;       /* ensures the rule sits on text midline */
+    align-items:center;
     gap:12px;
     color: hsl(var(--iron-oxide));
     font-style:italic;
@@ -512,82 +509,75 @@ div[style*="width:"], div[style*="left:"], div[style*="right:"] {
   }
   .header-index::before{
     content:"";
-    display:inline-block;
     width:var(--index-rule-len);
     height:var(--index-rule-thick);
     background:currentColor;
+    display:inline-block;
     position:relative;
-    top:var(--index-rule-offset-y);  /* adjust if the font optics need 1–2px */
+    top:var(--index-rule-offset-y);
   }
 
-  /* Right anchor: Year */
+  .main-menu{
+    justify-self:center;
+    display:flex;
+    gap:var(--menu-gap);
+    font-size:var(--menu-size);
+    color:hsl(var(--muted-foreground));
+    white-space:nowrap;
+  }
+  .main-menu a.active{ 
+    color:hsl(var(--iron-oxide)); 
+    font-style:italic; 
+  }
+
   .header-year{
-    grid-area:year;
     justify-self:end;
-    color: hsl(var(--iron-oxide));
+    color:hsl(var(--iron-oxide));
     letter-spacing:.12em;
     font-size: 12px;
     font-family: 'Crimson Text', 'Georgia', serif;
     text-transform: uppercase;
   }
 
-  /* Center menu */
-  .main-menu{
-    grid-area:menu;
-    justify-self:center;
-    display:flex;
-    gap:40px;                 /* matches reference spacing */
-    font-size:var(--menu-size);
-    color: hsl(var(--muted-foreground));
-    white-space:nowrap;
-  }
-  .main-menu .active{
-    color: hsl(var(--iron-oxide));
-    font-style:italic;
-  }
-
-  /* Logo block below the bar */
   .logo-block{
-    grid-area:logo;
     margin-top:20px;
-    text-align:left;
+    text-align:left;   /* anchored left under menu */
   }
   .logo-wordmark{
-    font-size:var(--logo-size);   /* fixed on desktop */
+    font-size:var(--logo-size);
     line-height:1;
     letter-spacing:.06em;
-    color: hsl(var(--ultramarine));
+    color:hsl(var(--ink));
     font-family: 'Crimson Text', 'Georgia', serif;
   }
   .logo-motto{
     margin-top:8px;
     font-size:var(--motto-size);
-    color: hsl(var(--muted-foreground));
+    color:hsl(var(--muted-foreground));
     font-style:italic;
-    max-width:60ch;              /* prevents overshoot without wrapping upward */
+    max-width:60ch;
   }
 }
 
-/* === MOBILE/TABLET: additive only (does NOT affect desktop) === */
-@media (max-width: 1023px){
+/* ===== MOBILE/TABLET: additive only, no hamburger ===== */
+@media (max-width:1023px){
   :root{
-    --logo-size: clamp(28px, 6vw, 42px); /* PLACIDUM scales down gracefully */
-    --motto-size: clamp(13px, 2.8vw, 16px);
-    --menu-size: clamp(14px, 2.8vw, 16px);
-    --gutter: 20px;
-    --index-rule-len: 28px;
+    --logo-size:clamp(28px,6vw,42px);
+    --motto-size:clamp(13px,2.8vw,16px);
+    --menu-size:clamp(14px,2.8vw,16px);
+    --gutter:20px;
+    --menu-gap:18px;
+    --index-rule-len:28px;
   }
 
   .site-header{
+    padding:14px var(--gutter) 0;
     display:flex;
     flex-direction:column;
-    align-items:center;
+    align-items:flex-start; /* keeps PLACIDUM left */
     gap:14px;
-    padding:14px var(--gutter) 0;
-    padding-bottom: 24px;
   }
 
-  /* top line: Index —— Year */
   .topline{
     width:100%;
     display:flex;
@@ -599,17 +589,17 @@ div[style*="width:"], div[style*="left:"], div[style*="right:"] {
     order:2;
     display:flex;
     flex-wrap:wrap;
-    gap:18px;
+    gap:var(--menu-gap);
     justify-content:center;
     font-size:var(--menu-size);
+    width: 100%;
   }
 
   .logo-block{
     order:3;
-    text-align:center;
+    text-align:left; /* remains left-aligned */
   }
 
-  /* keep rule centered to text on small screens too */
   .header-index{ 
     align-items:center; 
     gap:10px; 
@@ -633,8 +623,7 @@ div[style*="width:"], div[style*="left:"], div[style*="right:"] {
     font-size:var(--motto-size);
     margin-top: 6px;
   }
-
-  .main-menu[data-open="false"] {
-    display: none;
-  }
 }
+
+/* Disable any hamburger/drawer */
+.hamburger, .menu-toggle, .mobile-drawer { display:none !important; }

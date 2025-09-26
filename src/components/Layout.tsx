@@ -1,5 +1,4 @@
 import { Link, useLocation } from "react-router-dom";
-import { useState } from "react";
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -7,18 +6,13 @@ interface LayoutProps {
 
 const Layout = ({ children }: LayoutProps) => {
   const location = useLocation();
-  const [isNavOpen, setIsNavOpen] = useState(false);
 
   const navItems = [
     { path: "/", label: "notes" },
     { path: "/catalog", label: "corpus" },
-    { path: "/chronicles", label: "phonic chronicles" },
+    { path: "/chronicles", label: "speculations" },
     { path: "/shcaa", label: "principles" },
   ];
-
-  const toggleNav = () => {
-    setIsNavOpen(!isNavOpen);
-  };
 
   return (
     <div className="min-screen bg-background text-foreground">
@@ -26,7 +20,7 @@ const Layout = ({ children }: LayoutProps) => {
       <header className="site-header">
         <div className="topline">
           <div className="header-index">Index</div>
-          <nav className="main-menu" id="site-nav" data-open={isNavOpen}>
+          <nav className="main-menu" aria-label="Primary">
             {navItems.map((item) => (
               <Link
                 key={item.path}
@@ -34,9 +28,8 @@ const Layout = ({ children }: LayoutProps) => {
                 className={`ink-underline font-garamond lowercase tracking-wide transition-colors ${
                   location.pathname === item.path 
                     ? "active" 
-                    : "text-muted-foreground hover:text-accent"
+                    : ""
                 }`}
-                onClick={() => setIsNavOpen(false)}
               >
                 {item.label}
               </Link>
@@ -47,24 +40,14 @@ const Layout = ({ children }: LayoutProps) => {
 
         <div className="logo-block">
           <Link to="/" className="ink-underline inline-block">
-            <h1 className="logo-wordmark font-garamond tracking-wide text-ultramarine">
-              Placidum
-            </h1>
+            <div className="logo-wordmark font-garamond tracking-wide">
+              PLACIDUM
+            </div>
           </Link>
-          <p className="logo-motto font-garamond text-muted-foreground">
+          <div className="logo-motto font-garamond">
             <em>Observationes circa Impressionum Naturam</em>
-          </p>
+          </div>
         </div>
-
-        {/* Mobile Menu Toggle - only visible on mobile */}
-        <button 
-          className="lg:hidden nav-toggle font-garamond text-sm bg-accent text-accent-foreground px-4 py-2 rounded mt-4" 
-          aria-expanded={isNavOpen} 
-          aria-controls="site-nav"
-          onClick={toggleNav}
-        >
-          Menu
-        </button>
       </header>
       <main>{children}</main>
       <footer className="safe-area wrap stack journal-entry mt-24">
