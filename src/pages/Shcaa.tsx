@@ -4,7 +4,7 @@ const Shcaa = () => {
       <div className="space-y-16">
         {/* Chapter: Placidum */}
         <section className="space-y-6">
-          <h1 className="text-xl font-garamond font-normal mb-8 text-left codex-title" style={{ fontVariant: 'small-caps', letterSpacing: '0.1em' }}>
+          <h1 className="text-3xl font-garamond font-normal mb-8 text-center codex-title">
             Aphorisms
           </h1>
           <p className="leading-loose text-lg text-foreground">
