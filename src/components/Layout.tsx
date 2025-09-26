@@ -52,22 +52,19 @@ const Layout = ({ children }: LayoutProps) => {
       <main>{children}</main>
       <footer className="safe-area wrap stack journal-entry mt-24">
         <div className="marginalia">
-          <span className="folio-number text-accent font-cormorant italic">Contact</span>
+          <span className="folio-number">Contact</span>
         </div>
         <div className="py-12">
           <div className="grid cols-3 gap-8">
-            <div className="contact-entry">
-              <div className="contact-geometric-mark"></div>
+            <div className="fragment">
               <h3>Correspondence</h3>
               <p className="marginalia">sacha@placidum.com</p>
             </div>
-            <div className="contact-entry">
-              <div className="contact-geometric-mark contact-geometric-mark--circle"></div>
+            <div className="fragment">
               <h3>Archives</h3>
               <p className="marginalia">Est. MMXXIV</p>
             </div>
-            <div className="contact-entry">
-              <div className="contact-geometric-mark contact-geometric-mark--triangle"></div>
+            <div className="fragment">
               <p className="marginalia">© 2024 Placidum</p>
               <p className="marginalia mt-2">
                 Impressions preserved for posterity

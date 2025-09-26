@@ -5,7 +5,7 @@ const Shcaa = () => {
         {/* Chapter: Placidum */}
         <section className="space-y-6">
           <h1 className="text-3xl font-garamond font-normal mb-8 text-center codex-title">
-            Aphorisms
+            Placidum
           </h1>
           <p className="leading-loose text-lg text-foreground">
             In the quietude of digital spaces, we find ourselves confronting the eternal question of presence. What does it mean to be placid in an age of constant acceleration? The name itself—Placidum—carries within it the weight of contemplation, the necessity of pause, the revolutionary act of stillness.

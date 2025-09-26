@@ -134,6 +134,11 @@ const Chronicles = () => {
         ))}
       </div>
       
+      <div className="mt-16 text-center">
+        <p className="text-sm text-muted-foreground font-mono">
+          New episodes monthly • Subscribe on your preferred platform
+        </p>
+      </div>
     </div>
   );
 };
