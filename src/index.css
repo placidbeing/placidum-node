@@ -711,36 +711,3 @@ div[style*="width:"], div[style*="left:"], div[style*="right:"] {
     margin: 0 !important;
   }
 }
-
-/* Renaissance geometric forms for contact section */
-.contact-geometric-form {
-  position: absolute;
-  top: -8px;
-  left: -16px;
-  width: 16px;
-  height: 16px;
-  border: 1px solid hsl(var(--iron-oxide));
-}
-
-/* Correspondence - Square (representing earth/stability) */
-.correspondence-form {
-  background: transparent;
-  border-radius: 0;
-}
-
-/* Archives - Triangle (representing fire/knowledge) */
-.archives-form {
-  width: 0;
-  height: 0;
-  border: none;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-bottom: 14px solid hsl(var(--iron-oxide));
-  background: transparent;
-}
-
-/* Copyrights - Circle (representing perfection/completion) */
-.copyrights-form {
-  border-radius: 50%;
-  background: transparent;
-}
