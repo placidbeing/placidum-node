@@ -627,3 +627,72 @@ div[style*="width:"], div[style*="left:"], div[style*="right:"] {
 
 /* Disable any hamburger/drawer */
 .hamburger, .menu-toggle, .mobile-drawer { display:none !important; }
+
+/* Notes section manuscript styling */
+.notes-section {
+  font-family: 'Crimson Text', 'Georgia', serif;
+}
+
+.notes-header {
+  text-align: left;
+}
+
+.notes-header .folio-number {
+  font-style: italic;
+  color: hsl(var(--iron-oxide));
+}
+
+/* Each entry block with manuscript-style vertical strokes */
+.note-entry {
+  position: relative;
+  padding-left: 28px;
+  border: none;
+  margin-bottom: 2.5rem;
+}
+
+/* Vertical Leonardo-style stroke */
+.note-entry::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.3rem;
+  width: 1.5px;
+  height: 60%;
+  background: hsl(var(--verdigris) / 0.7);
+  opacity: 0.7;
+}
+
+/* Short horizontal tick at top */
+.note-entry::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.3rem;
+  width: 12px;
+  height: 1.5px;
+  background: hsl(var(--verdigris) / 0.7);
+  opacity: 0.7;
+}
+
+/* Mobile adjustments for notes */
+@media (max-width: 768px) {
+  .notes-section {
+    padding-inline: 20px;
+    text-align: left;
+  }
+
+  .notes-header .folio-number {
+    font-size: 0.75rem;
+    position: sticky;
+    top: 1rem;
+    z-index: 10;
+  }
+
+  .note-entry {
+    padding-left: 24px;
+  }
+  
+  .note-entry::before {
+    height: 50%;
+  }
+}

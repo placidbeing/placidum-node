@@ -129,10 +129,9 @@ const Catalog = () => {
   return (
     <div className="notebook-grid py-20">
       <div className="marginalia">
-        <span className="folio-number">Catalogus</span>
       </div>
       <div>
-        <div className="mb-16">
+        <div className="mb-16 text-right">
           <h1 className="font-cormorant text-4xl font-bold mb-6 codex-title" style={{ fontVariant: 'small-caps', letterSpacing: '0.1em' }}>
             Archive of Digital Folios
           </h1>
@@ -225,7 +224,6 @@ const Catalog = () => {
         </div>
       </div>
       <div className="marginalia">
-        <span className="folio-number">Codex Complete</span>
       </div>
     </div>
   );

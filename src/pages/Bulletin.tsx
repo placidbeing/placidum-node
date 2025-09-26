@@ -27,60 +27,55 @@ const Bulletin = () => {
   ];
 
   return (
-    <div className="notebook-grid py-20">
-      <div className="marginalia">
-        <span className="folio-number">Observationes</span>
-      </div>
-      <div>
-        <header className="mb-16">
-          <h1>field notes & observations</h1>
-          <div className="fragment">
-            <p className="max-w-2xl">
-              Documentation of recent activities, specimen discoveries, and taxonomical updates 
-              from the placidum collection.
-            </p>
-          </div>
-        </header>
-        
-        <div className="space-y-16">
-          {news.map((item, index) => (
-            <article key={index} className="relative py-8 border-l-2 border-verdigris/40 pl-8">
-              <div className="notebook-grid-wide">
-                <div className="marginalia">
-                  <div className="folio-number">{item.date}</div>
-                  <div className="marginalia mt-2">{item.category}</div>
-                </div>
-                
-                <div className="space-y-4">
-                  <h2 className="annotation-hover" data-annotation={`Entry ${index + 1}`}>
-                    {item.title}
-                  </h2>
-                  <div className="fragment">
-                    <p className="leading-relaxed">{item.content}</p>
-                  </div>
+    <div className="notes-section py-20 max-w-4xl mx-auto px-6">
+      <header className="notes-header mb-16 text-left">
+        <div className="marginalia mb-4">
+          <span className="folio-number text-iron-oxide italic">Observationes</span>
+        </div>
+        <h1 className="text-left">field notes & observations</h1>
+        <div className="fragment">
+          <p className="max-w-2xl">
+            Documentation of recent activities, specimen discoveries, and taxonomical updates 
+            from the placidum collection.
+          </p>
+        </div>
+      </header>
+      
+      <div className="space-y-16">
+        {news.map((item, index) => (
+          <article key={index} className="note-entry relative py-8 text-left">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+              <div className="md:col-span-1">
+                <div className="folio-number">{item.date}</div>
+                <div className="marginalia mt-2">{item.category}</div>
+              </div>
+              
+              <div className="md:col-span-3 space-y-4">
+                <h2 className="annotation-hover text-xl serif" data-annotation={`Entry ${index + 1}`}>
+                  {item.title}
+                </h2>
+                <div className="serif leading-relaxed text-base">
+                  <p>{item.content}</p>
                 </div>
               </div>
-            </article>
-          ))}
-        </div>
+            </div>
+          </article>
+        ))}
+      </div>
         
-        <footer className="journal-entry mt-20 p-8 text-center">
-          <div className="fragment">
-            <h3>Research Updates</h3>
-            <div className="marginalia">
-              Subscribe to field notes and specimen announcements
-            </div>
-            <div className="marginalia mt-4">
-              <a href="mailto:sacha@placidum.com" className="ink-underline">
-                sacha@placidum.com
-              </a>
-            </div>
+      <footer className="journal-entry mt-20 p-8 text-center">
+        <div className="fragment">
+          <h3>Research Updates</h3>
+          <div className="marginalia">
+            Subscribe to field notes and specimen announcements
           </div>
-        </footer>
-      </div>
-      <div className="marginalia">
-        <span className="folio-number">Continuatur</span>
-      </div>
+          <div className="marginalia mt-4">
+            <a href="mailto:sacha@placidum.com" className="ink-underline">
+              sacha@placidum.com
+            </a>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
