@@ -679,6 +679,37 @@ div[style*="width:"], div[style*="left:"], div[style*="right:"] {
   }
 }
 
+/* Corpus section 12-column layout on desktop */
+@media (min-width: 1024px) {
+  .corpus-section {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .corpus-main {
+    grid-column: span 9;
+  }
+  
+  .corpus-aside {
+    grid-column: span 3;
+  }
+  
+  .corpus-aside:first-child {
+    grid-column: span 3;
+    grid-row: 1;
+  }
+  
+  .corpus-aside:last-child {
+    grid-column: span 3;
+    grid-row: 1;
+    grid-column-start: 10;
+  }
+}
+
 /* Corpus/Catalog mobile layout improvements */
 @media (max-width: 768px) {
   .notebook-grid {
