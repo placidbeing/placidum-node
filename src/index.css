@@ -697,7 +697,54 @@ div[style*="width:"], div[style*="left:"], div[style*="right:"] {
   }
 }
 
-/* Corpus/Catalog mobile layout improvements */
+/* Contact geometric marks - Renaissance style */
+.contact-entry {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.contact-geometric-mark {
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+  width: 1rem;
+  height: 1rem;
+  border: 1.5px solid var(--accent);
+  opacity: 0.7;
+}
+
+.contact-geometric-mark--circle {
+  border-radius: 50%;
+}
+
+.contact-geometric-mark--triangle {
+  width: 0;
+  height: 0;
+  border: none;
+  border-left: 0.5rem solid transparent;
+  border-right: 0.5rem solid transparent;
+  border-bottom: 0.87rem solid var(--accent);
+  opacity: 0.7;
+}
+
+/* Corpus layout improvements */
+.corpus-release-container {
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+}
+
+/* Desktop corpus alignment with speculations */
+@media (min-width: 1024px) {
+  .corpus-release-container .flex-col {
+    flex-direction: row;
+  }
+  
+  .catalog-artwork {
+    max-width: 300px;
+  }
+}
+
+/* Mobile layout improvements */
 @media (max-width: 768px) {
   .notebook-grid {
     grid-template-columns: 1fr;
@@ -709,5 +756,14 @@ div[style*="width:"], div[style*="left:"], div[style*="right:"] {
     max-width: none !important;
     width: 100% !important;
     margin: 0 !important;
+  }
+  
+  .contact-entry {
+    padding-left: 1.5rem;
+  }
+  
+  .contact-geometric-mark {
+    width: 0.75rem;
+    height: 0.75rem;
   }
 }

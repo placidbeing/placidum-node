@@ -156,65 +156,72 @@ const Catalog = () => {
         <div className="space-y-24">
           {releases.map((release) => (
             <article key={release.catalog} className="py-8">
-              <div className="flex flex-col space-y-8">
-                {/* Folio Image - Full width on mobile */}
-                <div className="w-full">
-                  <div 
-                    className="catalog-artwork aspect-square bg-muted relative overflow-hidden annotation-hover max-w-md mx-auto md:mx-0"
-                    data-annotation={`${release.catalog} - ${release.totalDuration}`}
-                  >
-                    <img 
-                      src={release.artwork} 
-                      alt={`${release.artist} - ${release.title} folio illustration`}
-                      className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-                    />
-                  </div>
-                </div>
-                
-                {/* Folio Content - Below image */}
-                <div className="space-y-6 max-w-2xl">
-                  <div className="fragment">
-                    {/* Full Formatted Metadata - Iron Oxide Color */}
-                    <div className="mb-6">
-                      <div className="font-mono text-sm mb-2 text-iron-oxide" style={{ letterSpacing: '0.05em' }}>
-                        {release.catalogFormatted}
-                      </div>
-                      <h2 className="font-cormorant text-xl italic text-ink">
-                        {release.title}
-                      </h2>
-                    </div>
-                    
-                    {/* Leonardo-style Metadata */}
-                    <div className="mb-6 space-y-2">
-                      <div className="font-cormorant italic text-base text-muted-foreground" style={{ letterSpacing: '0.1em' }}>
-                        tempus totius operis: {release.totalDuration}
-                      </div>
-                      <div className="font-cormorant italic text-sm text-muted-foreground" style={{ letterSpacing: '0.05em' }}>
-                        {release.technicalSpecs}
-                      </div>
+              <div className="corpus-release-container relative border-l-2 border-verdigris/40 pl-8">
+                <div className="flex flex-col md:flex-row md:items-start gap-8">
+                  {/* Folio Image */}
+                  <div className="w-full md:w-48 flex-shrink-0">
+                    <div 
+                      className="catalog-artwork aspect-square bg-muted relative overflow-hidden annotation-hover"
+                      data-annotation={`${release.catalog} - ${release.totalDuration}`}
+                    >
+                      <img 
+                        src={release.artwork}
+                        alt={`${release.title} album artwork`}
+                        className="w-full h-full object-cover"
+                      />
                     </div>
                   </div>
                   
-                  {/* Tracklist - Leonardo Style */}
-                  <div className="fragment">
-                    <div className="space-y-3">
-                      {release.tracks.map((track, index) => (
-                        <div key={index} className="text-ink">
-                          <span className="font-cormorant text-lg leading-relaxed">
-                            {track.title}, {track.duration} 
-                          </span>
-                          <span className="font-cormorant italic text-sm text-muted-foreground ml-2" style={{ opacity: 0.7 }}>
-                            {track.gloss}
+                  {/* Folio Content */}
+                  <div className="space-y-6 flex-1">
+                    <div className="fragment">
+                      {/* Full Formatted Metadata - Iron Oxide Color */}
+                      <div className="mb-6">
+                        <p className="mb-2 font-mono text-sm text-iron-oxide tracking-wider">
+                          {release.catalog}
+                        </p>
+                        <h2 className="text-2xl font-cormorant mb-3 tracking-wide">
+                          {release.title}
+                        </h2>
+                        <p className="mb-4 font-mono text-sm text-muted-foreground">
+                          {release.totalDuration}
+                        </p>
+                      </div>
+
+                      {/* Track Listing */}
+                      <div className="space-y-3 mb-8">
+                        {release.tracks.map((track, idx) => (
+                          <div key={idx} className="flex justify-between items-center pb-2 border-b border-verdigris/20">
+                            <div className="flex items-baseline gap-3">
+                              <span className="font-mono text-xs text-muted-foreground w-8">
+                                {String(idx + 1).padStart(2, '0')}.
+                              </span>
+                              <h3 className="font-cormorant text-lg">{track.title}</h3>
+                              <span className="font-mono text-xs text-accent italic">
+                                {track.gloss}
+                              </span>
+                            </div>
+                            <span className="font-mono text-sm text-muted-foreground">
+                              {track.duration}
+                            </span>
+                          </div>
+                        ))}
+                      </div>
+
+                      {/* Horizontal divider before Bandcamp */}
+                      <div className="border-t border-verdigris/40 pt-6 mb-6"></div>
+
+                      {/* Bandcamp Embed Placeholder */}
+                      <div className="bg-muted border border-border p-6 text-center">
+                        <p className="text-sm text-muted-foreground font-mono mb-2">
+                          Listen on Bandcamp
+                        </p>
+                        <div className="aspect-[4/3] bg-background border border-border flex items-center justify-center">
+                          <span className="text-xs text-muted-foreground">
+                            Embedded Player: {release.title}
                           </span>
                         </div>
-                      ))}
-                    </div>
-                  </div>
-
-                  {/* Bandcamp Embed */}
-                  <div className="fragment">
-                    <div className="mt-6">
-                      <div dangerouslySetInnerHTML={{ __html: release.bandcampEmbed }} />
+                      </div>
                     </div>
                   </div>
                 </div>
