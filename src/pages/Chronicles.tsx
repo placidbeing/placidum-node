@@ -100,8 +100,14 @@ const Chronicles = () => {
               <div className="flex-1 space-y-4">
                 <div className="space-y-2">
                   <p className="text-sm font-mono text-muted-foreground">{episode.date}</p>
-                  <h2 className="text-2xl font-serif font-light tracking-wide">{episode.title}</h2>
-                  <p className="text-sm font-mono text-accent italic">{episode.latinTitle}</p>
+                  <h2 className="text-ink">
+                    <span className="font-cormorant text-lg leading-relaxed">
+                      {episode.title}
+                    </span>
+                    <span className="font-cormorant italic text-sm text-muted-foreground ml-2" style={{ opacity: 0.7 }}>
+                      {episode.latinTitle}
+                    </span>
+                  </h2>
                   <p className="text-sm font-mono text-muted-foreground">{episode.duration}</p>
                 </div>
                 
