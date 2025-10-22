@@ -102,12 +102,13 @@ const Chronicles = () => {
                   <p className="text-sm font-mono text-muted-foreground">{episode.date}</p>
                   <h2 className="text-ink">
                     <span className="font-cormorant text-lg leading-relaxed">
-                      {episode.title}, {episode.duration}
+                      {episode.title}
                     </span>
                     <span className="font-cormorant italic text-sm text-muted-foreground ml-2" style={{ opacity: 0.7 }}>
                       {episode.latinTitle}
                     </span>
                   </h2>
+                  <p className="text-sm font-mono text-muted-foreground">{episode.duration}</p>
                 </div>
                 
                 <blockquote className="text-muted-foreground leading-relaxed italic border-l-2 border-accent/30 pl-4">
