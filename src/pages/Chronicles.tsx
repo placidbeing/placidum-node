@@ -120,19 +120,23 @@ const Chronicles = () => {
               <div className="flex-1 space-y-4">
                 <div className="space-y-2">
                   <p className="text-sm font-mono text-muted-foreground">{episode.date}</p>
-                  {episode.chapterNumber && (
-                    <p className="font-cormorant text-lg leading-relaxed">
-                      Chapter {episode.chapterNumber}.
-                    </p>
-                  )}
-                  <h2 className="text-ink">
-                    <span className="font-cormorant text-lg leading-relaxed">
-                      {episode.title}
-                    </span>
-                    <span className="font-cormorant italic text-sm text-muted-foreground ml-2" style={{ opacity: 0.7 }}>
-                      {episode.latinTitle}
-                    </span>
-                  </h2>
+                  <div className="space-y-1">
+                    {episode.chapterNumber && (
+                      <p className="font-cormorant text-lg leading-relaxed">
+                        Chapter {episode.chapterNumber}.
+                      </p>
+                    )}
+                    <h2 className="text-ink">
+                      <span className="font-cormorant text-lg leading-relaxed">
+                        {episode.title}
+                      </span>
+                      {episode.chapterNumber && (
+                        <span className="font-cormorant italic text-sm text-muted-foreground ml-2" style={{ opacity: 0.7 }}>
+                          {episode.latinTitle}
+                        </span>
+                      )}
+                    </h2>
+                  </div>
                   <p className="font-cormorant text-lg leading-relaxed text-muted-foreground">{formatDuration(episode.duration)}</p>
                 </div>
                 
