@@ -51,6 +51,13 @@ button, input, select, textarea { font: inherit; color: inherit; }
     text-align: left;
   }
 }
+
+@media (max-width: 1024px) {
+  main, .grid, .catalog {
+    justify-items: center;
+    align-items: start;
+  }
+}
 @media (min-width: 1024px){ .grid.cols-3 { grid-template-columns: 1fr 1fr 1fr; } }
 
 /* Flex helpers */
