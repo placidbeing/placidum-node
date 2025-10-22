@@ -1,14 +1,33 @@
 const Bulletin = () => {
   const formatDate = (dateStr: string) => {
     const [year, month, day] = dateStr.split('.');
-    const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    const monthNamesLatin = ["Januarii", "Februarii", "Martii", "Aprilis", "Maii", "Junii", "Julii", "Augusti", "Septembris", "Octobris", "Novembris", "Decembris"];
     const romanNumerals = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII"];
     
-    const monthIndex = parseInt(month) - 1;
-    const classical = `${day}.${romanNumerals[monthIndex]}.${year}`;
-    const modern = `${day} ${monthNames[monthIndex]} ${year}`;
+    const toRoman = (num: number): string => {
+      const romanMap: [number, string][] = [
+        [1000, 'M'], [900, 'CM'], [500, 'D'], [400, 'CD'],
+        [100, 'C'], [90, 'XC'], [50, 'L'], [40, 'XL'],
+        [10, 'X'], [9, 'IX'], [5, 'V'], [4, 'IV'], [1, 'I']
+      ];
+      let result = '';
+      for (const [value, numeral] of romanMap) {
+        while (num >= value) {
+          result += numeral;
+          num -= value;
+        }
+      }
+      return result;
+    };
     
-    return { classical, modern };
+    const monthIndex = parseInt(month) - 1;
+    const dayRoman = toRoman(parseInt(day));
+    const yearRoman = toRoman(parseInt(year));
+    
+    const latin = `Die ${dayRoman}. ${monthNamesLatin[monthIndex]} ${yearRoman}.`;
+    const classical = `${day}.${romanNumerals[monthIndex]}.${year}`;
+    
+    return { latin, classical };
   };
 
   const news = [
@@ -65,8 +84,8 @@ const Bulletin = () => {
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             <div className="md:col-span-1">
                 <div className="folio-number leading-tight">
-                  <div style={{ opacity: 0.6 }}>{formatDate(item.date).classical}</div>
-                  <div style={{ opacity: 0.4, fontSize: '0.85rem' }}>{formatDate(item.date).modern}</div>
+                  <div style={{ opacity: 0.6 }}>{formatDate(item.date).latin}</div>
+                  <div style={{ opacity: 0.4, fontSize: '0.85rem' }}>{formatDate(item.date).classical}</div>
                 </div>
               </div>
               
