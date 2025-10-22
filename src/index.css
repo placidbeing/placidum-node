@@ -49,6 +49,14 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .row.center { align-items: center; }
 .row.between { justify-content: space-between; }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .row {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+}
+
 /* ===== Images & embeds ===== */
 .responsive-media { position: relative; width: 100%; }
 .responsive-media.r16x9 { padding-top: 56.25%; }
