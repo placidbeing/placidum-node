@@ -685,12 +685,23 @@ div[style*="width:"], div[style*="left:"], div[style*="right:"] {
     grid-template-columns: repeat(12, 1fr);
   }
   
-.corpus-main {
-    grid-column: 2 / 11;
+  .corpus-main {
+    grid-column: span 9;
   }
   
   .corpus-aside {
-    grid-column: 11 / -1;
+    grid-column: span 3;
+  }
+  
+  .corpus-aside:first-child {
+    grid-column: span 3;
+    grid-row: 1;
+  }
+  
+  .corpus-aside:last-child {
+    grid-column: span 3;
+    grid-row: 1;
+    grid-column-start: 10;
   }
 }
 

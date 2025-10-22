@@ -128,6 +128,8 @@ const Catalog = () => {
 
   return (
     <section id="corpus" className="corpus-section notebook-grid py-20">
+      <div className="corpus-aside marginalia">
+      </div>
       <main className="corpus-main">
         <div className="mb-16 text-left">
           <h1 className="font-cormorant text-4xl font-bold mb-6 codex-title" style={{ fontVariant: 'small-caps', letterSpacing: '0.1em' }}>
