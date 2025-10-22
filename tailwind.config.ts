@@ -20,10 +20,10 @@ export default {
 		extend: {
 			fontFamily: {
 				'mono': ['JetBrains Mono', 'Courier New', 'monospace'],
-				'serif': ['Spectral', 'Georgia', 'serif'],
-				'garamond': ['Spectral', 'Georgia', 'serif'],
-				'spectral': ['Spectral', 'Georgia', 'serif'],
-				'sans': ['Spectral', 'system-ui', 'sans-serif'],
+				'serif': ['Crimson Text', 'Georgia', 'serif'],
+				'garamond': ['EB Garamond', 'Crimson Text', 'Georgia', 'serif'],
+				'cormorant': ['Cormorant Garamond', 'EB Garamond', 'Georgia', 'serif'],
+				'sans': ['Inter', 'system-ui', 'sans-serif'],
 			},
 			fontSize: {
 				'journal-sm': ['0.875rem', { lineHeight: '1.5', letterSpacing: '0.025em' }],
