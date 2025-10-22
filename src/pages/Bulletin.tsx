@@ -37,6 +37,14 @@ const Bulletin = () => {
           <p className="max-w-2xl">
             Accounts of recent activity—emergent works, field notes, and subtle deviations within the Placidum continuum.
           </p>
+          <div className="marginalia mt-4">
+            Research Updates: <a 
+              href="mailto:notes@placidum.com" 
+              className="ink-underline"
+            >
+              notes@placidum.com
+            </a>
+          </div>
         </div>
       </header>
       
@@ -62,19 +70,6 @@ const Bulletin = () => {
         ))}
       </div>
         
-      <footer className="journal-entry mt-20 p-8 text-center">
-        <div className="fragment">
-          <h3>Research Updates</h3>
-          <div className="marginalia">
-            Subscribe to field notes and specimen announcements
-          </div>
-          <div className="marginalia mt-4">
-            <a href="mailto:sacha@placidum.com" className="ink-underline">
-              sacha@placidum.com
-            </a>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 };
