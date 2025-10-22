@@ -29,15 +29,14 @@ const Bulletin = () => {
   return (
     <div className="notes-section py-20 max-w-4xl mx-auto px-6">
       <header className="notes-header mb-16 text-left">
-        <div className="marginalia mb-4">
-          <span className="folio-number text-iron-oxide italic">Observationes</span>
-        </div>
-        <h1 className="text-left">field notes & observations</h1>
+        <h1 className="font-cormorant text-4xl font-bold mb-6 codex-title" style={{ fontVariant: 'small-caps', letterSpacing: '0.1em' }}>
+          Field Notes & Observations
+        </h1>
         <div>
-          <p className="max-w-2xl">
+          <p className="font-cormorant text-lg leading-relaxed mb-6 max-w-2xl">
             Accounts of recent activity—emergent works, field notes, and subtle deviations within the Placidum continuum.
           </p>
-          <div className="marginalia mt-4">
+          <div className="marginalia">
             Research Updates: <a 
               href="mailto:notes@placidum.com" 
               className="ink-underline"
