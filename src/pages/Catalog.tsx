@@ -174,10 +174,10 @@ const Catalog = () => {
                   <div className="fragment">
                     {/* Catalog Number and Date */}
                     <div className="mb-6">
-                      <div className="font-mono text-sm mb-2 text-iron-oxide" style={{ letterSpacing: '0.05em' }}>
+                      <div className="font-mono text-sm mb-2 text-iron-oxide" style={{ letterSpacing: '0.05em', fontWeight: 300 }}>
                         {release.catalog}_{release.date}
                       </div>
-                      <h2 className="font-mono text-xl italic text-ink" style={{ fontWeight: 400 }}>
+                      <h2 className="font-mono text-xl italic text-ink" style={{ fontWeight: 300 }}>
                         {release.artist} : {release.title}
                       </h2>
                     </div>
