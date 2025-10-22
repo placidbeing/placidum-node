@@ -66,30 +66,32 @@ button, input, select, textarea { font: inherit; color: inherit; }
   }
 }
 
+/* --- Corpus layout fix for iPad --- */
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* reset the parent layout */
+  /* Reset any inherited grid/flex rules */
+  .corpus-grid,
   .catalog,
-  .grid,
-  .corpus-grid {
+  .grid {
     display: block !important;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 700px;
+    margin: 0 auto;
+    max-width: 700px; /* keeps the manuscript feel */
+    padding: 2rem 1rem;
   }
 
-  /* center and align inner elements */
+  /* Center and tidy inner elements */
   .corpus-grid > * {
-    display: block;
+    display: block !important;
     width: 100%;
     max-width: 90%;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     text-align: left;
   }
 
-  /* optional: adjust spacing for elegance */
-  .corpus-grid {
-    padding: 2rem 1rem;
+  /* Optional: add space between text blocks */
+  .corpus-grid > * + * {
+    margin-top: 2rem;
   }
 }
 @media (min-width: 1024px){ .grid.cols-3 { grid-template-columns: 1fr 1fr 1fr; } }
