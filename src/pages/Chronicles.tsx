@@ -95,7 +95,7 @@ const Chronicles = () => {
 
       <div className="space-y-12">
         {episodes.map((episode) => (
-          <div key={episode.episode} className="relative py-8 pl-8">
+          <div key={episode.episode} className="relative py-8 border-l-2 border-verdigris/40 pl-8">
             <div className="flex flex-col md:flex-row md:items-start gap-8">
               {/* Episode Artwork */}
               <div className="w-full md:w-48 flex-shrink-0">
