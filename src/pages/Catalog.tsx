@@ -7,22 +7,39 @@ import heartsCover from "@/assets/placid_I_HEARTS_naked.jpg";
 import nocturnalSolutionsCover from "@/assets/Nocturnal_Solutions_Cover.jpg";
 
 const Catalog = () => {
-  // Format date from YYYYMMDD to classical notation
+  // Format date from YYYYMMDD to Latin and numerical notation
   const formatDate = (dateStr: string) => {
     const year = dateStr.substring(0, 4);
     const month = dateStr.substring(4, 6);
     const day = dateStr.substring(6, 8);
     
-    const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 
-                        'July', 'August', 'September', 'October', 'November', 'December'];
+    const monthNamesLatin = ['Januarii', 'Februarii', 'Martii', 'Aprilis', 'Maii', 'Junii',
+                             'Julii', 'Augusti', 'Septembris', 'Octobris', 'Novembris', 'Decembris'];
     const romanMonths = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII'];
     
     const monthIndex = parseInt(month) - 1;
     const dayNum = parseInt(day);
     
+    // Convert numbers to Roman numerals
+    const toRoman = (num: number): string => {
+      const romanNumerals: [number, string][] = [
+        [1000, 'M'], [900, 'CM'], [500, 'D'], [400, 'CD'],
+        [100, 'C'], [90, 'XC'], [50, 'L'], [40, 'XL'],
+        [10, 'X'], [9, 'IX'], [5, 'V'], [4, 'IV'], [1, 'I']
+      ];
+      let result = '';
+      for (const [value, numeral] of romanNumerals) {
+        while (num >= value) {
+          result += numeral;
+          num -= value;
+        }
+      }
+      return result;
+    };
+    
     return {
-      classical: `${dayNum}.${romanMonths[monthIndex]}.${year}`,
-      modern: `${dayNum} ${monthNames[monthIndex]} ${year}`
+      latin: `Die ${toRoman(dayNum)}. ${monthNamesLatin[monthIndex]} ${toRoman(parseInt(year))}.`,
+      numerical: `${day}.${month}.${year}`
     };
   };
 
@@ -198,10 +215,10 @@ const Catalog = () => {
                         </div>
                         <div className="font-mono text-sm leading-tight" style={{ letterSpacing: '0.05em', fontWeight: 300 }}>
                           <div className="text-iron-oxide" style={{ opacity: 0.6 }}>
-                            {formatDate(release.date).classical}
+                            {formatDate(release.date).latin}
                           </div>
                           <div className="text-iron-oxide" style={{ opacity: 0.4, fontSize: '0.85rem' }}>
-                            {formatDate(release.date).modern}
+                            {formatDate(release.date).numerical}
                           </div>
                         </div>
                       </div>
