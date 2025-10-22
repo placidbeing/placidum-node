@@ -2,6 +2,23 @@ import prefaceCover from "@/assets/Preface_Duchamp.jpg";
 import chapterICover from "@/assets/Chapter_I_Klee.jpg";
 
 const Chronicles = () => {
+  const formatDuration = (duration: string) => {
+    const parts = duration.split(':');
+    if (parts.length === 3) {
+      // Format: HH:MM:SS
+      const hours = parseInt(parts[0]);
+      const minutes = parseInt(parts[1]);
+      const seconds = parseInt(parts[2]);
+      const totalMinutes = hours * 60 + minutes;
+      return `${totalMinutes} min. ${seconds.toString().padStart(2, '0')} sec.`;
+    } else {
+      // Format: MM:SS
+      const minutes = parseInt(parts[0]);
+      const seconds = parts[1];
+      return `${minutes} min. ${seconds.padStart(2, '0')} sec.`;
+    }
+  };
+
   const episodes = [
     {
       episode: "003",
@@ -102,13 +119,12 @@ const Chronicles = () => {
                   <p className="text-sm font-mono text-muted-foreground">{episode.date}</p>
                   <h2 className="text-ink">
                     <span className="font-cormorant text-lg leading-relaxed">
-                      {episode.title}
+                      {episode.title}, {formatDuration(episode.duration)}
                     </span>
                     <span className="font-cormorant italic text-sm text-muted-foreground ml-2" style={{ opacity: 0.7 }}>
                       {episode.latinTitle}
                     </span>
                   </h2>
-                  <p className="text-sm font-mono text-muted-foreground">{episode.duration}</p>
                 </div>
                 
                 <blockquote className="text-muted-foreground leading-relaxed italic border-l-2 border-accent/30 pl-4">
