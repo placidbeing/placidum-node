@@ -192,9 +192,9 @@ const Catalog = () => {
                     </div>
                     
                     {/* Tracklist - Leonardo Style */}
-                    <div className="space-y-2">
+                    <div className="space-y-4">
                       {release.tracks.map((track, index) => (
-                        <div key={index} className="text-ink space-y-0.5">
+                        <div key={index} className="text-ink">
                           <div>
                             <span className="font-cormorant text-base leading-relaxed">
                               {track.title}
