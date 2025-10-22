@@ -209,7 +209,7 @@ const Catalog = () => {
 
                   {/* Bandcamp Embed */}
                   <div className="fragment-bandcamp">
-                    <div className="mt-6">
+                    <div className="mt-6 mb-6">
                       <div dangerouslySetInnerHTML={{ __html: release.bandcampEmbed }} />
                     </div>
                   </div>
