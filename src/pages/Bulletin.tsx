@@ -1,4 +1,16 @@
 const Bulletin = () => {
+  const formatDate = (dateStr: string) => {
+    const [year, month, day] = dateStr.split('.');
+    const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    const romanNumerals = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII"];
+    
+    const monthIndex = parseInt(month) - 1;
+    const classical = `${day}.${romanNumerals[monthIndex]}.${year}`;
+    const modern = `${day} ${monthNames[monthIndex]} ${year}`;
+    
+    return { classical, modern };
+  };
+
   const news = [
     {
       date: "2024.12.15",
@@ -51,8 +63,11 @@ const Bulletin = () => {
         {news.map((item, index) => (
           <article key={index} className="note-entry relative py-8 text-left">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-              <div className="md:col-span-1">
-                <div className="folio-number">{item.date}</div>
+            <div className="md:col-span-1">
+                <div className="folio-number leading-tight">
+                  <div style={{ opacity: 0.6 }}>{formatDate(item.date).classical}</div>
+                  <div style={{ opacity: 0.4, fontSize: '0.85rem' }}>{formatDate(item.date).modern}</div>
+                </div>
               </div>
               
               <div className="md:col-span-3 space-y-4">
