@@ -203,7 +203,7 @@ const Catalog = () => {
                               {track.gloss}
                             </span>
                           </div>
-                          <p className="font-mono text-xs text-muted-foreground">{track.duration}</p>
+                          <p className="font-cormorant italic text-sm text-muted-foreground">{track.duration}</p>
                         </div>
                       ))}
                     </div>
