@@ -457,6 +457,23 @@ div[style*="width:"], div[style*="left:"], div[style*="right:"] {
   .fragment::before {
     content: "⸻";
     position: absolute;
+    top: 0.5rem;
+    left: -0.5rem;
+    color: hsl(var(--verdigris) / 0.6);
+    font-size: 0.75rem;
+  }
+
+  .fragment-bandcamp {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: hsl(var(--card) / 0.6);
+    border-left: 2px solid hsl(var(--verdigris) / 0.4);
+    position: relative;
+  }
+
+  .fragment-bandcamp::before {
+    content: "⸻";
+    position: absolute;
     bottom: 0.5rem;
     left: -0.5rem;
     color: hsl(var(--verdigris) / 0.6);
