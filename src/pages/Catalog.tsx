@@ -11,8 +11,8 @@ const Catalog = () => {
   const releases = [
     {
       catalog: "PLUM7.",
-      date: "2025.03.15",
-      artist: "Shcaa",
+      catalogFormatted: "PLUM7. _BEAUTIFUL-SITUATION.2025.03",
+      artist: "Situation",
       title: "Beautiful Situation",
       artwork: beautifulSituationCover,
       totalDuration: "13 min. 36 sec.",
@@ -25,8 +25,8 @@ const Catalog = () => {
     },
     {
       catalog: "PLUM6.",
-      date: "2024.03.20",
-      artist: "Shcaa",
+      catalogFormatted: "PLUM6. _NEPTUNE.2024.03",
+      artist: "Neptune",
       title: "Neptune",
       artwork: neptuneCover,
       totalDuration: "21 min. 31 sec.",
@@ -41,8 +41,8 @@ const Catalog = () => {
     },
     {
       catalog: "PLUM5.",
-      date: "2023.06.10",
-      artist: "Ain°",
+      catalogFormatted: "PLUM5. _INTERIOR-ROOMS.2023.06",
+      artist: "Interior",
       title: "Interior Rooms",
       artwork: interiorRoomsCover,
       totalDuration: "27 min. 36 sec.",
@@ -58,8 +58,8 @@ const Catalog = () => {
     },
     {
       catalog: "PLUM4.",
-      date: "2023.03.25",
-      artist: "Nocturnal Solutions",
+      catalogFormatted: "PLUM4. _NOCTURNAL-SOLUTIONS.2023.03",
+      artist: "Midnight",
       title: "Nocturnal Solutions",
       artwork: nocturnalSolutionsCover,
       totalDuration: "40 min. 32 sec.",
@@ -75,7 +75,7 @@ const Catalog = () => {
     },
     {
       catalog: "PLUM3.",
-      date: "2022.08.12",
+      catalogFormatted: "PLUM3. _SOFT-SIGNS.2022.08",
       artist: "Shcaa",
       title: "Soft Signs",
       artwork: softSignsCover,
@@ -89,7 +89,7 @@ const Catalog = () => {
     },
     {
       catalog: "PLUM2.",
-      date: "2019.09.05",
+      catalogFormatted: "PLUM2. _GOLCONDE.2019.09",
       artist: "Shcaa",
       title: "Golconde",
       artwork: golcondeCover,
@@ -112,7 +112,7 @@ const Catalog = () => {
     },
     {
       catalog: "PLUM1.",
-      date: "2018.06.22",
+      catalogFormatted: "PLUM1. _HEARTS.2018.06",
       artist: "Ain°",
       title: "Hearts",
       artwork: heartsCover,
@@ -172,13 +172,13 @@ const Catalog = () => {
                 {/* Folio Content - Below image */}
                 <div className="space-y-6 max-w-2xl">
                   <div className="fragment">
-                    {/* Catalog Number and Date */}
+                    {/* Full Formatted Metadata - Iron Oxide Color */}
                     <div className="mb-6">
                       <div className="font-mono text-sm mb-2 text-iron-oxide" style={{ letterSpacing: '0.05em' }}>
-                        {release.catalog} {release.date}
+                        {release.catalogFormatted}
                       </div>
                       <h2 className="font-cormorant text-xl italic text-ink">
-                        {release.artist} : {release.title}
+                        {release.title}
                       </h2>
                     </div>
                     
@@ -191,8 +191,10 @@ const Catalog = () => {
                         {release.technicalSpecs}
                       </div>
                     </div>
-                    
-                    {/* Tracklist - Leonardo Style */}
+                  </div>
+                  
+                  {/* Tracklist - Leonardo Style */}
+                  <div className="fragment">
                     <div className="space-y-3">
                       {release.tracks.map((track, index) => (
                         <div key={index} className="text-ink">
