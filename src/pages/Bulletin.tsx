@@ -31,7 +31,8 @@ const Bulletin = () => {
     
     return {
       latin: `Die ${toRoman(dayNum)}. ${monthNamesLatin[monthIndex]}`,
-      year: toRoman(parseInt(year))
+      year: toRoman(parseInt(year)),
+      numerical: `${day}.${month}.${year}`
     };
   };
 
@@ -92,8 +93,11 @@ const Bulletin = () => {
                   <div className="text-iron-oxide" style={{ opacity: 0.6 }}>
                     {formatDate(item.date).latin}
                   </div>
-                  <div className="text-iron-oxide" style={{ opacity: 0.4, fontSize: '0.85rem' }}>
+                  <div className="text-iron-oxide" style={{ opacity: 0.5, fontSize: '0.85rem' }}>
                     {formatDate(item.date).year}
+                  </div>
+                  <div className="text-iron-oxide" style={{ opacity: 0.4, fontSize: '0.85rem' }}>
+                    {formatDate(item.date).numerical}
                   </div>
                 </div>
               </div>
