@@ -28,86 +28,15 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .wrap { width: var(--wrap); margin-inline: auto; padding-inline: var(--space); }
 .stack > * + * { margin-top: var(--space); }
 
-.catalog {
-  width: min(90vw, 1200px);
-  margin: auto;
-}
-
-.grid,
-.catalog {
-  gap: 2rem;
-  padding: 2rem 1rem;
-}
-
-.corpus-grid > * {
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: left;
-}
-
 /* Grid that collapses on mobile */
 .grid { display: grid; gap: var(--space); grid-template-columns: 1fr; }
 @media (min-width: 768px) { .grid.cols-2 { grid-template-columns: 1fr 1fr; } }
-@media (min-width: 768px) and (max-width: 1024px) {
-  .grid.cols-3,
-  .catalog {
-    grid-template-columns: 1fr;
-    max-width: 700px;
-    margin: 0 auto;
-    text-align: left;
-  }
-}
-
-@media (max-width: 1024px) {
-  main, .grid, .catalog {
-    justify-items: center;
-    align-items: start;
-  }
-}
-
-/* --- Corpus layout fix for iPad --- */
-@media (min-width: 768px) and (max-width: 1024px) {
-  /* Reset any inherited grid/flex rules */
-  .corpus-grid,
-  .catalog,
-  .grid {
-    display: block !important;
-    width: 100%;
-    margin: 0 auto;
-    max-width: 700px; /* keeps the manuscript feel */
-    padding: 2rem 1rem;
-  }
-
-  /* Center and tidy inner elements */
-  .corpus-grid > * {
-    display: block !important;
-    width: 100%;
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-  }
-
-  /* Optional: add space between text blocks */
-  .corpus-grid > * + * {
-    margin-top: 2rem;
-  }
-}
 @media (min-width: 1024px){ .grid.cols-3 { grid-template-columns: 1fr 1fr 1fr; } }
 
 /* Flex helpers */
 .row { display: flex; gap: var(--space); flex-wrap: wrap; align-items: flex-start; }
 .row.center { align-items: center; }
 .row.between { justify-content: space-between; }
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  .row {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.5rem;
-  }
-}
 
 /* ===== Images & embeds ===== */
 .responsive-media { position: relative; width: 100%; }
