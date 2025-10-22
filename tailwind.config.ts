@@ -19,11 +19,11 @@ export default {
 		},
 		extend: {
 		fontFamily: {
-			'mono': ['Outfit', 'system-ui', 'sans-serif'],
+			'mono': ['Space Grotesk', 'system-ui', 'sans-serif'],
 			'serif': ['Crimson Text', 'Georgia', 'serif'],
 			'garamond': ['EB Garamond', 'Crimson Text', 'Georgia', 'serif'],
 			'cormorant': ['Cormorant Garamond', 'EB Garamond', 'Georgia', 'serif'],
-			'sans': ['Outfit', 'system-ui', 'sans-serif'],
+			'sans': ['Space Grotesk', 'system-ui', 'sans-serif'],
 		},
 			fontSize: {
 				'journal-sm': ['0.875rem', { lineHeight: '1.5', letterSpacing: '0.025em' }],
