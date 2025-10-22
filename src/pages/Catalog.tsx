@@ -133,10 +133,9 @@ const Catalog = () => {
           <h1 className="font-cormorant text-4xl font-bold mb-6 codex-title" style={{ fontVariant: 'small-caps', letterSpacing: '0.1em' }}>
             Archive of Digital Folios
           </h1>
-          <div className="fragment">
+          <div>
             <p className="font-cormorant text-lg leading-relaxed mb-6 max-w-2xl">
-              A collection of sound documented as Leonardo would inscribe music in his notebooks—each release 
-              catalogued with precise measurements and poetic observations.
+              A collection of sound inscribed for those who come after - each release notated with precision, aware of the uncertainty within every trace.
             </p>
             <div className="marginalia">
               Collection Access: <a 
