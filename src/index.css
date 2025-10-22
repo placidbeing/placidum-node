@@ -683,10 +683,11 @@ div[style*="width:"], div[style*="left:"], div[style*="right:"] {
 @media (min-width: 1024px) {
   .corpus-section {
     grid-template-columns: repeat(12, 1fr);
+    gap: 2rem;
   }
   
-.corpus-main {
-    grid-column: 2 / 11;
+  .corpus-main {
+    grid-column: 3 / 11;
   }
   
   .corpus-aside {
