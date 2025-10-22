@@ -183,7 +183,7 @@ const Catalog = () => {
                     </div>
                     
                     {/* Leonardo-style Metadata */}
-                    <div className="mb-6 space-y-2">
+                    <div className="mb-6 space-y-0.5">
                       <div className="font-cormorant italic text-base text-muted-foreground" style={{ letterSpacing: '0.1em' }}>
                         tempus totius operis: {release.totalDuration}
                       </div>
@@ -193,7 +193,7 @@ const Catalog = () => {
                     </div>
                     
                     {/* Tracklist - Leonardo Style */}
-                    <div className="space-y-3">
+                    <div className="space-y-2">
                       {release.tracks.map((track, index) => (
                         <div key={index} className="text-ink">
                           <span className="font-cormorant text-lg leading-relaxed">
