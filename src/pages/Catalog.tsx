@@ -175,9 +175,9 @@ const Catalog = () => {
                     {/* Catalog Number and Date */}
                     <div className="mb-6">
                       <div className="font-mono text-sm mb-2 text-iron-oxide" style={{ letterSpacing: '0.05em' }}>
-                        {release.catalog} {release.date}
+                        {release.catalog}—{release.date}
                       </div>
-                      <h2 className="font-cormorant text-xl italic text-ink">
+                      <h2 className="font-mono text-xl italic text-ink">
                         {release.artist} : {release.title}
                       </h2>
                     </div>
