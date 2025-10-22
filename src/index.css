@@ -33,6 +33,12 @@ button, input, select, textarea { font: inherit; color: inherit; }
   margin: auto;
 }
 
+.grid,
+.catalog {
+  gap: 2rem;
+  padding: 2rem 1rem;
+}
+
 /* Grid that collapses on mobile */
 .grid { display: grid; gap: var(--space); grid-template-columns: 1fr; }
 @media (min-width: 768px) { .grid.cols-2 { grid-template-columns: 1fr 1fr; } }
