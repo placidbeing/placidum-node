@@ -33,10 +33,9 @@ const Bulletin = () => {
           <span className="folio-number text-iron-oxide italic">Observationes</span>
         </div>
         <h1 className="text-left">field notes & observations</h1>
-        <div className="fragment">
+        <div>
           <p className="max-w-2xl">
-            Documentation of recent activities, specimen discoveries, and taxonomical updates 
-            from the placidum collection.
+            Accounts of recent activity—emergent works, field notes, and subtle deviations within the Placidum continuum.
           </p>
         </div>
       </header>
