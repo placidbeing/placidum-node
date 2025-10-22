@@ -22,7 +22,8 @@ const Chronicles = () => {
   const episodes = [
     {
       episode: "003",
-      title: "II: Resonance Fields",
+      title: "Resonance Fields",
+      chapterNumber: "II",
       latinTitle: "Campus Resonantiae",
       date: "Die X Decembris MMXXIV",
       duration: "45:32",
@@ -32,7 +33,8 @@ const Chronicles = () => {
     },
     {
       episode: "002", 
-      title: "I: A Silent Spectator",
+      title: "A Silent Spectator",
+      chapterNumber: "I",
       latinTitle: "Spectator Silentis",
       date: "Die IX Augusti MMXVI",
       duration: "42:22",
@@ -48,7 +50,8 @@ const Chronicles = () => {
     },
     {
       episode: "001",
-      title: "Preface", 
+      title: "Preface",
+      chapterNumber: null,
       latinTitle: "Praefatio",
       date: "Die XXII Decembris MMXII",
       duration: "01:01:55",
@@ -117,6 +120,11 @@ const Chronicles = () => {
               <div className="flex-1 space-y-4">
                 <div className="space-y-2">
                   <p className="text-sm font-mono text-muted-foreground">{episode.date}</p>
+                  {episode.chapterNumber && (
+                    <p className="font-cormorant text-lg leading-relaxed">
+                      Chapter {episode.chapterNumber}.
+                    </p>
+                  )}
                   <h2 className="text-ink">
                     <span className="font-cormorant text-lg leading-relaxed">
                       {episode.title}
