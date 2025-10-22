@@ -1,5 +1,5 @@
 const Bulletin = () => {
-  // Format date from YYYY.MM.DD to Latin and numerical notation
+  // Format date from YYYY.MM.DD to Latin and year below
   const formatDate = (dateStr: string) => {
     const parts = dateStr.split('.');
     const year = parts[0];
@@ -30,8 +30,8 @@ const Bulletin = () => {
     };
     
     return {
-      latin: `Die ${toRoman(dayNum)}. ${monthNamesLatin[monthIndex]} ${toRoman(parseInt(year))}.`,
-      numerical: `${day}.${month}.${year}`
+      latin: `Die ${toRoman(dayNum)}. ${monthNamesLatin[monthIndex]}`,
+      year: toRoman(parseInt(year))
     };
   };
 
@@ -93,7 +93,7 @@ const Bulletin = () => {
                     {formatDate(item.date).latin}
                   </div>
                   <div className="text-iron-oxide" style={{ opacity: 0.4, fontSize: '0.85rem' }}>
-                    {formatDate(item.date).numerical}
+                    {formatDate(item.date).year}
                   </div>
                 </div>
               </div>
