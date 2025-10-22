@@ -4,7 +4,7 @@ const Shcaa = () => {
       <div className="space-y-16">
         {/* Chapter: Aphorisms */}
         <section className="space-y-6">
-          <h1 className="text-3xl font-garamond font-normal mb-8 text-left codex-title">
+          <h1 className="text-3xl font-garamond font-normal mb-8 text-left codex-title text-ink">
             Aphorisms
           </h1>
           <p className="leading-loose text-lg text-foreground">
@@ -26,7 +26,7 @@ const Shcaa = () => {
 
         {/* Chapter: Consensus Sensuum */}
         <section className="space-y-6">
-          <h2 className="text-3xl font-garamond font-normal mb-8 text-left codex-title">
+          <h2 className="text-3xl font-garamond font-normal mb-8 text-left codex-title text-ink">
             Consensus Sensuum
           </h2>
           <p className="leading-loose text-lg text-foreground">
@@ -51,7 +51,7 @@ const Shcaa = () => {
 
         {/* Chapter: Shcaa */}
         <section className="space-y-6">
-          <h2 className="text-3xl font-garamond font-normal mb-8 text-left codex-title">
+          <h2 className="text-3xl font-garamond font-normal mb-8 text-left codex-title text-ink">
             Shcaa
           </h2>
           <p className="leading-loose text-lg text-foreground">
@@ -76,7 +76,7 @@ const Shcaa = () => {
 
         {/* Chapter: Musica Imaginum */}
         <section className="space-y-6">
-          <h2 className="text-3xl font-garamond font-normal mb-8 text-left codex-title">
+          <h2 className="text-3xl font-garamond font-normal mb-8 text-left codex-title text-ink">
             Musica Imaginum
           </h2>
           <p className="leading-loose text-lg text-foreground">
