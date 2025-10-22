@@ -194,16 +194,13 @@ const Catalog = () => {
                     {/* Tracklist - Leonardo Style */}
                     <div className="space-y-2">
                       {release.tracks.map((track, index) => (
-                        <div key={index} className="text-ink space-y-0.5">
-                          <div>
-                            <span className="font-cormorant text-base leading-relaxed">
-                              {track.title}
-                            </span>
-                            <span className="font-cormorant italic text-sm text-muted-foreground ml-2" style={{ opacity: 0.7 }}>
-                              {track.gloss}
-                            </span>
-                          </div>
-                          <p className="font-mono text-xs text-muted-foreground">{track.duration}</p>
+                        <div key={index} className="text-ink">
+                          <span className="font-cormorant text-lg leading-relaxed">
+                            {track.title}, {track.duration} 
+                          </span>
+                          <span className="font-cormorant italic text-sm text-muted-foreground ml-2" style={{ opacity: 0.7 }}>
+                            {track.gloss}
+                          </span>
                         </div>
                       ))}
                     </div>
