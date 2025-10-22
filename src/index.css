@@ -395,7 +395,7 @@ div[style*="width:"], div[style*="left:"], div[style*="right:"] {
     border: 1px solid hsl(var(--border));
     padding: 0.5rem;
     font-size: 0.75rem;
-    font-family: 'DM Sans', system-ui, sans-serif;
+    font-family: 'Circular', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
     white-space: nowrap;
     opacity: 0;
     pointer-events: none;
