@@ -129,7 +129,7 @@ const Chronicles = () => {
                 </div>
                 
                 <blockquote className="text-muted-foreground leading-relaxed italic border-l-2 border-accent/30 pl-4">
-                  "{episode.quote}"
+                  {episode.quote}
                 </blockquote>
                 
                 {/* Simple Audio Player Placeholder */}
