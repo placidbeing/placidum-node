@@ -177,7 +177,7 @@ const Catalog = () => {
                       <div className="font-mono text-sm mb-2 text-iron-oxide" style={{ letterSpacing: '0.05em', fontWeight: 300 }}>
                         {release.catalog}_{release.date}
                       </div>
-                      <h2 className="font-mono text-base italic text-ink" style={{ fontWeight: 300, textTransform: 'uppercase' }}>
+                      <h2 className="font-mono text-base text-ink" style={{ fontWeight: 300, textTransform: 'uppercase' }}>
                         {release.artist} : {release.title}
                       </h2>
                     </div>
