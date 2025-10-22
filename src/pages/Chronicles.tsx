@@ -120,7 +120,7 @@ const Chronicles = () => {
               <div className="flex-1 space-y-4">
                 <div className="space-y-2">
                   <p className="text-sm font-mono text-muted-foreground">{episode.date}</p>
-                  <div className="space-y-1">
+                  <div>
                     {episode.chapterNumber && (
                       <p className="font-cormorant text-lg leading-relaxed">
                         Chapter {episode.chapterNumber}.
