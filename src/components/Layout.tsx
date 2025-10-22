@@ -51,7 +51,7 @@ const Layout = ({ children }: LayoutProps) => {
       <main>{children}</main>
       <footer className="safe-area wrap stack mt-24">
         <div className="marginalia">
-          <span className="folio-number text-2xl">Contact</span>
+          <span className="folio-number text-2xl">Details</span>
         </div>
         <div className="py-12">
           <div className="grid cols-3 gap-8">
