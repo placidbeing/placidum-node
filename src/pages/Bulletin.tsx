@@ -51,7 +51,7 @@ const Bulletin = () => {
         {news.map((item, index) => (
           <article key={index} className="note-entry relative py-8 text-left">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-              <div className="md:col-span-1 flex items-center">
+              <div className="md:col-span-1">
                 <div className="folio-number">{item.date}</div>
               </div>
               
