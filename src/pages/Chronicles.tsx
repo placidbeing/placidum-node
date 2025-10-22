@@ -125,7 +125,7 @@ const Chronicles = () => {
                       {episode.latinTitle}
                     </span>
                   </h2>
-                  <p className="font-cormorant text-lg leading-relaxed">{formatDuration(episode.duration)}</p>
+                  <p className="font-cormorant text-lg leading-relaxed text-muted-foreground">{formatDuration(episode.duration)}</p>
                 </div>
                 
                 <blockquote className="text-muted-foreground leading-relaxed italic border-l-2 border-accent/30 pl-4">
