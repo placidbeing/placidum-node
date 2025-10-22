@@ -280,7 +280,7 @@ div[style*="width:"], div[style*="left:"], div[style*="right:"] {
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Crimson Text', 'Georgia', serif;
+    font-family: 'Spectral', 'Georgia', serif;
     line-height: 1.65;
     font-size: 16px;
     background-color: hsl(var(--parchment));
