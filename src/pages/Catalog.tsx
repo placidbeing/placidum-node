@@ -11,7 +11,7 @@ const Catalog = () => {
   const releases = [
     {
       catalog: "PLUM7.",
-      date: "2025.03.15",
+      date: "20250315",
       artist: "Shcaa",
       title: "Beautiful Situation",
       artwork: beautifulSituationCover,
@@ -25,7 +25,7 @@ const Catalog = () => {
     },
     {
       catalog: "PLUM6.",
-      date: "2024.03.20",
+      date: "20240320",
       artist: "Shcaa",
       title: "Neptune",
       artwork: neptuneCover,
@@ -41,7 +41,7 @@ const Catalog = () => {
     },
     {
       catalog: "PLUM5.",
-      date: "2023.06.10",
+      date: "20230610",
       artist: "Ain°",
       title: "Interior Rooms",
       artwork: interiorRoomsCover,
@@ -58,7 +58,7 @@ const Catalog = () => {
     },
     {
       catalog: "PLUM4.",
-      date: "2023.03.25",
+      date: "20230325",
       artist: "Nocturnal Solutions",
       title: "Nocturnal Solutions",
       artwork: nocturnalSolutionsCover,
@@ -75,7 +75,7 @@ const Catalog = () => {
     },
     {
       catalog: "PLUM3.",
-      date: "2022.08.12",
+      date: "20220812",
       artist: "Shcaa",
       title: "Soft Signs",
       artwork: softSignsCover,
@@ -89,7 +89,7 @@ const Catalog = () => {
     },
     {
       catalog: "PLUM2.",
-      date: "2019.09.05",
+      date: "20190905",
       artist: "Shcaa",
       title: "Golconde",
       artwork: golcondeCover,
@@ -112,7 +112,7 @@ const Catalog = () => {
     },
     {
       catalog: "PLUM1.",
-      date: "2018.06.22",
+      date: "20180622",
       artist: "Ain°",
       title: "Hearts",
       artwork: heartsCover,
@@ -175,9 +175,9 @@ const Catalog = () => {
                     {/* Catalog Number and Date */}
                     <div className="mb-6">
                       <div className="font-mono text-sm mb-2 text-iron-oxide" style={{ letterSpacing: '0.05em' }}>
-                        {release.catalog}—{release.date}
+                        {release.catalog}_{release.date}
                       </div>
-                      <h2 className="font-mono text-xl italic text-ink">
+                      <h2 className="font-mono text-xl italic text-ink" style={{ fontWeight: 400 }}>
                         {release.artist} : {release.title}
                       </h2>
                     </div>
