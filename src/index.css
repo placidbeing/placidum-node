@@ -649,32 +649,28 @@ div[style*="width:"], div[style*="left:"], div[style*="right:"] {
   margin-bottom: 2.5rem;
 }
 
-/* Vertical Leonardo-style stroke with slight angle */
+/* Vertical Leonardo-style stroke */
 .note-entry::before {
   content: "";
   position: absolute;
   left: 0;
-  top: 1.2rem;
+  top: 0.3rem;
   width: 1.5px;
   height: 60%;
   background: hsl(var(--verdigris) / 0.7);
   opacity: 0.7;
-  transform: rotate(-2deg);
-  transform-origin: top left;
 }
 
-/* Short horizontal tick with slight angle */
+/* Short horizontal tick at top */
 .note-entry::after {
   content: "";
   position: absolute;
   left: 0;
-  top: 1.2rem;
+  top: 0.3rem;
   width: 12px;
   height: 1.5px;
   background: hsl(var(--verdigris) / 0.7);
   opacity: 0.7;
-  transform: rotate(3deg);
-  transform-origin: left center;
 }
 
 /* Mobile adjustments for notes */
