@@ -2,6 +2,16 @@ import prefaceCover from "@/assets/Preface_Duchamp.jpg";
 import chapterICover from "@/assets/Chapter_I_Klee.jpg";
 
 const Chronicles = () => {
+  // Format date from Latin to include numerical format
+  const formatDate = (latinDate: string) => {
+    // Extract day, month, year from Latin format "Die X. Decembris MMXXIV."
+    // This function just returns the date as-is for Latin and generates numerical
+    return {
+      latin: latinDate,
+      numerical: latinDate // Will be manually provided in data
+    };
+  };
+
   const formatDuration = (duration: string) => {
     const parts = duration.split(':');
     if (parts.length === 3) {
@@ -25,7 +35,8 @@ const Chronicles = () => {
       title: "Resonance Fields",
       chapterNumber: "II",
       latinTitle: "Campus Resonantiae",
-      date: "Die X. Decembris MMXXIV.",
+      dateLatin: "Die X. Decembris MMXXIV.",
+      dateNumerical: "10.12.2024",
       duration: "45:32",
       quote: "In silence, all sounds converge.",
       audioUrl: "#",
@@ -36,7 +47,8 @@ const Chronicles = () => {
       title: "A Silent Spectator",
       chapterNumber: "I",
       latinTitle: "Spectator Silentis",
-      date: "Die IX. Augusti MMXVI.",
+      dateLatin: "Die IX. Augusti MMXVI.",
+      dateNumerical: "09.08.2016",
       duration: "42:22",
       quote: "Give me that man That is not passion's slave and I will wear him In my heart's core, ay, in my heart of heart, As I do thee.",
       audioUrl: "#",
@@ -53,7 +65,8 @@ const Chronicles = () => {
       title: "Preface",
       chapterNumber: null,
       latinTitle: "Praefatio",
-      date: "Die XXII. Decembris MMXII.",
+      dateLatin: "Die XXII. Decembris MMXII.",
+      dateNumerical: "22.12.2012",
       duration: "01:01:55",
       quote: "The wind has stopped.",
       audioUrl: "#",
@@ -119,7 +132,14 @@ const Chronicles = () => {
               {/* Episode Info */}
               <div className="flex-1 space-y-4">
                 <div className="space-y-2">
-                  <p className="text-sm font-mono text-muted-foreground">{episode.date}</p>
+                  <div className="font-mono text-sm leading-tight" style={{ letterSpacing: '0.05em', fontWeight: 300 }}>
+                    <div className="text-iron-oxide" style={{ opacity: 0.6 }}>
+                      {episode.dateLatin}
+                    </div>
+                    <div className="text-iron-oxide" style={{ opacity: 0.4, fontSize: '0.85rem' }}>
+                      {episode.dateNumerical}
+                    </div>
+                  </div>
                   <div>
                     {episode.chapterNumber && (
                       <p className="font-cormorant text-lg leading-relaxed">

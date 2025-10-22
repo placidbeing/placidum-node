@@ -1,4 +1,40 @@
 const Bulletin = () => {
+  // Format date from YYYY.MM.DD to Latin and numerical notation
+  const formatDate = (dateStr: string) => {
+    const parts = dateStr.split('.');
+    const year = parts[0];
+    const month = parts[1];
+    const day = parts[2];
+    
+    const monthNamesLatin = ['Januarii', 'Februarii', 'Martii', 'Aprilis', 'Maii', 'Junii',
+                             'Julii', 'Augusti', 'Septembris', 'Octobris', 'Novembris', 'Decembris'];
+    
+    const monthIndex = parseInt(month) - 1;
+    const dayNum = parseInt(day);
+    
+    // Convert numbers to Roman numerals
+    const toRoman = (num: number): string => {
+      const romanNumerals: [number, string][] = [
+        [1000, 'M'], [900, 'CM'], [500, 'D'], [400, 'CD'],
+        [100, 'C'], [90, 'XC'], [50, 'L'], [40, 'XL'],
+        [10, 'X'], [9, 'IX'], [5, 'V'], [4, 'IV'], [1, 'I']
+      ];
+      let result = '';
+      for (const [value, numeral] of romanNumerals) {
+        while (num >= value) {
+          result += numeral;
+          num -= value;
+        }
+      }
+      return result;
+    };
+    
+    return {
+      latin: `Die ${toRoman(dayNum)}. ${monthNamesLatin[monthIndex]} ${toRoman(parseInt(year))}.`,
+      numerical: `${day}.${month}.${year}`
+    };
+  };
+
   const news = [
     {
       date: "2024.12.15",
@@ -52,7 +88,14 @@ const Bulletin = () => {
           <article key={index} className="note-entry relative py-8 text-left">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
               <div className="md:col-span-1">
-                <div className="folio-number">{item.date}</div>
+                <div className="font-mono text-sm leading-tight" style={{ letterSpacing: '0.05em', fontWeight: 300 }}>
+                  <div className="text-iron-oxide" style={{ opacity: 0.6 }}>
+                    {formatDate(item.date).latin}
+                  </div>
+                  <div className="text-iron-oxide" style={{ opacity: 0.4, fontSize: '0.85rem' }}>
+                    {formatDate(item.date).numerical}
+                  </div>
+                </div>
               </div>
               
               <div className="md:col-span-3 space-y-4">
