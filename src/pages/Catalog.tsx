@@ -7,25 +7,6 @@ import heartsCover from "@/assets/placid_I_HEARTS_naked.jpg";
 import nocturnalSolutionsCover from "@/assets/Nocturnal_Solutions_Cover.jpg";
 
 const Catalog = () => {
-  // Format date from YYYYMMDD to classical notation
-  const formatDate = (dateStr: string) => {
-    const year = dateStr.substring(0, 4);
-    const month = dateStr.substring(4, 6);
-    const day = dateStr.substring(6, 8);
-    
-    const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 
-                        'July', 'August', 'September', 'October', 'November', 'December'];
-    const romanMonths = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII'];
-    
-    const monthIndex = parseInt(month) - 1;
-    const dayNum = parseInt(day);
-    
-    return {
-      classical: `${dayNum}.${romanMonths[monthIndex]}.${year}`,
-      modern: `${dayNum} ${monthNames[monthIndex]} ${year}`
-    };
-  };
-
   // Fixed bandcamp embed rendering
   const releases = [
     {
@@ -192,18 +173,8 @@ const Catalog = () => {
                   <div className="fragment">
                     {/* Catalog Number and Date */}
                     <div className="mb-6">
-                      <div className="mb-1">
-                        <div className="font-mono text-sm text-iron-oxide" style={{ letterSpacing: '0.05em', fontWeight: 300 }}>
-                          {release.catalog}
-                        </div>
-                        <div className="font-mono text-sm leading-tight" style={{ letterSpacing: '0.05em', fontWeight: 300 }}>
-                          <div className="text-iron-oxide" style={{ opacity: 0.6 }}>
-                            {formatDate(release.date).classical}
-                          </div>
-                          <div className="text-iron-oxide" style={{ opacity: 0.4, fontSize: '0.85rem' }}>
-                            {formatDate(release.date).modern}
-                          </div>
-                        </div>
+                      <div className="font-mono text-sm mb-1 text-iron-oxide" style={{ letterSpacing: '0.05em', opacity: 0.6, fontWeight: 300 }}>
+                        {release.catalog}_{release.date}
                       </div>
                       <h2 className="font-cormorant text-2xl text-iron-oxide" style={{ fontWeight: 300, textTransform: 'uppercase' }}>
                         {release.artist} - {release.title}
