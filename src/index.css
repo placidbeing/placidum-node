@@ -493,7 +493,7 @@ div[style*="width:"], div[style*="left:"], div[style*="right:"] {
 /* ===== DESKTOP: lock to reference ===== */
 @media (min-width:1024px){
   :root{
-    --logo-size:48px;
+    --logo-size:52px;
     --motto-size:18px;
     --menu-size:18px;
     --gutter:56px;
