@@ -568,7 +568,7 @@ div[style*="width:"], div[style*="left:"], div[style*="right:"] {
     font-family: 'Crimson Text', 'Georgia', serif;
   }
   .logo-motto{
-    margin-top:-10px;
+    margin-top:-6px;
     line-height:1;
     font-size:var(--motto-size);
     color:hsl(var(--muted-foreground));
@@ -621,7 +621,7 @@ div[style*="width:"], div[style*="left:"], div[style*="right:"] {
 
   .logo-motto{
     font-size:var(--motto-size);
-    margin-top:-8px;
+    margin-top:-5px;
     line-height:1;
   }
 }
