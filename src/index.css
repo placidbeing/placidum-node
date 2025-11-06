@@ -493,7 +493,7 @@ div[style*="width:"], div[style*="left:"], div[style*="right:"] {
 /* ===== DESKTOP: lock to reference ===== */
 @media (min-width:1024px){
   :root{
-    --logo-size:52px;
+    --logo-size:48px;
     --motto-size:18px;
     --menu-size:18px;
     --gutter:56px;
@@ -568,8 +568,7 @@ div[style*="width:"], div[style*="left:"], div[style*="right:"] {
     font-family: 'Crimson Text', 'Georgia', serif;
   }
   .logo-motto{
-    margin-top:-6px;
-    line-height:1;
+    margin-top:8px;
     font-size:var(--motto-size);
     color:hsl(var(--muted-foreground));
     font-style:italic;
@@ -621,8 +620,7 @@ div[style*="width:"], div[style*="left:"], div[style*="right:"] {
 
   .logo-motto{
     font-size:var(--motto-size);
-    margin-top:-5px;
-    line-height:1;
+    margin-top: 6px;
   }
 }
 
@@ -656,20 +654,20 @@ div[style*="width:"], div[style*="left:"], div[style*="right:"] {
   content: "";
   position: absolute;
   left: 0;
-  top: 0;
+  top: 0.3rem;
   width: 1.5px;
-  height: 55%;
+  height: 60%;
   background: hsl(var(--verdigris) / 0.7);
   opacity: 0.7;
 }
 
-/* Horizontal tick crossing the vertical line */
+/* Short horizontal tick at top */
 .note-entry::after {
   content: "";
   position: absolute;
-  left: -3px;
-  top: 0.5rem;
-  width: 14px;
+  left: 0;
+  top: 0.3rem;
+  width: 12px;
   height: 1.5px;
   background: hsl(var(--verdigris) / 0.7);
   opacity: 0.7;
