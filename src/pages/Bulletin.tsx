@@ -88,7 +88,8 @@ const Bulletin = () => {
         {news.map((item, index) => (
           <article key={index} className="note-entry relative py-8 text-left">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-              <div className="md:col-span-1">
+              <div className="md:col-span-1 relative">
+                <div className="absolute top-0 left-0 w-full h-px bg-[hsl(var(--verdigris))]" style={{ opacity: 0.3 }} />
                 <div className="font-mono text-sm leading-tight" style={{ letterSpacing: '0.05em', fontWeight: 300 }}>
                   <div className="text-iron-oxide" style={{ opacity: 0.6 }}>
                     {formatDate(item.date).latin}
