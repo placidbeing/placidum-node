@@ -40,14 +40,14 @@ const Layout = ({ children }: LayoutProps) => {
 
         <div className="logo-block">
           <Link to="/" className="ink-underline inline-block">
-            <div className="flex items-center gap-0.5">
+            <div className="flex items-end gap-0.5">
               <img src={placidumLogo} alt="Placidum Logo" className="h-24 w-auto" />
               <div className="logo-wordmark font-garamond tracking-wide">
                 PLACIDUM
               </div>
             </div>
           </Link>
-          <div className="logo-motto font-garamond">
+          <div className="logo-motto font-garamond w-full">
             <em>Observationes circa Impressionum Naturam</em>
           </div>
         </div>
