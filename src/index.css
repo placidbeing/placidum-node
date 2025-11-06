@@ -656,20 +656,20 @@ div[style*="width:"], div[style*="left:"], div[style*="right:"] {
   content: "";
   position: absolute;
   left: 0;
-  top: 0.65rem;
+  top: 0;
   width: 1.5px;
-  height: 60%;
+  height: 55%;
   background: hsl(var(--verdigris) / 0.7);
   opacity: 0.7;
 }
 
-/* Short horizontal tick at top */
+/* Horizontal tick crossing the vertical line */
 .note-entry::after {
   content: "";
   position: absolute;
-  left: 0;
-  top: 0.3rem;
-  width: 12px;
+  left: -3px;
+  top: 0.5rem;
+  width: 14px;
   height: 1.5px;
   background: hsl(var(--verdigris) / 0.7);
   opacity: 0.7;
