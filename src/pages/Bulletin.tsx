@@ -89,6 +89,12 @@ const Bulletin = () => {
           <article key={index} className="note-entry relative py-8 text-left">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
               <div className="md:col-span-1 relative">
+                {index < news.length - 1 && (
+                  <div 
+                    className="absolute top-0 left-0 h-[1.5px] w-full" 
+                    style={{ background: 'hsl(var(--verdigris) / 0.7)', opacity: 0.7 }}
+                  ></div>
+                )}
                 <div className="font-mono text-sm leading-tight" style={{ letterSpacing: '0.05em', fontWeight: 300 }}>
                   <div className="text-iron-oxide" style={{ opacity: 0.6 }}>
                     {formatDate(item.date).latin}
@@ -100,12 +106,6 @@ const Bulletin = () => {
                     {formatDate(item.date).numerical}
                   </div>
                 </div>
-                {index < news.length - 1 && (
-                  <div 
-                    className="absolute bottom-0 left-0 h-[1.5px] w-full" 
-                    style={{ background: 'hsl(var(--verdigris) / 0.7)', opacity: 0.7 }}
-                  ></div>
-                )}
               </div>
               
               <div className="md:col-span-3 space-y-4">
