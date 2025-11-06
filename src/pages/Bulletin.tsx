@@ -100,7 +100,10 @@ const Bulletin = () => {
                     {formatDate(item.date).numerical}
                   </div>
                 </div>
-                <div className="mt-4 w-full h-[1.5px] bg-verdigris/40"></div>
+                <div 
+                  className="mt-4 w-full h-[1.5px]" 
+                  style={{ background: 'hsl(var(--verdigris) / 0.7)' }}
+                ></div>
               </div>
               
               <div className="md:col-span-3 space-y-4">
