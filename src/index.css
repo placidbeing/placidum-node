@@ -656,7 +656,7 @@ div[style*="width:"], div[style*="left:"], div[style*="right:"] {
   content: "";
   position: absolute;
   left: 0;
-  top: 0.3rem;
+  top: 0.65rem;
   width: 1.5px;
   height: 60%;
   background: hsl(var(--verdigris) / 0.7);
