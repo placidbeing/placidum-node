@@ -42,7 +42,7 @@ const Layout = ({ children }: LayoutProps) => {
           <Link to="/" className="ink-underline inline-block">
             <div className="flex items-stretch gap-1">
               <img src={placidumLogo} alt="Placidum Logo" className="h-32 w-auto" />
-              <div className="flex flex-col justify-end gap-0">
+              <div className="flex flex-col justify-end gap-0 pb-1">
                 <div className="logo-wordmark font-garamond tracking-wide leading-none">
                   PLACIDUM
                 </div>
