@@ -43,10 +43,10 @@ const Layout = ({ children }: LayoutProps) => {
             <div className="flex items-stretch gap-2">
               <img src={placidumLogo} alt="Placidum Logo" className="h-32 w-auto" />
               <div className="flex flex-col justify-end gap-0">
-                <div className="logo-wordmark font-garamond tracking-wide">
+                <div className="logo-wordmark font-garamond tracking-wide leading-none">
                   PLACIDUM
                 </div>
-                <div className="logo-motto font-garamond">
+                <div className="logo-motto font-garamond leading-none -mt-1">
                   <em>Observationes circa Impressionum Naturam</em>
                 </div>
               </div>
