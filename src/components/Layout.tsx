@@ -46,7 +46,7 @@ const Layout = ({ children }: LayoutProps) => {
                 <div className="logo-wordmark font-garamond tracking-wide leading-none">
                   PLACIDUM
                 </div>
-                <div className="logo-motto font-garamond leading-none -mt-1">
+                <div className="logo-motto font-garamond leading-none -mt-3">
                   <em>Observationes circa Impressionum Naturam</em>
                 </div>
               </div>
