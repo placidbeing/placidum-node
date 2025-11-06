@@ -84,40 +84,46 @@ const Bulletin = () => {
         </div>
       </header>
       
-      <div className="space-y-16">
+      <div className="space-y-0">
         {news.map((item, index) => (
-          <article key={index} className="note-entry relative py-8 text-left">
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-              <div className="md:col-span-1">
-                <div className="font-mono text-sm leading-tight" style={{ letterSpacing: '0.05em', fontWeight: 300 }}>
-                  <div className="text-iron-oxide" style={{ opacity: 0.6 }}>
-                    {formatDate(item.date).latin}
-                  </div>
-                  <div className="text-iron-oxide" style={{ opacity: 0.5, fontSize: '0.85rem' }}>
-                    {formatDate(item.date).year}
-                  </div>
-                  <div className="text-iron-oxide" style={{ opacity: 0.4, fontSize: '0.85rem' }}>
-                    {formatDate(item.date).numerical}
+          <div key={index}>
+            <article className="note-entry relative py-8 text-left">
+              <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div className="md:col-span-1">
+                  <div className="font-mono text-sm leading-tight" style={{ letterSpacing: '0.05em', fontWeight: 300 }}>
+                    <div className="text-iron-oxide" style={{ opacity: 0.6 }}>
+                      {formatDate(item.date).latin}
+                    </div>
+                    <div className="text-iron-oxide" style={{ opacity: 0.5, fontSize: '0.85rem' }}>
+                      {formatDate(item.date).year}
+                    </div>
+                    <div className="text-iron-oxide" style={{ opacity: 0.4, fontSize: '0.85rem' }}>
+                      {formatDate(item.date).numerical}
+                    </div>
                   </div>
                 </div>
-                {index < news.length - 1 && (
+                
+                <div className="md:col-span-3 space-y-4">
+                  <h2 className="annotation-hover text-xl serif" data-annotation={`Entry ${index + 1}`}>
+                    {item.title}
+                  </h2>
+                  <div className="serif leading-relaxed text-base">
+                    <p>{item.content}</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+            {index < news.length - 1 && (
+              <div className="grid grid-cols-1 md:grid-cols-4 gap-6 py-8">
+                <div className="md:col-span-1">
                   <div 
-                    className="mt-8 h-[1.5px] w-2/3" 
+                    className="h-[1.5px] w-2/3" 
                     style={{ background: 'hsl(var(--verdigris) / 0.7)', opacity: 0.7 }}
                   ></div>
-                )}
-              </div>
-              
-              <div className="md:col-span-3 space-y-4">
-                <h2 className="annotation-hover text-xl serif" data-annotation={`Entry ${index + 1}`}>
-                  {item.title}
-                </h2>
-                <div className="serif leading-relaxed text-base">
-                  <p>{item.content}</p>
                 </div>
               </div>
-            </div>
-          </article>
+            )}
+          </div>
         ))}
       </div>
         
