@@ -40,8 +40,8 @@ const Layout = ({ children }: LayoutProps) => {
 
         <div className="logo-block">
           <Link to="/" className="ink-underline inline-block">
-            <div className="flex items-center gap-4">
-              <img src={placidumLogo} alt="Placidum Logo" className="h-16 w-auto" />
+            <div className="flex items-center gap-2">
+              <img src={placidumLogo} alt="Placidum Logo" className="h-24 w-auto" />
               <div className="logo-wordmark font-garamond tracking-wide">
                 PLACIDUM
               </div>
