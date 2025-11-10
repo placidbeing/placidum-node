@@ -86,11 +86,6 @@ const Chronicles = () => {
         <h1 className="font-cormorant text-4xl font-bold mb-6 codex-title" style={{ fontVariant: 'small-caps', letterSpacing: '0.1em' }}>
           Phonic Chronicles
         </h1>
-        <div className="fragment">
-          <p className="font-cormorant text-lg leading-relaxed mb-6 max-w-2xl italic">
-            Sonic meditations on the nature of listening and creation.
-          </p>
-        </div>
       </div>
 
       <div className="space-y-12">
