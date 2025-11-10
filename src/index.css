@@ -565,7 +565,8 @@ div[style*="width:"], div[style*="left:"], div[style*="right:"] {
     line-height:1;
     letter-spacing:.06em;
     color:hsl(var(--ink));
-    font-family: 'Crimson Text', 'Georgia', serif;
+    font-family: 'Cormorant Garamond', 'Crimson Text', 'Georgia', serif;
+    font-weight: 300;
   }
   .logo-motto{
     margin-top:-6px;
