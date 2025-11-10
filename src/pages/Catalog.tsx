@@ -238,7 +238,7 @@ const Catalog = () => {
                     </div>
                     
                     {/* Tracklist - Leonardo Style */}
-                    <div className="space-y-4">
+                    <div className="space-y-4 mb-6">
                       {release.tracks.map((track, index) => (
                         <div key={index} className="text-ink">
                           <div>
@@ -253,11 +253,9 @@ const Catalog = () => {
                         </div>
                       ))}
                     </div>
-                  </div>
 
-                  {/* Bandcamp Embed */}
-                  <div className="fragment-bandcamp">
-                    <div className="mt-6 mb-6">
+                    {/* Bandcamp Embed */}
+                    <div>
                       <div dangerouslySetInnerHTML={{ __html: release.bandcampEmbed }} />
                     </div>
                   </div>
