@@ -557,7 +557,7 @@ div[style*="width:"], div[style*="left:"], div[style*="right:"] {
   }
 
   .logo-block{
-    margin-top:20px;
+    margin-top:48px;
     text-align:left;   /* anchored left under menu */
   }
   .logo-wordmark{
@@ -593,7 +593,7 @@ div[style*="width:"], div[style*="left:"], div[style*="right:"] {
     display:flex;
     flex-direction:column;
     align-items:flex-start; /* keeps PLACIDUM left */
-    gap:14px;
+    gap:32px;
   }
 
   .topline{
