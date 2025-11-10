@@ -66,7 +66,7 @@ const Bulletin = () => {
   return (
     <div className="notes-section py-20 max-w-4xl mx-auto px-6">
       <header className="notes-header mb-16 text-left">
-        <h1 className="font-cormorant text-4xl font-bold mb-6 codex-title text-ink" style={{ fontVariant: 'small-caps', letterSpacing: '0.1em' }}>
+        <h1 className="font-cormorant text-4xl font-bold mb-6 codex-title text-ultramarine" style={{ fontVariant: 'small-caps', letterSpacing: '0.1em' }}>
           Field Notes & Observations
         </h1>
         <div>
