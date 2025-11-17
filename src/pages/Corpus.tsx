@@ -53,7 +53,7 @@ const Catalog = () => {
       artwork: beautifulSituationCover,
       totalDuration: "13 min. 36 sec.",
       technicalSpecs: "scriptum ad 96 milia vibrationes / 24 puncta claritatis",
-      bandcampEmbed: '<iframe style="border: 0; width: 350px; height: 208px;" src="https://bandcamp.com/EmbeddedPlayer/album=1894036141/size=large/bgcol=333333/linkcol=e99708/artwork=none/transparent=true/" seamless><a href="https://placidum.bandcamp.com/album/beautiful-situation">Beautiful Situation by Shcaa</a></iframe>',
+      bandcampEmbed: '<iframe style="border: 0; width: 350px; height: 208px;" src="https://bandcamp.com/EmbeddedPlayer/album=1894036141/size=large/bgcol=000000/linkcol=e99708/artwork=none/transparent=true/" seamless><a href="https://placidum.bandcamp.com/album/beautiful-situation">Beautiful Situation by Shcaa</a></iframe>',
       tracks: [
         { title: "Bind (night transfer)", duration: "6 min. 59 sec.", gloss: "vinculum nocturnum" },
         { title: "Horses (coal song)", duration: "6 min. 37 sec.", gloss: "equus carbonis" }
@@ -67,7 +67,7 @@ const Catalog = () => {
       artwork: neptuneCover,
       totalDuration: "21 min. 31 sec.",
       technicalSpecs: "sonus captus ad 48 milia vibrationes / 24 partes subtilissimae",
-      bandcampEmbed: '<iframe style="border: 0; width: 350px; height: 274px;" src="https://bandcamp.com/EmbeddedPlayer/album=2314905344/size=large/bgcol=333333/linkcol=e99708/artwork=none/transparent=true/" seamless><a href="https://placidum.bandcamp.com/album/neptune">Neptune by Shcaa</a></iframe>',
+      bandcampEmbed: '<iframe style="border: 0; width: 350px; height: 274px;" src="https://bandcamp.com/EmbeddedPlayer/album=2314905344/size=large/bgcol=000000/linkcol=e99708/artwork=none/transparent=true/" seamless><a href="https://placidum.bandcamp.com/album/neptune">Neptune by Shcaa</a></iframe>',
       tracks: [
         { title: "Her Conscious Drift to Neptune's Frozen Reliefs", duration: "6 min. 38 sec.", gloss: "tractus unitatis" },
         { title: "Leviatano", duration: "6 min. 00 sec.", gloss: "sonus profundus" },
@@ -83,7 +83,7 @@ const Catalog = () => {
       artwork: interiorRoomsCover,
       totalDuration: "27 min. 36 sec.",
       technicalSpecs: "memoria impressa ad 48 milia vibrationes / 24 gradus artis",
-      bandcampEmbed: '<iframe style="border: 0; width: 100%; height: 307px;" src="https://bandcamp.com/EmbeddedPlayer/album=231561383/size=large/bgcol=333333/linkcol=e99708/artwork=none/transparent=true/" seamless><a href="https://placidum.bandcamp.com/album/interior-rooms">Interior Rooms by Ain°</a></iframe>',
+      bandcampEmbed: '<iframe style="border: 0; width: 100%; height: 307px;" src="https://bandcamp.com/EmbeddedPlayer/album=231561383/size=large/bgcol=000000/linkcol=e99708/artwork=none/transparent=true/" seamless><a href="https://placidum.bandcamp.com/album/interior-rooms">Interior Rooms by Ain°</a></iframe>',
       tracks: [
         { title: "For the Wind", duration: "5 min. 46 sec.", gloss: "pro vento" },
         { title: "Sanatoria", duration: "5 min. 30 sec.", gloss: "cura animae" },
@@ -100,7 +100,7 @@ const Catalog = () => {
       artwork: nocturnalSolutionsCover,
       totalDuration: "40 min. 32 sec.",
       technicalSpecs: "figura soni: 48 milia vibrationes / 24 rationes artis",
-      bandcampEmbed: '<iframe style="border: 0; width: 350px; height: 307px;" src="https://bandcamp.com/EmbeddedPlayer/album=971037456/size=large/bgcol=333333/linkcol=e99708/artwork=none/transparent=true/" seamless><a href="https://placidum.bandcamp.com/album/nocturnal-solutions">Nocturnal Solutions by Nocturnal Solutions</a></iframe>',
+      bandcampEmbed: '<iframe style="border: 0; width: 350px; height: 307px;" src="https://bandcamp.com/EmbeddedPlayer/album=971037456/size=large/bgcol=000000/linkcol=e99708/artwork=none/transparent=true/" seamless><a href="https://placidum.bandcamp.com/album/nocturnal-solutions">Nocturnal Solutions by Nocturnal Solutions</a></iframe>',
       tracks: [
         { title: "Nocturnal Solutions", duration: "6 min. 48 sec.", gloss: "solutio tenebrarum" },
         { title: "Ocean (Existence)", duration: "6 min. 39 sec.", gloss: "mare existentiae" },
@@ -117,7 +117,7 @@ const Catalog = () => {
       artwork: softSignsCover,
       totalDuration: "19 min. 48 sec.",
       technicalSpecs: "auditus servatus ad 48 milia vibrationes / 24 lineae subtilitatis",
-      bandcampEmbed: '<iframe style="border: 0; width: 350px; height: 208px;" src="https://bandcamp.com/EmbeddedPlayer/album=947788755/size=large/bgcol=333333/linkcol=e99708/artwork=none/transparent=true/" seamless><a href="https://placidum.bandcamp.com/album/soft-signs">Soft Signs by Shcaa</a></iframe>',
+      bandcampEmbed: '<iframe style="border: 0; width: 350px; height: 208px;" src="https://bandcamp.com/EmbeddedPlayer/album=947788755/size=large/bgcol=000000/linkcol=e99708/artwork=none/transparent=true/" seamless><a href="https://placidum.bandcamp.com/album/soft-signs">Soft Signs by Shcaa</a></iframe>',
       tracks: [
         { title: "Soft Signs", duration: "14 min. 29 sec.", gloss: "signa mollia" },
         { title: "Signs, air", duration: "5 min. 18 sec.", gloss: "signa aeris" }
@@ -131,7 +131,7 @@ const Catalog = () => {
       artwork: golcondeCover,
       totalDuration: "52 min. 54 sec.",
       technicalSpecs: "sonus captus ad 44,1 milia vibrationes / 24 partes subtilissimae",
-      bandcampEmbed: '<iframe style="border: 0; width: 350px; height: 472px;" src="https://bandcamp.com/EmbeddedPlayer/album=2860195605/size=large/bgcol=333333/linkcol=e99708/artwork=none/transparent=true/" seamless><a href="https://placidum.bandcamp.com/album/golconde">Golconde by Shcaa</a></iframe>',
+      bandcampEmbed: '<iframe style="border: 0; width: 350px; height: 472px;" src="https://bandcamp.com/EmbeddedPlayer/album=2860195605/size=large/bgcol=000000/linkcol=e99708/artwork=none/transparent=true/" seamless><a href="https://placidum.bandcamp.com/album/golconde">Golconde by Shcaa</a></iframe>',
       tracks: [
         { title: "Polokus", duration: "4 min. 45 sec.", gloss: "figura somnii" },
         { title: "Kohinor", duration: "4 min. 29 sec.", gloss: "lapis clarus" },
@@ -154,7 +154,7 @@ const Catalog = () => {
       artwork: heartsCover,
       totalDuration: "55 min. 50 sec.",
       technicalSpecs: "scriptura ad 44,1 milia vibrationes / 16 partes tenuitatis",
-      bandcampEmbed: '<iframe style="border: 0; width: 350px; height: 208px;" src="https://bandcamp.com/EmbeddedPlayer/album=2082775441/size=large/bgcol=333333/linkcol=e99708/artwork=none/transparent=true/" seamless><a href="https://placidum.bandcamp.com/album/hearts">Hearts by Ain°</a></iframe>',
+      bandcampEmbed: '<iframe style="border: 0; width: 350px; height: 208px;" src="https://bandcamp.com/EmbeddedPlayer/album=2082775441/size=large/bgcol=000000/linkcol=e99708/artwork=none/transparent=true/" seamless><a href="https://placidum.bandcamp.com/album/hearts">Hearts by Ain°</a></iframe>',
       tracks: [
         { title: "Pleading for The Grand Illusion", duration: "22 min. 56 sec.", gloss: "illusio magna" },
         { title: "Up There, Bowls Are Spinning, Hands, Fragile", duration: "32 min. 54 sec.", gloss: "manus fragiles" }
