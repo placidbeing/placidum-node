@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import placidumLogo from "@/assets/placidum-logo-l.png";
+import placidumLogo from "@/assets/placidum-logo-new.png";
 
 interface LayoutProps {
   children: React.ReactNode;
