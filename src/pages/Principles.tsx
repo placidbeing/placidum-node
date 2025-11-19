@@ -1,6 +1,6 @@
 const Shcaa = () => {
   return (
-    <div className="max-w-3xl mx-auto px-4 py-16">
+    <div className="safe-area wrap py-20">
       <div className="space-y-16">
         {/* Chapter: Aphorisms */}
         <section className="space-y-6">

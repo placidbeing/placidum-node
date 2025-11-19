@@ -81,7 +81,7 @@ const Chronicles = () => {
   ];
 
   return (
-    <div className="max-w-4xl mx-auto px-4 py-16">
+    <div className="safe-area wrap py-20">
       <div className="mb-16">
         <h1 className="font-cormorant text-4xl font-bold mb-6 codex-title" style={{ fontVariant: 'small-caps', letterSpacing: '0.1em' }}>
           Phonic Chronicles
