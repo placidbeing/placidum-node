@@ -163,9 +163,8 @@ const Catalog = () => {
   ];
 
   return (
-    <section id="corpus" className="corpus-section notebook-grid py-20">
-      <main className="corpus-main">
-        <div className="mb-16 text-left">
+    <div className="safe-area wrap py-20">
+      <div className="mb-16 text-left">
           <h1 className="font-cormorant text-4xl font-bold mb-6 codex-title" style={{ fontVariant: 'small-caps', letterSpacing: '0.1em' }}>
             Archive of Digital Folios
           </h1>
@@ -264,11 +263,7 @@ const Catalog = () => {
             </article>
           ))}
         </div>
-      </main>
-      <div className="corpus-aside marginalia">
-        <span className="folio-number">Codex Complete</span>
-      </div>
-    </section>
+    </div>
   );
 };
 
