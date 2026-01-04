@@ -5,6 +5,7 @@ import softSignsCover from "@/assets/soft_signs_is_LD.jpg";
 import golcondeCover from "@/assets/Golconde_Cover.png";
 import heartsCover from "@/assets/placid_I_HEARTS_naked.jpg";
 import nocturnalSolutionsCover from "@/assets/Nocturnal_Solutions_Cover.jpg";
+import latitudesCover from "@/assets/Latitudes_Cover.jpg";
 
 const Catalog = () => {
   // Format date from YYYYMMDD to Latin and numerical notation
@@ -45,6 +46,27 @@ const Catalog = () => {
 
   // Fixed bandcamp embed rendering
   const releases = [
+    {
+      catalog: "PLUM8.",
+      date: "20260104",
+      artist: "Ain°",
+      title: "Latitudes",
+      artwork: latitudesCover,
+      totalDuration: "32 min. 22 sec.",
+      technicalSpecs: "scriptum ad 48 milia vibrationes / 24 puncta claritatis",
+      bandcampEmbed: '<iframe style="border: 0; width: 350px; height: 373px;" src="https://bandcamp.com/EmbeddedPlayer/album=0/size=large/bgcol=000000/linkcol=e99708/artwork=none/transparent=true/" seamless><a href="https://placidum.bandcamp.com/album/latitudes">Latitudes by Ain°</a></iframe>',
+      tracks: [
+        { title: "Blues Profundo", duration: "4 min. 36 sec.", gloss: "profunditas caerulea" },
+        { title: "Cobalt", duration: "4 min. 19 sec.", gloss: "color cobalti" },
+        { title: "Ronces", duration: "3 min. 13 sec.", gloss: "spinae silvae" },
+        { title: "Sufficiently", duration: "2 min. 24 sec.", gloss: "satis esse" },
+        { title: "Espoir", duration: "5 min. 12 sec.", gloss: "spes futuri" },
+        { title: "Fontana", duration: "2 min. 27 sec.", gloss: "fons aquarum" },
+        { title: "Kama", duration: "2 min. 17 sec.", gloss: "desiderium" },
+        { title: "La Serre", duration: "2 min. 42 sec.", gloss: "hortus vitreus" },
+        { title: "Romance", duration: "2 min. 52 sec.", gloss: "amor cantus" }
+      ]
+    },
     {
       catalog: "PLUM7.",
       date: "20250315",
