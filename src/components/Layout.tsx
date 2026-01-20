@@ -11,7 +11,7 @@ const Layout = ({ children }: LayoutProps) => {
   const navItems = [
     { path: "/", label: "notes" },
     { path: "/catalog", label: "corpus" },
-    { path: "/chronicles", label: "speculations" },
+    { path: "/chronicles", label: "chronicles" },
     { path: "/shcaa", label: "principles" },
   ];
 
