@@ -10,9 +10,9 @@ const Layout = ({ children }: LayoutProps) => {
 
   const navItems = [
     { path: "/", label: "notes" },
-    { path: "/catalog", label: "corpus" },
+    { path: "/corpus", label: "corpus" },
     { path: "/chronicles", label: "chronicles" },
-    { path: "/shcaa", label: "principles" },
+    { path: "/principles", label: "principles" },
   ];
 
   return (
