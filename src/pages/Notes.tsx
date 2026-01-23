@@ -50,6 +50,38 @@ const Notes = () => {
     };
   };
 
+  // Render content with quotes in italics
+  const renderContent = (content: string) => {
+    // Split by quotes (both "..." and «...»)
+    const quotePattern = /("([^"]+)"|«([^»]+)»)/g;
+    const parts: { text: string; isQuote: boolean }[] = [];
+    let lastIndex = 0;
+    let match;
+
+    while ((match = quotePattern.exec(content)) !== null) {
+      // Add text before the quote
+      if (match.index > lastIndex) {
+        parts.push({ text: content.slice(lastIndex, match.index), isQuote: false });
+      }
+      // Add the quote (including the quote marks)
+      parts.push({ text: match[0], isQuote: true });
+      lastIndex = match.index + match[0].length;
+    }
+
+    // Add remaining text
+    if (lastIndex < content.length) {
+      parts.push({ text: content.slice(lastIndex), isQuote: false });
+    }
+
+    return parts.map((part, i) => 
+      part.isQuote ? (
+        <em key={i} className="font-garamond">{part.text}</em>
+      ) : (
+        <span key={i}>{part.text}</span>
+      )
+    );
+  };
+
   return (
     <div className="notes-section safe-area wrap py-20">
       <header className="notes-header mb-16 text-left">
@@ -99,7 +131,7 @@ const Notes = () => {
                 )}
                 {item.content && (
                   <div className="serif leading-relaxed text-base whitespace-pre-line">
-                    {item.content}
+                    {renderContent(item.content)}
                   </div>
                 )}
               </div>
