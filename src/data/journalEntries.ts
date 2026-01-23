@@ -9,9 +9,9 @@ export const journalEntries: JournalEntry[] = [
   {
     date: "2026.01.01",
     title: "",
-    content: `We know that a true meeting has taken place when there is change in us. We made room for the other and room for a part of ourselves hitherto unknown.
+    content: `"We know that a true meeting has taken place when there is change in us. We made room for the other and room for a part of ourselves hitherto unknown.
 
-There can be no meeting except in the unexpected. Beauty is always bizarre. The sudden emergence of a presence.`,
+There can be no meeting except in the unexpected. Beauty is always bizarre. The sudden emergence of a presence."`,
     isFullyItalic: true
   },
   {
