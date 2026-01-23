@@ -110,8 +110,10 @@ Coltrane — Crescent. Gabor Szabo — Galatea's Guitar, Fire Dance, My Foolish 
   },
   {
     date: "2025.04.06",
-    title: "Brussels",
-    content: "Raphael Rogiński. The Handover."
+    title: "Brussels — BRDCST",
+    content: `Church of Notre Dame aux Riches Claires, curated by Stetson. Raphael Rogiński. The Handover.
+
+The day before: Abel Ghekiere «In de verte, dit uitzicht»`
   },
   {
     date: "2024.12.01",
