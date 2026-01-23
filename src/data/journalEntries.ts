@@ -2,6 +2,7 @@ export interface JournalEntry {
   date: string; // YYYY.MM.DD format, or YYYY for year-only entries
   title: string;
   content: string;
+  isFullyItalic?: boolean;
 }
 
 export const journalEntries: JournalEntry[] = [
@@ -10,7 +11,8 @@ export const journalEntries: JournalEntry[] = [
     title: "",
     content: `We know that a true meeting has taken place when there is change in us. We made room for the other and room for a part of ourselves hitherto unknown.
 
-There can be no meeting except in the unexpected. Beauty is always bizarre. The sudden emergence of a presence.`
+There can be no meeting except in the unexpected. Beauty is always bizarre. The sudden emergence of a presence.`,
+    isFullyItalic: true
   },
   {
     date: "2025.12.15",
