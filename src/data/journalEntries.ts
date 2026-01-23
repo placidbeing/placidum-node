@@ -6,61 +6,53 @@ export interface JournalEntry {
 
 export const journalEntries: JournalEntry[] = [
   {
-    date: "2025.04.15",
-    title: "Japan, Second Trip",
-    content: `Blue on Velvet — playlist du voyage:
-
-Coltrane — Crescent. Gabor Szabo — Galatea's Guitar, Fire Dance, My Foolish Heart. The Doors — Indian Summer. Grateful Dead — Dark Star. Eden Ahbez — The Wanderer. Chico Hamilton Quintet — Blue Sands. Paul Motian Trio — It Should've Happened a Long Time Ago. Nana Mouskouri — No Moon at All. Velvet Underground — I Found a Reason. Sly and the Family Stone — In Time. Santana — Evil Ways. Fairuz — Le Beirut. Marianne Faithfull — Corrine Corina. Mel Tormé — The Windmills of Your Mind. Peggy Lee — Is That All There Is?. Vanilla Fudge — Keep Me Hangin' On. The Wings — Let Me Roll It. The Beatles — Dear Prudence. Bob Dylan — One More Cup of Coffee. Scott Walker — It's Raining Today. Jacques Brel — Les Marquises, Je suis un soir d'été. Yo La Tengo — Nowhere Near. Lewis Taylor — Lucky. Marvin Gaye — I Want You, Come Live with Me Angel. Alain Bashung — Kalabougie (rough mix).`
-  },
-  {
-    date: "2025.05.15",
+    date: "2026.01.01",
     title: "",
-    content: `Hassell:
+    content: `We know that a true meeting has taken place when there is change in us. We made room for the other and room for a part of ourselves hitherto unknown.
 
-"J'ai désormais dépassé le stade où le sujet de mon œuvre était de questionner la nature de la musique, du son, et me contente d'essayer de créer de belles choses à l'aune de certaines règles."`
+There can be no meeting except in the unexpected. Beauty is always bizarre. The sudden emergence of a presence.`
   },
   {
-    date: "2025.05.09",
-    title: "De retour du Japon",
-    content: `Yoshino.
-
-"Il est dit que la vie est un flux, une rivière, un voyage. Nous avançons perpétuellement et il n'y a pas de destination."
-
-Le présent est fait du passé et du futur. La trajectoire n'est pas linéaire, tel que le temps n'est pas absolu. Nous avançons dans le temps comme une planète et son système. Il y a des récurrences, des inerties, des micro-cycles.
-
-Le passé peut être un poids, mais il peut être également un puit d'eau fraîche — il contient notre futur, surtout le plus lointain. L'eau me plaît, elle est un vecteur pour remonter dans le temps.
-
-Dans la petite salle de bain de Yoshino, accroupi, je me rappelais, aidé par les touches turquoises, la petite salle de bain de mon enfance. Qui était uniquement pour moi, où ma mère me lavait et me parlait. Elle semblait un peu en-dehors de l'appartement. L'extérieur pouvait y entrer mais j'étais sans crainte. Cette simplicité est toujours là, elle fait partie de moi.
-
-À Yoshino, je me rends compte que la petite salle de bain est toujours là, c'est à moi de m'en rappeler. De la laisser apparaître dans ma rivière — elle éloignera doucement les souvenirs voraces et autoritaires.
-
-Les symboles sur ma voie ne sont pas des portails qui me transporteraient vers une nouvelle contrée entièrement. Mais plutôt des totems, qui m'accompagneront, et si je le permets définiront ma trajectoire.
-
-En ce sens le Japon est ancré dans mon passé lointain mais aussi je le pense dans mon futur.
-
-Paul Motian: "Playing the music is real, physically and whole. Then it's gone. But it's still there, in the air, in the mind, it exists. It's not part of technology, it's not recorded. It's part of the soul. It's there."
-
-Films: A Real Pain. Death Stranding.
-Listening: Terre Thaemlitz — Elevatorium (in the plane).`
-  },
-  {
-    date: "2025.04.06",
-    title: "Brussels",
-    content: "Raphael Rogiński. The Handover."
-  },
-  {
-    date: "2025.02.15",
+    date: "2025.12.15",
     title: "",
     content: `Dylan:
 
-"Folk music was a reality of a more brilliant dimension. It exceeded all human understanding, and if it called out to you, you could disappear and be sucked into it. It was so real, so more true to life than life itself. It was life magnified."`
+"Folk music was a reality of a more brilliant dimension. It exceeded all human understanding, and if it called out to you, you could disappear and be sucked into it. It was so real, so more true to life than life itself. It was life magnified."
+
+Sebald:
+
+"For hours I gazed at the specimens of stones in the display cases, the pyrite crystals, the dark green Siberian malachites, the Bohemian micas, granites and quartzes, jet-black basalts and isabeline calcite, and wondered on what foundations our world is built."`
   },
   {
-    date: "2025.01.15",
+    date: "2025.12.01",
     title: "",
-    content: `Hassell:
+    content: `Sebald, Austerlitz:
 
-"L'écoute verticale: écouter 'ce qui se passe MAINTENANT' — en laissant son oreille interne analyser l'entièreté du spectre sonore, en se demandant quel genre de 'formes' se manifestent."`
+"The study of history, so Hilary's thesis ran, was merely a matter of pre-formed images fixed inside our heads, on which we keep our eyes while the truth lies elsewhere, somewhere apart, in a place no one has yet discovered."
+
+"It was to this sort of phenomenon, to these spurious incursions of the unreal into the real world, to certain effects of light in a landscape spread out before us, to the reflection in a beloved person's eye, that our deepest feelings were kindled, or what we took for such."`
+  },
+  {
+    date: "2025.11.15",
+    title: "",
+    content: `Dylan:
+
+"A folk song has over a thousand faces and you must meet them all if you want to play this stuff."
+
+Hassell:
+
+"Vertical listening: listening to 'what's happening NOW' — letting your inner ear parse out the entire spectrum of sound, asking yourself what kinds of 'shapes' are being manifested."
+
+"I've gone past the stage where questioning the nature of music, of sound, was the subject matter of my work, and am content to simply try to make beautiful things according to certain rules."`
+  },
+  {
+    date: "2025.11.01",
+    title: "",
+    content: `Hassell, Atmospherics:
+
+"See music as a painting with layers, retouchings, second thoughts, with new layers erased in places so that the under-painting shows through."
+
+Pentimento — The reappearance in a painting of images, forms, or strokes that have been changed and are used as elements of a final composition.`
   },
   {
     date: "2025.10.15",
@@ -72,65 +64,93 @@ Listening: Terre Thaemlitz — Elevatorium (in the plane).`
   {
     date: "2025.10.01",
     title: "Pantelleria",
-    content: `Óscar Hahn:
+    content: `Rûmi, Le livre du dedans:
 
-Les jours passeront comme passent tous les mauvais jours de la vie
-Les vents néfastes faibliront
-Le sang de ta plaie stagnera
-L'âme errante regagnera son nid
-Ce qui hier était perdu reparaîtra
+"Comment pourrait-on parvenir à la perle en regardant simplement la mer ? Il faut un plongeur pour trouver la perle."
 
-Et tu diras face à la mer: Comment ai-je pu
-inondé sans boussole et perdu
-arriver à bon port toutes voiles déchirées?
+Óscar Hahn:
 
-Une voix te dira: Tu ne le sais donc pas?
-Le vent qui a brisé tes vaisseaux est le même que celui qui fait voler les mouettes.
+Les jours passeront comme passent tous les mauvais jours de la vie. Les vents néfastes faibliront. Le sang de ta plaie stagnera. L'âme errante regagnera son nid. Ce qui hier était perdu reparaîtra.
+
+Et tu diras face à la mer: Comment ai-je pu inondé sans boussole et perdu arriver à bon port toutes voiles déchirées?
+
+Une voix te dira: Tu ne le sais donc pas? Le vent qui a brisé tes vaisseaux est le même que celui qui fait voler les mouettes.
 
 Films: Lou Ye — Suzhou River. Wong Kar Wai — Fallen Angels. Jacques Rivette — La Belle Noiseuse. Tarkovsky — The Sacrifice. Cassavetes — Love Streams.
 
 Taste of Cherry: "My love I am flying off come to me, I'm hounded from my friend's garden, come to me. Tell me. We barely know each other. You go, I'm your friend. You stay, I'm your friend."`
   },
   {
-    date: "2024.12.15",
-    title: "",
-    content: `Dylan:
+    date: "2025.05.09",
+    title: "De retour du Japon",
+    content: `Yoshino.
 
-"A folk song has over a thousand faces and you must meet them all if you want to play this stuff."`
+"Il est dit que la vie est un flux, une rivière, un voyage. Nous avançons perpétuellement et il n'y a pas de destination."
+
+The past can be a weight, but also a well of fresh water — it contains our future, especially the most distant. Water as a vector to travel back in time.
+
+In the bathroom at Yoshino, crouching, helped by turquoise touches, I remembered the small bathroom of my childhood. Mine alone, where my mother washed me and spoke to me. It seemed slightly outside the apartment. The exterior could enter but I was without fear. This simplicity is still there, part of me.
+
+Otto Benson — Another Long Day
+
+At Yoshino, I realize the small bathroom is still there. It's up to me to remember it. To let it appear in the river — it will gently push away the voracious and authoritarian memories.
+
+Paul Motian: "Playing the music is real, physically and whole. Then it's gone. But it's still there, in the air, in the mind, it exists. It's not part of technology, it's not recorded. It's part of the soul. It's there."
+
+In the plane — Films: A Real Pain. Death Stranding. Listening: Terre Thaemlitz — Elevatorium.`
+  },
+  {
+    date: "2025.04.15",
+    title: "Japan, Second Trip",
+    content: `Blue on Velvet — playlist du voyage:
+
+Coltrane — Crescent. Gabor Szabo — Galatea's Guitar, Fire Dance, My Foolish Heart. The Doors — Indian Summer. Grateful Dead — Dark Star. Eden Ahbez — The Wanderer. Chico Hamilton Quintet — Blue Sands. Paul Motian Trio — It Should've Happened a Long Time Ago. Nana Mouskouri — No Moon at All. Velvet Underground — I Found a Reason. Sly and the Family Stone — In Time. Santana — Evil Ways. Fairuz — Le Beirut. Marianne Faithfull — Corrine Corina. Mel Tormé — The Windmills of Your Mind. Peggy Lee — Is That All There Is?. Vanilla Fudge — Keep Me Hangin' On. The Wings — Let Me Roll It. The Beatles — Dear Prudence. Bob Dylan — One More Cup of Coffee. Scott Walker — It's Raining Today. Jacques Brel — Les Marquises, Je suis un soir d'été. Yo La Tengo — Nowhere Near. Lewis Taylor — Lucky. Marvin Gaye — I Want You, Come Live with Me Angel. Alain Bashung — Kalabougie (rough mix).`
+  },
+  {
+    date: "2025.04.06",
+    title: "Brussels",
+    content: "Raphael Rogiński. The Handover."
   },
   {
     date: "2024.12.01",
     title: "Madrid",
-    content: `Plusieurs jours plongé dans les intrigues de Hideo Kojima. On cesse d'essayer de comprendre et on se laisse porter.
+    content: `Several days immersed in the intrigues of Hideo Kojima. Stop trying to understand, let yourself be carried.
 
-Les Black Paintings de Goya. Incomplètes, hors de leur état naturel, réinterprétées. Pourtant l'équilibre est là, les nuances sont magnifiques.
+Goya's Black Paintings. Incomplete, removed from their natural state, reinterpreted. Yet the balance is there, the nuances magnificent.
 
 "If you look for a meaning, you will miss everything that happens." — Nietzsche
 
-Joshua Edelman au Central Cafe (student of Barry Harris, played with Chuck Israel). La musique cubaine: Un équilibre. Les instruments interchangent leurs rôles. Percussifs et tonaux. Le rythme est constant mais ne se répète pas. La danse vient cristalliser les mélodies, le cœur, et donne de la liberté harmonique. On sort de la tonalité, sans perdre la communion.
+Joshua Edelman at Central Cafe (student of Barry Harris, played with Chuck Israel).
 
-Faire de la musique, pas des propositions en rapport avec la musique, mais la forme la plus complète qui existe. Mélodies, textures, progressions harmoniques, narration, rythmes organiques et denses, espaces émergents. Souvenirs. Une chanson, une pièce.
+Cuban music: Instruments interchange roles. Percussive and tonal. Rhythm constant but never repeating. Dance crystallizes melodies, the pulsing heart, grants harmonic freedom. Leaving tonality without losing communion.
 
-Bucolico — Plus d'éclectisme, ni de standards ni stylistique. Une richesse d'évocations certes, mais un seul et même propos, récurrent. La capacité à nommer.`
+Making music — not propositions about music, but the most complete form there is. Melodies, textures, harmonic progressions, narration, organic and dense rhythms, emergent spaces. Memories. A song, a piece.
+
+Bucolico — No more eclecticism, no standards, no stylistic posturing. A richness of evocations, yes, but one single recurring purpose. The ability to name.`
+  },
+  {
+    date: "2024.11.25",
+    title: "Perfect Days",
+    content: `Kondo a kondo / Ima wa ima
+
+"Ophir is the arrival to the safe place, now I need to bring all things past, those of great value, through the desert."`
+  },
+  {
+    date: "2024.11.15",
+    title: "Livre du Réel",
+    content: `"We are gardeners who have a plot at the back of our house. We take what we have to magnify it, to elevate it and twist it in sometimes very surprising ways."
+
+"I wish to live entirely in the real, accept its limits, the cracks in our body, accept seeing things degrade or crumble without fear."`
   },
   {
     date: "2024.11.01",
     title: "Lucy Railton",
-    content: "Ghost pads. Wind sounds like boomerangs around the space. Organic wind then synthesized — like air displacing. Frequency selection."
-  },
-  {
-    date: "2024.11.01",
-    title: "",
-    content: `Hassell, Atmospherics:
-
-"Voir la musique comme une peinture avec des couches, des retouches, des repentirs, avec de nouvelles couches effacées par endroits, de manière à ce que les motifs sous-jacents soient remis en avant."
-
-Pentimento — Résurgence dans une peinture d'images, de formes ou de traits antérieurs qui ont été modifiés et sont utilisés comme éléments d'une composition finale.`
+    content: "Ghost pads. Wind like boomerangs around space. Organic then synthesized — like air displacing. Intense frequency selection."
   },
   {
     date: "2024.10.01",
     title: "Petits Bains",
-    content: "Laurel Halo. Leila Bordreuil. Spectral harmony, complete ensemble. Underwater landscapes."
+    content: "Laurel Halo. Leila Bordreuil. Spectral harmonies, cohesive sonic ensemble. Underwater landscapes."
   },
   {
     date: "2024.09.05",
@@ -149,7 +169,7 @@ That same day: Bi Gan's Kaili Blues at the theatre.`
     title: "De retour à Paris",
     content: `Lecture de Sebald, Les Émigrants, au spa du RM. Bi Gan vu le week-end précédent.
 
-"Alors que je finissais de lire le roman de Sebald, je cherchais la vérité de ces histoires. Je voulais profondément y croire, car elles étaient pour moi la preuve de la beauté du réel. Malgré la dimension spéculative et composite des écrits de Sebald, l'authenticité des histoires reste intacte pour moi."
+"As I finished reading, I was searching for the truth of these stories. I wanted deeply to believe in them, for they were proof to me of the beauty of the real. Despite the speculative and composite nature of Sebald's writings, the authenticity of the stories remains intact for me."
 
 Les personnages sont habités de fantômes, ils cherchent sans trouver. L'éloignement spatial et temporel de leur patrie leur fait ressentir un manque qui dépasse, de manière métaphysique, leur condition vécue. Ils ressentent la hauteur et la profondeur de la vie, de l'existence, et se savent alors relativement immobiles dans cette immensité. Une hypersensibilité à la vérité et au possible.
 
@@ -163,8 +183,8 @@ Film: The Scent of Green Papaya`
   },
   {
     date: "2024.03.07",
-    title: "Anvers",
-    content: "Jacob Bro. Midori Takada."
+    title: "Anvers — Blauwe Zaal",
+    content: "Jakob Bro / Midori Takada / Jesper Zeuthen / Marilyn Mazur."
   },
   {
     date: "2023.08.01",
@@ -173,9 +193,7 @@ Film: The Scent of Green Papaya`
 
 "The closer we can get to the natural world, the sooner we start to realise we are not separate. And that when we create, we are not just expressing our unique individuality, but our seamless connection to an infinite oneness."
 
-"It is said the ocean provides a closer reflection of who we are than any mirror."
-
-"You can't step in the same stream twice because it's always flowing. Everything is."`
+"It is said the ocean provides a closer reflection of who we are than any mirror."`
   },
   {
     date: "2023.07.01",
@@ -227,7 +245,9 @@ Recording.`
   {
     date: "2023.02.02",
     title: "Leviathan",
-    content: `Lorsque les torrents étreignent la rumeur. Que les idées cessent. Les torrents rassurent. Leur bruit blanc ne se répétera jamais. Leur respiration nous enracine.
+    content: `Braque: "Le vase donne une forme au vide et la musique au silence."
+
+Lorsque les torrents étreignent la rumeur. Que les idées cessent. Les torrents rassurent. Leur bruit blanc ne se répétera jamais. Leur respiration nous enracine.
 
 Je ne souhaite plus écouter de battements imposés, séquencés. Le monde déborde d'énergies mais on y perd notre sensibilité. Un vacarme si organisé qu'il en devient inaudible. Les lumières bleues nous aveuglent.
 
@@ -244,7 +264,7 @@ Rêve: un tsunami remplit la terre d'eau. Escalade sans fin de montagnes pour é
 
 Rêve (avion du retour, au-dessus de la Mongolie glacée): Escale à Venise. Visite d'un immeuble où j'aurais vécu pendant mes années d'études. La vue sur le fleuve. Les appartements sont sublimes et spacieux. Une Venise idéale. Poissons énormes et multicolores.
 
-Sebald: "Ces voix qui traversent l'éther une fois le crépuscule venu, que seuls quelques-uns parviennent à capter, ont comme les chauves-souris leur vie propre et fuient la lumière du jour."
+Sebald: "Those voices that traverse the ether once dusk has fallen, which only a few can pick up, have a life of their own like bats, and shun the light of day."
 
 Recordings.`
   },
@@ -253,23 +273,27 @@ Recordings.`
     title: "",
     content: `Sebald:
 
-"Les souris et les taupes, les petits mammifères, séjournent eux aussi, lorsqu'ils dorment, dans un univers existant uniquement dans leur fort intérieur, et qui sait si les mites elles-mêmes ne rêvent pas, ou la laitue elle-même contemplant l'astre lunaire sous le ciel nocturne."`
+"Mice and moles, and small mammals in general, also spend their sleeping hours in a world that exists purely within themselves, and who knows, perhaps the mites dream too, or the lettuce gazing up at the moon by night."`
   },
   {
     date: "2022.11.15",
     title: "",
     content: `Stéphane Lambert sur Klee:
 
-"Klee est littéralement fasciné par ce miracle qui fait sortir les vivants de leur inexistence."
+"Klee is literally fascinated by this miracle that brings the living out of their non-existence."
 
-"Il y a en permanence chez Klee un pont subliminal entre irréalité et matérialité."`
+"There is permanently in Klee a subliminal bridge between unreality and materiality."
+
+"In Klee's compositions, this alloy reaches such a level of concentration that it gives off sometimes dizzying exhalations. The painter advances on the path of the unknowable until the vanishing of reason."
+
+"It is not colours that inhabit the works of Paul Klee, but the murmur of the spectres we shall become."`
   },
   {
     date: "2022.08.01",
     title: "",
     content: `Sebald, Austerlitz:
 
-"Alphonso nous fit un jour cette remarque, que sous nos yeux tout palissait, que les plus belles couleurs avaient déjà presque toutes disparu ou qu'on ne les trouvait plus que là où personne ne les voyait, dans les jardins aquatiques, à des dizaines de brasses sous la surface de la mer."`
+"Alphonso once remarked that it seemed to him as if all the colours had faded, as if everything beautiful was disappearing and could only be found in places where no one looked for it anymore, in underwater gardens, dozens of fathoms below the surface of the sea."`
   },
   {
     date: "2022.05.01",
@@ -277,11 +301,11 @@ Recordings.`
     content: "Recording: Pink Lime."
   },
   {
-    date: "2021.01.01",
+    date: "2021",
     title: "Thomas Mann — The Magic Mountain",
     content: `« Le monde de l'atome était extérieur et, de même, la planète Terre, que nous habitons, était selon toute probabilité un intérieur plein de profondeur, sur le plan organique. Un chercheur n'avait-il pas évoqué, dans son audace rêveuse, les « animaux de la Voie lactée », monstres cosmiques dont la chair, les os et le cerveau étaient composés de systèmes solaires? »
 
-Les rideaux de pluie miroitante s'évanouirent : la mer s'étendait, c'était une mer du Sud, d'un bleu extrêmement profond, étincelant de lueurs argentées, avec une baie magnifique, dégagée et vaporeuse d'un côté, à demi sertie dans de vastes massifs montagneux dont le bleu allait en se délavant...`
+Les rideaux de pluie miroitante s'évanouirent : la mer s'étendait, c'était une mer du Sud, d'un bleu extrêmement profond, étincelant de lueurs argentées, avec une baie magnifique, dégagée et vaporeuse d'un côté, à demi sertie dans de vastes massifs montagneux dont le bleu allait en se délavant…`
   },
   {
     date: "2019.12.19",
@@ -310,7 +334,7 @@ Les rideaux de pluie miroitante s'évanouirent : la mer s'étendait, c'était un
   },
   {
     date: "2018.08.16",
-    title: "Pharaoh's Birds",
+    title: "Faroh's Birds",
     content: `It's like a storm inside
 A weight to their songs
 Obstructing the light
@@ -375,11 +399,6 @@ Encountered Ryuichi Sakamoto in the street.`
 Plusieurs fois j'ai tenté d'écrire car mon cœur débordait, mais je restais, immobile sur le canapé délavé, orangé, du petit salon. Cette pièce en contrebas est abritée de toutes parts par un beau jardin rempli d'oiseaux."`
   },
   {
-    date: "2017.09.25",
-    title: "",
-    content: "All I can is hope to meet her in the heights of a clear night, where bones of many salvations counsel my reality, blow life into the dearest passions. The one that cannot because it was never real — a most vivid fiction of the soul."
-  },
-  {
     date: "2017.09.07",
     title: "Dakota Dreams",
     content: "Weird retake. Recording."
@@ -428,12 +447,7 @@ Faint call from the naked angle. My dream has paused, partially lost I suppose. 
   {
     date: "2017.02.02",
     title: "",
-    content: `La brume ne songe qu'à nos rires
-Elle sait voir nos leurs au déplaisir
-Laisse s'étendre dans les passages étroits la lueur de cœurs inventés.
-Personne ici n'a de cœur.
-Nous sommes une foule qui ressent sans choisir.
-Ses rues sont bordées d'incandescence qu'elle enrobe par bienveillance et obsession.`
+    content: "La brume ne songe qu'à nos rires. Elle sait voir nos leurs au déplaisir. Laisse s'étendre dans les passages étroits la lueur de cœurs inventés. Personne ici n'a de cœur. Nous sommes une foule qui ressent sans choisir. Ses rues sont bordées d'incandescence qu'elle enrobe par bienveillance et obsession."
   },
   {
     date: "2017.01.25",
@@ -443,11 +457,7 @@ Ses rues sont bordées d'incandescence qu'elle enrobe par bienveillance et obses
   {
     date: "2017.01.15",
     title: "",
-    content: `Le froid bleu de l'air qui nous retient
-L'envie que chacun a d'observer en l'autre une réponse
-Car les brûlures se font plus nettes encore que le temps
-Quelle est la marque de l'attachement?
-Lorsque une lumière vacille et qu'il se fait tard.`
+    content: "Le froid bleu de l'air qui nous retient. L'envie que chacun a d'observer en l'autre une réponse. Car les brûlures se font plus nettes encore que le temps. Quelle est la marque de l'attachement? Lorsque une lumière vacille et qu'il se fait tard."
   },
   {
     date: "2016.12.01",
@@ -490,6 +500,11 @@ Baudelaire, Les Paradis artificiels — Le goût de l'infini:
 "La femme est fatalement suggestive ; elle vit d'une autre vie que la sienne propre ; elle vit spirituellement dans les imaginations qu'elle hante et qu'elle féconde."`
   },
   {
+    date: "2016.08.09",
+    title: "",
+    content: `Second sonic collage is recorded, « A Silent Spectator » (see chronicles)`
+  },
+  {
     date: "2016.08.01",
     title: "Sicilia",
     content: "Many nights sleeping outside. Loren Connors on repeat. Epiphanies — the sparse guitar, uncertain tempo, hugely melancholic intertwined melodies against Mediterranean backdrop."
@@ -497,7 +512,11 @@ Baudelaire, Les Paradis artificiels — Le goût de l'infini:
   {
     date: "2016.07.01",
     title: "Golconde Sessions",
-    content: "South of France. Guitars layered at night. Air saturated with pine needles. Small walks under yellowish artificial light — tricked myself into believing this was quiet America. This way of working will remain."
+    content: `South of France. Guitars layered at night. Air saturated with pine needles. Small walks under yellowish artificial light — tricked myself into believing this was quiet America. This way of working will remain.
+
+Mémoires: "Doors opened very early, onto universes I could not understand but whose grandeur I felt."
+
+Arlequin. The jungle, woody and exotic mysteries (the back of my grandparents' house). The reptile aquariums.`
   },
   {
     date: "2016.05.27",
@@ -511,7 +530,7 @@ Baudelaire, Les Paradis artificiels — Le goût de l'infini:
 
 Stéphane Lambert on Klee:
 
-« L'artiste-architecte attend le moment où la théorie ne répond plus pour échafauder la structure du rêve. C'est par exemple un Départ des bateaux (1927) sur une mer nocturne. Le moindre suffit pour planter le décor. Battre la mesure dans l'obscurité. Les couleurs vives flottent dans la nuit, qui pourraient être autant d'allusions allégoriques que de simples voiliers cherchant à s'orienter. Cette position intermédiaire charge l'œuvre d'une épaisseur inédite comme si elle s'était inscrite sur un palimpseste maintes fois effacé. Les époques se fondent en un courant identique. Deux petits cercles surplombent un fin rectangle : et un visage apparaît. Quelques triangles sur des croissants de lune : et nous voilà embarqués pour l'odyssée. Dans le sommeil de l'existence, des ombres œuvrent à notre navigation. Notre image se dilue dans les eaux sombres sur lesquelles nous voguons. »`
+« L'artiste-architecte attend le moment où la théorie ne répond plus pour échafauder la structure du rêve. C'est par exemple un Départ des bateaux (1927) sur une mer nocturne. Le moindre suffit pour planter le décor. Battre la mesure dans l'obscurité. Les couleurs vives flottent dans la nuit, qui pourraient être autant d'allusions allégoriques que de simples voiliers cherchant à s'orienter. Cette position intermédiaire charge l'œuvre d'une épaisseur inédite comme si elle s'était inscrite sur un palimpseste maintes fois effacé. Les époques se fondent en un courant identique. Deux petits cercles surplombent un fin rectangle : et un visage apparaît. Quelques triangles sur des croissants de lune : et nous voilà embarqués pour l'odyssée. Dans le sommeil de l'existence, des ombres œuvrent à notre navigation. Notre image se dilue dans les eaux sombres sur lesquelles nous voguons.»`
   },
   {
     date: "2016.01.10",
@@ -529,7 +548,7 @@ Stéphane Lambert on Klee:
     content: "Mediterranean scents in an antique city. Mazy stairs."
   },
   {
-    date: "2014.01.01",
+    date: "2014",
     title: "Spot Bleu",
     content: "A set that opened doors. Cross-contaminated curations since absorbed into my language. Could not see the crowd — the lights."
   },
@@ -541,12 +560,14 @@ Stéphane Lambert on Klee:
   {
     date: "2013.04.15",
     title: "Transmission: Iz Pepla",
-    content: "For Pluie Noir."
+    content: `For Pluie Noir.
+
+https://soundcloud.com/pluie-noir/pluie-noir-podcast-028`
   },
   {
     date: "2013.03.21",
     title: "Moscow, Early Spring",
-    content: "Winter persists. A track called A dombon materializes. Tropical assumptions, vocoded French, a Dostoevskian shadow. Reading Tender Is the Night. A sentence yields \"Placid Strait.\" For now, a vague alias. Nothing more."
+    content: `Winter persists. A track called A dombon materializes. Tropical assumptions, vocoded French, a Dostoevskian shadow. Reading Tender Is the Night. A sentence yields "Placid Strait." For now, a vague alias. Nothing more.`
   },
   {
     date: "2012.02.15",
@@ -557,12 +578,5 @@ Stéphane Lambert on Klee:
     date: "2012.02.12",
     title: "Praeludium",
     content: "London, third winter. End of a cycle, apparent now. High fever, things refusing alignment. Without knowing it, back where it began. A dream of chamber music — texture and hidden melodies in conversation. Time released. Later that season: trains ascending Swiss mountains, War & Peace open on my lap. Something behind the peak. Keep climbing."
-  },
+  }
 ];
-
-// Sort entries by date (newest first)
-export const sortedJournalEntries = [...journalEntries].sort((a, b) => {
-  const dateA = a.date.replace(/\./g, '');
-  const dateB = b.date.replace(/\./g, '');
-  return dateB.localeCompare(dateA);
-});
