@@ -1,4 +1,7 @@
-import { sortedJournalEntries } from '@/data/journalEntries';
+import { journalEntries } from '@/data/journalEntries';
+
+// Sort entries by date descending
+const sortedJournalEntries = [...journalEntries].sort((a, b) => b.date.localeCompare(a.date));
 
 const Notes = () => {
   // Format date from YYYY.MM.DD to Latin and year below
