@@ -103,10 +103,8 @@ In the plane — Films: A Real Pain. Death Stranding. Listening: Terre Thaemlitz
   },
   {
     date: "2025.04.15",
-    title: "Japan, Second Trip",
-    content: `Blue on Velvet — playlist du voyage:
-
-Coltrane — Crescent. Gabor Szabo — Galatea's Guitar, Fire Dance, My Foolish Heart. The Doors — Indian Summer. Grateful Dead — Dark Star. Eden Ahbez — The Wanderer. Chico Hamilton Quintet — Blue Sands. Paul Motian Trio — It Should've Happened a Long Time Ago. Nana Mouskouri — No Moon at All. Velvet Underground — I Found a Reason. Sly and the Family Stone — In Time. Santana — Evil Ways. Fairuz — Le Beirut. Marianne Faithfull — Corrine Corina. Mel Tormé — The Windmills of Your Mind. Peggy Lee — Is That All There Is?. Vanilla Fudge — Keep Me Hangin' On. The Wings — Let Me Roll It. The Beatles — Dear Prudence. Bob Dylan — One More Cup of Coffee. Scott Walker — It's Raining Today. Jacques Brel — Les Marquises, Je suis un soir d'été. Yo La Tengo — Nowhere Near. Lewis Taylor — Lucky. Marvin Gaye — I Want You, Come Live with Me Angel. Alain Bashung — Kalabougie (rough mix).`
+    title: "Blue On Velvet",
+    content: `Coltrane — Crescent. Gabor Szabo — Galatea's Guitar, Fire Dance, My Foolish Heart. The Doors — Indian Summer. Grateful Dead — Dark Star. Eden Ahbez — The Wanderer. Chico Hamilton Quintet — Blue Sands. Paul Motian Trio — It Should've Happened a Long Time Ago. Nana Mouskouri — No Moon at All. Velvet Underground — I Found a Reason. Sly and the Family Stone — In Time. Santana — Evil Ways. Fairuz — Le Beirut. Marianne Faithfull — Corrine Corina. Mel Tormé — The Windmills of Your Mind. Peggy Lee — Is That All There Is?. Vanilla Fudge — Keep Me Hangin' On. The Wings — Let Me Roll It. The Beatles — Dear Prudence. Bob Dylan — One More Cup of Coffee. Scott Walker — It's Raining Today. Jacques Brel — Les Marquises, Je suis un soir d'été. Yo La Tengo — Nowhere Near. Lewis Taylor — Lucky. Marvin Gaye — I Want You, Come Live with Me Angel. Alain Bashung — Kalabougie (rough mix).`
   },
   {
     date: "2025.04.06",
