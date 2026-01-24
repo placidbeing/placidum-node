@@ -22,6 +22,8 @@ import papaya1 from '@/assets/papaya/papaya-1.png';
 import papaya2 from '@/assets/papaya/papaya-2.png';
 import papaya3 from '@/assets/papaya/papaya-3.png';
 import papaya4 from '@/assets/papaya/papaya-4.png';
+import midori1 from '@/assets/brdcst/midori-1.jpg';
+import jelinek1 from '@/assets/brdcst/jelinek-1.jpg';
 
 export interface JournalMedia {
   type: 'image' | 'audio' | 'gallery';
@@ -462,7 +464,13 @@ Leaving me cold, vague, with sympathy for their melody.`
   {
     date: "2018.04.17",
     title: "Union Chapel",
-    content: "Jan Jelinek and Midori Takada."
+    content: "Jan Jelinek and Midori Takada.",
+    contentBlocks: [
+      {
+        type: 'vertical-gallery',
+        images: [midori1, jelinek1]
+      }
+    ]
   },
   {
     date: "2018.03.11",
