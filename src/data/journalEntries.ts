@@ -290,13 +290,13 @@ Recordings.`
     title: "",
     content: `Stéphane Lambert sur Klee:
 
-"Klee is literally fascinated by this miracle that brings the living out of their non-existence."
+« Klee est littéralement fasciné par ce miracle qui fait sortir les vivants de leur inexistence. »
 
-"There is permanently in Klee a subliminal bridge between unreality and materiality."
+« Il y a en permanence chez Klee un pont subliminal entre irréalité et matérialité. »
 
-"In Klee's compositions, this alloy reaches such a level of concentration that it gives off sometimes dizzying exhalations. The painter advances on the path of the unknowable until the vanishing of reason."
+« Chez Klee, cet alliage atteint un tel degré de concentration qu'il dégage des exhalaisons parfois vertigineuses. Le peintre avance sur le chemin de l'inconnaissable jusqu'à l'évanouissement de la raison. »
 
-"It is not colours that inhabit the works of Paul Klee, but the murmur of the spectres we shall become."`
+« Ce ne sont pas des couleurs qui habitent les œuvres de Paul Klee, mais le murmure des spectres que nous deviendrons. »`
   },
   {
     date: "2022.08.19",
