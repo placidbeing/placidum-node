@@ -32,6 +32,7 @@ import seaJungle1 from '@/assets/sea/sea-jungle-1.jpg';
 import seaDark from '@/assets/sea/sea-dark.jpg';
 import seaFern from '@/assets/sea/sea-fern.jpg';
 import dordogne1 from '@/assets/dordogne/dordogne-1.jpg';
+import spotbleu1 from '@/assets/spotbleu/spotbleu-1.png';
 
 export interface JournalMedia {
   type: 'image' | 'audio' | 'gallery';
@@ -710,7 +711,13 @@ Stéphane Lambert on Klee:
   {
     date: "2014",
     title: "Spot Bleu",
-    content: "A set that opened doors. Cross-contaminated curations since absorbed into my language. Could not see the crowd — the lights."
+    content: "A set that opened doors. Cross-contaminated curations since absorbed into my language. Could not see the crowd — the lights.",
+    contentBlocks: [
+      {
+        type: 'vertical-gallery',
+        images: [spotbleu1]
+      }
+    ]
   },
   {
     date: "2013.07.01",
