@@ -39,6 +39,8 @@ import dubaiCreek from '@/assets/dubai/dubai-creek.jpg';
 import siciliaTerrace from '@/assets/sicilia/sicilia-terrace.jpg';
 import kleeYoungLady from '@/assets/klee-young-lady.jpg';
 import pacificGarden from '@/assets/pacific/pacific-garden.jpg';
+import newyorkStudio from '@/assets/newyork/newyork-studio.jpg';
+import placidumMap from '@/assets/newyork/placidum-map.jpg';
 
 export interface JournalMedia {
   type: 'image' | 'audio' | 'gallery';
@@ -552,9 +554,7 @@ Soundtrack: Basinski — Cascade. Low — Lullaby.`,
     title: "Village Vanguard",
     content: `Bill Frisell & The Bad Plus.
 
-Unsung Heroes. Into the Animal Race. Let Me In. Rag. Live to Tell.
-
-Placidum — concept laid down. Logo emerges through archive research.`
+Unsung Heroes. Into the Animal Race. Let Me In. Rag. Live to Tell.`
   },
   {
     date: "2017.10.01",
@@ -563,7 +563,25 @@ Placidum — concept laid down. Logo emerges through archive research.`
 
 Bill Frisell. John Zorn. Tyshawn Sorey. Marc Ribot. Jimi Hendrix at the Bunker. Alan Vega exhibition. Matana Roberts. Cécile McLorin Salvant.
 
-Encountered Ryuichi Sakamoto in the street.`
+Encountered Ryuichi Sakamoto in the street.`,
+    contentBlocks: [
+      {
+        type: 'vertical-gallery',
+        images: [newyorkStudio],
+        aspectRatio: '1:1'
+      },
+      {
+        type: 'text',
+        text: `Placidum — concept laid down. Logo emerges through archive research.
+
+Also finalized a second track for my R&S Records 12".`
+      },
+      {
+        type: 'vertical-gallery',
+        images: [placidumMap],
+        aspectRatio: '1:1'
+      }
+    ]
   },
   {
     date: "2017.09.25",
