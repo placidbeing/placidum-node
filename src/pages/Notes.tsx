@@ -130,7 +130,7 @@ const Notes = () => {
                   </h2>
                 )}
                 {item.content && (
-                  <div className={`serif leading-relaxed text-lg whitespace-pre-line ${item.isFullyItalic ? 'font-garamond italic' : ''}`}>
+                  <div className={`serif leading-relaxed text-xl whitespace-pre-line ${item.isFullyItalic ? 'font-garamond italic' : ''}`}>
                     {item.isFullyItalic ? item.content : renderContent(item.content)}
                   </div>
                 )}
