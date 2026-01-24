@@ -142,9 +142,9 @@ const Notes = () => {
                       {item.isFullyItalic ? block.text : renderContent(block.text)}
                     </div>
                   ) : block.type === 'gallery' && block.images ? (
-                    <div key={blockIndex} className="flex gap-2 my-4">
+                    <div key={blockIndex} className="flex gap-3 my-5">
                       {block.images.map((src: string, imgIndex: number) => (
-                        <div key={imgIndex} className="flex-shrink-0 w-24 h-24 overflow-hidden">
+                        <div key={imgIndex} className="flex-shrink-0 w-32 h-32 overflow-hidden">
                           <img 
                             src={src} 
                             alt={`Gallery image ${imgIndex + 1}`}
