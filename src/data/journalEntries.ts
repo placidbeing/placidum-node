@@ -567,7 +567,7 @@ Encountered Ryuichi Sakamoto in the street.`,
     contentBlocks: [
       {
         type: 'text',
-        text: `Placidum — concept laid down. Logo emerges through archive research.`
+        text: `Placidum — concept laid down. Different versions of the logo slowly emerge through archive research.`
       },
       {
         type: 'vertical-gallery',
