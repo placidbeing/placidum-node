@@ -1,4 +1,5 @@
 import { journalEntries } from '@/data/journalEntries';
+import JournalMedia from '@/components/JournalMedia';
 
 // Sort entries by date descending
 const sortedJournalEntries = [...journalEntries].sort((a, b) => b.date.localeCompare(a.date));
@@ -132,6 +133,14 @@ const Notes = () => {
                 {item.content && (
                   <div className={`serif leading-relaxed text-[1.1875rem] whitespace-pre-line ${item.isFullyItalic ? 'font-garamond italic' : ''}`}>
                     {item.isFullyItalic ? item.content : renderContent(item.content)}
+                  </div>
+                )}
+                {/* Render media after content - Sebald style */}
+                {item.media && item.media.length > 0 && (
+                  <div className="journal-media-container mt-6 space-y-4">
+                    {item.media.map((mediaItem, mediaIndex) => (
+                      <JournalMedia key={mediaIndex} media={mediaItem} />
+                    ))}
                   </div>
                 )}
               </div>

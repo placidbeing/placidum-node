@@ -1,8 +1,16 @@
+export interface JournalMedia {
+  type: 'image' | 'audio';
+  src: string; // Path to asset or URL
+  caption?: string; // Optional caption below media
+  position?: 'inline' | 'after'; // 'inline' interrupts text, 'after' appears at end (default: 'after')
+}
+
 export interface JournalEntry {
   date: string; // YYYY.MM.DD format, or YYYY for year-only entries
   title: string;
   content: string;
   isFullyItalic?: boolean;
+  media?: JournalMedia[]; // Optional media attachments
 }
 
 export const journalEntries: JournalEntry[] = [
