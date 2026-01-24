@@ -23,7 +23,7 @@ There can be no meeting except in the unexpected. Beauty is always bizarre. The 
     isFullyItalic: true
   },
   {
-    date: "2025.12.15",
+    date: "2025.12.11",
     title: "",
     content: `Dylan:
 
@@ -34,7 +34,7 @@ Sebald:
 "For hours I gazed at the specimens of stones in the display cases, the pyrite crystals, the dark green Siberian malachites, the Bohemian micas, granites and quartzes, jet-black basalts and isabeline calcite, and wondered on what foundations our world is built."`
   },
   {
-    date: "2025.12.01",
+    date: "2025.12.03",
     title: "",
     content: `Sebald, Austerlitz:
 
@@ -43,7 +43,7 @@ Sebald:
 "It was to this sort of phenomenon, to these spurious incursions of the unreal into the real world, to certain effects of light in a landscape spread out before us, to the reflection in a beloved person's eye, that our deepest feelings were kindled, or what we took for such."`
   },
   {
-    date: "2025.11.15",
+    date: "2025.11.27",
     title: "",
     content: `Dylan:
 
@@ -56,7 +56,7 @@ Hassell:
 "I've gone past the stage where questioning the nature of music, of sound, was the subject matter of my work, and am content to simply try to make beautiful things according to certain rules."`
   },
   {
-    date: "2025.11.01",
+    date: "2025.11.04",
     title: "",
     content: `Hassell, Atmospherics:
 
@@ -65,7 +65,7 @@ Hassell:
 Pentimento — The reappearance in a painting of images, forms, or strokes that have been changed and are used as elements of a final composition.`
   },
   {
-    date: "2025.10.15",
+    date: "2025.10.18",
     title: "",
     content: `Dylan, Chronicles:
 
@@ -246,7 +246,7 @@ Cold, feverish, walking out of Paris to suburban reaches. Streets quiet and comf
 Recording.`
   },
   {
-    date: "2023.02.05",
+    date: "2023.02.06",
     title: "",
     content: `Bachelard, L'Air et les songes:
 
@@ -279,14 +279,14 @@ Sebald: "Those voices that traverse the ether once dusk has fallen, which only a
 Recordings.`
   },
   {
-    date: "2023.01.01",
+    date: "2023.01.07",
     title: "",
     content: `Sebald:
 
 "Mice and moles, and small mammals in general, also spend their sleeping hours in a world that exists purely within themselves, and who knows, perhaps the mites dream too, or the lettuce gazing up at the moon by night."`
   },
   {
-    date: "2022.11.15",
+    date: "2022.11.09",
     title: "",
     content: `Stéphane Lambert sur Klee:
 
@@ -299,7 +299,7 @@ Recordings.`
 "It is not colours that inhabit the works of Paul Klee, but the murmur of the spectres we shall become."`
   },
   {
-    date: "2022.08.01",
+    date: "2022.08.19",
     title: "",
     content: `Sebald, Austerlitz:
 
@@ -446,7 +446,7 @@ Faint call from the naked angle. My dream has paused, partially lost I suppose. 
     content: "Les mots se plissent, doucement, puis se voilent tant ces pensées sont réelles, trop grandes pour une âme sans courage. Elle arracha l'horloge du mur et brisa le verre. J'aimais les yeux fatigués, car ils ne récitent plus. C'est ça le jazz. La cadence des vents. Les cycles millénaires. La minute de trop."
   },
   {
-    date: "2017.02.15",
+    date: "2017.02.17",
     title: "",
     content: `Baudelaire, Les Paradis artificiels — III. Le Théâtre de Séraphin:
 
@@ -475,7 +475,7 @@ Faint call from the naked angle. My dream has paused, partially lost I suppose. 
     content: "Bought a guitar in the desert. Named it Aino — reading Sándor Márai at the time. This instrument, that feeling, will become the embodiment of a series: Hearts, Interior Rooms, Latitudes. A decade of sonic evolution."
   },
   {
-    date: "2016.11.21",
+    date: "2016.11.23",
     title: "",
     content: `"Ce jour d'août la main pesait sur moi, la sève de ma vie s'était asséchée comme dans la chaleur sèche de l'été."
 
@@ -484,7 +484,7 @@ Baudelaire, Les Paradis artificiels — Le goût de l'infini:
 "Il est des jours où l'homme s'éveille avec un génie jeune et vigoureux ; ses paupières à peine déchargées du sommeil qui les scellait, le monde s'offre à lui avec un relief puissant, une netteté de contours, une richesse de couleurs admirables ; le monde moral ouvre ses vastes perspectives pleines de clartés nouvelles."`
   },
   {
-    date: "2016.10.15",
+    date: "2016.10.08",
     title: "",
     content: `Baudelaire, Les Paradis artificiels — Le poème du Hachisch, I. Le goût de l'infini:
 
@@ -501,7 +501,7 @@ Baudelaire, Les Paradis artificiels — Le goût de l'infini:
     content: "Opening for Hans Joachim Roedelius and Christopher Chaplin. Visual collaboration with Dream Rec. A new kind of set."
   },
   {
-    date: "2016.08.15",
+    date: "2016.08.17",
     title: "",
     content: `Baudelaire, dédicace à J.G.F. des Paradis artificiels:
 
