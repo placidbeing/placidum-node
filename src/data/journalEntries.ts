@@ -438,6 +438,13 @@ J'ai besoin d'écouter les éléments, un environnement vide d'idées. Watson. F
 Les rideaux de pluie miroitante s'évanouirent : la mer s'étendait, c'était une mer du Sud, d'un bleu extrêmement profond, étincelant de lueurs argentées, avec une baie magnifique, dégagée et vaporeuse d'un côté, à demi sertie dans de vastes massifs montagneux dont le bleu allait en se délavant…`
   },
   {
+    date: "2020.08.29",
+    title: "Richard Brody on Bird",
+    content: `"People could and did dance to Parker's music, but it was essentially concert music; it wouldn't have served to back a floor show. With its intricate harmonies, Parker—nicknamed Bird—turned soloing into a jittery and skittering rope dance of chord changes that made his melodic inventiveness, his depth of feeling, his supersonic virtuosity, and his mercurial imagination all the more astounding.
+
+Parker's music had an effect akin to that of Welles's deep-focus complexities in 'Citizen Kane,' uniting the foreground and the background, rendering the complex musical framework conspicuous. Like Abstract Expressionism, it rendered the surfaces of music turbulent and cosmically intricate."`
+  },
+  {
     date: "2020.04.04",
     title: "9128.live — Astral Industries Takeover",
     content: `Premier confinement.
