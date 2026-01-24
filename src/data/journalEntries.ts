@@ -82,7 +82,7 @@ export interface JournalEntry {
 
 export const journalEntries: JournalEntry[] = [
   {
-    date: "2023.03.30",
+    date: "2024.03.30",
     title: "NIVHEK at Presences",
     content: `ENGINE / approx. 35'
 
