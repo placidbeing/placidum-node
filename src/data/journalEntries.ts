@@ -59,7 +59,7 @@ export interface ContentBlock {
   audioSrc?: string;
   audioTitle?: string;
   audioSubtitle?: string;
-  aspectRatio?: '16:9' | '16:7' | '4:3' | '1:1'; // Optional aspect ratio for images
+  aspectRatio?: '16:9' | '16:7' | '16:6' | '4:3' | '1:1'; // Optional aspect ratio for images
 }
 
 export interface JournalEntry {
@@ -572,7 +572,7 @@ Encountered Ryuichi Sakamoto in the street.`,
       {
         type: 'vertical-gallery',
         images: [placidumMap],
-        aspectRatio: '16:7'
+        aspectRatio: '16:6'
       },
       {
         type: 'text',

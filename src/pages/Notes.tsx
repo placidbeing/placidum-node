@@ -194,11 +194,11 @@ const Notes = () => {
                       ))}
                     </div>
                   ) : block.type === 'vertical-gallery' && block.images ? (
-                    <figure key={blockIndex} className="flex flex-col gap-4 my-6 max-w-lg">
+                    <figure key={blockIndex} className="flex flex-col gap-4 my-6 max-w-sm">
                       {block.images.map((src: string, imgIndex: number) => (
                         <div 
                           key={imgIndex} 
-                          className={`w-full overflow-hidden ${block.aspectRatio === '16:9' ? 'aspect-video' : block.aspectRatio === '16:7' ? 'aspect-[16/7]' : block.aspectRatio === '4:3' ? 'aspect-[4/3]' : block.aspectRatio === '1:1' ? 'aspect-square' : ''}`}
+                          className={`w-full overflow-hidden ${block.aspectRatio === '16:9' ? 'aspect-video' : block.aspectRatio === '16:7' ? 'aspect-[16/7]' : block.aspectRatio === '16:6' ? 'aspect-[16/6]' : block.aspectRatio === '4:3' ? 'aspect-[4/3]' : block.aspectRatio === '1:1' ? 'aspect-square' : ''}`}
                         >
                           <ImageLightbox 
                             src={src} 
