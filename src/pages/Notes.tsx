@@ -155,17 +155,28 @@ const Notes = () => {
                       ))}
                     </div>
                   ) : block.type === 'vertical-gallery' && block.images ? (
-                    <div key={blockIndex} className="flex flex-col gap-4 my-6 max-w-lg">
+                    <figure key={blockIndex} className="flex flex-col gap-4 my-6 max-w-lg">
                       {block.images.map((src: string, imgIndex: number) => (
-                        <div key={imgIndex} className="w-full aspect-video overflow-hidden">
+                        <div key={imgIndex} className="w-full overflow-hidden">
                           <ImageLightbox 
                             src={src} 
-                            alt={`Gallery image ${imgIndex + 1}`}
-                            className="w-full h-full object-cover grayscale-[30%] opacity-80 hover:opacity-100 hover:grayscale-0 transition-all duration-500"
+                            alt={block.caption || `Gallery image ${imgIndex + 1}`}
+                            className="w-full h-auto object-contain grayscale-[30%] opacity-80 hover:opacity-100 hover:grayscale-0 transition-all duration-500"
                           />
                         </div>
                       ))}
-                    </div>
+                      {block.caption && (
+                        <figcaption className="text-sm text-muted-foreground font-mono italic opacity-70 whitespace-pre-line">
+                          {block.captionLink ? (
+                            <a href={block.captionLink} target="_blank" rel="noopener noreferrer" className="hover:opacity-100 transition-opacity">
+                              {block.caption}
+                            </a>
+                          ) : (
+                            block.caption
+                          )}
+                        </figcaption>
+                      )}
+                    </figure>
                   ) : null
                 ))}
                 {/* Render inline media between content sections */}
