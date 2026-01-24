@@ -255,9 +255,14 @@ Bucolico — No more eclecticism, no standards, no stylistic posturing. A richne
     content: "Ghost pads. Wind like boomerangs around space. Organic then synthesized — like air displacing. Intense frequency selection."
   },
   {
-    date: "2024.10.01",
-    title: "Petits Bains",
-    content: "Laurel Halo. Leila Bordreuil. Spectral harmonies, cohesive sonic ensemble. Underwater landscapes."
+    date: "2024.11.01",
+    title: "Lucy Railton at Presences",
+    content: ""
+  },
+  {
+    date: "2024.10.14",
+    title: "Laurel Halo & Leila Bordreuil at Petits Bains",
+    content: "Spectral harmonies, cohesive sonic ensemble. Underwater landscapes."
   },
   {
     date: "2024.09.05",
