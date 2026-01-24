@@ -255,7 +255,7 @@ Bucolico — No more eclecticism, no standards, no stylistic posturing. A richne
 That same day: Bi Gan's Kaili Blues at the theatre.`
   },
   {
-    date: "2024.03.31",
+    date: "2024.04.27",
     title: "De retour à Paris",
     content: `Lecture de Sebald, Les Émigrants, au spa du RM. Bi Gan vu le week-end précédent.
 
