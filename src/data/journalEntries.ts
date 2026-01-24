@@ -574,7 +574,8 @@ Plusieurs fois j'ai tenté d'écrire car mon cœur débordait, mais je restais, 
     contentBlocks: [
       {
         type: 'vertical-gallery',
-        images: [pacificGarden]
+        images: [pacificGarden],
+        aspectRatio: '1:1'
       }
     ]
   },
