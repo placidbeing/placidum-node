@@ -729,3 +729,30 @@ div[style*="width:"], div[style*="left:"], div[style*="right:"] {
     margin: 0 !important;
   }
 }
+
+/* Sebald-style journal media */
+.journal-media {
+  max-width: 24rem;
+  margin-left: 0;
+}
+
+.journal-media-image img {
+  border: none;
+  box-shadow: none;
+}
+
+.journal-media-audio audio {
+  height: 32px;
+  opacity: 0.7;
+}
+
+.journal-media-audio audio:hover {
+  opacity: 1;
+}
+
+/* Subtle appearance for media captions */
+.journal-media figcaption {
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  opacity: 0.5;
+}
