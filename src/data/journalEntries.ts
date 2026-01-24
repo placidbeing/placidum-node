@@ -38,6 +38,7 @@ import pigallePlants from '@/assets/pigalle/pigalle-plants.jpg';
 import dubaiCreek from '@/assets/dubai/dubai-creek.jpg';
 import siciliaTerrace from '@/assets/sicilia/sicilia-terrace.jpg';
 import kleeYoungLady from '@/assets/klee-young-lady.jpg';
+import pacificGarden from '@/assets/pacific/pacific-garden.jpg';
 
 export interface JournalMedia {
   type: 'image' | 'audio' | 'gallery';
@@ -566,10 +567,16 @@ Encountered Ryuichi Sakamoto in the street.`
   },
   {
     date: "2017.09.25",
-    title: "1 Semaine à NY",
-    content: `"Les derniers jours m'ont submergé d'un sentiment de plénitude, effaçant le vide, repoussant l'obscurité pressante de mes rêves éphémères.
+    title: "Pacific Street",
+    content: `"Les derniers jours m'ont submergé d'un sentiment de plénitude, effaçant le vide, repoussant l'obscurité
 
-Plusieurs fois j'ai tenté d'écrire car mon cœur débordait, mais je restais, immobile sur le canapé délavé, orangé, du petit salon. Cette pièce en contrebas est abritée de toutes parts par un beau jardin rempli d'oiseaux."`
+Plusieurs fois j'ai tenté d'écrire car mon cœur débordait, mais je restais, immobile, sur le canapé délavé, orangé, du petit salon. Cette pièce en contrebas est abritée de toutes parts par un beau jardin rempli d'oiseaux."`,
+    contentBlocks: [
+      {
+        type: 'vertical-gallery',
+        images: [pacificGarden]
+      }
+    ]
   },
   {
     date: "2017.09.07",
