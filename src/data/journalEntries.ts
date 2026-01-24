@@ -33,6 +33,7 @@ import seaDark from '@/assets/sea/sea-dark.jpg';
 import seaFern from '@/assets/sea/sea-fern.jpg';
 import dordogne1 from '@/assets/dordogne/dordogne-1.jpg';
 import spotbleu1 from '@/assets/spotbleu/spotbleu-1.png';
+import romaNight from '@/assets/roma/roma-night.jpg';
 
 export interface JournalMedia {
   type: 'image' | 'audio' | 'gallery';
@@ -706,7 +707,13 @@ Stéphane Lambert on Klee:
   {
     date: "2015.01.01",
     title: "Roma",
-    content: "Mediterranean scents in an antique city. Mazy stairs."
+    content: "Mediterranean scents in an antique city. Mazy stairs.",
+    contentBlocks: [
+      {
+        type: 'gallery',
+        images: [romaNight]
+      }
+    ]
   },
   {
     date: "2014",
