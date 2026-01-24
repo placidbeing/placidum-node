@@ -86,7 +86,7 @@ Et tu diras face à la mer: Comment ai-je pu inondé sans boussole et perdu arri
 
 Une voix te dira: Tu ne le sais donc pas? Le vent qui a brisé tes vaisseaux est le même que celui qui fait voler les mouettes.
 
-Films: Lou Ye — Suzhou River. Wong Kar Wai — Fallen Angels. Jacques Rivette — La Belle Noiseuse. Tarkovsky — The Sacrifice. Cassavetes — Love Streams.
+Films: Lou Ye — Suzhou River. Wong Kar Wai — Fallen Angels. Jacques Rivette — La Belle Noiseuse. Tarkovsky — The Sacrifice. Cassavetes — Love Streams. Stephen Kijak — Scott Walker: 30 Century Man.
 
 Taste of Cherry: "My love I am flying off come to me, I'm hounded from my friend's garden, come to me. Tell me. We barely know each other. You go, I'm your friend. You stay, I'm your friend."`
   },
