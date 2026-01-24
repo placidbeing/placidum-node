@@ -37,6 +37,7 @@ import romaNight from '@/assets/roma/roma-night.jpg';
 import pigallePlants from '@/assets/pigalle/pigalle-plants.jpg';
 import dubaiCreek from '@/assets/dubai/dubai-creek.jpg';
 import siciliaTerrace from '@/assets/sicilia/sicilia-terrace.jpg';
+import kleeYoungLady from '@/assets/klee-young-lady.jpg';
 
 export interface JournalMedia {
   type: 'image' | 'audio' | 'gallery';
@@ -50,6 +51,8 @@ export interface ContentBlock {
   type: 'text' | 'gallery' | 'vertical-gallery';
   text?: string;
   images?: string[];
+  caption?: string;
+  captionLink?: string;
 }
 
 export interface JournalEntry {
@@ -666,6 +669,19 @@ Baudelaire, Les Paradis artificiels — Le goût de l'infini:
     date: "2016.09.18",
     title: "Intrinsic London",
     content: "Opening for Hans Joachim Roedelius and Christopher Chaplin. Visual collaboration with Dream Rec. A new kind of set."
+  },
+  {
+    date: "2016.09.09",
+    title: "Mixtate",
+    content: "",
+    contentBlocks: [
+      {
+        type: 'vertical-gallery',
+        images: [kleeYoungLady],
+        caption: "Paul Klee\nA Young Lady's Adventure (1922)\nTate",
+        captionLink: "https://www.tate.org.uk/art/artworks/klee-a-young-ladys-adventure-n05659/mixtate-shcaa-paul-klee"
+      }
+    ]
   },
   {
     date: "2016.08.17",
