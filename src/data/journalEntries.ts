@@ -682,7 +682,7 @@ Baudelaire, Les Paradis artificiels — Le goût de l'infini:
     content: "(see chronicles)"
   },
   {
-    date: "2016.08.17",
+    date: "2016.08.12",
     title: "Sicilia",
     content: "Many nights sleeping outside. Loren Connors on repeat. Epiphanies — the sparse guitar, uncertain tempo, hugely melancholic intertwined melodies against Mediterranean backdrop.",
     contentBlocks: [
