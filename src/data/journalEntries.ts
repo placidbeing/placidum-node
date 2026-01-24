@@ -18,6 +18,10 @@ import eve1 from '@/assets/astral/eve-1.png';
 import eve2 from '@/assets/astral/eve-2.png';
 import eve3 from '@/assets/astral/eve-3.png';
 import eve4 from '@/assets/astral/eve-4.png';
+import papaya1 from '@/assets/papaya/papaya-1.png';
+import papaya2 from '@/assets/papaya/papaya-2.png';
+import papaya3 from '@/assets/papaya/papaya-3.png';
+import papaya4 from '@/assets/papaya/papaya-4.png';
 
 export interface JournalMedia {
   type: 'image' | 'audio' | 'gallery';
@@ -28,7 +32,7 @@ export interface JournalMedia {
 }
 
 export interface ContentBlock {
-  type: 'text' | 'gallery';
+  type: 'text' | 'gallery' | 'vertical-gallery';
   text?: string;
   images?: string[];
 }
@@ -219,7 +223,13 @@ Sans que je le sache, mes terres d'accueil devinrent virtuelles, résidant dans 
 
 Le temps passant ma vie s'est simplifiée et éclaircie.
 
-Film: The Scent of Green Papaya`
+Film: The Scent of Green Papaya`,
+    contentBlocks: [
+      {
+        type: 'vertical-gallery',
+        images: [papaya1, papaya2, papaya3, papaya4]
+      }
+    ]
   },
   {
     date: "2024.03.07",
