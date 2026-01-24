@@ -49,6 +49,12 @@ import tp2 from '@/assets/techno-pessimism/tp-2.png';
 import tp3 from '@/assets/techno-pessimism/tp-3.png';
 import tp4 from '@/assets/techno-pessimism/tp-4.png';
 import tp5 from '@/assets/techno-pessimism/tp-5.png';
+import ensor1 from '@/assets/bozar/ensor-1.jpg';
+import ensor2 from '@/assets/bozar/ensor-2.jpg';
+import ensor3 from '@/assets/bozar/ensor-3.jpg';
+import ensor4 from '@/assets/bozar/ensor-4.jpg';
+import ensor5 from '@/assets/bozar/ensor-5.jpg';
+import ensor6 from '@/assets/bozar/ensor-6.jpg';
 
 export interface JournalMedia {
   type: 'image' | 'audio' | 'gallery';
@@ -81,6 +87,17 @@ export interface JournalEntry {
 }
 
 export const journalEntries: JournalEntry[] = [
+  {
+    date: "2024.03.06",
+    title: "James Ensor",
+    content: `Bozar, Brussels`,
+    contentBlocks: [
+      {
+        type: 'gallery',
+        images: [ensor1, ensor2, ensor3, ensor4, ensor5, ensor6]
+      }
+    ]
+  },
   {
     date: "2024.03.30",
     title: "NIVHEK at Presences",
