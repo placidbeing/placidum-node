@@ -48,11 +48,14 @@ export interface JournalMedia {
 }
 
 export interface ContentBlock {
-  type: 'text' | 'gallery' | 'vertical-gallery';
+  type: 'text' | 'gallery' | 'vertical-gallery' | 'audio';
   text?: string;
   images?: string[];
   caption?: string;
   captionLink?: string;
+  audioSrc?: string;
+  audioTitle?: string;
+  audioSubtitle?: string;
 }
 
 export interface JournalEntry {
@@ -672,14 +675,23 @@ Baudelaire, Les Paradis artificiels — Le goût de l'infini:
   },
   {
     date: "2016.09.09",
-    title: "Mixtate",
-    content: "",
+    title: "MixTate Shcaa on Paul Klee",
+    content: `I knew I wanted to work on a mix for a Paul Klee painting even before I had an idea of what I might find in the Tate collection. I have been captivated by his work for some time, and I think it is because I enjoy his balance, his delicacy in whispering to the subconscious. Klee elevated his art by intellectualising every facet of it – he knew what aspects needed to be considered and executed in a precise manner; at the same time, he also preserved other spaces for spontaneity where he could let the imperfections of organic life express themselves.`,
     contentBlocks: [
+      {
+        type: 'text',
+        text: 'https://www.tate.org.uk/art/artworks/klee-a-young-ladys-adventure-n05659/mixtate-shcaa-paul-klee'
+      },
       {
         type: 'vertical-gallery',
         images: [kleeYoungLady],
-        caption: "Paul Klee\nA Young Lady's Adventure (1922)\nTate",
-        captionLink: "https://www.tate.org.uk/art/artworks/klee-a-young-ladys-adventure-n05659/mixtate-shcaa-paul-klee"
+        caption: "Paul Klee\nA Young Lady's Adventure (1922)\nTate"
+      },
+      {
+        type: 'audio',
+        audioSrc: '/audio/shcaa-suspicion-of-weakness.mp3',
+        audioTitle: 'Shcaa - Suspicion of Weakness',
+        audioSubtitle: 'Tate exclusive'
       }
     ]
   },

@@ -136,12 +136,24 @@ const Notes = () => {
                     {item.isFullyItalic ? item.content : renderContent(item.content)}
                   </div>
                 )}
-                {/* Render content blocks (mixed text and galleries) */}
                 {item.contentBlocks && item.contentBlocks.map((block: ContentBlock, blockIndex: number) => (
                   block.type === 'text' && block.text ? (
-                    <div key={blockIndex} className={`serif leading-relaxed text-[1.1875rem] whitespace-pre-line ${item.isFullyItalic ? 'font-garamond italic' : ''}`}>
-                      {item.isFullyItalic ? block.text : renderContent(block.text)}
-                    </div>
+                    block.text.startsWith('http') ? (
+                      <div key={blockIndex} className="my-4">
+                        <a 
+                          href={block.text} 
+                          target="_blank" 
+                          rel="noopener noreferrer" 
+                          className="font-mono text-sm text-muted-foreground hover:text-foreground transition-colors break-all"
+                        >
+                          {block.text}
+                        </a>
+                      </div>
+                    ) : (
+                      <div key={blockIndex} className={`serif leading-relaxed text-[1.1875rem] whitespace-pre-line ${item.isFullyItalic ? 'font-garamond italic' : ''}`}>
+                        {item.isFullyItalic ? block.text : renderContent(block.text)}
+                      </div>
+                    )
                   ) : block.type === 'gallery' && block.images ? (
                     <div key={blockIndex} className="flex gap-3 my-5">
                       {block.images.map((src: string, imgIndex: number) => (
@@ -176,6 +188,37 @@ const Notes = () => {
                           )}
                         </figcaption>
                       )}
+                    </figure>
+                  ) : block.type === 'audio' && block.audioSrc ? (
+                    <figure key={blockIndex} className="my-6 max-w-lg">
+                      <div className="bg-muted/30 border border-muted p-4 space-y-3">
+                        <div className="space-y-1">
+                          {block.audioTitle && (
+                            <div className="font-mono text-sm font-medium">{block.audioTitle}</div>
+                          )}
+                          {block.audioSubtitle && (
+                            <div className="font-mono text-xs text-muted-foreground italic">{block.audioSubtitle}</div>
+                          )}
+                        </div>
+                        <audio 
+                          src={block.audioSrc} 
+                          controls 
+                          className="w-full h-10 opacity-80"
+                          preload="metadata"
+                        />
+                        <a 
+                          href={block.audioSrc} 
+                          download 
+                          className="inline-flex items-center gap-2 font-mono text-xs text-muted-foreground hover:text-foreground transition-colors"
+                        >
+                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                            <polyline points="7 10 12 15 17 10"/>
+                            <line x1="12" y1="15" x2="12" y2="3"/>
+                          </svg>
+                          Download
+                        </a>
+                      </div>
                     </figure>
                   ) : null
                 ))}
