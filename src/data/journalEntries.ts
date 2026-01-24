@@ -17,10 +17,17 @@ export interface JournalMedia {
   position?: 'inline' | 'after'; // 'inline' interrupts text, 'after' appears at end (default: 'after')
 }
 
+export interface ContentBlock {
+  type: 'text' | 'gallery';
+  text?: string;
+  images?: string[];
+}
+
 export interface JournalEntry {
   date: string; // YYYY.MM.DD format, or YYYY for year-only entries
   title: string;
   content: string;
+  contentBlocks?: ContentBlock[]; // Mixed text and media blocks for complex entries
   contentAfterMedia?: string; // Optional content that appears after inline media
   isFullyItalic?: boolean;
   media?: JournalMedia[]; // Optional media attachments
@@ -233,27 +240,45 @@ Film: The Scent of Green Papaya`
     title: "Kunsthistorisches Museum, Vienna",
     content: `Georg Baselitz — Towel - Beach Picture 6, 1980:
 
-'The problem is not the object in the picture, but the picture as an object.' Simple, raw compositions in oil and egg tempera. Fierce, brusque pictures made alongside first sculptures. Enormous, unwieldy plasticity — but gaiety, occasionally comedy.
+'The problem is not the object in the picture, but the picture as an object.' Simple, raw compositions in oil and egg tempera. Fierce, brusque pictures made alongside first sculptures. Enormous, unwieldy plasticity — but gaiety, occasionally comedy.`,
+    contentBlocks: [
+      {
+        type: 'text',
+        text: `Mania, 2019:
 
-Mania, 2019:
-
-Hands are an important motif. The hand of rulers, the hand of God. Blessing or damning, acting in isolation from golden ground. Later, Dürer and Parmigianino depicted their own hands to reassure themselves of their artistry.
-
-Surrealism Is Moving, 2019:
-
-'I paint a picture and I counterproof it. The counterproof is simply the lighter rendition, like a reflection. Just the illusion of it all.'
-
-The Ice Skating Woman, 2019:
-
-The canvas as an arena. Baselitz confidently plays with the method but does not relinquish the object. We are not looking at an ice skater floating across the lake at all — our entire vision begins to float.`,
-    contentAfterMedia: `Bill Frisell and Thomas Morgan — Vienna playlist: Misterioso. Mumbo Jumbo. It Should Have Happened a Long Time Ago. You Only Live Twice. Goldfinger.`,
-    media: [
+Hands are an important motif. The hand of rulers, the hand of God. Blessing or damning, acting in isolation from golden ground. Later, Dürer and Parmigianino depicted their own hands to reassure themselves of their artistry.`
+      },
       {
         type: 'gallery',
-        src: '',
-        images: [viennaCelestial, viennaSundial, viennaDome, viennaBloodstone, viennaAgate, viennaAmethyst, viennaUrn, viennaLizards, viennaTriton, viennaCoral],
-        caption: 'Kunstkammer',
-        position: 'inline'
+        images: [viennaCelestial, viennaSundial, viennaDome]
+      },
+      {
+        type: 'text',
+        text: `Surrealism Is Moving, 2019:
+
+'I paint a picture and I counterproof it. The counterproof is simply the lighter rendition, like a reflection. Just the illusion of it all.'`
+      },
+      {
+        type: 'gallery',
+        images: [viennaBloodstone, viennaAgate]
+      },
+      {
+        type: 'text',
+        text: `The Ice Skating Woman, 2019:
+
+The canvas as an arena. Baselitz confidently plays with the method but does not relinquish the object. We are not looking at an ice skater floating across the lake at all — our entire vision begins to float.`
+      },
+      {
+        type: 'gallery',
+        images: [viennaAmethyst, viennaUrn, viennaLizards]
+      },
+      {
+        type: 'text',
+        text: `Bill Frisell and Thomas Morgan — Vienna playlist: Misterioso. Mumbo Jumbo. It Should Have Happened a Long Time Ago. You Only Live Twice. Goldfinger.`
+      },
+      {
+        type: 'gallery',
+        images: [viennaTriton, viennaCoral]
       }
     ]
   },

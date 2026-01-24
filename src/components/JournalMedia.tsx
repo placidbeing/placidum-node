@@ -26,11 +26,11 @@ const JournalMedia = ({ media }: JournalMediaProps) => {
   if (media.type === 'gallery' && media.images) {
     return (
       <figure className="journal-media journal-media-gallery my-4">
-        <div className="flex gap-1 overflow-x-auto">
+        <div className="flex gap-2">
           {media.images.map((src, index) => (
             <div 
               key={index} 
-              className="flex-shrink-0 w-16 h-16 overflow-hidden"
+              className="flex-shrink-0 w-24 h-24 overflow-hidden"
             >
               <img 
                 src={src} 

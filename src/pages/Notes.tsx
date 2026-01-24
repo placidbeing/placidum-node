@@ -1,4 +1,4 @@
-import { journalEntries } from '@/data/journalEntries';
+import { journalEntries, ContentBlock } from '@/data/journalEntries';
 import JournalMedia from '@/components/JournalMedia';
 
 // Sort entries by date descending
@@ -135,6 +135,27 @@ const Notes = () => {
                     {item.isFullyItalic ? item.content : renderContent(item.content)}
                   </div>
                 )}
+                {/* Render content blocks (mixed text and galleries) */}
+                {item.contentBlocks && item.contentBlocks.map((block: ContentBlock, blockIndex: number) => (
+                  block.type === 'text' && block.text ? (
+                    <div key={blockIndex} className={`serif leading-relaxed text-[1.1875rem] whitespace-pre-line ${item.isFullyItalic ? 'font-garamond italic' : ''}`}>
+                      {item.isFullyItalic ? block.text : renderContent(block.text)}
+                    </div>
+                  ) : block.type === 'gallery' && block.images ? (
+                    <div key={blockIndex} className="flex gap-2 my-4">
+                      {block.images.map((src: string, imgIndex: number) => (
+                        <div key={imgIndex} className="flex-shrink-0 w-24 h-24 overflow-hidden">
+                          <img 
+                            src={src} 
+                            alt={`Gallery image ${imgIndex + 1}`}
+                            className="w-full h-full object-cover grayscale-[30%] opacity-80 hover:opacity-100 hover:grayscale-0 transition-all duration-500"
+                            loading="lazy"
+                          />
+                        </div>
+                      ))}
+                    </div>
+                  ) : null
+                ))}
                 {/* Render inline media between content sections */}
                 {item.media && item.media.filter(m => m.position === 'inline').length > 0 && (
                   <div className="journal-media-inline">
