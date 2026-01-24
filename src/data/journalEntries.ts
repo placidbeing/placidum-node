@@ -35,6 +35,7 @@ import dordogne1 from '@/assets/dordogne/dordogne-1.jpg';
 import spotbleu1 from '@/assets/spotbleu/spotbleu-1.png';
 import romaNight from '@/assets/roma/roma-night.jpg';
 import pigallePlants from '@/assets/pigalle/pigalle-plants.jpg';
+import dubaiCreek from '@/assets/dubai/dubai-creek.jpg';
 
 export interface JournalMedia {
   type: 'image' | 'audio' | 'gallery';
@@ -629,9 +630,15 @@ Faint call from the naked angle. My dream has paused, partially lost I suppose. 
     content: "Le froid bleu de l'air qui nous retient. L'envie que chacun a d'observer en l'autre une réponse. Car les brûlures se font plus nettes encore que le temps. Quelle est la marque de l'attachement? Lorsque une lumière vacille et qu'il se fait tard."
   },
   {
-    date: "2016.12.01",
+    date: "2016.12.26",
     title: "The Desert Guitar",
-    content: "Bought a guitar in the desert. Named it Aino — reading Sándor Márai at the time. This instrument, that feeling, will become the embodiment of a series: Hearts, Interior Rooms, Latitudes. A decade of sonic evolution."
+    content: "Bought a guitar in the desert. Named it Aino — reading Sándor Márai at the time. This instrument, that feeling, will become the embodiment of a series: Hearts, Interior Rooms, Latitudes. A decade of sonic evolution.",
+    contentBlocks: [
+      {
+        type: 'vertical-gallery',
+        images: [dubaiCreek]
+      }
+    ]
   },
   {
     date: "2016.11.23",
