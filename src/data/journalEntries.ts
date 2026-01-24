@@ -56,6 +56,7 @@ export interface ContentBlock {
   audioSrc?: string;
   audioTitle?: string;
   audioSubtitle?: string;
+  aspectRatio?: '16:9' | '4:3' | '1:1'; // Optional aspect ratio for images
 }
 
 export interface JournalEntry {
@@ -327,7 +328,8 @@ Botanical knowledge increased continually during the 15th and 16th centuries. Lo
       },
       {
         type: 'vertical-gallery',
-        images: [viennaBotanical1, viennaBotanical2]
+        images: [viennaBotanical1, viennaBotanical2],
+        aspectRatio: '16:9'
       },
       {
         type: 'text',
