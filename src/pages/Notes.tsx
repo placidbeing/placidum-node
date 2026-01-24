@@ -169,11 +169,14 @@ const Notes = () => {
                   ) : block.type === 'vertical-gallery' && block.images ? (
                     <figure key={blockIndex} className="flex flex-col gap-4 my-6 max-w-lg">
                       {block.images.map((src: string, imgIndex: number) => (
-                        <div key={imgIndex} className="w-full overflow-hidden">
+                        <div 
+                          key={imgIndex} 
+                          className={`w-full overflow-hidden ${block.aspectRatio === '16:9' ? 'aspect-video' : block.aspectRatio === '4:3' ? 'aspect-[4/3]' : block.aspectRatio === '1:1' ? 'aspect-square' : ''}`}
+                        >
                           <ImageLightbox 
                             src={src} 
                             alt={block.caption || `Gallery image ${imgIndex + 1}`}
-                            className="w-full h-auto object-contain grayscale-[30%] opacity-80 hover:opacity-100 hover:grayscale-0 transition-all duration-500"
+                            className={`w-full ${block.aspectRatio ? 'h-full object-cover' : 'h-auto object-contain'} grayscale-[30%] opacity-80 hover:opacity-100 hover:grayscale-0 transition-all duration-500`}
                           />
                         </div>
                       ))}
