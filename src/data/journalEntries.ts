@@ -36,6 +36,7 @@ import spotbleu1 from '@/assets/spotbleu/spotbleu-1.png';
 import romaNight from '@/assets/roma/roma-night.jpg';
 import pigallePlants from '@/assets/pigalle/pigalle-plants.jpg';
 import dubaiCreek from '@/assets/dubai/dubai-creek.jpg';
+import siciliaTerrace from '@/assets/sicilia/sicilia-terrace.jpg';
 
 export interface JournalMedia {
   type: 'image' | 'audio' | 'gallery';
@@ -681,9 +682,15 @@ Baudelaire, Les Paradis artificiels — Le goût de l'infini:
     content: `Second sonic collage is recorded, « A Silent Spectator » (see chronicles)`
   },
   {
-    date: "2016.08.01",
+    date: "2016.08.17",
     title: "Sicilia",
-    content: "Many nights sleeping outside. Loren Connors on repeat. Epiphanies — the sparse guitar, uncertain tempo, hugely melancholic intertwined melodies against Mediterranean backdrop."
+    content: "Many nights sleeping outside. Loren Connors on repeat. Epiphanies — the sparse guitar, uncertain tempo, hugely melancholic intertwined melodies against Mediterranean backdrop.",
+    contentBlocks: [
+      {
+        type: 'vertical-gallery',
+        images: [siciliaTerrace]
+      }
+    ]
   },
   {
     date: "2016.07.01",
