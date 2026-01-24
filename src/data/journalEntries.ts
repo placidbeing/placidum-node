@@ -237,6 +237,21 @@ The canvas as an arena. Baselitz confidently plays with the method but does not 
 Bill Frisell and Thomas Morgan — Vienna playlist: Misterioso. Mumbo Jumbo. It Should Have Happened a Long Time Ago. You Only Live Twice. Goldfinger.`
   },
   {
+    date: "2023.02.28",
+    title: "Japan",
+    content: `First trip.
+
+La nature, brute, bleue-gris. Sculptée mais pas par le vent — de l'intérieur. Industrialisation précise, dense, sens du design.
+
+Rêve: un tsunami remplit la terre d'eau. Escalade sans fin de montagnes pour échapper à la noyade. Villages de montagne abandonnés. On découvre une vie possible très haut. Les montagnes sont vertes, fleuries, tempérées.
+
+Rêve (avion du retour, au-dessus de la Mongolie glacée): Escale à Venise. Visite d'un immeuble où j'aurais vécu pendant mes années d'études. La vue sur le fleuve. Les appartements sont sublimes et spacieux. Une Venise idéale. Poissons énormes et multicolores.
+
+Sebald: "Those voices that traverse the ether once dusk has fallen, which only a few can pick up, have a life of their own like bats, and shun the light of day."
+
+Recordings.`
+  },
+  {
     date: "2023.02.08",
     title: "Michiyo Yagi Trio",
     content: `With Eivind Aarset & Jan Bang. Le Générateur, Gentilly.
@@ -262,21 +277,6 @@ Lorsque les torrents étreignent la rumeur. Que les idées cessent. Les torrents
 Je ne souhaite plus écouter de battements imposés, séquencés. Le monde déborde d'énergies mais on y perd notre sensibilité. Un vacarme si organisé qu'il en devient inaudible. Les lumières bleues nous aveuglent.
 
 J'ai besoin d'écouter les éléments, un environnement vide d'idées. Watson. Fennesz. Lloyd. Il y a des orages dans la nature — ils apaisent par leur force. Leur force n'est pas destructrice, elle ne disperse pas.`
-  },
-  {
-    date: "2023.02.01",
-    title: "Japan",
-    content: `First trip.
-
-La nature, brute, bleue-gris. Sculptée mais pas par le vent — de l'intérieur. Industrialisation précise, dense, sens du design.
-
-Rêve: un tsunami remplit la terre d'eau. Escalade sans fin de montagnes pour échapper à la noyade. Villages de montagne abandonnés. On découvre une vie possible très haut. Les montagnes sont vertes, fleuries, tempérées.
-
-Rêve (avion du retour, au-dessus de la Mongolie glacée): Escale à Venise. Visite d'un immeuble où j'aurais vécu pendant mes années d'études. La vue sur le fleuve. Les appartements sont sublimes et spacieux. Une Venise idéale. Poissons énormes et multicolores.
-
-Sebald: "Those voices that traverse the ether once dusk has fallen, which only a few can pick up, have a life of their own like bats, and shun the light of day."
-
-Recordings.`
   },
   {
     date: "2023.01.07",
