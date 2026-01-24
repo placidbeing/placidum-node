@@ -689,6 +689,12 @@ Baudelaire, Les Paradis artificiels — Le goût de l'infini:
       },
       {
         type: 'audio',
+        audioSrc: 'https://archive.org/download/placidum-chronicles-a-silent-spectator/Shcaa%20Mixtate%20A%20Young%20Lady%27s%20Adventure.wav',
+        audioTitle: 'Shcaa - MixTate A Young Lady\'s Adventure',
+        audioSubtitle: 'Full mix'
+      },
+      {
+        type: 'audio',
         audioSrc: '/audio/shcaa-suspicion-of-weakness.mp3',
         audioTitle: 'Shcaa - Suspicion of Weakness',
         audioSubtitle: 'Tate exclusive'
