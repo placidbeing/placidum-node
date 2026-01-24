@@ -26,6 +26,7 @@ import midori1 from '@/assets/brdcst/midori-1.jpg';
 import jelinek1 from '@/assets/brdcst/jelinek-1.jpg';
 import viennaBotanical1 from '@/assets/vienna/vienna-botanical-1.jpg';
 import viennaBotanical2 from '@/assets/vienna/vienna-botanical-2.jpg';
+import autechre1 from '@/assets/brdcst/autechre-1.jpg';
 
 export interface JournalMedia {
   type: 'image' | 'audio' | 'gallery';
@@ -379,6 +380,17 @@ J'ai besoin d'écouter les éléments, un environnement vide d'idées. Watson. F
 « Chez Klee, cet alliage atteint un tel degré de concentration qu'il dégage des exhalaisons parfois vertigineuses. Le peintre avance sur le chemin de l'inconnaissable jusqu'à l'évanouissement de la raison. »
 
 « Ce ne sont pas des couleurs qui habitent les œuvres de Paul Klee, mais le murmure des spectres que nous deviendrons. »`
+  },
+  {
+    date: "2022.10.07",
+    title: "Barbican Hall, London",
+    content: "Autechre. Zoviet France in support.\n\nCave music. Sound as geology — The hall becomes the instrument.",
+    contentBlocks: [
+      {
+        type: 'gallery',
+        images: [autechre1]
+      }
+    ]
   },
   {
     date: "2022.08.19",
