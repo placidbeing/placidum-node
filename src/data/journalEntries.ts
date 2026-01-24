@@ -59,7 +59,7 @@ export interface ContentBlock {
   audioSrc?: string;
   audioTitle?: string;
   audioSubtitle?: string;
-  aspectRatio?: '16:9' | '4:3' | '1:1'; // Optional aspect ratio for images
+  aspectRatio?: '16:9' | '16:7' | '4:3' | '1:1'; // Optional aspect ratio for images
 }
 
 export interface JournalEntry {
@@ -566,20 +566,22 @@ Bill Frisell. John Zorn. Tyshawn Sorey. Marc Ribot. Jimi Hendrix at the Bunker. 
 Encountered Ryuichi Sakamoto in the street.`,
     contentBlocks: [
       {
-        type: 'vertical-gallery',
-        images: [newyorkStudio],
-        aspectRatio: '1:1'
-      },
-      {
         type: 'text',
-        text: `Placidum — concept laid down. Logo emerges through archive research.
-
-Also finalized a second track for my R&S Records 12".`
+        text: `Placidum — concept laid down. Logo emerges through archive research.`
       },
       {
         type: 'vertical-gallery',
         images: [placidumMap],
-        aspectRatio: '16:9'
+        aspectRatio: '16:7'
+      },
+      {
+        type: 'text',
+        text: `Also finalized a second track for my R&S Records 12".`
+      },
+      {
+        type: 'vertical-gallery',
+        images: [newyorkStudio],
+        aspectRatio: '16:7'
       }
     ]
   },
