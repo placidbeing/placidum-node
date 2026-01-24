@@ -27,6 +27,10 @@ import jelinek1 from '@/assets/brdcst/jelinek-1.jpg';
 import viennaBotanical1 from '@/assets/vienna/vienna-botanical-1.jpg';
 import viennaBotanical2 from '@/assets/vienna/vienna-botanical-2.jpg';
 import autechre1 from '@/assets/brdcst/autechre-1.jpg';
+import seaBalloons from '@/assets/sea/sea-balloons.jpg';
+import seaJungle1 from '@/assets/sea/sea-jungle-1.jpg';
+import seaDark from '@/assets/sea/sea-dark.jpg';
+import seaFern from '@/assets/sea/sea-fern.jpg';
 
 export interface JournalMedia {
   type: 'image' | 'audio' | 'gallery';
@@ -509,7 +513,13 @@ Leaving me cold, vague, with sympathy for their melody.`
     title: "South East Asia",
     content: `Opposition of high modernity and minimalism with luxuriant tropical atmosphere. Strong impact.
 
-Soundtrack: Basinski — Cascade. Low — Lullaby.`
+Soundtrack: Basinski — Cascade. Low — Lullaby.`,
+    contentBlocks: [
+      {
+        type: 'vertical-gallery',
+        images: [seaBalloons, seaJungle1, seaDark, seaFern]
+      }
+    ]
   },
   {
     date: "2017.10.14",
