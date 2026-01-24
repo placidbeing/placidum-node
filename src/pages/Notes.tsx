@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { journalEntries, ContentBlock } from '@/data/journalEntries';
 import JournalMedia from '@/components/JournalMedia';
 import ImageLightbox from '@/components/ImageLightbox';
@@ -52,36 +53,62 @@ const Notes = () => {
     };
   };
 
-  // Render content with quotes in italics
+  // Render content with quotes in italics and markdown links
   const renderContent = (content: string) => {
-    // Split by quotes (both "..." and «...»)
-    const quotePattern = /("([^"]+)"|«([^»]+)»)/g;
-    const parts: { text: string; isQuote: boolean }[] = [];
+    // First handle markdown links [text](url)
+    const linkPattern = /\[([^\]]+)\]\(([^)]+)\)/g;
+    const segments: { text: string; isLink: boolean; url?: string }[] = [];
     let lastIndex = 0;
     let match;
 
-    while ((match = quotePattern.exec(content)) !== null) {
-      // Add text before the quote
+    while ((match = linkPattern.exec(content)) !== null) {
       if (match.index > lastIndex) {
-        parts.push({ text: content.slice(lastIndex, match.index), isQuote: false });
+        segments.push({ text: content.slice(lastIndex, match.index), isLink: false });
       }
-      // Add the quote (including the quote marks)
-      parts.push({ text: match[0], isQuote: true });
+      segments.push({ text: match[1], isLink: true, url: match[2] });
       lastIndex = match.index + match[0].length;
     }
-
-    // Add remaining text
     if (lastIndex < content.length) {
-      parts.push({ text: content.slice(lastIndex), isQuote: false });
+      segments.push({ text: content.slice(lastIndex), isLink: false });
     }
 
-    return parts.map((part, i) => 
-      part.isQuote ? (
-        <em key={i} className="font-garamond">{part.text}</em>
-      ) : (
-        <span key={i}>{part.text}</span>
-      )
-    );
+    // Now process each segment for quotes
+    const renderSegment = (segment: { text: string; isLink: boolean; url?: string }, segmentIndex: number) => {
+      if (segment.isLink && segment.url) {
+        return (
+          <Link key={segmentIndex} to={segment.url} className="text-accent hover:underline">
+            {segment.text}
+          </Link>
+        );
+      }
+
+      // Split by quotes (both "..." and «...»)
+      const quotePattern = /("([^"]+)"|«([^»]+)»)/g;
+      const parts: { text: string; isQuote: boolean }[] = [];
+      let lastIdx = 0;
+      let quoteMatch;
+
+      while ((quoteMatch = quotePattern.exec(segment.text)) !== null) {
+        if (quoteMatch.index > lastIdx) {
+          parts.push({ text: segment.text.slice(lastIdx, quoteMatch.index), isQuote: false });
+        }
+        parts.push({ text: quoteMatch[0], isQuote: true });
+        lastIdx = quoteMatch.index + quoteMatch[0].length;
+      }
+      if (lastIdx < segment.text.length) {
+        parts.push({ text: segment.text.slice(lastIdx), isQuote: false });
+      }
+
+      return parts.map((part, i) => 
+        part.isQuote ? (
+          <em key={`${segmentIndex}-${i}`} className="font-garamond">{part.text}</em>
+        ) : (
+          <span key={`${segmentIndex}-${i}`}>{part.text}</span>
+        )
+      );
+    };
+
+    return segments.map((segment, i) => renderSegment(segment, i));
   };
 
   return (
