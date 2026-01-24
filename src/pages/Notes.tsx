@@ -1,5 +1,6 @@
 import { journalEntries, ContentBlock } from '@/data/journalEntries';
 import JournalMedia from '@/components/JournalMedia';
+import ImageLightbox from '@/components/ImageLightbox';
 
 // Sort entries by date descending
 const sortedJournalEntries = [...journalEntries].sort((a, b) => b.date.localeCompare(a.date));
@@ -145,11 +146,10 @@ const Notes = () => {
                     <div key={blockIndex} className="flex gap-3 my-5">
                       {block.images.map((src: string, imgIndex: number) => (
                         <div key={imgIndex} className="flex-shrink-0 w-32 h-32 overflow-hidden">
-                          <img 
+                          <ImageLightbox 
                             src={src} 
                             alt={`Gallery image ${imgIndex + 1}`}
                             className="w-full h-full object-cover grayscale-[30%] opacity-80 hover:opacity-100 hover:grayscale-0 transition-all duration-500"
-                            loading="lazy"
                           />
                         </div>
                       ))}
