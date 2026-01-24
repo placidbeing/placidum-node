@@ -24,6 +24,8 @@ import papaya3 from '@/assets/papaya/papaya-3.png';
 import papaya4 from '@/assets/papaya/papaya-4.png';
 import midori1 from '@/assets/brdcst/midori-1.jpg';
 import jelinek1 from '@/assets/brdcst/jelinek-1.jpg';
+import viennaBotanical1 from '@/assets/vienna/vienna-botanical-1.jpg';
+import viennaBotanical2 from '@/assets/vienna/vienna-botanical-2.jpg';
 
 export interface JournalMedia {
   type: 'image' | 'audio' | 'gallery';
@@ -297,6 +299,18 @@ The canvas as an arena. Baselitz confidently plays with the method but does not 
       {
         type: 'gallery',
         images: [viennaLizards, viennaTriton]
+      },
+      {
+        type: 'text',
+        text: `Between Nature and Art:
+
+Flowers and Fruits
+
+Botanical knowledge increased continually during the 15th and 16th centuries. Local flora was systematically investigated and new species reached Europe from distant lands. Detailed illustrations accompanied scientific publications on herbs and plants, which artisans could use for accurate replicas of flowers and fruits in silver, glass, stone or ivory.`
+      },
+      {
+        type: 'vertical-gallery',
+        images: [viennaBotanical1, viennaBotanical2]
       },
       {
         type: 'text',
