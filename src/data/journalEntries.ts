@@ -678,8 +678,8 @@ Baudelaire, Les Paradis artificiels — Le goût de l'infini:
   },
   {
     date: "2016.08.09",
-    title: "",
-    content: `Second sonic collage is recorded, « A Silent Spectator » (see chronicles)`
+    title: "Second sonic collage is finalized, « A Silent Spectator »",
+    content: "(see chronicles)"
   },
   {
     date: "2016.08.17",
