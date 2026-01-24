@@ -252,7 +252,8 @@ Bill Frisell and Thomas Morgan — Vienna playlist: Misterioso. Mumbo Jumbo. It 
         type: 'gallery',
         src: '',
         images: [viennaCelestial, viennaSundial, viennaDome, viennaBloodstone, viennaAgate, viennaAmethyst, viennaUrn, viennaLizards, viennaTriton, viennaCoral],
-        caption: 'Kunstkammer'
+        caption: 'Kunstkammer',
+        position: 'inline'
       }
     ]
   },
