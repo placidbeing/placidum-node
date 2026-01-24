@@ -9,6 +9,16 @@ import viennaSundial from '@/assets/vienna/vienna-sundial.jpg';
 import viennaDome from '@/assets/vienna/vienna-dome.jpg';
 import viennaTriton from '@/assets/vienna/vienna-triton.jpg';
 
+import astral1 from '@/assets/astral/astral-1.png';
+import astral2 from '@/assets/astral/astral-2.png';
+import astral3 from '@/assets/astral/astral-3.png';
+import astral4 from '@/assets/astral/astral-4.png';
+import astral5 from '@/assets/astral/astral-5.png';
+import eve1 from '@/assets/astral/eve-1.png';
+import eve2 from '@/assets/astral/eve-2.png';
+import eve3 from '@/assets/astral/eve-3.png';
+import eve4 from '@/assets/astral/eve-4.png';
+
 export interface JournalMedia {
   type: 'image' | 'audio' | 'gallery';
   src: string; // Path to asset or URL (for single image/audio)
@@ -366,6 +376,39 @@ J'ai besoin d'écouter les éléments, un environnement vide d'idées. Watson. F
     content: `« Le monde de l'atome était extérieur et, de même, la planète Terre, que nous habitons, était selon toute probabilité un intérieur plein de profondeur, sur le plan organique. Un chercheur n'avait-il pas évoqué, dans son audace rêveuse, les « animaux de la Voie lactée », monstres cosmiques dont la chair, les os et le cerveau étaient composés de systèmes solaires? »
 
 Les rideaux de pluie miroitante s'évanouirent : la mer s'étendait, c'était une mer du Sud, d'un bleu extrêmement profond, étincelant de lueurs argentées, avec une baie magnifique, dégagée et vaporeuse d'un côté, à demi sertie dans de vastes massifs montagneux dont le bleu allait en se délavant…`
+  },
+  {
+    date: "2020.04.04",
+    title: "9128.live — Astral Industries Takeover",
+    content: `Premier confinement.
+
+Fifty-hour stream. Chi Factory. Deepchord — Rod Modell's submerged dub. Waveform Transmission — esoteric sound collages.`,
+    contentBlocks: [
+      {
+        type: 'gallery',
+        images: [astral1, astral2]
+      },
+      {
+        type: 'text',
+        text: `The visualisations helped foster the tension between synthetic and organic. Advent of a new era.`
+      },
+      {
+        type: 'gallery',
+        images: [astral3, astral4, astral5]
+      },
+      {
+        type: 'text',
+        text: `Digging some EVE artworks to complete the vision...`
+      },
+      {
+        type: 'gallery',
+        images: [eve1, eve2]
+      },
+      {
+        type: 'gallery',
+        images: [eve3, eve4]
+      }
+    ]
   },
   {
     date: "2019.12.19",
