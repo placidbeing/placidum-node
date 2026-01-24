@@ -686,7 +686,7 @@ Baudelaire, Les Paradis artificiels — Le goût de l'infini:
       },
       {
         type: 'audio',
-        audioSrc: 'https://archive.org/download/placidum-chronicles-a-silent-spectator/Shcaa%20Mixtate%20A%20Young%20Lady%27s%20Adventure.wav',
+        audioSrc: 'https://archive.org/download/placidum-chronicles-a-silent-spectator/Shcaa%20Mixtate%20A%20Young%20Lady%27s%20Adventure.mp3',
         audioTitle: 'Shcaa - MixTate A Young Lady\'s Adventure',
         audioSubtitle: 'Full mix'
       },
@@ -710,7 +710,7 @@ Baudelaire, Les Paradis artificiels — Le goût de l'infini:
   {
     date: "2016.08.09",
     title: "Second sonic collage is finalized, « A Silent Spectator »",
-    content: "(see chronicles)"
+    content: "(see [chronicles](/chronicles))"
   },
   {
     date: "2016.08.12",
@@ -798,7 +798,7 @@ https://soundcloud.com/pluie-noir/pluie-noir-podcast-028`
   {
     date: "2012.02.15",
     title: "Recording: Preface",
-    content: "South of France. Wet soil, dead leaves, firewood smoke. Preface emerges — not pretentious, a collection of missing links. (See Chronicles.)"
+    content: "South of France. Wet soil, dead leaves, firewood smoke. Preface emerges — not pretentious, a collection of missing links. (See [Chronicles](/chronicles).)"
   },
   {
     date: "2012.02.12",
