@@ -25,12 +25,12 @@ const JournalMedia = ({ media }: JournalMediaProps) => {
 
   if (media.type === 'gallery' && media.images) {
     return (
-      <figure className="journal-media journal-media-gallery my-6">
-        <div className="grid grid-cols-5 gap-1 max-w-lg mx-auto">
+      <figure className="journal-media journal-media-gallery my-4">
+        <div className="flex gap-1 overflow-x-auto">
           {media.images.map((src, index) => (
             <div 
               key={index} 
-              className="aspect-square overflow-hidden"
+              className="flex-shrink-0 w-16 h-16 overflow-hidden"
             >
               <img 
                 src={src} 
@@ -42,7 +42,7 @@ const JournalMedia = ({ media }: JournalMediaProps) => {
           ))}
         </div>
         {media.caption && (
-          <figcaption className="text-center text-sm text-muted-foreground mt-3 font-mono italic opacity-70">
+          <figcaption className="text-sm text-muted-foreground mt-2 font-mono italic opacity-70">
             {media.caption}
           </figcaption>
         )}
