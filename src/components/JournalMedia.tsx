@@ -23,6 +23,33 @@ const JournalMedia = ({ media }: JournalMediaProps) => {
     );
   }
 
+  if (media.type === 'gallery' && media.images) {
+    return (
+      <figure className="journal-media journal-media-gallery my-6">
+        <div className="grid grid-cols-5 gap-1 max-w-lg mx-auto">
+          {media.images.map((src, index) => (
+            <div 
+              key={index} 
+              className="aspect-square overflow-hidden"
+            >
+              <img 
+                src={src} 
+                alt={media.caption ? `${media.caption} ${index + 1}` : `Gallery image ${index + 1}`}
+                className="w-full h-full object-cover grayscale-[30%] opacity-80 hover:opacity-100 hover:grayscale-0 transition-all duration-500"
+                loading="lazy"
+              />
+            </div>
+          ))}
+        </div>
+        {media.caption && (
+          <figcaption className="text-center text-sm text-muted-foreground mt-3 font-mono italic opacity-70">
+            {media.caption}
+          </figcaption>
+        )}
+      </figure>
+    );
+  }
+
   if (media.type === 'audio') {
     return (
       <figure className="journal-media journal-media-audio my-6">

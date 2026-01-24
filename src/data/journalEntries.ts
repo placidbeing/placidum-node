@@ -1,6 +1,18 @@
+import viennaCoral from '@/assets/vienna/vienna-coral.jpg';
+import viennaAmethyst from '@/assets/vienna/vienna-amethyst.jpg';
+import viennaAgate from '@/assets/vienna/vienna-agate.jpg';
+import viennaLizards from '@/assets/vienna/vienna-lizards.jpg';
+import viennaUrn from '@/assets/vienna/vienna-urn.jpg';
+import viennaBloodstone from '@/assets/vienna/vienna-bloodstone.jpg';
+import viennaCelestial from '@/assets/vienna/vienna-celestial.jpg';
+import viennaSundial from '@/assets/vienna/vienna-sundial.jpg';
+import viennaDome from '@/assets/vienna/vienna-dome.jpg';
+import viennaTriton from '@/assets/vienna/vienna-triton.jpg';
+
 export interface JournalMedia {
-  type: 'image' | 'audio';
-  src: string; // Path to asset or URL
+  type: 'image' | 'audio' | 'gallery';
+  src: string; // Path to asset or URL (for single image/audio)
+  images?: string[]; // Array of image paths (for gallery type)
   caption?: string; // Optional caption below media
   position?: 'inline' | 'after'; // 'inline' interrupts text, 'after' appears at end (default: 'after')
 }
@@ -234,7 +246,15 @@ The Ice Skating Woman, 2019:
 
 The canvas as an arena. Baselitz confidently plays with the method but does not relinquish the object. We are not looking at an ice skater floating across the lake at all — our entire vision begins to float.
 
-Bill Frisell and Thomas Morgan — Vienna playlist: Misterioso. Mumbo Jumbo. It Should Have Happened a Long Time Ago. You Only Live Twice. Goldfinger.`
+Bill Frisell and Thomas Morgan — Vienna playlist: Misterioso. Mumbo Jumbo. It Should Have Happened a Long Time Ago. You Only Live Twice. Goldfinger.`,
+    media: [
+      {
+        type: 'gallery',
+        src: '',
+        images: [viennaCelestial, viennaSundial, viennaDome, viennaBloodstone, viennaAgate, viennaAmethyst, viennaUrn, viennaLizards, viennaTriton, viennaCoral],
+        caption: 'Kunstkammer'
+      }
+    ]
   },
   {
     date: "2023.02.28",
