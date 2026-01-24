@@ -133,12 +133,20 @@ const Notes = () => {
                 {item.content && (
                   <div className={`serif leading-relaxed text-[1.1875rem] whitespace-pre-line ${item.isFullyItalic ? 'font-garamond italic' : ''}`}>
                     {item.isFullyItalic ? item.content : renderContent(item.content)}
+                    {/* Render inline media within the content flow */}
+                    {item.media && item.media.filter(m => m.position === 'inline').length > 0 && (
+                      <div className="journal-media-inline my-4">
+                        {item.media.filter(m => m.position === 'inline').map((mediaItem, mediaIndex) => (
+                          <JournalMedia key={mediaIndex} media={mediaItem} />
+                        ))}
+                      </div>
+                    )}
                   </div>
                 )}
-                {/* Render media after content - Sebald style */}
-                {item.media && item.media.length > 0 && (
+                {/* Render media after content - Sebald style (default position) */}
+                {item.media && item.media.filter(m => m.position !== 'inline').length > 0 && (
                   <div className="journal-media-container mt-6 space-y-4">
-                    {item.media.map((mediaItem, mediaIndex) => (
+                    {item.media.filter(m => m.position !== 'inline').map((mediaItem, mediaIndex) => (
                       <JournalMedia key={mediaIndex} media={mediaItem} />
                     ))}
                   </div>
