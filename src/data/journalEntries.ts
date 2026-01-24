@@ -570,7 +570,13 @@ For an instant, the great luminaries took shelter within the most obscure earth,
     title: "First Live Act",
     content: `Dordogne. Contours of what is to come. Improvisational collage: synthetic materials, field recordings, found audio. Improvised guitar along DSP. Solid body Gibson 335.
 
-Opening for E/tape and Nicolas Lutz. Among others that festival: Jan Jelinek, Chi Factory, Roedelius & Chaplin.`
+Opening for E/tape and Nicolas Lutz. Among others that festival: Jan Jelinek & Masayoshi Fujita, Chi Factory, Andrew James Gustav, Roedelius & Chaplin.`,
+    contentBlocks: [
+      {
+        type: 'vertical-gallery',
+        images: [jelinek1]
+      }
+    ]
   },
   {
     date: "2017.07.11",
