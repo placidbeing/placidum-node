@@ -82,6 +82,19 @@ export interface JournalEntry {
 
 export const journalEntries: JournalEntry[] = [
   {
+    date: "2023.03.30",
+    title: "NIVHEK at Presences",
+    content: `ENGINE / approx. 35'
+
+with a film by Takashi Makino
+
+Sounds of trains and cars from drag races at Portland International Raceway / North Portland rail lines; synthesizer and other electronic components.
+
+ENGINE was born from a ten-year obsession with the noise of engines. The sound of excess, power, sex, destruction, capitalism, oil becoming atmospheric pollution, transformation, life. The guttural bass and revolutions mirror organic rhythms—imitating heartbeats, breathing, rushing blood. A spiraling ode to symbiotic decay.
+
+Nivhek is the project of musician Liz Harris (aka Grouper), originally from the Pacific Northwest. For this concert, Liz will be joined by Danish musician and composer Astrid Sonne on viola.`
+  },
+  {
     date: "2026.01.01",
     title: "",
     content: `"We know that a true meeting has taken place when there is change in us. We made room for the other and room for a part of ourselves hitherto unknown.
