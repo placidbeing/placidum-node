@@ -154,6 +154,18 @@ const Notes = () => {
                         </div>
                       ))}
                     </div>
+                  ) : block.type === 'vertical-gallery' && block.images ? (
+                    <div key={blockIndex} className="flex flex-col gap-4 my-6 max-w-lg">
+                      {block.images.map((src: string, imgIndex: number) => (
+                        <div key={imgIndex} className="w-full aspect-video overflow-hidden">
+                          <ImageLightbox 
+                            src={src} 
+                            alt={`Gallery image ${imgIndex + 1}`}
+                            className="w-full h-full object-cover grayscale-[30%] opacity-80 hover:opacity-100 hover:grayscale-0 transition-all duration-500"
+                          />
+                        </div>
+                      ))}
+                    </div>
                   ) : null
                 ))}
                 {/* Render inline media between content sections */}
