@@ -27,6 +27,9 @@ import jelinek1 from '@/assets/brdcst/jelinek-1.jpg';
 import viennaBotanical1 from '@/assets/vienna/vienna-botanical-1.jpg';
 import viennaBotanical2 from '@/assets/vienna/vienna-botanical-2.jpg';
 import autechre1 from '@/assets/brdcst/autechre-1.jpg';
+import barbicanBlur from '@/assets/brdcst/barbican-blur.jpg';
+import barbicanRain from '@/assets/brdcst/barbican-rain.jpg';
+import barbicanWet from '@/assets/brdcst/barbican-wet.jpg';
 import seaBalloons from '@/assets/sea/sea-balloons.jpg';
 import seaJungle1 from '@/assets/sea/sea-jungle-1.jpg';
 import seaDark from '@/assets/sea/sea-dark.jpg';
@@ -414,7 +417,7 @@ J'ai besoin d'écouter les éléments, un environnement vide d'idées. Watson. F
     contentBlocks: [
       {
         type: 'gallery',
-        images: [autechre1]
+        images: [autechre1, barbicanBlur, barbicanRain, barbicanWet]
       }
     ]
   },
