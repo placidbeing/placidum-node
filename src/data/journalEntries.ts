@@ -664,11 +664,6 @@ Baudelaire, Les Paradis artificiels — Le goût de l'infini:
 "Ceux qui savent s'observer eux-mêmes et qui gardent la mémoire de leurs impressions, ceux-là qui ont su, comme Hoffmann, construire leur baromètre spirituel, ont eu parfois à noter, dans l'observatoire de leur pensée, de belles saisons, d'heureuses journées, de délicieuses minutes."`
   },
   {
-    date: "2016.10.01",
-    title: "Tatemix",
-    content: "Recording session. Klee as reference. Mossy hues and textures that remain. Compositions will emerge from that grove."
-  },
-  {
     date: "2016.09.18",
     title: "Intrinsic London",
     content: "Opening for Hans Joachim Roedelius and Christopher Chaplin. Visual collaboration with Dream Rec. A new kind of set."
