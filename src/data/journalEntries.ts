@@ -21,6 +21,7 @@ export interface JournalEntry {
   date: string; // YYYY.MM.DD format, or YYYY for year-only entries
   title: string;
   content: string;
+  contentAfterMedia?: string; // Optional content that appears after inline media
   isFullyItalic?: boolean;
   media?: JournalMedia[]; // Optional media attachments
 }
@@ -244,9 +245,8 @@ Surrealism Is Moving, 2019:
 
 The Ice Skating Woman, 2019:
 
-The canvas as an arena. Baselitz confidently plays with the method but does not relinquish the object. We are not looking at an ice skater floating across the lake at all — our entire vision begins to float.
-
-Bill Frisell and Thomas Morgan — Vienna playlist: Misterioso. Mumbo Jumbo. It Should Have Happened a Long Time Ago. You Only Live Twice. Goldfinger.`,
+The canvas as an arena. Baselitz confidently plays with the method but does not relinquish the object. We are not looking at an ice skater floating across the lake at all — our entire vision begins to float.`,
+    contentAfterMedia: `Bill Frisell and Thomas Morgan — Vienna playlist: Misterioso. Mumbo Jumbo. It Should Have Happened a Long Time Ago. You Only Live Twice. Goldfinger.`,
     media: [
       {
         type: 'gallery',
