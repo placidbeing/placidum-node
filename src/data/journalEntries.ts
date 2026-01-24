@@ -252,7 +252,7 @@ Bucolico — No more eclecticism, no standards, no stylistic posturing. A richne
   {
     date: "2024.11.01",
     title: "Lucy Railton at Presences",
-    content: "Wind like boomerangs around space. Organic then synthesized — like air displacing. Intense frequency selection."
+    content: "Organic then synthesized — like air displacing. Intense frequency selection. Boomerangs around space."
   },
   {
     date: "2024.10.14",
