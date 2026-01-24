@@ -34,6 +34,7 @@ import seaFern from '@/assets/sea/sea-fern.jpg';
 import dordogne1 from '@/assets/dordogne/dordogne-1.jpg';
 import spotbleu1 from '@/assets/spotbleu/spotbleu-1.png';
 import romaNight from '@/assets/roma/roma-night.jpg';
+import pigallePlants from '@/assets/pigalle/pigalle-plants.jpg';
 
 export interface JournalMedia {
   type: 'image' | 'audio' | 'gallery';
@@ -458,8 +459,14 @@ Fifty-hour stream. Chi Factory. Deepchord — Rod Modell's submerged dub. Wavefo
   },
   {
     date: "2019.09.01",
-    title: "Black Midi",
-    content: "Paris. Immediacy of music. Kaleidoscopic qualities. Strong narration."
+    title: "Black Midi — La Boule Noire, Pigalle",
+    content: "Immediacy of music. Kaleidoscopic qualities. Strong narration.",
+    contentBlocks: [
+      {
+        type: 'gallery',
+        images: [pigallePlants]
+      }
+    ]
   },
   {
     date: "2019.02.17",
