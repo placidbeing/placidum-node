@@ -41,6 +41,11 @@ import kleeYoungLady from '@/assets/klee-young-lady.jpg';
 import pacificGarden from '@/assets/pacific/pacific-garden.jpg';
 import newyorkStudio from '@/assets/newyork/newyork-studio.jpg';
 import placidumMap from '@/assets/newyork/placidum-map.jpg';
+import tp1 from '@/assets/techno-pessimism/tp-1.png';
+import tp2 from '@/assets/techno-pessimism/tp-2.png';
+import tp3 from '@/assets/techno-pessimism/tp-3.png';
+import tp4 from '@/assets/techno-pessimism/tp-4.png';
+import tp5 from '@/assets/techno-pessimism/tp-5.png';
 
 export interface JournalMedia {
   type: 'image' | 'audio' | 'gallery';
@@ -509,6 +514,17 @@ Lost in the sublime, the subliminal
 Like persistent dreams for coloured sins,
 They praise the cage, delay its pulse, prey on affection,
 Leaving me cold, vague, with sympathy for their melody.`
+  },
+  {
+    date: "2018.07.25",
+    title: "Techno-pessimism",
+    content: "",
+    contentBlocks: [
+      {
+        type: 'gallery',
+        images: [tp1, tp2, tp3, tp4, tp5]
+      }
+    ]
   },
   {
     date: "2018.04.17",
