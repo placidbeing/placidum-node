@@ -545,16 +545,12 @@ Soundtrack: Basinski — Cascade. Low — Lullaby.`,
     ]
   },
   {
-    date: "2017.10.14",
-    title: "MOMA",
-    content: "Matana Roberts. Recording."
-  },
-  {
     date: "2017.10.10",
     title: "Village Vanguard",
     content: `Bill Frisell & The Bad Plus.
+"Unsung Heroes. Into the Animal Race. Let Me In. Rag. Live to Tell."
 
-Unsung Heroes. Into the Animal Race. Let Me In. Rag. Live to Tell.`
+Watching Bill play, a feeling of familiarity, as a memory from a very distant future. We will meet one day.`
   },
   {
     date: "2017.10.01",
