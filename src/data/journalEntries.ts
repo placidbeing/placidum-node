@@ -697,7 +697,7 @@ Baudelaire, Les Paradis artificiels — Le goût de l'infini:
         type: 'audio',
         audioSrc: '/audio/shcaa-suspicion-of-weakness.mp3',
         audioTitle: 'Shcaa - Suspicion of Weakness',
-        audioSubtitle: 'Tate exclusive'
+        audioSubtitle: 'Tate exclusive track'
       }
     ]
   },
