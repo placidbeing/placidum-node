@@ -579,7 +579,7 @@ Also finalized a second track for my R&S Records 12".`
       {
         type: 'vertical-gallery',
         images: [placidumMap],
-        aspectRatio: '1:1'
+        aspectRatio: '16:9'
       }
     ]
   },
