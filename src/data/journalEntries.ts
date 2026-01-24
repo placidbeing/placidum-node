@@ -31,6 +31,7 @@ import seaBalloons from '@/assets/sea/sea-balloons.jpg';
 import seaJungle1 from '@/assets/sea/sea-jungle-1.jpg';
 import seaDark from '@/assets/sea/sea-dark.jpg';
 import seaFern from '@/assets/sea/sea-fern.jpg';
+import dordogne1 from '@/assets/dordogne/dordogne-1.jpg';
 
 export interface JournalMedia {
   type: 'image' | 'audio' | 'gallery';
@@ -570,7 +571,13 @@ For an instant, the great luminaries took shelter within the most obscure earth,
     title: "First Live Act",
     content: `Dordogne. Contours of what is to come. Improvisational collage: synthetic materials, field recordings, found audio. Improvised guitar along DSP. Solid body Gibson 335.
 
-Opening for E/tape and Nicolas Lutz. Among others that festival: Jan Jelinek, Chi Factory, Roedelius & Chaplin.`
+Opening for E/tape and Nicolas Lutz. Among others that festival: Jan Jelinek, Chi Factory, Roedelius & Chaplin.`,
+    contentBlocks: [
+      {
+        type: 'vertical-gallery',
+        images: [dordogne1]
+      }
+    ]
   },
   {
     date: "2017.07.11",
