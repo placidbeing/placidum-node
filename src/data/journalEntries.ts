@@ -557,7 +557,7 @@ Watching Bill play, a feeling of familiarity, as a memory from a very distant fu
     title: "New York",
     content: `After the album's release. Finalisation of Hearts. Many inspiring acts, nighttime walks.
 
-Bill Frisell. John Zorn. Tyshawn Sorey. Marc Ribot. Jimi Hendrix at the Bunker. Alan Vega exhibition. Matana Roberts. Cécile McLorin Salvant.
+Bill Frisell. Zorn. Tyshawn Sorey. Marc Ribot. On Ka'a Davis at the Stone (lofi sceneries + bluesy guitar). Alan Vega retrospect. Matana Roberts improvising in MOMA. Cécile McLorin Salvant.
 
 Encountered Ryuichi Sakamoto in the street.`,
     contentBlocks: [
