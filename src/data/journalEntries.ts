@@ -243,6 +243,10 @@ Film: The Scent of Green Papaya`
 'The problem is not the object in the picture, but the picture as an object.' Simple, raw compositions in oil and egg tempera. Fierce, brusque pictures made alongside first sculptures. Enormous, unwieldy plasticity — but gaiety, occasionally comedy.`,
     contentBlocks: [
       {
+        type: 'gallery',
+        images: [viennaCelestial, viennaSundial]
+      },
+      {
         type: 'text',
         text: `Mania, 2019:
 
@@ -250,7 +254,7 @@ Hands are an important motif. The hand of rulers, the hand of God. Blessing or d
       },
       {
         type: 'gallery',
-        images: [viennaCelestial, viennaSundial, viennaDome]
+        images: [viennaDome, viennaBloodstone, viennaAgate]
       },
       {
         type: 'text',
@@ -260,7 +264,7 @@ Hands are an important motif. The hand of rulers, the hand of God. Blessing or d
       },
       {
         type: 'gallery',
-        images: [viennaBloodstone, viennaAgate]
+        images: [viennaAmethyst, viennaUrn]
       },
       {
         type: 'text',
@@ -270,7 +274,7 @@ The canvas as an arena. Baselitz confidently plays with the method but does not 
       },
       {
         type: 'gallery',
-        images: [viennaAmethyst, viennaUrn, viennaLizards]
+        images: [viennaLizards, viennaTriton]
       },
       {
         type: 'text',
@@ -278,7 +282,7 @@ The canvas as an arena. Baselitz confidently plays with the method but does not 
       },
       {
         type: 'gallery',
-        images: [viennaTriton, viennaCoral]
+        images: [viennaCoral]
       }
     ]
   },
