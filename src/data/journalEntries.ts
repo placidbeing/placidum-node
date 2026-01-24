@@ -315,10 +315,6 @@ Botanical knowledge increased continually during the 15th and 16th centuries. Lo
       {
         type: 'text',
         text: `Bill Frisell and Thomas Morgan — Vienna playlist: Misterioso. Mumbo Jumbo. It Should Have Happened a Long Time Ago. You Only Live Twice. Goldfinger.`
-      },
-      {
-        type: 'gallery',
-        images: [viennaCoral]
       }
     ]
   },
