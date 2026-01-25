@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom';
+import { useRef } from 'react';
 import { journalEntries, ContentBlock } from '@/data/journalEntries';
 import JournalMedia from '@/components/JournalMedia';
 import ImageLightbox from '@/components/ImageLightbox';
+import YearIndicator from '@/components/YearIndicator';
 
 // Sort entries by date descending
 const sortedJournalEntries = [...journalEntries].sort((a, b) => b.date.localeCompare(a.date));
@@ -111,8 +113,14 @@ const Notes = () => {
     return segments.map((segment, i) => renderSegment(segment, i));
   };
 
+  // Refs for each entry to track scroll position
+  const entryRefs = useRef<(HTMLElement | null)[]>([]);
+
   return (
     <div className="notes-section safe-area wrap py-20">
+      {/* Year indicator */}
+      <YearIndicator entries={sortedJournalEntries} entryRefs={entryRefs} />
+      
       <header className="notes-header mb-16 text-left">
         <h1 className="font-cormorant text-4xl font-bold mb-6 codex-title" style={{ fontVariant: 'small-caps', letterSpacing: '0.1em' }}>
           Field Notes & Observations
@@ -134,7 +142,11 @@ const Notes = () => {
       
       <div className="space-y-16">
         {sortedJournalEntries.map((item, index) => (
-          <article key={index} className="note-entry relative py-8 text-left">
+          <article 
+            key={index} 
+            ref={(el) => { entryRefs.current[index] = el; }}
+            className="note-entry relative py-8 text-left"
+          >
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
               <div className="md:col-span-1">
                 <div className="font-mono text-sm leading-tight" style={{ letterSpacing: '0.05em', fontWeight: 300 }}>
