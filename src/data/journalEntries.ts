@@ -415,7 +415,7 @@ Botanical knowledge increased continually during the 15th and 16th centuries. Lo
       },
       {
         type: 'text',
-        text: `First trip.
+        text: `Landing with Uma Elmo by Jakob Bro, Arve Henriksen & Jorge Rossy.
 
 Nature, raw, blue-grey. Sculpted but not by the wind — from within. Precise, dense industrialisation, sense of design.`
       },
