@@ -55,6 +55,8 @@ import ensor3 from '@/assets/bozar/ensor-3.jpg';
 import ensor4 from '@/assets/bozar/ensor-4.jpg';
 import ensor5 from '@/assets/bozar/ensor-5.jpg';
 import ensor6 from '@/assets/bozar/ensor-6.jpg';
+import numbersPalm from '@/assets/numbers/numbers-palm.jpg';
+import numbersAlley from '@/assets/numbers/numbers-alley.jpg';
 
 export interface JournalMedia {
   type: 'image' | 'audio' | 'gallery';
@@ -298,6 +300,21 @@ Film: The Scent of Green Papaya`,
     date: "2024.03.07",
     title: "Anvers — Blauwe Zaal",
     content: "Jakob Bro / Midori Takada / Jesper Zeuthen / Marilyn Mazur."
+  },
+  {
+    date: "2022.04.22",
+    title: "Numbers",
+    content: `From abacus to vacuum tube to transistor — the same question compressed smaller each decade. Silicon at 10nm meets quantum tunnelling: electrons refuse barriers, flow continuously. The gate loses control.
+
+Graphene waits. Carbon sensing terahertz radiation, changing properties with smell. Flexible, elastic. A material that listens.
+
+Memory access time remains the bottleneck. 80 to 90% of machine learning is spent remembering. The rest is thought.`,
+    contentBlocks: [
+      {
+        type: 'vertical-gallery',
+        images: [numbersPalm, numbersAlley]
+      }
+    ]
   },
   {
     date: "2023.08.01",
