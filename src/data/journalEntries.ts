@@ -81,6 +81,7 @@ import gulbenkianTilesFlowers from '@/assets/gulbenkian/gulbenkian-tiles-flowers
 import gulbenkianLions from '@/assets/gulbenkian/gulbenkian-lions.jpg';
 import gulbenkianJade from '@/assets/gulbenkian/gulbenkian-jade.jpg';
 import pantelleriaLove from '@/assets/pantelleria/pantelleria-love.jpg';
+import parisRepubliqueSnow from '@/assets/paris/paris-republique-snow.jpg';
 
 export interface JournalMedia {
   type: 'image' | 'audio' | 'gallery';
@@ -144,6 +145,17 @@ Nivhek is the project of musician Liz Harris (aka Grouper), originally from the 
 
 There can be no meeting except in the unexpected. Beauty is always bizarre. The sudden emergence of a presence."`,
     isFullyItalic: true
+  },
+  {
+    date: "2026.01.06",
+    title: "",
+    content: "",
+    contentBlocks: [
+      {
+        type: 'vertical-gallery',
+        images: [parisRepubliqueSnow]
+      }
+    ]
   },
   {
     date: "2025.12.11",
