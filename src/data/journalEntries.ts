@@ -80,6 +80,7 @@ import gulbenkianTilesGrape from '@/assets/gulbenkian/gulbenkian-tiles-grape.jpg
 import gulbenkianTilesFlowers from '@/assets/gulbenkian/gulbenkian-tiles-flowers.jpg';
 import gulbenkianLions from '@/assets/gulbenkian/gulbenkian-lions.jpg';
 import gulbenkianJade from '@/assets/gulbenkian/gulbenkian-jade.jpg';
+import pantelleriaLove from '@/assets/pantelleria/pantelleria-love.jpg';
 
 export interface JournalMedia {
   type: 'image' | 'audio' | 'gallery';
@@ -194,7 +195,7 @@ Pentimento — The reappearance in a painting of images, forms, or strokes that 
 "Songs, to me, were more important than just light entertainment. They were my preceptor and guide into some altered consciousness of reality, some different republic, some liberated republic."`
   },
   {
-    date: "2025.10.01",
+    date: "2025.10.21",
     title: "Pantelleria",
     content: `Rûmi, Le livre du dedans:
 
@@ -210,7 +211,14 @@ Une voix te dira: Tu ne le sais donc pas? Le vent qui a brisé tes vaisseaux est
 
 Films: Lou Ye — Suzhou River. Wong Kar Wai — Fallen Angels. Jacques Rivette — La Belle Noiseuse. Tarkovsky — The Sacrifice. Cassavetes — Love Streams. Stephen Kijak — Scott Walker: 30 Century Man.
 
-Taste of Cherry: "My love I am flying off come to me, I'm hounded from my friend's garden, come to me. Tell me. We barely know each other. You go, I'm your friend. You stay, I'm your friend."`
+Taste of Cherry: "My love I am flying off come to me, I'm hounded from my friend's garden, come to me. Tell me. We barely know each other. You go, I'm your friend. You stay, I'm your friend."`,
+    contentBlocks: [
+      {
+        type: 'vertical-gallery',
+        images: [pantelleriaLove],
+        aspectRatio: '16:9'
+      }
+    ]
   },
   {
     date: "2025.05.09",
