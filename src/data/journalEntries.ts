@@ -148,6 +148,13 @@ There can be no meeting except in the unexpected. Beauty is always bizarre. The 
   {
     date: "2025.12.11",
     title: "",
+    content: `Sebald, Austerlitz:
+
+"The study of history, so Hilary's thesis ran, was merely a matter of pre-formed images fixed inside our heads, on which we keep our eyes while the truth lies elsewhere, somewhere apart, in a place no one has yet discovered."`
+  },
+  {
+    date: "2026.01.06",
+    title: "",
     content: `Dylan:
 
 "Folk music was a reality of a more brilliant dimension. It exceeded all human understanding, and if it called out to you, you could disappear and be sucked into it. It was so real, so more true to life than life itself. It was life magnified."
@@ -155,15 +162,6 @@ There can be no meeting except in the unexpected. Beauty is always bizarre. The 
 Sebald:
 
 "For hours I gazed at the specimens of stones in the display cases, the pyrite crystals, the dark green Siberian malachites, the Bohemian micas, granites and quartzes, jet-black basalts and isabeline calcite, and wondered on what foundations our world is built."`
-  },
-  {
-    date: "2026.01.06",
-    title: "",
-    content: `Sebald, Austerlitz:
-
-"The study of history, so Hilary's thesis ran, was merely a matter of pre-formed images fixed inside our heads, on which we keep our eyes while the truth lies elsewhere, somewhere apart, in a place no one has yet discovered."
-
-"It was to this sort of phenomenon, to these spurious incursions of the unreal into the real world, to certain effects of light in a landscape spread out before us, to the reflection in a beloved person's eye, that our deepest feelings were kindled, or what we took for such."`
   },
   {
     date: "2025.11.27",
@@ -508,13 +506,6 @@ Lorsque les torrents étreignent la rumeur. Que les idées cessent. Les torrents
 Je ne souhaite plus écouter de battements imposés, séquencés. Le monde déborde d'énergies mais on y perd notre sensibilité. Un vacarme si organisé qu'il en devient inaudible. Les lumières bleues nous aveuglent.
 
 J'ai besoin d'écouter les éléments, un environnement vide d'idées. Watson. Fennesz. Lloyd. Il y a des orages dans la nature — ils apaisent par leur force. Leur force n'est pas destructrice, elle ne disperse pas.`
-  },
-  {
-    date: "2023.01.07",
-    title: "",
-    content: `Sebald:
-
-"Mice and moles, and small mammals in general, also spend their sleeping hours in a world that exists purely within themselves, and who knows, perhaps the mites dream too, or the lettuce gazing up at the moon by night."`
   },
   {
     date: "2022.11.09",
