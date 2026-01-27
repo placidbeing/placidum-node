@@ -106,7 +106,7 @@ export const journalEntries: JournalEntry[] = [
     contentBlocks: [
       {
         type: 'gallery',
-        images: [ensor1, ensor2, ensor3, ensor4, ensor5, ensor6]
+        images: [ensor2, ensor3, ensor4, ensor5]
       }
     ]
   },
