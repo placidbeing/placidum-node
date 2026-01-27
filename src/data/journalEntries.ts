@@ -776,6 +776,32 @@ Wind stopped. Time resets backward, recites common wonders. Perfect circle rulin
 Faint call from the naked angle. My dream has paused, partially lost I suppose. Now eerie is this cotton sphere — its mines are none.`
   },
   {
+    date: "2017.05.15",
+    title: "",
+    content: `Victor Hugo:
+
+"Le Poète engage dans les profondeurs de l'inconnu le souvenir des amis intimes, des morts, des absents, des empires disparus.
+
+La double mer du Temps et de l'Espace.
+
+Comme la musique, art du nombre qui révèle la loi de l'Ordre Cosmique. Liaison de la langue humaine à celle de Dieu.
+
+Révéler la mesure entre la grande âme obscure de la nature et la simplicité de l'enfance. Faculté d'absorption de la vie extérieure. Sens subtils révélant les abîmes : les poètes voient le mystère partout. ← Exprimer les ténèbres captivantes, l'énigmatique physionomie du mystère. C'est Dieu qui remplit tout."`
+  },
+  {
+    date: "2017.05.08",
+    title: "",
+    content: `Le bleu de l'âme pour préserver la grâce des nuits. 
+Fontaines de sables et océans éteins.
+Une rosée qui se compose, vert sur noir, les chants comme les nuits, les plumes d'une certitude infinie.`
+  },
+  {
+    date: "2017.04.26",
+    title: "",
+    content: `Cicéron: «Si vous possédez une bibliothèque et un jardin, vous avez tout ce qu'il vous faut.»`,
+    isFullyItalic: true
+  },
+  {
     date: "2017.02.27",
     title: "",
     content: "Les mots se plissent, doucement, puis se voilent tant ces pensées sont réelles, trop grandes pour une âme sans courage. Elle arracha l'horloge du mur et brisa le verre. J'aimais les yeux fatigués, car ils ne récitent plus. C'est ça le jazz. La cadence des vents. Les cycles millénaires. La minute de trop."
