@@ -215,8 +215,7 @@ Taste of Cherry: "My love I am flying off come to me, I'm hounded from my friend
     contentBlocks: [
       {
         type: 'vertical-gallery',
-        images: [pantelleriaLove],
-        aspectRatio: '16:9'
+        images: [pantelleriaLove]
       }
     ]
   },
