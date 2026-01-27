@@ -157,7 +157,7 @@ Sebald:
 "For hours I gazed at the specimens of stones in the display cases, the pyrite crystals, the dark green Siberian malachites, the Bohemian micas, granites and quartzes, jet-black basalts and isabeline calcite, and wondered on what foundations our world is built."`
   },
   {
-    date: "2026.01.06",
+    date: "2022.01.06",
     title: "",
     content: `Sebald, Austerlitz:
 
