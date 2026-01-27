@@ -82,6 +82,7 @@ import gulbenkianLions from '@/assets/gulbenkian/gulbenkian-lions.jpg';
 import gulbenkianJade from '@/assets/gulbenkian/gulbenkian-jade.jpg';
 import pantelleriaLove from '@/assets/pantelleria/pantelleria-love.jpg';
 import parisRepubliqueSnow from '@/assets/paris/paris-republique-snow.jpg';
+import nivhekPresences from '@/assets/presences/nivhek-presences.jpg';
 
 export interface JournalMedia {
   type: 'image' | 'audio' | 'gallery';
@@ -134,9 +135,14 @@ with a film by Takashi Makino
 
 Sounds of trains and cars from drag races at Portland International Raceway / North Portland rail lines; synthesizer and other electronic components.
 
-ENGINE was born from a ten-year obsession with the noise of engines. The sound of excess, power, sex, destruction, capitalism, oil becoming atmospheric pollution, transformation, life. The guttural bass and revolutions mirror organic rhythms—imitating heartbeats, breathing, rushing blood. A spiraling ode to symbiotic decay.
-
-Nivhek is the project of musician Liz Harris (aka Grouper), originally from the Pacific Northwest. For this concert, Liz will be joined by Danish musician and composer Astrid Sonne on viola.`
+ENGINE was born from a ten-year obsession with the noise of engines. The sound of excess, power, sex, destruction, capitalism, oil becoming atmospheric pollution, transformation, life. The guttural bass and revolutions mirror organic rhythms—imitating heartbeats, breathing, rushing blood. A spiraling ode to symbiotic decay.`,
+    contentBlocks: [
+      {
+        type: 'vertical-gallery',
+        images: [nivhekPresences],
+        aspectRatio: '16:9'
+      }
+    ]
   },
   {
     date: "2025.12.16",
