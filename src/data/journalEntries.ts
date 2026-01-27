@@ -64,6 +64,9 @@ import japanHorizon from '@/assets/japan/japan-horizon.jpg';
 import japanMountainsPurple from '@/assets/japan/japan-mountains-purple.jpg';
 import japanPeaks from '@/assets/japan/japan-peaks.jpg';
 import japanSnow from '@/assets/japan/japan-snow.jpg';
+import japanFuji from '@/assets/japan/japan-fuji.jpg';
+import japanLifeBrief from '@/assets/japan/japan-life-brief.jpg';
+import japanHighway from '@/assets/japan/japan-highway.jpg';
 
 export interface JournalMedia {
   type: 'image' | 'audio' | 'gallery';
@@ -406,6 +409,10 @@ Botanical knowledge increased continually during the 15th and 16th centuries. Lo
     date: "2023.02.28",
     title: "Japan",
     contentBlocks: [
+      {
+        type: 'gallery',
+        images: [japanFuji, japanLifeBrief, japanHighway]
+      },
       {
         type: 'text',
         text: `First trip.
