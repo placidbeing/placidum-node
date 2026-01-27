@@ -57,6 +57,13 @@ import ensor5 from '@/assets/bozar/ensor-5.jpg';
 import ensor6 from '@/assets/bozar/ensor-6.jpg';
 import numbersPalm from '@/assets/numbers/numbers-palm.jpg';
 import numbersAlley from '@/assets/numbers/numbers-alley.jpg';
+import japanCredits from '@/assets/japan/japan-credits.jpg';
+import japanWindow from '@/assets/japan/japan-window.jpg';
+import japanPurpleClouds from '@/assets/japan/japan-purple-clouds.jpg';
+import japanHorizon from '@/assets/japan/japan-horizon.jpg';
+import japanMountainsPurple from '@/assets/japan/japan-mountains-purple.jpg';
+import japanPeaks from '@/assets/japan/japan-peaks.jpg';
+import japanSnow from '@/assets/japan/japan-snow.jpg';
 
 export interface JournalMedia {
   type: 'image' | 'audio' | 'gallery';
@@ -398,17 +405,40 @@ Botanical knowledge increased continually during the 15th and 16th centuries. Lo
   {
     date: "2023.02.28",
     title: "Japan",
-    content: `First trip.
+    contentBlocks: [
+      {
+        type: 'text',
+        text: `First trip.
 
-La nature, brute, bleue-gris. Sculptée mais pas par le vent — de l'intérieur. Industrialisation précise, dense, sens du design.
-
-Rêve: un tsunami remplit la terre d'eau. Escalade sans fin de montagnes pour échapper à la noyade. Villages de montagne abandonnés. On découvre une vie possible très haut. Les montagnes sont vertes, fleuries, tempérées.
-
-Rêve (avion du retour, au-dessus de la Mongolie glacée): Escale à Venise. Visite d'un immeuble où j'aurais vécu pendant mes années d'études. La vue sur le fleuve. Les appartements sont sublimes et spacieux. Une Venise idéale. Poissons énormes et multicolores.
+Nature, raw, blue-grey. Sculpted but not by the wind — from within. Precise, dense industrialisation, sense of design.`
+      },
+      {
+        type: 'gallery',
+        images: [japanWindow, japanHorizon, japanSnow]
+      },
+      {
+        type: 'text',
+        text: `Dream: a tsunami fills the earth with water. Endless climbing of mountains to escape drowning. Abandoned mountain villages. We discover a possible life very high up. The mountains are green, flowered, temperate.`
+      },
+      {
+        type: 'gallery',
+        images: [japanMountainsPurple, japanPeaks, japanPurpleClouds]
+      },
+      {
+        type: 'text',
+        text: `Dream (return flight, above frozen Mongolia): Stopover in Venice. Visiting a building where I would have lived during my student years. The view over the river. The apartments are sublime and spacious. An ideal Venice. Enormous, multicoloured fish.
 
 Sebald: "Those voices that traverse the ether once dusk has fallen, which only a few can pick up, have a life of their own like bats, and shun the light of day."
 
 Recordings.`
+      },
+      {
+        type: 'gallery',
+        images: [japanCredits],
+        caption: 'In-flight entertainment credits'
+      }
+    ],
+    content: ''
   },
   {
     date: "2023.02.08",
