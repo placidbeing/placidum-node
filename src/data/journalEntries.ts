@@ -138,7 +138,7 @@ ENGINE was born from a ten-year obsession with the noise of engines. The sound o
 Nivhek is the project of musician Liz Harris (aka Grouper), originally from the Pacific Northwest. For this concert, Liz will be joined by Danish musician and composer Astrid Sonne on viola.`
   },
   {
-    date: "2026.01.01",
+    date: "2025.12.16",
     title: "",
     content: `"We know that a true meeting has taken place when there is change in us. We made room for the other and room for a part of ourselves hitherto unknown.
 
@@ -157,7 +157,7 @@ Sebald:
 "For hours I gazed at the specimens of stones in the display cases, the pyrite crystals, the dark green Siberian malachites, the Bohemian micas, granites and quartzes, jet-black basalts and isabeline calcite, and wondered on what foundations our world is built."`
   },
   {
-    date: "2025.12.03",
+    date: "2022.01.06",
     title: "",
     content: `Sebald, Austerlitz:
 
@@ -233,8 +233,6 @@ In the bathroom at Yoshino, crouching, helped by turquoise touches, I remembered
 Otto Benson — Another Long Day
 
 At Yoshino, I realize the small bathroom is still there. It's up to me to remember it. To let it appear in the river — it will gently push away the voracious and authoritarian memories.
-
-Paul Motian: "Playing the music is real, physically and whole. Then it's gone. But it's still there, in the air, in the mind, it exists. It's not part of technology, it's not recorded. It's part of the soul. It's there."
 
 In the plane — Films: A Real Pain. Death Stranding. Listening: Terre Thaemlitz — Elevatorium.`
   },
@@ -548,6 +546,12 @@ J'ai besoin d'écouter les éléments, un environnement vide d'idées. Watson. F
     content: `Sebald, Austerlitz:
 
 "Alphonso once remarked that it seemed to him as if all the colours had faded, as if everything beautiful was disappearing and could only be found in places where no one looked for it anymore, in underwater gardens, dozens of fathoms below the surface of the sea."`
+  },
+  {
+    date: "2022.07.22",
+    title: "Paul Motian",
+    content: `"Playing the music is real, physically and whole. Then it's gone. But it's still there, in the air, in the mind, it exists. It's not part of technology, it's not recorded. It's part of the soul. It's there."`,
+    isFullyItalic: true
   },
   {
     date: "2022.05.01",
