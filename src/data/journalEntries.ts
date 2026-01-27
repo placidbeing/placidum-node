@@ -70,6 +70,16 @@ import japanHighway from '@/assets/japan/japan-highway.jpg';
 import anversStation from '@/assets/anvers/anvers-station.jpg';
 import anversStage from '@/assets/anvers/anvers-stage.jpg';
 import anversCathedral from '@/assets/anvers/anvers-cathedral.jpg';
+import gulbenkianBowl from '@/assets/gulbenkian/gulbenkian-bowl.jpg';
+import gulbenkianVaseBlue from '@/assets/gulbenkian/gulbenkian-vase-blue.jpg';
+import gulbenkianGlassBirds from '@/assets/gulbenkian/gulbenkian-glass-birds.jpg';
+import gulbenkianGlassPhoenix from '@/assets/gulbenkian/gulbenkian-glass-phoenix.jpg';
+import gulbenkianTilesSpiral from '@/assets/gulbenkian/gulbenkian-tiles-spiral.jpg';
+import gulbenkianPlateGreen from '@/assets/gulbenkian/gulbenkian-plate-green.jpg';
+import gulbenkianTilesGrape from '@/assets/gulbenkian/gulbenkian-tiles-grape.jpg';
+import gulbenkianTilesFlowers from '@/assets/gulbenkian/gulbenkian-tiles-flowers.jpg';
+import gulbenkianLions from '@/assets/gulbenkian/gulbenkian-lions.jpg';
+import gulbenkianJade from '@/assets/gulbenkian/gulbenkian-jade.jpg';
 
 export interface JournalMedia {
   type: 'image' | 'audio' | 'gallery';
@@ -343,6 +353,17 @@ Memory access time remains the bottleneck. 80 to 90% of machine learning is spen
 "The closer we can get to the natural world, the sooner we start to realise we are not separate. And that when we create, we are not just expressing our unique individuality, but our seamless connection to an infinite oneness."
 
 "It is said the ocean provides a closer reflection of who we are than any mirror."`
+  },
+  {
+    date: "2024.07.23",
+    title: "Gulbenkian, Lisbon",
+    content: "There is no inner path without an outer perimeter. The path connects the practical and public dimension of life (the outer perimeter) to the mystical knowledge of divine reality (the luminous and ineffable centre).",
+    contentBlocks: [
+      {
+        type: 'gallery',
+        images: [gulbenkianBowl, gulbenkianVaseBlue, gulbenkianGlassBirds, gulbenkianGlassPhoenix, gulbenkianTilesSpiral, gulbenkianPlateGreen, gulbenkianTilesGrape, gulbenkianTilesFlowers, gulbenkianLions, gulbenkianJade]
+      }
+    ]
   },
   {
     date: "2023.07.01",
