@@ -67,6 +67,9 @@ import japanSnow from '@/assets/japan/japan-snow.jpg';
 import japanFuji from '@/assets/japan/japan-fuji.jpg';
 import japanLifeBrief from '@/assets/japan/japan-life-brief.jpg';
 import japanHighway from '@/assets/japan/japan-highway.jpg';
+import anversStation from '@/assets/anvers/anvers-station.jpg';
+import anversStage from '@/assets/anvers/anvers-stage.jpg';
+import anversCathedral from '@/assets/anvers/anvers-cathedral.jpg';
 
 export interface JournalMedia {
   type: 'image' | 'audio' | 'gallery';
@@ -309,7 +312,13 @@ Film: The Scent of Green Papaya`,
   {
     date: "2024.03.07",
     title: "Anvers — Blauwe Zaal",
-    content: "Jakob Bro / Midori Takada / Jesper Zeuthen / Marilyn Mazur."
+    content: "Jakob Bro / Midori Takada / Jesper Zeuthen / Marilyn Mazur.",
+    contentBlocks: [
+      {
+        type: 'gallery',
+        images: [anversStation, anversStage, anversCathedral]
+      }
+    ]
   },
   {
     date: "2022.04.22",
