@@ -386,8 +386,8 @@ Memory access time remains the bottleneck. 80 to 90% of machine learning is spen
   },
   {
     date: "2023.06.17",
-    title: "Gypsy Night",
-    content: "Never heard an acoustic instrument sound like this."
+    title: "One more cup of coffee (gypsy night)",
+    content: `Mayo Hubert and another Japanese player. We ended up taking a cab to find a new bar when the one we were in closes. Standards after standards, they don't stop, sometimes his wife sings. Rarely heard such energy from acoustic instruments.... fills me persistent joy....`
   },
   {
     date: "2023.04.26",
