@@ -149,7 +149,9 @@ There can be no meeting except in the unexpected. Beauty is always bizarre. The 
   {
     date: "2026.01.06",
     title: "",
-    content: "",
+    content: `Sebald:
+
+"It was to this sort of phenomenon, to these spurious incursions of the unreal into the real world, to certain effects of light in a landscape spread out before us, to the reflection in a beloved person's eye, that our deepest feelings were kindled, or what we took for such."`,
     contentBlocks: [
       {
         type: 'vertical-gallery',
@@ -167,15 +169,6 @@ There can be no meeting except in the unexpected. Beauty is always bizarre. The 
 Sebald:
 
 "The study of history, so Hilary's thesis ran, was merely a matter of pre-formed images fixed inside our heads, on which we keep our eyes while the truth lies elsewhere, somewhere apart, in a place no one has yet discovered."`
-  },
-  {
-    date: "2026.06.01",
-    title: "",
-    content: `Sebald:
-
-"It was to this sort of phenomenon, to these spurious incursions of the unreal into the real world, to certain effects of light in a landscape spread out before us, to the reflection in a beloved person's eye, that our deepest feelings were kindled, or what we took for such."
-
-"For hours I gazed at the specimens of stones in the display cases, the pyrite crystals, the dark green Siberian malachites, the Bohemian micas, granites and quartzes, jet-black basalts and isabeline calcite, and wondered on what foundations our world is built."`
   },
   {
     date: "2025.11.27",
