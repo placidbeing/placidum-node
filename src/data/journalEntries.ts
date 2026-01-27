@@ -157,7 +157,7 @@ Sebald:
 "For hours I gazed at the specimens of stones in the display cases, the pyrite crystals, the dark green Siberian malachites, the Bohemian micas, granites and quartzes, jet-black basalts and isabeline calcite, and wondered on what foundations our world is built."`
   },
   {
-    date: "2022.01.06",
+    date: "2026.01.06",
     title: "",
     content: `Sebald, Austerlitz:
 
@@ -541,7 +541,7 @@ J'ai besoin d'écouter les éléments, un environnement vide d'idées. Watson. F
     ]
   },
   {
-    date: "2022.08.19",
+    date: "2025.12.28",
     title: "",
     content: `Sebald, Austerlitz:
 
