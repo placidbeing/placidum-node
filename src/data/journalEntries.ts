@@ -93,6 +93,10 @@ import venise2 from '@/assets/venise/venise-2.jpg';
 import venise3 from '@/assets/venise/venise-3.jpg';
 import venise4 from '@/assets/venise/venise-4.jpg';
 import venise5 from '@/assets/venise/venise-5.jpg';
+import earthbound1 from '@/assets/earthbound/earthbound-1.jpg';
+import earthbound2 from '@/assets/earthbound/earthbound-2.jpg';
+import earthbound3 from '@/assets/earthbound/earthbound-3.jpg';
+import earthbound4 from '@/assets/earthbound/earthbound-4.jpg';
 
 export interface JournalMedia {
   type: 'image' | 'audio' | 'gallery';
@@ -149,6 +153,17 @@ ENGINE was born from a ten-year obsession with the noise of engines. The sound o
         type: 'vertical-gallery',
         images: [nivhekPresences],
         aspectRatio: '16:9'
+      }
+    ]
+  },
+  {
+    date: "2025.05.26",
+    title: "Earthbound",
+    content: "",
+    contentBlocks: [
+      {
+        type: 'gallery',
+        images: [earthbound1, earthbound2, earthbound3, earthbound4]
       }
     ]
   },
