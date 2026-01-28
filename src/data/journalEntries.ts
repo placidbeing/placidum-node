@@ -698,6 +698,12 @@ Fifty-hour stream. Chi Factory. Deepchord — Rod Modell's submerged dub. Wavefo
     content: "Beirut."
   },
   {
+    date: "2019.12.18",
+    title: "",
+    content: `"Those who have not learned to read the ancient classics in the language in which they were written must have a very imperfect knowledge of the history of the human race; for it is remarkable that no transcript of them has ever been made into any modern tongue, unless our civilization itself may be regarded as such a transcript. Homer has never yet been printed in English, nor Eschylus, nor Virgil even, - works as refined, as solidly done, and as beautiful almost as the morning itself; for later writers, say what we will of their genius, have rarely, if ever, equalled the elaborate beauty and finish and the lifelong and heroic literary labors of the ancients. They only talk of forgetting them who never knew them. It will be soon enough to forget them when we have the learning and the genius which will enable us to attend to and appreciate them. That age will be rich indeed when those relics which we call Classics, and the still older and more than classic but even less known Scriptures of the nations, shall have still further accumulated, when the Vaticans shall be filled with Vedas and Zendavestas and Bibles, with Homers and Dantes and Shakspeares, and all the centuries to come shall have successively deposited their trophies in the forum of the world. By such a pile we may hope to scale heaven at last."`,
+    isFullyItalic: true
+  },
+  {
     date: "2019.02.14",
     title: "Fanar Birds",
     content: "Beirut."
