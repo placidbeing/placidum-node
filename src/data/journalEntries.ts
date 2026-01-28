@@ -88,6 +88,11 @@ import rueDeSeine2 from '@/assets/rue-de-seine/rue-de-seine-2.jpg';
 import rueDeSeine3 from '@/assets/rue-de-seine/rue-de-seine-3.jpg';
 import rueDeSeine4 from '@/assets/rue-de-seine/rue-de-seine-4.jpg';
 import motianTrio1989 from '@/assets/motian/motian-trio-1989.jpg';
+import venise1 from '@/assets/venise/venise-1.jpg';
+import venise2 from '@/assets/venise/venise-2.jpg';
+import venise3 from '@/assets/venise/venise-3.jpg';
+import venise4 from '@/assets/venise/venise-4.jpg';
+import venise5 from '@/assets/venise/venise-5.jpg';
 
 export interface JournalMedia {
   type: 'image' | 'audio' | 'gallery';
@@ -581,6 +586,29 @@ J'ai besoin d'écouter les éléments, un environnement vide d'idées. Watson. F
       {
         type: 'gallery',
         images: [rueDeSeine1, rueDeSeine2, rueDeSeine3, rueDeSeine4]
+      }
+    ]
+  },
+  {
+    date: "2021.07.13",
+    title: "Venise — Living with other beings",
+    content: "",
+    contentBlocks: [
+      {
+        type: 'text',
+        text: `"Our bodies are ecologies. They also belong to different ecosystems in which we are not alone. This room is dedicated to rethinking these ecologies more inclusively and symbiotically and to designing spaces in which these ecologies could thrive.`
+      },
+      {
+        type: 'gallery',
+        images: [venise1, venise2, venise3]
+      },
+      {
+        type: 'text',
+        text: `How does architecture recognize, represent, and help us live with other beings? How does it include the microbiomes of the body or the birds, bees, luffas, soils, and fungi as partners in building and inhabiting these ecosystems?"`
+      },
+      {
+        type: 'gallery',
+        images: [venise4, venise5]
       }
     ]
   },
