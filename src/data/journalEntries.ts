@@ -87,6 +87,7 @@ import rueDeSeine1 from '@/assets/rue-de-seine/rue-de-seine-1.jpg';
 import rueDeSeine2 from '@/assets/rue-de-seine/rue-de-seine-2.jpg';
 import rueDeSeine3 from '@/assets/rue-de-seine/rue-de-seine-3.jpg';
 import rueDeSeine4 from '@/assets/rue-de-seine/rue-de-seine-4.jpg';
+import motianTrio1989 from '@/assets/motian/motian-trio-1989.jpg';
 
 export interface JournalMedia {
   type: 'image' | 'audio' | 'gallery';
@@ -557,7 +558,15 @@ J'ai besoin d'écouter les éléments, un environnement vide d'idées. Watson. F
     date: "2022.07.22",
     title: "Paul Motian",
     content: `"Playing the music is real, physically and whole. Then it's gone. But it's still there, in the air, in the mind, it exists. It's not part of technology, it's not recorded. It's part of the soul. It's there."`,
-    isFullyItalic: true
+    isFullyItalic: true,
+    contentBlocks: [
+      {
+        type: 'vertical-gallery',
+        images: [motianTrio1989],
+        caption: 'Paul Motian Trio 1989',
+        aspectRatio: '16:9'
+      }
+    ]
   },
   {
     date: "2022.05.01",
