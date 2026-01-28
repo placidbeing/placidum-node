@@ -83,6 +83,10 @@ import gulbenkianJade from '@/assets/gulbenkian/gulbenkian-jade.jpg';
 import pantelleriaLove from '@/assets/pantelleria/pantelleria-love.jpg';
 import parisRepubliqueSnow from '@/assets/paris/paris-republique-snow.jpg';
 import nivhekPresences from '@/assets/presences/nivhek-presences.jpg';
+import rueDeSeine1 from '@/assets/rue-de-seine/rue-de-seine-1.jpg';
+import rueDeSeine2 from '@/assets/rue-de-seine/rue-de-seine-2.jpg';
+import rueDeSeine3 from '@/assets/rue-de-seine/rue-de-seine-3.jpg';
+import rueDeSeine4 from '@/assets/rue-de-seine/rue-de-seine-4.jpg';
 
 export interface JournalMedia {
   type: 'image' | 'audio' | 'gallery';
@@ -559,6 +563,17 @@ J'ai besoin d'écouter les éléments, un environnement vide d'idées. Watson. F
     date: "2022.05.01",
     title: "Los Angeles",
     content: "Recording: Pink Lime."
+  },
+  {
+    date: "2022.01.01",
+    title: "Rue de Seine",
+    content: "",
+    contentBlocks: [
+      {
+        type: 'gallery',
+        images: [rueDeSeine1, rueDeSeine2, rueDeSeine3, rueDeSeine4]
+      }
+    ]
   },
   {
     date: "2021",
