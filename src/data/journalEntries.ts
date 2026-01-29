@@ -165,7 +165,7 @@ ENGINE was born from a ten-year obsession with the noise of engines. The sound o
     ]
   },
   {
-    date: "2025.05.26",
+    date: "2020.05.26",
     title: "Earthbound",
     content: "",
     contentBlocks: [
