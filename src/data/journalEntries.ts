@@ -1123,7 +1123,7 @@ Stéphane Lambert on Klee:
       {
         type: 'audio',
         audioSrc: '/audio/chene-pluie-noir.mp3',
-        audioTitle: 'Chêne',
+        audioTitle: 'Placid Strait — Chêne',
         audioSubtitle: 'For Pluie Noir'
       }
     ]
