@@ -733,7 +733,15 @@ Fifty-hour stream. Chi Factory. Deepchord — Rod Modell's submerged dub. Wavefo
   {
     date: "2019.02.14",
     title: "Fanar Birds",
-    content: "Beirut."
+    content: "Beirut.",
+    contentBlocks: [
+      {
+        type: 'audio',
+        audioSrc: '/audio/oiseaux-fanar.mp3',
+        audioTitle: 'Oiseaux Fanar',
+        audioSubtitle: 'Beirut'
+      }
+    ]
   },
   {
     date: "2018.11.22",
@@ -944,7 +952,15 @@ Une rosée qui se compose, vert sur noir, les chants comme les nuits, les plumes
   {
     date: "2017.01.25",
     title: "Recording: The Day the Wall Fell",
-    content: ""
+    content: "",
+    contentBlocks: [
+      {
+        type: 'audio',
+        audioSrc: '/audio/the-day-the-wall-fell.mp3',
+        audioTitle: 'The Day the Wall Fell',
+        audioSubtitle: ''
+      }
+    ]
   },
   {
     date: "2017.01.15",
