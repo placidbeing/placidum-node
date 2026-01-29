@@ -97,6 +97,14 @@ import earthbound1 from '@/assets/earthbound/earthbound-1.jpg';
 import earthbound2 from '@/assets/earthbound/earthbound-2.jpg';
 import earthbound3 from '@/assets/earthbound/earthbound-3.jpg';
 import earthbound4 from '@/assets/earthbound/earthbound-4.jpg';
+import daysOfHeavenTiger from '@/assets/days-of-heaven/days-of-heaven-tiger.jpg';
+import daysOfHeavenHarvest from '@/assets/days-of-heaven/days-of-heaven-harvest.jpg';
+import daysOfHeavenSilhouettes from '@/assets/days-of-heaven/days-of-heaven-silhouettes.jpg';
+import daysOfHeavenGazebo from '@/assets/days-of-heaven/days-of-heaven-gazebo.jpg';
+import daysOfHeavenBear from '@/assets/days-of-heaven/days-of-heaven-bear.jpg';
+import daysOfHeavenScarecrow from '@/assets/days-of-heaven/days-of-heaven-scarecrow.jpg';
+import daysOfHeavenSnake from '@/assets/days-of-heaven/days-of-heaven-snake.jpg';
+import daysOfHeavenBuffalo from '@/assets/days-of-heaven/days-of-heaven-buffalo.jpg';
 
 export interface JournalMedia {
   type: 'image' | 'audio' | 'gallery';
@@ -696,6 +704,17 @@ Fifty-hour stream. Chi Factory. Deepchord — Rod Modell's submerged dub. Wavefo
     date: "2019.02.17",
     title: "Recording: Time Apart",
     content: "Beirut."
+  },
+  {
+    date: "2019.12.07",
+    title: "Terrence Malick — Days of Heaven",
+    content: "",
+    contentBlocks: [
+      {
+        type: 'gallery',
+        images: [daysOfHeavenTiger, daysOfHeavenBuffalo, daysOfHeavenSnake, daysOfHeavenScarecrow, daysOfHeavenHarvest, daysOfHeavenGazebo, daysOfHeavenSilhouettes, daysOfHeavenBear]
+      }
+    ]
   },
   {
     date: "2019.12.18",
