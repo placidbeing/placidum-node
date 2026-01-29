@@ -1031,8 +1031,16 @@ Arlequin. The jungle, woody and exotic mysteries (the back of my grandparents' h
   },
   {
     date: "2016.05.27",
-    title: "Swell Music II-1",
-    content: "Recording session."
+    title: "Swell Music II",
+    content: "Recording session.",
+    contentBlocks: [
+      {
+        type: 'audio',
+        audioSrc: '/audio/swell-music-ii.mp3',
+        audioTitle: 'Swell Music II',
+        audioSubtitle: ''
+      }
+    ]
   },
   {
     date: "2016.05.01",
