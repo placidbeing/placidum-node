@@ -599,7 +599,15 @@ J'ai besoin d'écouter les éléments, un environnement vide d'idées. Watson. F
   {
     date: "2022.05.01",
     title: "Los Angeles",
-    content: "Recording: Pink Lime."
+    content: "Recording: Pink Lime.",
+    contentBlocks: [
+      {
+        type: 'audio',
+        audioSrc: '/audio/pink-lime.mp3',
+        audioTitle: 'Pink Lime',
+        audioSubtitle: ''
+      }
+    ]
   },
   {
     date: "2022.01.01",
@@ -845,7 +853,15 @@ Plusieurs fois j'ai tenté d'écrire car mon cœur débordait, mais je restais, 
   {
     date: "2017.09.07",
     title: "Dakota Dreams",
-    content: "Weird retake. Recording."
+    content: "Weird retake. Recording.",
+    contentBlocks: [
+      {
+        type: 'audio',
+        audioSrc: '/audio/dakota-dreams-weird-retake.mp3',
+        audioTitle: 'Dakota Dreams',
+        audioSubtitle: 'Weird retake'
+      }
+    ]
   },
   {
     date: "2017.09.01",
@@ -1086,7 +1102,15 @@ Stéphane Lambert on Klee:
   {
     date: "2013.07.01",
     title: "Recording: Chêne",
-    content: "For Pluie Noir."
+    content: "For Pluie Noir.",
+    contentBlocks: [
+      {
+        type: 'audio',
+        audioSrc: '/audio/chene-pluie-noir.mp3',
+        audioTitle: 'Chêne',
+        audioSubtitle: 'For Pluie Noir'
+      }
+    ]
   },
   {
     date: "2013.04.15",
