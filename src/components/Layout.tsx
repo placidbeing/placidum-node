@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import placidumLogo from "@/assets/placidum-logo-latest.png";
+import placidumLogo from "@/assets/placidum-logo-new.png";
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -41,7 +41,7 @@ const Layout = ({ children }: LayoutProps) => {
         <div className="logo-block">
           <Link to="/" className="ink-underline inline-block">
             <div className="flex items-stretch gap-1">
-              <img src={placidumLogo} alt="Placidum Logo" className="h-[50px] md:h-[65px] lg:h-[80px] w-auto brightness-[1.2] opacity-70" />
+              <img src={placidumLogo} alt="Placidum Logo" className="h-[50px] md:h-[65px] lg:h-[80px] w-auto min-w-[40px] brightness-[1.2] opacity-70" />
               <div className="flex flex-col justify-end gap-0 pb-1">
                 <div className="logo-wordmark font-garamond tracking-wide leading-none">
                   PLACIDUM
