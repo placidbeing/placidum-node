@@ -7,12 +7,16 @@ interface JournalMediaProps {
 
 const JournalMedia = ({ media }: JournalMediaProps) => {
   if (media.type === 'image') {
+    const sizeClass = media.size === 'square-medium' 
+      ? 'w-48 h-48 object-cover' 
+      : 'w-full max-w-md';
+    
     return (
       <figure className="journal-media journal-media-image my-6">
         <OptimizedImage 
           src={media.src} 
           alt={media.caption || ''} 
-          className="w-full max-w-md mx-auto block grayscale-[20%] opacity-90 hover:opacity-100 transition-opacity duration-300"
+          className={`${sizeClass} mx-auto block grayscale-[20%] opacity-90 hover:opacity-100 transition-opacity duration-300`}
         />
         {media.caption && (
           <figcaption className="text-center text-sm text-muted-foreground mt-2 font-mono italic opacity-70">

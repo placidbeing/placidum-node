@@ -164,6 +164,7 @@ import neptune13 from '@/assets/neptune/neptune-13.jpg';
 import neptune14 from '@/assets/neptune/neptune-14.jpg';
 import jaguar1 from '@/assets/jaguar/jaguar-1.jpg';
 import jaguar2 from '@/assets/jaguar/jaguar-2.jpg';
+import albiniGrave from '@/assets/albini/albini-grave.jpg';
 
 export interface JournalMedia {
   type: 'image' | 'audio' | 'gallery';
@@ -171,6 +172,7 @@ export interface JournalMedia {
   images?: string[]; // Array of image paths (for gallery type)
   caption?: string; // Optional caption below media
   position?: 'inline' | 'after'; // 'inline' interrupts text, 'after' appears at end (default: 'after')
+  size?: 'default' | 'square-medium'; // Size variant for images
 }
 
 export interface ContentBlock {
@@ -487,7 +489,7 @@ Bucolico — No more eclecticism, no standards, no stylistic posturing. A richne
     content: ""
   },
   {
-    date: "2024.05.01",
+    date: "2024.05.03",
     title: "The Jaguar",
     content: `Wanting to refine guitar approach. Looking for a Telecaster to perform in New York. Ended up with a vintage Jaguar — very acoustic, quite heavy. Indian feel.
 
@@ -497,6 +499,19 @@ That same day: Bi Gan's Kaili Blues at the theatre.`,
         type: 'gallery',
         images: [jaguar1, jaguar2],
         aspectRatio: '9:16'
+      }
+    ]
+  },
+  {
+    date: "2024.05.09",
+    title: "Steve Albini",
+    content: `"I've always detested mechanized dance music, its stupid simplicity, the clubs where it was played, the people who went to those clubs, the drugs they took, the shit they liked to talk about, the clothes they wore, the battles they fought amongst each other..."`,
+    isFullyItalic: true,
+    media: [
+      {
+        type: 'image',
+        src: albiniGrave,
+        size: 'square-medium'
       }
     ]
   },
