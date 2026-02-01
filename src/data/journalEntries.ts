@@ -82,6 +82,9 @@ import gulbenkianLions from '@/assets/gulbenkian/gulbenkian-lions.jpg';
 import gulbenkianJade from '@/assets/gulbenkian/gulbenkian-jade.jpg';
 import pantelleriaLove from '@/assets/pantelleria/pantelleria-love.jpg';
 import parisRepubliqueSnow from '@/assets/paris/paris-republique-snow.jpg';
+import parisNeon from '@/assets/paris/paris-neon.jpg';
+import parisChandelier from '@/assets/paris/paris-chandelier.jpg';
+import parisLamp from '@/assets/paris/paris-lamp.jpg';
 import nivhekPresences from '@/assets/presences/nivhek-presences.jpg';
 import rueDeSeine1 from '@/assets/rue-de-seine/rue-de-seine-1.jpg';
 import rueDeSeine2 from '@/assets/rue-de-seine/rue-de-seine-2.jpg';
@@ -677,6 +680,18 @@ Lorsque les torrents étreignent la rumeur. Que les idées cessent. Les torrents
 Je ne souhaite plus écouter de battements imposés, séquencés. Le monde déborde d'énergies mais on y perd notre sensibilité. Un vacarme si organisé qu'il en devient inaudible. Les lumières bleues nous aveuglent.
 
 J'ai besoin d'écouter les éléments, un environnement vide d'idées. Watson. Fennesz. Lloyd. Il y a des orages dans la nature — ils apaisent par leur force. Leur force n'est pas destructrice, elle ne disperse pas.`
+  },
+  {
+    date: "2023.01.29",
+    title: "Paris Nights",
+    content: "",
+    contentBlocks: [
+      {
+        type: 'vertical-gallery',
+        images: [parisNeon, parisChandelier, parisLamp],
+        aspectRatio: '16:9'
+      }
+    ]
   },
   {
     date: "2022.11.09",
