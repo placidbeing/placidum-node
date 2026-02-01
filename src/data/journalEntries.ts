@@ -144,9 +144,8 @@ export const journalEntries: JournalEntry[] = [
     content: "",
     contentBlocks: [
       {
-        type: 'vertical-gallery',
-        images: [bossaManha],
-        aspectRatio: '1:1'
+        type: 'gallery',
+        images: [bossaManha]
       }
     ]
   },
