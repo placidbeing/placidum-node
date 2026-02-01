@@ -227,7 +227,12 @@ const Notes = () => {
                   ) : block.type === 'gallery' && block.images ? (
                     <div key={blockIndex} className="flex flex-wrap gap-3 my-5">
                       {block.images.map((src: string, imgIndex: number) => (
-                        <div key={imgIndex} className="flex-shrink-0 w-32 h-32 overflow-hidden">
+                        <div 
+                          key={imgIndex} 
+                          className={`flex-shrink-0 overflow-hidden ${
+                            block.aspectRatio === '9:16' ? 'h-32 aspect-[9/16]' : 'w-32 h-32'
+                          }`}
+                        >
                           <ImageLightbox 
                             src={src} 
                             alt={`Gallery image ${imgIndex + 1}`}

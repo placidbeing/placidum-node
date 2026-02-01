@@ -180,7 +180,7 @@ export interface ContentBlock {
   audioSrc?: string;
   audioTitle?: string;
   audioSubtitle?: string;
-  aspectRatio?: '16:9' | '16:7' | '16:6' | '4:3' | '1:1'; // Optional aspect ratio for images
+  aspectRatio?: '16:9' | '16:7' | '16:6' | '4:3' | '1:1' | '9:16'; // Optional aspect ratio for images
 }
 
 export interface JournalEntry {
@@ -498,7 +498,8 @@ That same day: Bi Gan's Kaili Blues at the theatre.`
     contentBlocks: [
       {
         type: 'gallery',
-        images: [neptune1, neptune2, neptune3, neptune4, neptune5, neptune6, neptune7, neptune8, neptune9, neptune10, neptune11, neptune12, neptune13, neptune14]
+        images: [neptune1, neptune2, neptune3, neptune4, neptune5, neptune6, neptune7, neptune8, neptune9, neptune10, neptune11, neptune12, neptune13, neptune14],
+        aspectRatio: '9:16'
       }
     ]
   },
