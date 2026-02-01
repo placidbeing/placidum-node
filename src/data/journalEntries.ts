@@ -105,8 +105,8 @@ import daysOfHeavenBear from '@/assets/days-of-heaven/days-of-heaven-bear.jpg';
 import daysOfHeavenScarecrow from '@/assets/days-of-heaven/days-of-heaven-scarecrow.jpg';
 import daysOfHeavenSnake from '@/assets/days-of-heaven/days-of-heaven-snake.jpg';
 import daysOfHeavenBuffalo from '@/assets/days-of-heaven/days-of-heaven-buffalo.jpg';
-import bossaManha from '@/assets/bossa/bossa-manha.jpg';
 import seaBeach from '@/assets/sea/sea-beach.jpg';
+import japanYoshinoDeer from '@/assets/japan/japan-yoshino-deer.jpg';
 
 export interface JournalMedia {
   type: 'image' | 'audio' | 'gallery';
@@ -140,25 +140,34 @@ export interface JournalEntry {
 
 export const journalEntries: JournalEntry[] = [
   {
-    date: "2025.06.12",
-    title: "Bossa",
-    content: "",
-    contentBlocks: [
-      {
-        type: 'gallery',
-        images: [bossaManha]
-      }
-    ]
-  },
-  {
     date: "2025.06.15",
-    title: "",
+    title: "De retour du Japon",
     content: "",
     contentBlocks: [
       {
         type: 'vertical-gallery',
         images: [seaBeach],
         aspectRatio: '16:9'
+      },
+      {
+        type: 'text',
+        text: `Yoshino.
+
+"Il est dit que la vie est un flux, une rivière, un voyage. Nous avançons perpétuellement et il n'y a pas de destination."
+
+The past can be a weight, but also a well of fresh water —`
+      },
+      {
+        type: 'gallery',
+        images: [japanYoshinoDeer]
+      },
+      {
+        type: 'text',
+        text: `In the bathroom at Yoshino, crouching, turquoise light reminded me of my childhood bathroom. The exterior could enter but I felt no fear. This simplicity remains part of me.
+
+Otto Benson — Another Long Day
+
+In the plane — Films: A Real Pain. Death Stranding. Listening: Terre Thaemlitz — Elevatorium.`
       }
     ]
   },
