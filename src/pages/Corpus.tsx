@@ -209,7 +209,7 @@ const Catalog = () => {
 
         <div className="space-y-24">
           {releases.map((release) => (
-            <article key={release.catalog} className="py-8">
+            <article key={release.catalog} id={release.catalog.toLowerCase().replace('.', '')} className="py-8">
               <div className="flex flex-col space-y-8">
                 {/* Folio Image - Full width on mobile */}
                 <div className="w-full">

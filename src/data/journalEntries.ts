@@ -518,7 +518,7 @@ That same day: Bi Gan's Kaili Blues at the theatre.`,
   {
     date: "2024.05.17",
     title: "PLUM6. Neptune",
-    content: "As time goes by our life is simplified — [PLUM6](/corpus)",
+    content: "As time goes by our life is simplified — [PLUM6.](/corpus#plum6)",
     contentBlocks: [
       {
         type: 'gallery',
