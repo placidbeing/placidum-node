@@ -146,7 +146,7 @@ export const journalEntries: JournalEntry[] = [
       {
         type: 'vertical-gallery',
         images: [bossaManha],
-        aspectRatio: '16:9'
+        aspectRatio: '1:1'
       }
     ]
   },
