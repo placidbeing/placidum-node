@@ -14,11 +14,7 @@ export default defineConfig(({ mode }) => ({
     react(),
     imagetools({
       defaultDirectives: (url) => {
-        // Skip logo files - they need PNG transparency
-        if (url.pathname.includes('logo')) {
-          return new URLSearchParams();
-        }
-        // Apply optimization to all other images from assets folder
+        // Apply optimization to all images from assets folder
         if (url.pathname.includes('/assets/')) {
           return new URLSearchParams({
             format: 'webp;jpg',
