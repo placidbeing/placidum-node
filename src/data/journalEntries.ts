@@ -126,6 +126,7 @@ import summerCloudsPink from '@/assets/summer/summer-clouds-pink.jpg';
 import summerCactiNight from '@/assets/summer/summer-cacti-night.jpg';
 import summerSeaLights from '@/assets/summer/summer-sea-lights.jpg';
 import newmorningLage from '@/assets/newmorning/newmorning-lage.jpg';
+import generateurYagi from '@/assets/generateur/generateur-yagi.jpg';
 
 export interface JournalMedia {
   type: 'image' | 'audio' | 'gallery';
@@ -632,11 +633,24 @@ Recordings.`
   {
     date: "2023.02.08",
     title: "Michiyo Yagi Trio",
-    content: `With Eivind Aarset & Jan Bang. Le Générateur, Gentilly.
-
-Cold, feverish, walking out of Paris to suburban reaches. Streets quiet and comforting. Charles Lloyd's Sangam on the way. Concert extremely inspiring — mossy, full of life and shades.
+    content: "",
+    contentBlocks: [
+      {
+        type: 'text',
+        text: `With Eivind Aarset & Jan Bang. Le Générateur, Gentilly.`
+      },
+      {
+        type: 'vertical-gallery',
+        images: [generateurYagi],
+        aspectRatio: '16:9'
+      },
+      {
+        type: 'text',
+        text: `Cold, feverish, walking out of Paris to suburban reaches. Streets quiet and comforting. Charles Lloyd's Sangam on the way. Concert extremely inspiring — mossy, full of life and shades.
 
 Recording.`
+      }
+    ]
   },
   {
     date: "2023.02.06",
