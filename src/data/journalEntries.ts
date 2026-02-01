@@ -106,7 +106,7 @@ import daysOfHeavenScarecrow from '@/assets/days-of-heaven/days-of-heaven-scarec
 import daysOfHeavenSnake from '@/assets/days-of-heaven/days-of-heaven-snake.jpg';
 import daysOfHeavenBuffalo from '@/assets/days-of-heaven/days-of-heaven-buffalo.jpg';
 import seaBeach from '@/assets/sea/sea-beach.jpg';
-import japanYoshino from '@/assets/japan/japan-yoshino.jpg';
+import japanYoshinoDeer from '@/assets/japan/japan-yoshino-deer.jpg';
 import madrid1 from '@/assets/madrid/madrid-1.jpg';
 import madrid2 from '@/assets/madrid/madrid-2.jpg';
 import madrid3 from '@/assets/madrid/madrid-3.jpg';
@@ -342,7 +342,7 @@ In the bathroom at Yoshino, crouching, helped by turquoise touches, I remembered
       },
       {
         type: 'gallery',
-        images: [japanYoshino]
+        images: [japanYoshinoDeer]
       },
       {
         type: 'text',
