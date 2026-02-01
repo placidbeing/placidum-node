@@ -125,6 +125,7 @@ import summerInteriorCoat from '@/assets/summer/summer-interior-coat.jpg';
 import summerCloudsPink from '@/assets/summer/summer-clouds-pink.jpg';
 import summerCactiNight from '@/assets/summer/summer-cacti-night.jpg';
 import summerSeaLights from '@/assets/summer/summer-sea-lights.jpg';
+import newmorningLage from '@/assets/newmorning/newmorning-lage.jpg';
 
 export interface JournalMedia {
   type: 'image' | 'audio' | 'gallery';
@@ -501,6 +502,17 @@ Memory access time remains the bottleneck. 80 to 90% of machine learning is spen
       {
         type: 'gallery',
         images: [gulbenkianBowl, gulbenkianVaseBlue, gulbenkianGlassBirds, gulbenkianTilesSpiral, gulbenkianTilesGrape, gulbenkianTilesFlowers, gulbenkianLions, gulbenkianJade]
+      }
+    ]
+  },
+  {
+    date: "2023.07.18",
+    title: "New Morning",
+    content: "Julian Lage, Jorge Roeder, Joey Baron — chemistry, warmth.",
+    contentBlocks: [
+      {
+        type: 'gallery',
+        images: [newmorningLage]
       }
     ]
   },
