@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useRef, useState } from 'react';
+import { Radio } from 'lucide-react';
 import { journalEntries, ContentBlock, JournalEntry } from '@/data/journalEntries';
 import JournalMedia from '@/components/JournalMedia';
 import ImageLightbox from '@/components/ImageLightbox';
@@ -165,7 +166,7 @@ const Notes = () => {
                 : 'text-muted-foreground opacity-60 hover:opacity-100'
             }`}
           >
-            {showAudioOnly ? '✕ Show all entries' : '♪ Sonic artefacts only'}
+            {showAudioOnly ? '✕ Show all entries' : <><Radio size={14} className="inline mr-1.5 -mt-0.5" /> Sonic artefacts only</>}
           </button>
         </div>
       </header>
