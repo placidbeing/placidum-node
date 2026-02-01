@@ -105,6 +105,7 @@ import daysOfHeavenBear from '@/assets/days-of-heaven/days-of-heaven-bear.jpg';
 import daysOfHeavenScarecrow from '@/assets/days-of-heaven/days-of-heaven-scarecrow.jpg';
 import daysOfHeavenSnake from '@/assets/days-of-heaven/days-of-heaven-snake.jpg';
 import daysOfHeavenBuffalo from '@/assets/days-of-heaven/days-of-heaven-buffalo.jpg';
+import bossaManha from '@/assets/bossa/bossa-manha.jpg';
 
 export interface JournalMedia {
   type: 'image' | 'audio' | 'gallery';
@@ -137,6 +138,18 @@ export interface JournalEntry {
 }
 
 export const journalEntries: JournalEntry[] = [
+  {
+    date: "2025.06.12",
+    title: "Bossa",
+    content: "",
+    contentBlocks: [
+      {
+        type: 'vertical-gallery',
+        images: [bossaManha],
+        aspectRatio: '16:9'
+      }
+    ]
+  },
   {
     date: "2024.03.06",
     title: "James Ensor",
