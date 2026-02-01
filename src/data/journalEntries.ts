@@ -106,6 +106,7 @@ import daysOfHeavenScarecrow from '@/assets/days-of-heaven/days-of-heaven-scarec
 import daysOfHeavenSnake from '@/assets/days-of-heaven/days-of-heaven-snake.jpg';
 import daysOfHeavenBuffalo from '@/assets/days-of-heaven/days-of-heaven-buffalo.jpg';
 import bossaManha from '@/assets/bossa/bossa-manha.jpg';
+import seaBeach from '@/assets/sea/sea-beach.jpg';
 
 export interface JournalMedia {
   type: 'image' | 'audio' | 'gallery';
@@ -146,6 +147,18 @@ export const journalEntries: JournalEntry[] = [
       {
         type: 'gallery',
         images: [bossaManha]
+      }
+    ]
+  },
+  {
+    date: "2025.06.15",
+    title: "",
+    content: "",
+    contentBlocks: [
+      {
+        type: 'vertical-gallery',
+        images: [seaBeach],
+        aspectRatio: '16:9'
       }
     ]
   },
