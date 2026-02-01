@@ -156,6 +156,12 @@ import neptune5 from '@/assets/neptune/neptune-5.jpg';
 import neptune6 from '@/assets/neptune/neptune-6.jpg';
 import neptune7 from '@/assets/neptune/neptune-7.jpg';
 import neptune8 from '@/assets/neptune/neptune-8.jpg';
+import neptune9 from '@/assets/neptune/neptune-9.jpg';
+import neptune10 from '@/assets/neptune/neptune-10.jpg';
+import neptune11 from '@/assets/neptune/neptune-11.jpg';
+import neptune12 from '@/assets/neptune/neptune-12.jpg';
+import neptune13 from '@/assets/neptune/neptune-13.jpg';
+import neptune14 from '@/assets/neptune/neptune-14.jpg';
 
 export interface JournalMedia {
   type: 'image' | 'audio' | 'gallery';
@@ -492,7 +498,7 @@ That same day: Bi Gan's Kaili Blues at the theatre.`
     contentBlocks: [
       {
         type: 'gallery',
-        images: [neptune1, neptune2, neptune3, neptune4, neptune5, neptune6, neptune7, neptune8]
+        images: [neptune1, neptune2, neptune3, neptune4, neptune5, neptune6, neptune7, neptune8, neptune9, neptune10, neptune11, neptune12, neptune13, neptune14]
       }
     ]
   },
