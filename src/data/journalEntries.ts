@@ -118,6 +118,7 @@ import hylics4 from '@/assets/hylics/hylics-4.png';
 import petitsbains1 from '@/assets/petitsbains/petitsbains-1.jpg';
 import petitsbains2 from '@/assets/petitsbains/petitsbains-2.jpg';
 import petitsbains3 from '@/assets/petitsbains/petitsbains-3.jpg';
+import newmorningLage from '@/assets/newmorning/newmorning-lage.jpg';
 
 export interface JournalMedia {
   type: 'image' | 'audio' | 'gallery';
@@ -494,6 +495,18 @@ Memory access time remains the bottleneck. 80 to 90% of machine learning is spen
       {
         type: 'gallery',
         images: [gulbenkianBowl, gulbenkianVaseBlue, gulbenkianGlassBirds, gulbenkianTilesSpiral, gulbenkianTilesGrape, gulbenkianTilesFlowers, gulbenkianLions, gulbenkianJade]
+      }
+    ]
+  },
+  {
+    date: "2023.07.18",
+    title: "New Morning",
+    content: "Julian Lage, Jorge Roeder, Joey Baron — chemistry, warmth.",
+    contentBlocks: [
+      {
+        type: 'vertical-gallery',
+        images: [newmorningLage],
+        aspectRatio: '16:9'
       }
     ]
   },
