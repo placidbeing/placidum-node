@@ -194,7 +194,7 @@ const Notes = () => {
                       </div>
                     )
                   ) : block.type === 'gallery' && block.images ? (
-                    <div key={blockIndex} className="flex flex-wrap gap-3 my-5">
+                    <div key={blockIndex} className="flex gap-3 my-5">
                       {block.images.map((src: string, imgIndex: number) => (
                         <div key={imgIndex} className="flex-shrink-0 w-32 h-32 overflow-hidden">
                           <ImageLightbox 
