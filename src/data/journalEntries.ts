@@ -288,21 +288,27 @@ Taste of Cherry: "My love I am flying off come to me, I'm hounded from my friend
   {
     date: "2025.05.09",
     title: "De retour du Japon",
-    content: `Yoshino.
+    content: "",
+    contentBlocks: [
+      {
+        type: 'text',
+        text: `Yoshino.
 
 "Il est dit que la vie est un flux, une rivière, un voyage. Nous avançons perpétuellement et il n'y a pas de destination."
 
 The past can be a weight, but also a well of fresh water —
 
-In the bathroom at Yoshino, crouching, helped by turquoise touches, I remembered the small bathroom of my childhood. It felt slightly outside the apartment. The exterior could enter but I was without fear. This simplicity is still there, part of me.
-
-Otto Benson — Another Long Day
-
-In the plane — Films: A Real Pain. Death Stranding. Listening: Terre Thaemlitz — Elevatorium.`,
-    contentBlocks: [
+In the bathroom at Yoshino, crouching, helped by turquoise touches, I remembered the small bathroom of my childhood. It felt slightly outside the apartment. The exterior could enter but I was without fear. This simplicity is still there, part of me.`
+      },
       {
         type: 'gallery',
         images: [japanYoshino]
+      },
+      {
+        type: 'text',
+        text: `Otto Benson — Another Long Day
+
+In the plane — Films: A Real Pain. Death Stranding. Listening: Terre Thaemlitz — Elevatorium.`
       }
     ]
   },
