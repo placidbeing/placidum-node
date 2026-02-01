@@ -105,8 +105,8 @@ import daysOfHeavenBear from '@/assets/days-of-heaven/days-of-heaven-bear.jpg';
 import daysOfHeavenScarecrow from '@/assets/days-of-heaven/days-of-heaven-scarecrow.jpg';
 import daysOfHeavenSnake from '@/assets/days-of-heaven/days-of-heaven-snake.jpg';
 import daysOfHeavenBuffalo from '@/assets/days-of-heaven/days-of-heaven-buffalo.jpg';
-import bossaManha from '@/assets/bossa/bossa-manha.jpg';
 import seaBeach from '@/assets/sea/sea-beach.jpg';
+import japanYoshino from '@/assets/japan/japan-yoshino.jpg';
 
 export interface JournalMedia {
   type: 'image' | 'audio' | 'gallery';
@@ -139,17 +139,6 @@ export interface JournalEntry {
 }
 
 export const journalEntries: JournalEntry[] = [
-  {
-    date: "2025.06.12",
-    title: "Bossa",
-    content: "",
-    contentBlocks: [
-      {
-        type: 'gallery',
-        images: [bossaManha]
-      }
-    ]
-  },
   {
     date: "2025.06.15",
     title: "",
@@ -303,15 +292,19 @@ Taste of Cherry: "My love I am flying off come to me, I'm hounded from my friend
 
 "Il est dit que la vie est un flux, une rivière, un voyage. Nous avançons perpétuellement et il n'y a pas de destination."
 
-The past can be a weight, but also a well of fresh water — it contains our future, especially the most distant. Water as a vector to travel back in time.
+The past can be a weight, but also a well of fresh water —
 
-In the bathroom at Yoshino, crouching, helped by turquoise touches, I remembered the small bathroom of my childhood. Mine alone, where my mother washed me and spoke to me. It seemed slightly outside the apartment. The exterior could enter but I was without fear. This simplicity is still there, part of me.
+In the bathroom at Yoshino, crouching, helped by turquoise touches, I remembered the small bathroom of my childhood. It felt slightly outside the apartment. The exterior could enter but I was without fear. This simplicity is still there, part of me.
 
 Otto Benson — Another Long Day
 
-At Yoshino, I realize the small bathroom is still there. It's up to me to remember it. To let it appear in the river — it will gently push away the voracious and authoritarian memories.
-
-In the plane — Films: A Real Pain. Death Stranding. Listening: Terre Thaemlitz — Elevatorium.`
+In the plane — Films: A Real Pain. Death Stranding. Listening: Terre Thaemlitz — Elevatorium.`,
+    contentBlocks: [
+      {
+        type: 'gallery',
+        images: [japanYoshino]
+      }
+    ]
   },
   {
     date: "2025.04.15",
