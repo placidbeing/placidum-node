@@ -115,6 +115,9 @@ import hylics1 from '@/assets/hylics/hylics-1.png';
 import hylics2 from '@/assets/hylics/hylics-2.png';
 import hylics3 from '@/assets/hylics/hylics-3.png';
 import hylics4 from '@/assets/hylics/hylics-4.png';
+import petitsbains1 from '@/assets/petitsbains/petitsbains-1.jpg';
+import petitsbains2 from '@/assets/petitsbains/petitsbains-2.jpg';
+import petitsbains3 from '@/assets/petitsbains/petitsbains-3.jpg';
 
 export interface JournalMedia {
   type: 'image' | 'audio' | 'gallery';
@@ -394,7 +397,13 @@ Bucolico — No more eclecticism, no standards, no stylistic posturing. A richne
   {
     date: "2024.10.14",
     title: "Laurel Halo & Leila Bordreuil at Petits Bains",
-    content: "Spectral harmonies, cohesive sonic ensemble. Underwater landscapes."
+    content: "Spectral harmonies, cohesive sonic ensemble. Underwater landscapes.",
+    contentBlocks: [
+      {
+        type: 'gallery',
+        images: [petitsbains1, petitsbains2, petitsbains3]
+      }
+    ]
   },
   {
     date: "2024.09.05",
