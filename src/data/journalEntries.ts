@@ -118,7 +118,6 @@ import hylics4 from '@/assets/hylics/hylics-4.png';
 import petitsbains1 from '@/assets/petitsbains/petitsbains-1.jpg';
 import petitsbains2 from '@/assets/petitsbains/petitsbains-2.jpg';
 import petitsbains3 from '@/assets/petitsbains/petitsbains-3.jpg';
-import newmorningLage from '@/assets/newmorning/newmorning-lage.jpg';
 
 export interface JournalMedia {
   type: 'image' | 'audio' | 'gallery';
@@ -412,17 +411,6 @@ Bucolico — No more eclecticism, no standards, no stylistic posturing. A richne
     content: ""
   },
   {
-    date: "2024.08.11",
-    title: "Last summer",
-    content: "",
-    contentBlocks: [
-      {
-        type: 'gallery',
-        images: [seaFern, seaDark, seaJungle1, seaBalloons, seaBeach, pacificGarden, pantelleriaLove]
-      }
-    ]
-  },
-  {
     date: "2024.05.01",
     title: "The Jaguar",
     content: `Wanting to refine guitar approach. Looking for a Telecaster to perform in New York. Ended up with a vintage Jaguar — very acoustic, quite heavy. Indian feel.
@@ -495,18 +483,6 @@ Memory access time remains the bottleneck. 80 to 90% of machine learning is spen
       {
         type: 'gallery',
         images: [gulbenkianBowl, gulbenkianVaseBlue, gulbenkianGlassBirds, gulbenkianTilesSpiral, gulbenkianTilesGrape, gulbenkianTilesFlowers, gulbenkianLions, gulbenkianJade]
-      }
-    ]
-  },
-  {
-    date: "2023.07.18",
-    title: "New Morning",
-    content: "Julian Lage, Jorge Roeder, Joey Baron — chemistry, warmth.",
-    contentBlocks: [
-      {
-        type: 'vertical-gallery',
-        images: [newmorningLage],
-        aspectRatio: '16:9'
       }
     ]
   },
