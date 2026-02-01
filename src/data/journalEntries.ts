@@ -131,6 +131,13 @@ import summerCactiNight from '@/assets/summer/summer-cacti-night.jpg';
 import summerSeaLights from '@/assets/summer/summer-sea-lights.jpg';
 import newmorningLage from '@/assets/newmorning/newmorning-lage.jpg';
 import generateurYagi from '@/assets/generateur/generateur-yagi.jpg';
+import abudhabi1 from '@/assets/abudhabi/abudhabi-1.jpg';
+import abudhabi2 from '@/assets/abudhabi/abudhabi-2.jpg';
+import abudhabi3 from '@/assets/abudhabi/abudhabi-3.jpg';
+import abudhabi4 from '@/assets/abudhabi/abudhabi-4.jpg';
+import abudhabi5 from '@/assets/abudhabi/abudhabi-5.jpg';
+import abudhabi6 from '@/assets/abudhabi/abudhabi-6.jpg';
+import abudhabi7 from '@/assets/abudhabi/abudhabi-7.jpg';
 
 export interface JournalMedia {
   type: 'image' | 'audio' | 'gallery';
@@ -832,6 +839,17 @@ Fifty-hour stream. Chi Factory. Deepchord — Rod Modell's submerged dub. Wavefo
       {
         type: 'gallery',
         images: [eve3, eve4]
+      }
+    ]
+  },
+  {
+    date: "2020.02.15",
+    title: "Abu Dhabi",
+    content: "",
+    contentBlocks: [
+      {
+        type: 'gallery',
+        images: [abudhabi1, abudhabi2, abudhabi3, abudhabi4, abudhabi5, abudhabi6, abudhabi7]
       }
     ]
   },
