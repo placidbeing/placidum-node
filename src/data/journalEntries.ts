@@ -179,11 +179,9 @@ ENGINE was born from a ten-year obsession with the noise of engines. The sound o
     date: "2020.07.06",
     title: "L'eau coule",
     content: `Natsume Sōseki:
-
 "Sans savoir pourquoi j'aime ce monde où nous venons pour mourir"
 
 Ozaki Hōsai:
-
 "Partout des meurtres et pourtant l'eau coule dans la nuit"`,
     isFullyItalic: true
   },
