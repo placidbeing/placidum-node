@@ -107,6 +107,10 @@ import daysOfHeavenSnake from '@/assets/days-of-heaven/days-of-heaven-snake.jpg'
 import daysOfHeavenBuffalo from '@/assets/days-of-heaven/days-of-heaven-buffalo.jpg';
 import seaBeach from '@/assets/sea/sea-beach.jpg';
 import japanYoshino from '@/assets/japan/japan-yoshino.jpg';
+import madrid1 from '@/assets/madrid/madrid-1.jpg';
+import madrid2 from '@/assets/madrid/madrid-2.jpg';
+import madrid3 from '@/assets/madrid/madrid-3.jpg';
+import madrid4 from '@/assets/madrid/madrid-4.jpg';
 
 export interface JournalMedia {
   type: 'image' | 'audio' | 'gallery';
@@ -339,7 +343,13 @@ Cuban music: Instruments interchange roles. Percussive and tonal. Rhythm constan
 
 Making music — not propositions about music, but the most complete form there is. Melodies, textures, harmonic progressions, narration, organic and dense rhythms, emergent spaces. Memories. A song, a piece.
 
-Bucolico — No more eclecticism, no standards, no stylistic posturing. A richness of evocations, yes, but one single recurring purpose. The ability to name.`
+Bucolico — No more eclecticism, no standards, no stylistic posturing. A richness of evocations, yes, but one single recurring purpose. The ability to name.`,
+    contentBlocks: [
+      {
+        type: 'gallery',
+        images: [madrid1, madrid2, madrid3, madrid4]
+      }
+    ]
   },
   {
     date: "2024.11.25",
