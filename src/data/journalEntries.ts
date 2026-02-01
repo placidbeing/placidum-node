@@ -221,6 +221,14 @@ ENGINE was born from a ten-year obsession with the noise of engines. The sound o
     ]
   },
   {
+    date: "2024.01.17",
+    title: "Jamie James — Music Of The Spheres",
+    content: `"It was in the music of this hero that Romantic anthropo-centrism first glimmers forth. In Beethoven originates the paradigm of the artistic personality, difficult and deeply individualistic, as well as the first strong emphasis on the human scale in the content of the music."
+
+"Music was no less metaphysical after Beethoven, but the search for transcendence turned inward. Divinity was to be found in the spirit of man, not in a remote and theoretical cosmos that could only be comprehended by increasingly abstruse mathematics. This earthward shift resulted in a paradox: as the emphasis was transferred to the human scale, the human agent—the artist—came to be regarded as superhuman."`,
+    isFullyItalic: true
+  },
+  {
     date: "2020.05.26",
     title: "Earthbound",
     content: "",
