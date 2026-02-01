@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { X } from 'lucide-react';
-import OptimizedImage from './OptimizedImage';
 
 interface ImageLightboxProps {
   src: string;
@@ -13,7 +12,7 @@ const ImageLightbox = ({ src, alt, className }: ImageLightboxProps) => {
 
   return (
     <>
-      <OptimizedImage 
+      <img 
         src={src} 
         alt={alt}
         className={`cursor-pointer ${className}`}
@@ -31,7 +30,7 @@ const ImageLightbox = ({ src, alt, className }: ImageLightboxProps) => {
           >
             <X size={28} />
           </button>
-          <OptimizedImage 
+          <img 
             src={src} 
             alt={alt}
             className="max-w-[90vw] max-h-[90vh] object-contain animate-scale-in"

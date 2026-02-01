@@ -599,15 +599,7 @@ J'ai besoin d'écouter les éléments, un environnement vide d'idées. Watson. F
   {
     date: "2022.05.01",
     title: "Los Angeles",
-    content: "Recording: Pink Lime.",
-    contentBlocks: [
-      {
-        type: 'audio',
-        audioSrc: '/audio/pink-lime.mp3',
-        audioTitle: 'Pink Lime',
-        audioSubtitle: ''
-      }
-    ]
+    content: "Recording: Pink Lime."
   },
   {
     date: "2022.01.01",
@@ -733,15 +725,7 @@ Fifty-hour stream. Chi Factory. Deepchord — Rod Modell's submerged dub. Wavefo
   {
     date: "2019.02.14",
     title: "Fanar Birds",
-    content: "Beirut.",
-    contentBlocks: [
-      {
-        type: 'audio',
-        audioSrc: '/audio/oiseaux-fanar.mp3',
-        audioTitle: 'Oiseaux Fanar',
-        audioSubtitle: 'Beirut'
-      }
-    ]
+    content: "Beirut."
   },
   {
     date: "2018.11.22",
@@ -861,15 +845,7 @@ Plusieurs fois j'ai tenté d'écrire car mon cœur débordait, mais je restais, 
   {
     date: "2017.09.07",
     title: "Dakota Dreams",
-    content: "Weird retake. Recording.",
-    contentBlocks: [
-      {
-        type: 'audio',
-        audioSrc: '/audio/dakota-dreams-weird-retake.mp3',
-        audioTitle: 'Dakota Dreams',
-        audioSubtitle: 'Weird retake'
-      }
-    ]
+    content: "Weird retake. Recording."
   },
   {
     date: "2017.09.01",
@@ -952,15 +928,7 @@ Une rosée qui se compose, vert sur noir, les chants comme les nuits, les plumes
   {
     date: "2017.01.25",
     title: "Recording: The Day the Wall Fell",
-    content: "",
-    contentBlocks: [
-      {
-        type: 'audio',
-        audioSrc: '/audio/the-day-the-wall-fell.mp3',
-        audioTitle: 'The Day the Wall Fell',
-        audioSubtitle: ''
-      }
-    ]
+    content: ""
   },
   {
     date: "2017.01.15",
@@ -1063,16 +1031,8 @@ Arlequin. The jungle, woody and exotic mysteries (the back of my grandparents' h
   },
   {
     date: "2016.05.27",
-    title: "Swell Music II",
-    content: "Recording session.",
-    contentBlocks: [
-      {
-        type: 'audio',
-        audioSrc: '/audio/swell-music-ii.mp3',
-        audioTitle: 'Swell Music II',
-        audioSubtitle: ''
-      }
-    ]
+    title: "Swell Music II-1",
+    content: "Recording session."
   },
   {
     date: "2016.05.01",
@@ -1118,15 +1078,7 @@ Stéphane Lambert on Klee:
   {
     date: "2013.07.01",
     title: "Recording: Chêne",
-    content: "For Pluie Noir.",
-    contentBlocks: [
-      {
-        type: 'audio',
-        audioSrc: '/audio/chene-pluie-noir.mp3',
-        audioTitle: 'Placid Strait — Chêne',
-        audioSubtitle: 'For Pluie Noir'
-      }
-    ]
+    content: "For Pluie Noir."
   },
   {
     date: "2013.04.15",
