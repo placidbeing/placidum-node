@@ -111,6 +111,10 @@ import madrid1 from '@/assets/madrid/madrid-1.jpg';
 import madrid2 from '@/assets/madrid/madrid-2.jpg';
 import madrid3 from '@/assets/madrid/madrid-3.jpg';
 import madrid4 from '@/assets/madrid/madrid-4.jpg';
+import hylics1 from '@/assets/hylics/hylics-1.png';
+import hylics2 from '@/assets/hylics/hylics-2.png';
+import hylics3 from '@/assets/hylics/hylics-3.png';
+import hylics4 from '@/assets/hylics/hylics-4.png';
 
 export interface JournalMedia {
   type: 'image' | 'audio' | 'gallery';
@@ -152,6 +156,17 @@ export const journalEntries: JournalEntry[] = [
         type: 'vertical-gallery',
         images: [seaBeach],
         aspectRatio: '16:9'
+      }
+    ]
+  },
+  {
+    date: "2025.02.09",
+    title: "Hylics",
+    content: "",
+    contentBlocks: [
+      {
+        type: 'gallery',
+        images: [hylics1, hylics2, hylics3, hylics4]
       }
     ]
   },
