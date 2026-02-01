@@ -844,12 +844,20 @@ Fifty-hour stream. Chi Factory. Deepchord — Rod Modell's submerged dub. Wavefo
   },
   {
     date: "2020.02.15",
-    title: "Abu Dhabi",
+    title: "Mapping territorial conquests",
     content: "",
     contentBlocks: [
       {
         type: 'gallery',
-        images: [abudhabi1, abudhabi2, abudhabi3, abudhabi4, abudhabi5, abudhabi6, abudhabi7]
+        images: [abudhabi1, abudhabi2, abudhabi3]
+      },
+      {
+        type: 'text',
+        text: `Territorial struggles, both on land and at sea, have always been a significant "meeting point" of civilisations. Maps are a record of the changing borders resulting from territorial conquests, while military strategy, which exploits geographical knowledge, serves both a historical and an educational role in the biographical accounts of great leaders.`
+      },
+      {
+        type: 'gallery',
+        images: [abudhabi4, abudhabi5, abudhabi6, abudhabi7]
       }
     ]
   },
