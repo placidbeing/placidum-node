@@ -138,6 +138,16 @@ import abudhabi4 from '@/assets/abudhabi/abudhabi-4.jpg';
 import abudhabi5 from '@/assets/abudhabi/abudhabi-5.jpg';
 import abudhabi6 from '@/assets/abudhabi/abudhabi-6.jpg';
 import abudhabi7 from '@/assets/abudhabi/abudhabi-7.jpg';
+import hk1 from '@/assets/hk/hk-1.jpg';
+import hk2 from '@/assets/hk/hk-2.jpg';
+import hk3 from '@/assets/hk/hk-3.jpg';
+import hk4 from '@/assets/hk/hk-4.jpg';
+import hk5 from '@/assets/hk/hk-5.jpg';
+import hk6 from '@/assets/hk/hk-6.jpg';
+import hk7 from '@/assets/hk/hk-7.jpg';
+import hk8 from '@/assets/hk/hk-8.jpg';
+import hk9 from '@/assets/hk/hk-9.jpg';
+import hk10 from '@/assets/hk/hk-10.jpg';
 
 export interface JournalMedia {
   type: 'image' | 'audio' | 'gallery';
@@ -427,6 +437,17 @@ Bucolico — No more eclecticism, no standards, no stylistic posturing. A richne
     content: `"We are gardeners who have a plot at the back of our house. We take what we have to magnify it, to elevate it and twist it in sometimes very surprising ways."
 
 "I wish to live entirely in the real, accept its limits, the cracks in our body, accept seeing things degrade or crumble without fear."`
+  },
+  {
+    date: "2024.11.11",
+    title: "HKx3",
+    content: "",
+    contentBlocks: [
+      {
+        type: 'gallery',
+        images: [hk1, hk2, hk3, hk4, hk5, hk6, hk7, hk8, hk9, hk10]
+      }
+    ]
   },
   {
     date: "2024.11.01",
