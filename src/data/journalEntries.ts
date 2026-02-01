@@ -85,6 +85,7 @@ import parisRepubliqueSnow from '@/assets/paris/paris-republique-snow.jpg';
 import parisNeon from '@/assets/paris/paris-neon.jpg';
 import parisChandelier from '@/assets/paris/paris-chandelier.jpg';
 import parisLamp from '@/assets/paris/paris-lamp.jpg';
+import parisLantern from '@/assets/paris/paris-lantern.jpg';
 import nivhekPresences from '@/assets/presences/nivhek-presences.jpg';
 import rueDeSeine1 from '@/assets/rue-de-seine/rue-de-seine-1.jpg';
 import rueDeSeine2 from '@/assets/rue-de-seine/rue-de-seine-2.jpg';
@@ -688,7 +689,7 @@ J'ai besoin d'écouter les éléments, un environnement vide d'idées. Watson. F
     contentBlocks: [
       {
         type: 'vertical-gallery',
-        images: [parisNeon, parisChandelier, parisLamp],
+        images: [parisNeon, parisChandelier, parisLamp, parisLantern],
         aspectRatio: '16:9'
       }
     ]
