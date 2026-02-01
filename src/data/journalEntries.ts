@@ -118,6 +118,13 @@ import hylics4 from '@/assets/hylics/hylics-4.png';
 import petitsbains1 from '@/assets/petitsbains/petitsbains-1.jpg';
 import petitsbains2 from '@/assets/petitsbains/petitsbains-2.jpg';
 import petitsbains3 from '@/assets/petitsbains/petitsbains-3.jpg';
+import summerFernNight from '@/assets/summer/summer-fern-night.jpg';
+import summerCloudsOrange from '@/assets/summer/summer-clouds-orange.jpg';
+import summerInteriorHallway from '@/assets/summer/summer-interior-hallway.jpg';
+import summerInteriorCoat from '@/assets/summer/summer-interior-coat.jpg';
+import summerCloudsPink from '@/assets/summer/summer-clouds-pink.jpg';
+import summerCactiNight from '@/assets/summer/summer-cacti-night.jpg';
+import summerSeaLights from '@/assets/summer/summer-sea-lights.jpg';
 
 export interface JournalMedia {
   type: 'image' | 'audio' | 'gallery';
@@ -170,6 +177,17 @@ export const journalEntries: JournalEntry[] = [
       {
         type: 'gallery',
         images: [hylics1, hylics2, hylics3, hylics4]
+      }
+    ]
+  },
+  {
+    date: "2024.08.11",
+    title: "Last summer",
+    content: "",
+    contentBlocks: [
+      {
+        type: 'gallery',
+        images: [summerFernNight, summerCloudsOrange, summerInteriorHallway, summerInteriorCoat, summerCloudsPink, summerCactiNight, summerSeaLights]
       }
     ]
   },
