@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import { useRef } from 'react';
-import { journalEntries, ContentBlock } from '@/data/journalEntries';
+import { useRef, useState } from 'react';
+import { journalEntries, ContentBlock, JournalEntry } from '@/data/journalEntries';
 import JournalMedia from '@/components/JournalMedia';
 import ImageLightbox from '@/components/ImageLightbox';
 import YearIndicator from '@/components/YearIndicator';
@@ -8,7 +8,23 @@ import YearIndicator from '@/components/YearIndicator';
 // Sort entries by date descending
 const sortedJournalEntries = [...journalEntries].sort((a, b) => b.date.localeCompare(a.date));
 
+// Check if entry contains audio
+const hasAudio = (entry: JournalEntry): boolean => {
+  if (entry.contentBlocks?.some(block => block.type === 'audio' && block.audioSrc)) {
+    return true;
+  }
+  if (entry.media?.some(m => m.type === 'audio')) {
+    return true;
+  }
+  return false;
+};
+
 const Notes = () => {
+  const [showAudioOnly, setShowAudioOnly] = useState(false);
+  
+  const filteredEntries = showAudioOnly 
+    ? sortedJournalEntries.filter(hasAudio)
+    : sortedJournalEntries;
   // Format date from YYYY.MM.DD to Latin and year below
   const formatDate = (dateStr: string) => {
     const parts = dateStr.split('.');
@@ -138,10 +154,24 @@ const Notes = () => {
             </a>
           </div>
         </div>
+        
+        {/* Subtle filter toggle */}
+        <div className="mt-8">
+          <button
+            onClick={() => setShowAudioOnly(!showAudioOnly)}
+            className={`font-mono text-sm transition-opacity duration-300 ${
+              showAudioOnly 
+                ? 'text-accent opacity-100' 
+                : 'text-muted-foreground opacity-60 hover:opacity-100'
+            }`}
+          >
+            {showAudioOnly ? '✕ Show all entries' : '♪ Sonic artefacts only'}
+          </button>
+        </div>
       </header>
       
       <div className="space-y-16">
-        {sortedJournalEntries.map((item, index) => (
+        {filteredEntries.map((item, index) => (
           <article 
             key={index} 
             ref={(el) => { entryRefs.current[index] = el; }}
