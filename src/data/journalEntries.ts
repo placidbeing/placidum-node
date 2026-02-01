@@ -331,23 +331,29 @@ The day before: Abel Ghekiere «In de verte, dit uitzicht»`
   {
     date: "2024.12.01",
     title: "Madrid",
-    content: `Several days immersed in the intrigues of Hideo Kojima. Stop trying to understand, let yourself be carried.
+    content: "",
+    contentBlocks: [
+      {
+        type: 'text',
+        text: `Several days immersed in the intrigues of Hideo Kojima. Stop trying to understand, let yourself be carried.
 
 Goya's Black Paintings. Incomplete, removed from their natural state, reinterpreted. Yet the balance is there, the nuances magnificent.
 
 "If you look for a meaning, you will miss everything that happens." — Nietzsche
 
-Joshua Edelman at Central Cafe (student of Barry Harris, played with Chuck Israel).
-
-Cuban music: Instruments interchange roles. Percussive and tonal. Rhythm constant but never repeating. Dance crystallizes melodies, the pulsing heart, grants harmonic freedom. Leaving tonality without losing communion.
-
-Making music — not propositions about music, but the most complete form there is. Melodies, textures, harmonic progressions, narration, organic and dense rhythms, emergent spaces. Memories. A song, a piece.
-
-Bucolico — No more eclecticism, no standards, no stylistic posturing. A richness of evocations, yes, but one single recurring purpose. The ability to name.`,
-    contentBlocks: [
+Joshua Edelman at Central Cafe (student of Barry Harris, played with Chuck Israel).`
+      },
       {
         type: 'gallery',
         images: [madrid1, madrid2, madrid3, madrid4]
+      },
+      {
+        type: 'text',
+        text: `Cuban music: Instruments interchange roles. Percussive and tonal. Rhythm constant but never repeating. Dance crystallizes melodies, the pulsing heart, grants harmonic freedom. Leaving tonality without losing communion.
+
+Making music — not propositions about music, but the most complete form there is. Melodies, textures, harmonic progressions, narration, organic and dense rhythms, emergent spaces. Memories. A song, a piece.
+
+Bucolico — No more eclecticism, no standards, no stylistic posturing. A richness of evocations, yes, but one single recurring purpose. The ability to name.`
       }
     ]
   },
