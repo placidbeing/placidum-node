@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import beautifulSituationCover from "@/assets/Beautiful_Situation_Cover_LD.jpg";
 import neptuneCover from "@/assets/Neptune_Cover.jpg";
 import interiorRoomsCover from "@/assets/IR_Cover.jpg";
@@ -8,6 +10,18 @@ import nocturnalSolutionsCover from "@/assets/Nocturnal_Solutions_Cover.jpg";
 import latitudesCover from "@/assets/Latitudes_Cover.jpg";
 
 const Catalog = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.getElementById(location.hash.slice(1));
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }, 100);
+      }
+    }
+  }, [location.hash]);
   // Format date from YYYYMMDD to Latin and numerical notation
   const formatDate = (dateStr: string) => {
     const year = dateStr.substring(0, 4);
