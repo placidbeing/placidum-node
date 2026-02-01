@@ -411,6 +411,17 @@ Bucolico — No more eclecticism, no standards, no stylistic posturing. A richne
     content: ""
   },
   {
+    date: "2024.08.11",
+    title: "Last summer",
+    content: "",
+    contentBlocks: [
+      {
+        type: 'gallery',
+        images: [seaFern, seaDark, seaJungle1, seaBalloons, seaBeach, pacificGarden, pantelleriaLove]
+      }
+    ]
+  },
+  {
     date: "2024.05.01",
     title: "The Jaguar",
     content: `Wanting to refine guitar approach. Looking for a Telecaster to perform in New York. Ended up with a vintage Jaguar — very acoustic, quite heavy. Indian feel.
