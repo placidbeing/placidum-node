@@ -166,7 +166,7 @@ const Notes = () => {
                 : 'text-muted-foreground opacity-60 hover:opacity-100'
             }`}
           >
-            {showAudioOnly ? '✕ Show all entries' : <><Radio size={14} className="inline mr-1.5 -mt-0.5" /> Sonic artefacts only</>}
+            {showAudioOnly ? '✕ Show all entries' : <><Radio size={14} className="inline mr-1.5 -mt-0.5" /> Vestigia Sonora</>}
           </button>
         </div>
       </header>
