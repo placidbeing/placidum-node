@@ -148,6 +148,14 @@ import hk7 from '@/assets/hk/hk-7.jpg';
 import hk8 from '@/assets/hk/hk-8.jpg';
 import hk9 from '@/assets/hk/hk-9.jpg';
 import hk10 from '@/assets/hk/hk-10.jpg';
+import neptune1 from '@/assets/neptune/neptune-1.jpg';
+import neptune2 from '@/assets/neptune/neptune-2.jpg';
+import neptune3 from '@/assets/neptune/neptune-3.jpg';
+import neptune4 from '@/assets/neptune/neptune-4.jpg';
+import neptune5 from '@/assets/neptune/neptune-5.jpg';
+import neptune6 from '@/assets/neptune/neptune-6.jpg';
+import neptune7 from '@/assets/neptune/neptune-7.jpg';
+import neptune8 from '@/assets/neptune/neptune-8.jpg';
 
 export interface JournalMedia {
   type: 'image' | 'audio' | 'gallery';
@@ -476,6 +484,17 @@ Bucolico — No more eclecticism, no standards, no stylistic posturing. A richne
     content: `Wanting to refine guitar approach. Looking for a Telecaster to perform in New York. Ended up with a vintage Jaguar — very acoustic, quite heavy. Indian feel.
 
 That same day: Bi Gan's Kaili Blues at the theatre.`
+  },
+  {
+    date: "2024.05.17",
+    title: "PLUM6. Neptune",
+    content: "As time goes by our life is simplified",
+    contentBlocks: [
+      {
+        type: 'gallery',
+        images: [neptune1, neptune2, neptune3, neptune4, neptune5, neptune6, neptune7, neptune8]
+      }
+    ]
   },
   {
     date: "2024.04.27",
