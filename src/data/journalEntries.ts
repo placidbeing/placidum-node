@@ -511,8 +511,9 @@ Memory access time remains the bottleneck. 80 to 90% of machine learning is spen
     content: "Julian Lage, Jorge Roeder, Joey Baron — chemistry, warmth.",
     contentBlocks: [
       {
-        type: 'gallery',
-        images: [newmorningLage]
+        type: 'vertical-gallery',
+        images: [newmorningLage],
+        aspectRatio: '16:9'
       }
     ]
   },
