@@ -782,6 +782,18 @@ Recordings.`
     content: ''
   },
   {
+    date: "2023.02.24",
+    title: "",
+    content: "",
+    contentBlocks: [
+      {
+        type: 'vertical-gallery',
+        images: [japanLifeBrief],
+        aspectRatio: '16:9'
+      }
+    ]
+  },
+  {
     date: "2023.02.08",
     title: "Michiyo Yagi Trio",
     content: "",
