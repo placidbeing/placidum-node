@@ -398,6 +398,12 @@ Taste of Cherry: "My love I am flying off come to me, I'm hounded from my friend
     ]
   },
   {
+    date: "2025.10.08",
+    title: "The Inner Sleeve by Chino Amobi, async (The Wire 501)",
+    content: "\"What begins as an ordinary view suddenly slips into the uncanny, where the familiar texture of dirt and clay mutates into bands of digital signal. It is a vision of the everyday recast as science fiction, where the mundane acquires a preternatural glow. That, to me, is the genius of Sakamoto's visual and sonic language: he reveals how the ordinary is always already strange. A potted plant is no longer simply a container of earth but a portal into another order of time, a site where memory and perception collapse into radiant streams.\"",
+    isFullyItalic: true
+  },
+  {
     date: "2025.05.09",
     title: "De retour du Japon",
     content: "",
