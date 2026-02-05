@@ -1,3 +1,4 @@
+import hassellAtmospherics from '@/assets/hassell/hassell-atmospherics.jpg';
 import viennaCoral from '@/assets/vienna/vienna-coral.jpg';
 import odysseaMoonHills from '@/assets/odyssea/odyssea-moon-hills.jpg';
 import odysseaCoastSunset from '@/assets/odyssea/odyssea-coast-sunset.jpg';
@@ -371,16 +372,23 @@ Hassell:
 
 "I've gone past the stage where questioning the nature of music, of sound, was the subject matter of my work, and am content to simply try to make beautiful things according to certain rules."`
   },
-{
+  {
     date: "2025.11.04",
     title: "",
     content: `Hassell, Atmospherics:
 
 "See music as a painting with layers, retouchings, second thoughts, with new layers erased in places so that the under-painting shows through."
 
-Pentimento — The reappearance in a painting of images, forms, or strokes that have been changed and are used as elements of a final composition.
-
-"Vertical listening: listening to 'what's happening NOW' — letting your inner ear parse out the entire spectrum of sound, asking yourself what kinds of 'shapes' are being manifested."
+Pentimento — The reappearance in a painting of images, forms, or strokes that have been changed and are used as elements of a final composition.`,
+    media: [
+      {
+        type: 'image',
+        src: hassellAtmospherics,
+        position: 'inline',
+        size: 'square-medium'
+      }
+    ],
+    contentAfterMedia: `"Vertical listening: listening to 'what's happening NOW' — letting your inner ear parse out the entire spectrum of sound, asking yourself what kinds of 'shapes' are being manifested."
 
 "I've gone past the stage where questioning the nature of music, of sound, was the subject matter of my work, and am content to simply try to make beautiful things according to certain rules."`
   },
