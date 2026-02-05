@@ -186,6 +186,7 @@ import soulages7 from '@/assets/soulages/soulages-7.jpg';
 import soulages8 from '@/assets/soulages/soulages-8.jpg';
 import soulages9 from '@/assets/soulages/soulages-9.jpg';
 import soulages10 from '@/assets/soulages/soulages-10.jpg';
+import intrinsicWaterRoom from '@/assets/intrinsic/intrinsic-water-room.png';
 
 export interface JournalMedia {
   type: 'image' | 'audio' | 'gallery';
@@ -1634,9 +1635,14 @@ Stéphane Lambert on Klee:
   },
   {
     date: "2016.09.18",
-    title: "Intrinsic",
-    content: "",
+    title: "Live at Intrinsic Water Room",
+    content: "Dj set opening for Hans Joachim Roedelius & Christopher Chaplin, visuals by dreamrec.",
     contentBlocks: [
+      {
+        type: 'vertical-gallery',
+        images: [intrinsicWaterRoom],
+        aspectRatio: '16:9'
+      },
       {
         type: 'audio',
         audioSrc: 'https://archive.org/download/placidum-chronicles-a-silent-spectator/Shcaa%20-%20Intrinsic%20%28Cut%20%26%20Mastering%29.mp3',
