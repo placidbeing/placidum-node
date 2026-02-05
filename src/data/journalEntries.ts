@@ -1542,6 +1542,123 @@ Stéphane Lambert on Klee:
     ]
   },
   {
+    date: "2025.04.02",
+    title: "Futurewaves",
+    content: "",
+    contentBlocks: [
+      {
+        type: 'audio',
+        audioSrc: 'https://archive.org/download/placidum-chronicles-a-silent-spectator/shcaa%20futurewaves%20v4.1.mp3',
+        audioTitle: 'Futurewaves',
+        audioSubtitle: ''
+      }
+    ]
+  },
+  {
+    date: "2024.11.04",
+    title: "HKCR",
+    content: "",
+    contentBlocks: [
+      {
+        type: 'audio',
+        audioSrc: 'https://archive.org/download/placidum-chronicles-a-silent-spectator/SHCAA%20HKCR2%20v1_01.mp3',
+        audioTitle: 'HKCR',
+        audioSubtitle: ''
+      }
+    ]
+  },
+  {
+    date: "2024.06.09",
+    title: "XLR8R",
+    content: "",
+    contentBlocks: [
+      {
+        type: 'audio',
+        audioSrc: 'https://archive.org/download/placidum-chronicles-a-silent-spectator/Shcaa%20XLR8R.mp3',
+        audioTitle: 'XLR8R',
+        audioSubtitle: ''
+      }
+    ]
+  },
+  {
+    date: "2023.01.13",
+    title: "radio.syg.ma",
+    content: "",
+    contentBlocks: [
+      {
+        type: 'audio',
+        audioSrc: 'https://archive.org/download/placidum-chronicles-a-silent-spectator/Shcaa%20-%20Paris.mp3',
+        audioTitle: 'Paris',
+        audioSubtitle: ''
+      }
+    ]
+  },
+  {
+    date: "2021.05.27",
+    title: "Miromx",
+    content: "",
+    contentBlocks: [
+      {
+        type: 'audio',
+        audioSrc: 'https://archive.org/download/placidum-chronicles-a-silent-spectator/Ain°%20Miromx.mp3',
+        audioTitle: 'Miromx',
+        audioSubtitle: ''
+      }
+    ]
+  },
+  {
+    date: "2020.05.29",
+    title: "Hazmx",
+    content: "",
+    contentBlocks: [
+      {
+        type: 'audio',
+        audioSrc: 'https://archive.org/download/placidum-chronicles-a-silent-spectator/shcaa%20hazmx.mp3',
+        audioTitle: 'Hazmx',
+        audioSubtitle: ''
+      }
+    ]
+  },
+  {
+    date: "2017.06.01",
+    title: "Bird Of Prey",
+    content: "For Phonographe Corp.",
+    contentBlocks: [
+      {
+        type: 'audio',
+        audioSrc: 'https://archive.org/download/placidum-chronicles-a-silent-spectator/Shcaa%20-%20Bird%20Of%20Prey%20%28For%20Phonographe%20Corp%29.mp3',
+        audioTitle: 'Bird Of Prey',
+        audioSubtitle: 'For Phonographe Corp'
+      }
+    ]
+  },
+  {
+    date: "2016.09.18",
+    title: "Intrinsic",
+    content: "",
+    contentBlocks: [
+      {
+        type: 'audio',
+        audioSrc: 'https://archive.org/download/placidum-chronicles-a-silent-spectator/Shcaa%20-%20Intrinsic%20%28Cut%20%26%20Mastering%29.mp3',
+        audioTitle: 'Intrinsic',
+        audioSubtitle: ''
+      }
+    ]
+  },
+  {
+    date: "2014.06.02",
+    title: "Lover, Dancer",
+    content: "For Sharingtones.",
+    contentBlocks: [
+      {
+        type: 'audio',
+        audioSrc: 'https://archive.org/download/placidum-chronicles-a-silent-spectator/Lovda%20%28for%20Sharingtones%29.mp3',
+        audioTitle: 'Lover, Dancer',
+        audioSubtitle: 'For Sharingtones'
+      }
+    ]
+  },
+  {
     date: "2014",
     title: "Spot Bleu",
     content: "A set that opened doors. Cross-contaminated curations since absorbed into my language. Could not see the crowd — the lights.",
@@ -1549,6 +1666,12 @@ Stéphane Lambert on Klee:
       {
         type: 'vertical-gallery',
         images: [spotbleu1]
+      },
+      {
+        type: 'audio',
+        audioSrc: 'https://archive.org/download/placidum-chronicles-a-silent-spectator/shcaa%20%40%20spot%20bleu%2006.mp3',
+        audioTitle: 'Spot Bleu',
+        audioSubtitle: ''
       }
     ]
   },
@@ -1567,10 +1690,16 @@ Stéphane Lambert on Klee:
   },
   {
     date: "2013.04.15",
-    title: "Transmission: Iz Pepla",
-    content: `For Pluie Noir.
-
-https://soundcloud.com/pluie-noir/pluie-noir-podcast-028`
+    title: "Iz Pepla",
+    content: "For Pluie Noir.",
+    contentBlocks: [
+      {
+        type: 'audio',
+        audioSrc: 'https://archive.org/download/placidum-chronicles-a-silent-spectator/Placid%20Strait%20-%20iz%20pepla%20%28for%20Pluie%20Noir%29.mp3',
+        audioTitle: 'Iz Pepla',
+        audioSubtitle: 'For Pluie Noir'
+      }
+    ]
   },
   {
     date: "2013.03.21",
