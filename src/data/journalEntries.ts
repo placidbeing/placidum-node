@@ -1008,6 +1008,12 @@ Fifty-hour stream. Chi Factory. Deepchord — Rod Modell's submerged dub. Wavefo
     ]
   },
   {
+    date: "2019.07.12",
+    title: "Nabokov, Pale Fire",
+    content: "\"I am looking at him. I am witnessing a unique physiological phenomenon: John Shade perceiving and transforming the world, taking it in and taking it apart, re-combining its elements in the very process of storing them up so as to produce at some unspecified date an organic miracle, a fusion of image and music, a line of verse. And I experienced the same thrill as when in my early boyhood I once watched across the tea table in my uncle's castle a conjurer who had just given a fantastic performance and was now quietly consuming a vanilla ice. I stared at his powdered cheeks, at the magical flower in his buttonhole where it had passed through a succession of different colors and had now become fixed as a white carnation, and especially at his marvelous fluid-looking fingers which could if he chose make his spoon dissolve into a sunbeam by twiddling it, or turn his plate into a dove by tossing it up in the air.\"",
+    isFullyItalic: true
+  },
+  {
     date: "2019.02.17",
     title: "Recording: Time Apart",
     content: "Beirut."
