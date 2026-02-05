@@ -373,7 +373,7 @@ Hassell:
 "I've gone past the stage where questioning the nature of music, of sound, was the subject matter of my work, and am content to simply try to make beautiful things according to certain rules."`
   },
   {
-    date: "2025.11.04",
+    date: "2025.10.16",
     title: "",
     content: `Hassell, Atmospherics:
 
