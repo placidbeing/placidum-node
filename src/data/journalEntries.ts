@@ -911,6 +911,14 @@ Par l'abstraction figurative, l'histoire de l'art est revisitée par les deux bo
 Les rideaux de pluie miroitante s'évanouirent : la mer s'étendait, c'était une mer du Sud, d'un bleu extrêmement profond, étincelant de lueurs argentées, avec une baie magnifique, dégagée et vaporeuse d'un côté, à demi sertie dans de vastes massifs montagneux dont le bleu allait en se délavant…`
   },
   {
+    date: "2020.12.07",
+    title: "Lettre de Henri Matisse à Marguerite Duthuit",
+    content: `«Un tableau fauve est un bloc lumineux formé par l'accord de plusieurs couleurs, formant un espace possible pour l'esprit (dans le genre, à mon sens, de celui d'un accord musical).
+
+L'espace créé peut être vide comme une pièce d'appartement mais l'espace est tout de même créé. Suis-je clair? Je le crois.»`,
+    isFullyItalic: true
+  },
+  {
     date: "2020.10.16",
     title: "Sean Booth",
     content: "\"The piano is beautiful but it's dumb, it separates the artist from the string.\"",
