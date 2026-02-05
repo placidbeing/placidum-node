@@ -366,18 +366,13 @@ Sebald:
 "The study of history, so Hilary's thesis ran, was merely a matter of pre-formed images fixed inside our heads, on which we keep our eyes while the truth lies elsewhere, somewhere apart, in a place no one has yet discovered."`
   },
   {
-    date: "2025.11.27",
-    title: "",
-    content: `Dylan: "A folk song has over a thousand faces and you must meet them all if you want to play this stuff."`
-  },
-  {
     date: "2025.11.03",
     title: "Istanbul",
-    content: "",
+    content: `Dylan: "A folk song has over a thousand faces and you must meet them all if you want to play this stuff."`,
     contentBlocks: [
       {
         type: 'gallery',
-        images: [istanbul1, istanbul2, istanbul3, istanbul4, istanbul5, istanbul6]
+        images: [istanbul1, istanbul2, istanbul3, istanbul4, istanbul6]
       }
     ]
   },
