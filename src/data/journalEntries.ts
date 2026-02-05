@@ -296,7 +296,7 @@ ENGINE was born from a ten-year obsession with the noise of engines. The sound o
     contentBlocks: [
       {
         type: 'gallery',
-        images: [soulages1, soulages2, soulages3, soulages4, soulages5, soulages6, soulages7, soulages8, soulages9, soulages10],
+        images: [soulages4, soulages5, soulages2, soulages6, soulages7, soulages3, soulages8, soulages9, soulages10],
         aspectRatio: '9:16'
       }
     ]
