@@ -721,7 +721,7 @@ Memory access time remains the bottleneck. 80 to 90% of machine learning is spen
       {
         type: 'audio',
         audioSrc: '/audio/gypsy-night.mp3',
-        audioTitle: 'Nuit Avec Mayo',
+        audioTitle: 'nuit avec mayo',
         audioSubtitle: ''
       }
     ]
