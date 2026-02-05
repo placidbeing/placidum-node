@@ -715,14 +715,14 @@ Memory access time remains the bottleneck. 80 to 90% of machine learning is spen
   },
   {
     date: "2023.06.17",
-    title: "One more cup of coffee (gypsy night)",
+    title: "One more cup of coffee",
     content: `Mayo Hubert and another Japanese player. We ended up taking a cab to find a new bar when the one we were in closes. Standards after standards, they don't stop, sometimes his wife sings. Rarely heard such energy from acoustic instruments.... fills me persistent joy....`,
     contentBlocks: [
       {
         type: 'audio',
         audioSrc: '/audio/gypsy-night.mp3',
-        audioTitle: 'Gypsy Night',
-        audioSubtitle: 'Nuit Avec Mayo'
+        audioTitle: 'Nuit Avec Mayo',
+        audioSubtitle: ''
       }
     ]
   },
