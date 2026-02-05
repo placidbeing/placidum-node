@@ -165,6 +165,7 @@ import neptune14 from '@/assets/neptune/neptune-14.jpg';
 import jaguar1 from '@/assets/jaguar/jaguar-1.jpg';
 import jaguar2 from '@/assets/jaguar/jaguar-2.jpg';
 import albiniGrave from '@/assets/albini/albini-grave.jpg';
+import kleeNachtpflanzen from '@/assets/klee-nachtpflanzen.jpg';
 
 export interface JournalMedia {
   type: 'image' | 'audio' | 'gallery';
@@ -815,6 +816,23 @@ J'ai besoin d'écouter les éléments, un environnement vide d'idées. Watson. F
         images: [motianTrio1989],
         caption: 'Paul Motian Trio 1989',
         aspectRatio: '16:9'
+      }
+    ]
+  },
+  {
+    date: "2022.11.09",
+    title: "Stéphane Lambert",
+    content: `Peindre est un moyen, un lieu, une direction.
+
+Le peintre expérimente son art tandis qu'il tente à travers lui de donner une forme au sentiment qui l'habite. Les œuvres se confondent aux effets que leurs artifices produisent. Les mosaïques calment la frayeur de la vue en ce point où ce qui se décompose rejoint ce qui s'assemble. L'ornement devient le sanctuaire qu'il décore. Dans la tanière des âmes, Klee bâtit des cathédrales où prier. La complicité de la matière et de l'esprit aboutit à un double mouvement : constructif-impressif.
+
+Par l'abstraction figurative, l'histoire de l'art est revisitée par les deux bouts. Quand les pointillistes fragmentent la lumière en une multitude de particules, Klee passe de l'autre côté du miroir. Percée.`,
+    isFullyItalic: true,
+    media: [
+      {
+        type: 'image',
+        src: kleeNachtpflanzen,
+        size: 'square-medium'
       }
     ]
   },
