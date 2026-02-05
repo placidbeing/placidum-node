@@ -943,7 +943,7 @@ Par l'abstraction figurative, l'histoire de l'art est revisitée par les deux bo
   {
     date: "2022.05.01",
     title: "Los Angeles",
-    content: "Pink Lime.",
+    content: "",
     contentBlocks: [
       {
         type: 'audio',
@@ -1093,8 +1093,8 @@ Fifty-hour stream. Chi Factory. Deepchord — Rod Modell's submerged dub. Wavefo
   },
   {
     date: "2019.02.17",
-    title: "Time Apart",
-    content: "Beirut."
+    title: "Fanar Birds, Fanar",
+    content: ""
   },
   {
     date: "2019.12.07",
@@ -1175,8 +1175,8 @@ Leaving me cold, vague, with sympathy for their melody.`
   },
   {
     date: "2018.03.11",
-    title: "Reflection",
-    content: "South East Asia.",
+    title: "Singapura",
+    content: "",
     contentBlocks: [
       {
         type: 'audio',
