@@ -1635,7 +1635,7 @@ Stéphane Lambert on Klee:
   },
   {
     date: "2016.09.18",
-    title: "Live at Intrinsic Water Room",
+    title: "Live at Water View Room, Intrinsic",
     content: "Dj set opening for Hans Joachim Roedelius & Christopher Chaplin, visuals by dreamrec.",
     contentBlocks: [
       {
@@ -1646,7 +1646,7 @@ Stéphane Lambert on Klee:
       {
         type: 'audio',
         audioSrc: 'https://archive.org/download/placidum-chronicles-a-silent-spectator/Shcaa%20-%20Intrinsic%20%28Cut%20%26%20Mastering%29.mp3',
-        audioTitle: 'Intrinsic',
+        audioTitle: 'live at water view room',
         audioSubtitle: ''
       }
     ]
