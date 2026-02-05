@@ -1053,6 +1053,12 @@ Leaving me cold, vague, with sympathy for their melody.`
     ]
   },
   {
+    date: "2018.07.14",
+    title: "The Luminaries",
+    content: "\"She was dressed in her gown of striped charcoal, and over it, a smart black riding jacket with puffed leg-o'-mutton sleeves. Her copper hair, wonderfully bright, was piled high upon her head, the chignon held in place with a black band of velvet. As she swept by the barristers' bench, Moody caught the scent of camphor, lemons, and aniseed-an emphatic scent...\"",
+    isFullyItalic: true
+  },
+  {
     date: "2018.04.17",
     title: "Union Chapel",
     content: "Jan Jelinek and Midori Takada.",
