@@ -847,6 +847,12 @@ Sebald: "Those voices that traverse the ether once dusk has fallen, which only a
         text: `Cold, feverish, walking out of Paris to suburban reaches. Streets quiet and comforting. Charles Lloyd's Sangam on the way. Concert extremely inspiring — mossy, full of life and shades.
 
 `
+      },
+      {
+        type: 'audio',
+        audioSrc: '/audio/michiyo-yagi-trio.mp3',
+        audioTitle: 'Michiyo Yagi Trio @ Le Générateur',
+        audioSubtitle: ''
       }
     ]
   },
@@ -1092,6 +1098,19 @@ Fifty-hour stream. Chi Factory. Deepchord — Rod Modell's submerged dub. Wavefo
     isFullyItalic: true
   },
   {
+    date: "2019.03.27",
+    title: "Contemporary Audio Solutions",
+    content: "",
+    contentBlocks: [
+      {
+        type: 'audio',
+        audioSrc: '/audio/contemporary-audio-solutions.mp3',
+        audioTitle: 'Contemporary Audio Solutions',
+        audioSubtitle: ''
+      }
+    ]
+  },
+  {
     date: "2019.02.17",
     title: "Fanar Birds, Fanar",
     content: ""
@@ -1182,6 +1201,19 @@ Leaving me cold, vague, with sympathy for their melody.`
         type: 'audio',
         audioSrc: '/audio/singapura.mp3',
         audioTitle: 'Singapura',
+        audioSubtitle: ''
+      }
+    ]
+  },
+  {
+    date: "2018.02.19",
+    title: "Summer Gone",
+    content: "",
+    contentBlocks: [
+      {
+        type: 'audio',
+        audioSrc: '/audio/summer-gone.mp3',
+        audioTitle: 'Summer Gone',
         audioSubtitle: ''
       }
     ]
