@@ -273,7 +273,7 @@ const Notes = () => {
                         <button 
                           className="text-sm font-mono text-accent hover:underline"
                           onClick={() => {
-                            const audio = document.getElementById(`audio-${blockIndex}`) as HTMLAudioElement;
+                            const audio = document.getElementById(`audio-${index}-${blockIndex}`) as HTMLAudioElement;
                             if (audio) {
                               if (audio.paused) {
                                 audio.play();
@@ -299,7 +299,7 @@ const Notes = () => {
                       {block.audioSubtitle && (
                         <div className="mt-2 font-mono text-xs text-muted-foreground italic">{block.audioSubtitle}</div>
                       )}
-                      <audio id={`audio-${blockIndex}`} src={block.audioSrc} preload="metadata" className="hidden" />
+                      <audio id={`audio-${index}-${blockIndex}`} src={block.audioSrc} preload="metadata" className="hidden" />
                     </div>
                   ) : null
                 ))}
