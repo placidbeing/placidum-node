@@ -344,9 +344,7 @@ There can be no meeting except in the unexpected. Beauty is always bizarre. The 
   {
     date: "2026.01.06",
     title: "",
-    content: `Sebald:
-
-"It was to this sort of phenomenon, to these spurious incursions of the unreal into the real world, to certain effects of light in a landscape spread out before us, to the reflection in a beloved person's eye, that our deepest feelings were kindled, or what we took for such."`,
+    content: `Sebald: "It was to this sort of phenomenon, to these spurious incursions of the unreal into the real world, to certain effects of light in a landscape spread out before us, to the reflection in a beloved person's eye, that our deepest feelings were kindled, or what we took for such."`,
     contentBlocks: [
       {
         type: 'vertical-gallery',
@@ -357,13 +355,9 @@ There can be no meeting except in the unexpected. Beauty is always bizarre. The 
   {
     date: "2025.12.11",
     title: "",
-    content: `Dylan:
+    content: `Dylan: "Folk music was a reality of a more brilliant dimension. It exceeded all human understanding, and if it called out to you, you could disappear and be sucked into it. It was so real, so more true to life than life itself. It was life magnified."
 
-"Folk music was a reality of a more brilliant dimension. It exceeded all human understanding, and if it called out to you, you could disappear and be sucked into it. It was so real, so more true to life than life itself. It was life magnified."
-
-Sebald:
-
-"The study of history, so Hilary's thesis ran, was merely a matter of pre-formed images fixed inside our heads, on which we keep our eyes while the truth lies elsewhere, somewhere apart, in a place no one has yet discovered."`
+Sebald: "The study of history, so Hilary's thesis ran, was merely a matter of pre-formed images fixed inside our heads, on which we keep our eyes while the truth lies elsewhere, somewhere apart, in a place no one has yet discovered."`
   },
   {
     date: "2025.11.03",
