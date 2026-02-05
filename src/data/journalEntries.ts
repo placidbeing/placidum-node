@@ -1107,11 +1107,6 @@ Fifty-hour stream. Chi Factory. Deepchord — Rod Modell's submerged dub. Wavefo
     ]
   },
   {
-    date: "2019.02.17",
-    title: "Fanar Birds, Fanar",
-    content: ""
-  },
-  {
     date: "2019.12.07",
     title: "Terrence Malick — Days of Heaven",
     content: "",
@@ -1130,14 +1125,14 @@ Fifty-hour stream. Chi Factory. Deepchord — Rod Modell's submerged dub. Wavefo
   },
   {
     date: "2019.02.14",
-    title: "Fanar Birds",
-    content: "Beirut.",
+    title: "Fanar",
+    content: "",
     contentBlocks: [
       {
         type: 'audio',
         audioSrc: '/audio/oiseaux-fanar.mp3',
-        audioTitle: 'Oiseaux Fanar',
-        audioSubtitle: 'Beirut'
+        audioTitle: 'oiseaux fanar',
+        audioSubtitle: ''
       }
     ]
   },
