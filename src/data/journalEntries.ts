@@ -1,4 +1,10 @@
 import hassellAtmospherics from '@/assets/hassell/hassell-atmospherics.jpg';
+import istanbul1 from '@/assets/istanbul/istanbul-1.jpg';
+import istanbul2 from '@/assets/istanbul/istanbul-2.jpg';
+import istanbul3 from '@/assets/istanbul/istanbul-3.jpg';
+import istanbul4 from '@/assets/istanbul/istanbul-4.jpg';
+import istanbul5 from '@/assets/istanbul/istanbul-5.jpg';
+import istanbul6 from '@/assets/istanbul/istanbul-6.jpg';
 import viennaCoral from '@/assets/vienna/vienna-coral.jpg';
 import odysseaMoonHills from '@/assets/odyssea/odyssea-moon-hills.jpg';
 import odysseaCoastSunset from '@/assets/odyssea/odyssea-coast-sunset.jpg';
@@ -362,15 +368,18 @@ Sebald:
   {
     date: "2025.11.27",
     title: "",
-    content: `Dylan:
-
-"A folk song has over a thousand faces and you must meet them all if you want to play this stuff."
-
-Hassell:
-
-"Vertical listening: listening to 'what's happening NOW' — letting your inner ear parse out the entire spectrum of sound, asking yourself what kinds of 'shapes' are being manifested."
-
-"I've gone past the stage where questioning the nature of music, of sound, was the subject matter of my work, and am content to simply try to make beautiful things according to certain rules."`
+    content: `Dylan: "A folk song has over a thousand faces and you must meet them all if you want to play this stuff."`
+  },
+  {
+    date: "2025.11.03",
+    title: "Istanbul",
+    content: "",
+    contentBlocks: [
+      {
+        type: 'gallery',
+        images: [istanbul1, istanbul2, istanbul3, istanbul4, istanbul5, istanbul6]
+      }
+    ]
   },
   {
     date: "2025.10.16",
