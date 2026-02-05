@@ -584,7 +584,7 @@ Bucolico — No more eclecticism, no standards, no stylistic posturing. A richne
   },
   {
     date: "2024.09.05",
-    title: "Recording: Dilos Dos Veces",
+    title: "Dilos Dos Veces",
     content: ""
   },
   {
@@ -818,7 +818,7 @@ Nature, raw, blue-grey. Sculpted but not by the wind — from within. Precise, d
 
 Sebald: "Those voices that traverse the ether once dusk has fallen, which only a few can pick up, have a life of their own like bats, and shun the light of day."
 
-Recordings.`
+`
       },
       {
         type: 'gallery',
@@ -846,7 +846,7 @@ Recordings.`
         type: 'text',
         text: `Cold, feverish, walking out of Paris to suburban reaches. Streets quiet and comforting. Charles Lloyd's Sangam on the way. Concert extremely inspiring — mossy, full of life and shades.
 
-Recording.`
+`
       }
     ]
   },
@@ -943,7 +943,7 @@ Par l'abstraction figurative, l'histoire de l'art est revisitée par les deux bo
   {
     date: "2022.05.01",
     title: "Los Angeles",
-    content: "Recording: Pink Lime.",
+    content: "Pink Lime.",
     contentBlocks: [
       {
         type: 'audio',
@@ -1093,7 +1093,7 @@ Fifty-hour stream. Chi Factory. Deepchord — Rod Modell's submerged dub. Wavefo
   },
   {
     date: "2019.02.17",
-    title: "Recording: Time Apart",
+    title: "Time Apart",
     content: "Beirut."
   },
   {
@@ -1176,7 +1176,7 @@ Leaving me cold, vague, with sympathy for their melody.`
   {
     date: "2018.03.11",
     title: "Reflection",
-    content: "Recording: South East Asia.",
+    content: "South East Asia.",
     contentBlocks: [
       {
         type: 'audio',
@@ -1258,7 +1258,7 @@ Plusieurs fois j'ai tenté d'écrire car mon cœur débordait, mais je restais, 
   {
     date: "2017.09.07",
     title: "Dakota Dreams",
-    content: "Weird retake. Recording.",
+    content: "Weird retake.",
     contentBlocks: [
       {
         type: 'audio',
@@ -1348,7 +1348,7 @@ Une rosée qui se compose, vert sur noir, les chants comme les nuits, les plumes
   },
   {
     date: "2017.01.25",
-    title: "Recording: The Day the Wall Fell",
+    title: "The Day the Wall Fell",
     content: "",
     contentBlocks: [
       {
@@ -1461,7 +1461,7 @@ Arlequin. The jungle, woody and exotic mysteries (the back of my grandparents' h
   {
     date: "2016.05.27",
     title: "Swell Music II",
-    content: "Recording session.",
+    content: "",
     contentBlocks: [
       {
         type: 'audio',
@@ -1522,7 +1522,7 @@ Stéphane Lambert on Klee:
   },
   {
     date: "2013.07.01",
-    title: "Recording: Chêne",
+    title: "Chêne",
     content: "For Pluie Noir.",
     contentBlocks: [
       {
@@ -1547,7 +1547,7 @@ https://soundcloud.com/pluie-noir/pluie-noir-podcast-028`
   },
   {
     date: "2012.02.15",
-    title: "Recording: Preface",
+    title: "Preface",
     content: "South of France. Wet soil, dead leaves, firewood smoke. Preface emerges — not pretentious, a collection of missing links. (See [Chronicles](/chronicles).)"
   },
   {
