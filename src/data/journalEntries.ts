@@ -220,6 +220,45 @@ export interface JournalEntry {
 
 export const journalEntries: JournalEntry[] = [
   {
+    date: "2024.09.05",
+    title: "Dilo Dos Veces",
+    content: "",
+    contentBlocks: [
+      {
+        type: 'audio',
+        audioSrc: '/audio/dilo-dos-veces.mp3',
+        audioTitle: 'Dilo Dos Veces',
+        audioSubtitle: ''
+      }
+    ]
+  },
+  {
+    date: "2016.02.10",
+    title: "Untitled _/2",
+    content: "",
+    contentBlocks: [
+      {
+        type: 'audio',
+        audioSrc: '/audio/untitled-2.mp3',
+        audioTitle: 'Untitled _/2',
+        audioSubtitle: ''
+      }
+    ]
+  },
+  {
+    date: "2014.06.14",
+    title: "Sailing",
+    content: "",
+    contentBlocks: [
+      {
+        type: 'audio',
+        audioSrc: '/audio/sailing.mp3',
+        audioTitle: 'Sailing',
+        audioSubtitle: ''
+      }
+    ]
+  },
+  {
     date: "2025.08.11",
     title: "Odyssea",
     content: "«Dernier aperçu d'un avenir impossible»",
