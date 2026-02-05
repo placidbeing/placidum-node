@@ -1143,8 +1143,16 @@ Fifty-hour stream. Chi Factory. Deepchord — Rod Modell's submerged dub. Wavefo
   },
   {
     date: "2018.11.22",
-    title: "Scout Niblett",
-    content: "Transcended. Years before, a small note to myself compared her voice to Miles' trumpet on Bitches Brew. Both look like burning canyons."
+    title: "Scout Niblett at Petits Bains",
+    content: "Transcended. Years before, a small note to myself compared her voice to Miles' trumpet on Bitches Brew. Both look like burning canyons.",
+    contentBlocks: [
+      {
+        type: 'audio',
+        audioSrc: '/audio/scout-niblett-petits-bains.mp3',
+        audioTitle: 'Scout Niblett @ Petits Bains',
+        audioSubtitle: ''
+      }
+    ]
   },
   {
     date: "2018.08.16",
