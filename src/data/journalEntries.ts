@@ -219,9 +219,8 @@ export const journalEntries: JournalEntry[] = [
     isFullyItalic: true,
     contentBlocks: [
       {
-        type: 'vertical-gallery',
-        images: [odysseaMoonHills, odysseaCoastSunset, odysseaMoonSea],
-        aspectRatio: '1:1'
+        type: 'gallery',
+        images: [odysseaMoonHills, odysseaCoastSunset, odysseaMoonSea]
       }
     ]
   },
