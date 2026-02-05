@@ -372,7 +372,7 @@ Sebald:
     contentBlocks: [
       {
         type: 'gallery',
-        images: [istanbul5, istanbul2, istanbul3, istanbul4, istanbul6]
+        images: [istanbul1, istanbul2, istanbul3, istanbul4, istanbul6]
       }
     ]
   },
