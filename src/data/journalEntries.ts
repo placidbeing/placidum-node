@@ -1622,13 +1622,13 @@ Stéphane Lambert on Klee:
   {
     date: "2017.06.01",
     title: "Bird Of Prey",
-    content: "For Phonographe Corp.",
+    content: "",
     contentBlocks: [
       {
         type: 'audio',
         audioSrc: 'https://archive.org/download/placidum-chronicles-a-silent-spectator/Shcaa%20-%20Bird%20Of%20Prey%20%28For%20Phonographe%20Corp%29.mp3',
         audioTitle: 'Bird Of Prey',
-        audioSubtitle: 'For Phonographe Corp'
+        audioSubtitle: ''
       }
     ]
   },
