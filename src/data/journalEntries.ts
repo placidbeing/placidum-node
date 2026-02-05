@@ -1483,7 +1483,7 @@ Stéphane Lambert on Klee:
   {
     date: "2016.01.10",
     title: "Unwanted Studio Fragment",
-    content: "Ennio Morricone, controfase.",
+    content: "Controfase.",
     contentBlocks: [
       {
         type: 'audio',
