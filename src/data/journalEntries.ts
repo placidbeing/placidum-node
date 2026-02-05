@@ -911,6 +911,12 @@ Par l'abstraction figurative, l'histoire de l'art est revisitée par les deux bo
 Les rideaux de pluie miroitante s'évanouirent : la mer s'étendait, c'était une mer du Sud, d'un bleu extrêmement profond, étincelant de lueurs argentées, avec une baie magnifique, dégagée et vaporeuse d'un côté, à demi sertie dans de vastes massifs montagneux dont le bleu allait en se délavant…`
   },
   {
+    date: "2020.10.16",
+    title: "Sean Booth",
+    content: "\"The piano is beautiful but it's dumb, it separates the artist from the string.\"",
+    isFullyItalic: true
+  },
+  {
     date: "2020.08.29",
     title: "Richard Brody on Bird",
     content: `"In the abstract, bop is the harmonic and rhythmic complexification of jazz, based on the substitution of a new and more elaborate framework of chords for the ones originally anchoring pop songs.
