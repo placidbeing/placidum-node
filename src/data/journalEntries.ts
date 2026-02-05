@@ -820,7 +820,7 @@ J'ai besoin d'écouter les éléments, un environnement vide d'idées. Watson. F
     ]
   },
   {
-    date: "2022.11.09",
+    date: "2022.09.22",
     title: "Stéphane Lambert",
     content: `« Peindre est un moyen, un lieu, une direction.
 
