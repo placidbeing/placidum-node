@@ -1,4 +1,7 @@
 import viennaCoral from '@/assets/vienna/vienna-coral.jpg';
+import odysseaMoonHills from '@/assets/odyssea/odyssea-moon-hills.jpg';
+import odysseaCoastSunset from '@/assets/odyssea/odyssea-coast-sunset.jpg';
+import odysseaMoonSea from '@/assets/odyssea/odyssea-moon-sea.jpg';
 import viennaAmethyst from '@/assets/vienna/vienna-amethyst.jpg';
 import viennaAgate from '@/assets/vienna/vienna-agate.jpg';
 import viennaLizards from '@/assets/vienna/vienna-lizards.jpg';
@@ -209,6 +212,19 @@ export interface JournalEntry {
 }
 
 export const journalEntries: JournalEntry[] = [
+  {
+    date: "2025.08.11",
+    title: "Odyssea",
+    content: "«Dernier aperçu d'un avenir impossible»",
+    isFullyItalic: true,
+    contentBlocks: [
+      {
+        type: 'vertical-gallery',
+        images: [odysseaMoonHills, odysseaCoastSunset, odysseaMoonSea],
+        aspectRatio: '1:1'
+      }
+    ]
+  },
   {
     date: "2025.06.15",
     title: "",
