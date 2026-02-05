@@ -166,6 +166,16 @@ import jaguar1 from '@/assets/jaguar/jaguar-1.jpg';
 import jaguar2 from '@/assets/jaguar/jaguar-2.jpg';
 import albiniGrave from '@/assets/albini/albini-grave.jpg';
 import kleeNachtpflanzen from '@/assets/klee-nachtpflanzen.jpg';
+import soulages1 from '@/assets/soulages/soulages-1.jpg';
+import soulages2 from '@/assets/soulages/soulages-2.jpg';
+import soulages3 from '@/assets/soulages/soulages-3.jpg';
+import soulages4 from '@/assets/soulages/soulages-4.jpg';
+import soulages5 from '@/assets/soulages/soulages-5.jpg';
+import soulages6 from '@/assets/soulages/soulages-6.jpg';
+import soulages7 from '@/assets/soulages/soulages-7.jpg';
+import soulages8 from '@/assets/soulages/soulages-8.jpg';
+import soulages9 from '@/assets/soulages/soulages-9.jpg';
+import soulages10 from '@/assets/soulages/soulages-10.jpg';
 
 export interface JournalMedia {
   type: 'image' | 'audio' | 'gallery';
@@ -276,6 +286,18 @@ ENGINE was born from a ten-year obsession with the noise of engines. The sound o
       {
         type: 'gallery',
         images: [earthbound1, earthbound2, earthbound3, earthbound4]
+      }
+    ]
+  },
+  {
+    date: "2020.02.09",
+    title: "Soulages au Louvre",
+    content: "",
+    contentBlocks: [
+      {
+        type: 'gallery',
+        images: [soulages1, soulages2, soulages3, soulages4, soulages5, soulages6, soulages7, soulages8, soulages9, soulages10],
+        aspectRatio: '9:16'
       }
     ]
   },
