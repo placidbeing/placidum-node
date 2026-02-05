@@ -1137,7 +1137,15 @@ Leaving me cold, vague, with sympathy for their melody.`
   {
     date: "2018.03.11",
     title: "Reflection",
-    content: "Recording: South East Asia."
+    content: "Recording: South East Asia.",
+    contentBlocks: [
+      {
+        type: 'audio',
+        audioSrc: '/audio/singapura.mp3',
+        audioTitle: 'Singapura',
+        audioSubtitle: ''
+      }
+    ]
   },
   {
     date: "2018.02.15",
