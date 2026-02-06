@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
-import { useRef, useState } from 'react';
+import { useRef, useState, useEffect, useMemo } from 'react';
 import { Radio } from 'lucide-react';
 import { journalEntries, ContentBlock, JournalEntry } from '@/data/journalEntries';
 import JournalMedia from '@/components/JournalMedia';
 import ImageLightbox from '@/components/ImageLightbox';
 import YearIndicator from '@/components/YearIndicator';
-
+import { useAudioPlayer } from '@/hooks/useAudioPlayer';
 // Sort entries by date descending
 const sortedJournalEntries = [...journalEntries].sort((a, b) => b.date.localeCompare(a.date));
 
@@ -22,10 +22,41 @@ const hasAudio = (entry: JournalEntry): boolean => {
 
 const Notes = () => {
   const [showAudioOnly, setShowAudioOnly] = useState(false);
+  const { toggle, registerAudio } = useAudioPlayer();
   
   const filteredEntries = showAudioOnly 
     ? sortedJournalEntries.filter(hasAudio)
     : sortedJournalEntries;
+
+  // Build ordered list of audio IDs for auto-advance
+  const audioIds = useMemo(() => {
+    const ids: string[] = [];
+    filteredEntries.forEach((entry, entryIndex) => {
+      entry.contentBlocks?.forEach((block, blockIndex) => {
+        if (block.type === 'audio' && block.audioSrc) {
+          ids.push(`audio-${entryIndex}-${blockIndex}`);
+        }
+      });
+      entry.media?.forEach((m, mediaIndex) => {
+        if (m.type === 'audio') {
+          ids.push(`media-audio-${entryIndex}-${mediaIndex}`);
+        }
+      });
+    });
+    return ids;
+  }, [filteredEntries]);
+
+  // Register all audio elements with their next track
+  useEffect(() => {
+    // Small delay to ensure DOM is ready
+    const timer = setTimeout(() => {
+      audioIds.forEach((id, i) => {
+        const nextId = i < audioIds.length - 1 ? audioIds[i + 1] : undefined;
+        registerAudio(id, nextId);
+      });
+    }, 100);
+    return () => clearTimeout(timer);
+  }, [audioIds, registerAudio]);
   // Format date from YYYY.MM.DD to Latin and year below
   const formatDate = (dateStr: string) => {
     const parts = dateStr.split('.');
@@ -272,16 +303,7 @@ const Notes = () => {
                       <div className="flex items-center justify-between">
                         <button 
                           className="text-sm font-mono text-accent hover:underline"
-                          onClick={() => {
-                            const audio = document.getElementById(`audio-${index}-${blockIndex}`) as HTMLAudioElement;
-                            if (audio) {
-                              if (audio.paused) {
-                                audio.play();
-                              } else {
-                                audio.pause();
-                              }
-                            }
-                          }}
+                          onClick={() => toggle(`audio-${index}-${blockIndex}`)}
                         >
                           ▶ {block.audioTitle || 'Play'}
                         </button>
