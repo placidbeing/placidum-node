@@ -1481,11 +1481,6 @@ Baudelaire, Les Paradis artificiels — Le goût de l'infini:
 "Ceux qui savent s'observer eux-mêmes et qui gardent la mémoire de leurs impressions, ceux-là qui ont su, comme Hoffmann, construire leur baromètre spirituel, ont eu parfois à noter, dans l'observatoire de leur pensée, de belles saisons, d'heureuses journées, de délicieuses minutes."`
   },
   {
-    date: "2016.09.18",
-    title: "Intrinsic London",
-    content: "Opening for Hans Joachim Roedelius and Christopher Chaplin. Visual collaboration with Dream Rec. A new kind of set."
-  },
-  {
     date: "2016.09.09",
     title: "MixTate Shcaa on Paul Klee",
     content: `I knew I wanted to work on a mix for a Paul Klee painting even before I had an idea of what I might find in the Tate collection. I have been captivated by his work for some time, and I think it is because I enjoy his balance, his delicacy in whispering to the subconscious. Klee elevated his art by intellectualising every facet of it – he knew what aspects needed to be considered and executed in a precise manner; at the same time, he also preserved other spaces for spontaneity where he could let the imperfections of organic life express themselves.`,
