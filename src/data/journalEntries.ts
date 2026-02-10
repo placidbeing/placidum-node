@@ -342,13 +342,7 @@ export const journalEntries: JournalEntry[] = [
 Sounds of trains and cars from drag races at Portland International Raceway / North Portland rail lines; synthesizer and other electronic components. Liz Harris was joined by Danish musician and composer Astrid Sonne on viola.
 
 ENGINE was born from a ten-year obsession with the noise of engines. The sound of excess, power, sex, destruction, capitalism, oil becoming atmospheric pollution, transformation, life. The guttural bass and revolutions mirror organic rhythms—imitating heartbeats, breathing, rushing blood. A spiraling ode to symbiotic decay.`,
-    contentBlocks: [
-      {
-        type: 'vertical-gallery',
-        images: [nivhekPresences],
-        aspectRatio: '16:9'
-      }
-    ]
+    isFullyItalic: true
   },
   {
     date: "2024.01.17",
