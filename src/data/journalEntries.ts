@@ -1695,7 +1695,7 @@ Stéphane Lambert on Klee:
     contentBlocks: [
       {
         type: 'vertical-gallery',
-        images: [intrinsicWaterRoom],
+        images: [dordogne2],
         aspectRatio: '16:9'
       },
       {
