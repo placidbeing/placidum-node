@@ -196,7 +196,8 @@ import soulages7 from '@/assets/soulages/soulages-7.jpg';
 import soulages8 from '@/assets/soulages/soulages-8.jpg';
 import soulages9 from '@/assets/soulages/soulages-9.jpg';
 import soulages10 from '@/assets/soulages/soulages-10.jpg';
-import intrinsicWaterRoom from '@/assets/intrinsic/intrinsic-water-room.png';
+import interiorRooms from '@/assets/intrinsic/interior-rooms.png';
+import waterViewRoom from '@/assets/intrinsic/water-view-room.png';
 
 export interface JournalMedia {
   type: 'image' | 'audio' | 'gallery';
@@ -733,7 +734,7 @@ Memory access time remains the bottleneck. 80 to 90% of machine learning is spen
     contentBlocks: [
       {
         type: 'vertical-gallery',
-        images: [intrinsicWaterRoom],
+        images: [interiorRooms],
       }
     ]
   },
@@ -1695,7 +1696,7 @@ Stéphane Lambert on Klee:
     contentBlocks: [
       {
         type: 'vertical-gallery',
-        images: [intrinsicWaterRoom],
+        images: [waterViewRoom],
         aspectRatio: '16:9'
       },
       {
