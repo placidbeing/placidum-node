@@ -715,7 +715,7 @@ Memory access time remains the bottleneck. 80 to 90% of machine learning is spen
     contentBlocks: [
       {
         type: 'gallery',
-        images: [gulbenkianBowl, gulbenkianVaseBlue, gulbenkianGlassBirds, gulbenkianTilesSpiral, gulbenkianTilesFlowers, gulbenkianLions, gulbenkianJade],
+        images: [gulbenkianBowl, gulbenkianGlassBirds, gulbenkianTilesSpiral, gulbenkianTilesFlowers, gulbenkianLions, gulbenkianJade],
         aspectRatio: '9:16'
       }
     ]
