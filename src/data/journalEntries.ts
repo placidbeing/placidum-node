@@ -798,6 +798,18 @@ Botanical knowledge increased continually during the 15th and 16th centuries. Lo
     ]
   },
   {
+    date: "2023.03.15",
+    title: "Spring",
+    content: "",
+    contentBlocks: [
+      {
+        type: 'vertical-gallery',
+        images: [pacificGarden],
+        aspectRatio: '16:9'
+      }
+    ]
+  },
+  {
     date: "2023.02.28",
     title: "Japan",
     contentBlocks: [
