@@ -231,20 +231,6 @@ export interface JournalEntry {
 
 export const journalEntries: JournalEntry[] = [
   {
-    date: "2026.02.10",
-    title: "Faroh's birds",
-    content: `It's like a storm inside
-A weight to their songs
-Obstructing the light
-When the 23rd passes
-The seventh, check five, four
-Lost in the sublime, the subliminal
-
-They praise the cage, delay its pulse, prey on affection,
-Leaving me cold, vague, with sympathy for their melody.`,
-    isFullyItalic: true
-  },
-  {
     date: "2024.09.05",
     title: "Dilo Dos Veces",
     content: "",
