@@ -691,7 +691,7 @@ Memory access time remains the bottleneck. 80 to 90% of machine learning is spen
   {
     date: "2023.11.10",
     title: "",
-    content: `When I play, I strive to open my heart and senses to incorporate all elements present—be it the space, the audience, or nature—into myself. So, the concept of nature, when I mention it, goes beyond common associations like forests or jungles; it's rooted in more abstract and cosmic perspectives. I engage in this process continuously for about 1 hour and 50 minutes without interruption.`,
+    content: `When I play, I strive to open my heart and senses to incorporate all elements present—be it the space, the audience, or nature—into myself. So, the concept of nature, when I mention it, goes beyond common associations like forests or jungles; it's rooted in more abstract and cosmic perspectives.`,
     isFullyItalic: true,
     media: [
       {
