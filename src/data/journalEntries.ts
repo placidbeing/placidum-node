@@ -704,7 +704,7 @@ Memory access time remains the bottleneck. 80 to 90% of machine learning is spen
 "It is said the ocean provides a closer reflection of who we are than any mirror."`
   },
   {
-    date: "2024.07.23",
+    date: "2023.06.24",
     title: "Gulbenkian, Lisbon",
     content: "There is no inner path without an outer perimeter. The path connects the practical and public dimension of life (the outer perimeter) to the mystical knowledge of divine reality (the luminous and ineffable centre).",
     contentBlocks: [
