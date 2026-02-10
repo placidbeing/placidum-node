@@ -955,7 +955,7 @@ J'ai besoin d'écouter les éléments, un environnement vide d'idées. Watson. F
   {
     date: "2022.10.14",
     title: "FTMA Festival",
-    content: "Live act along with Romeo Poirier & Jan Jelinek. 3537, Rue des Francs-Bourgeois.",
+    content: "Shcaa live along with Romeo Poirier & Jan Jelinek. 3537, Rue des Francs-Bourgeois.",
     contentBlocks: [
       {
         type: 'vertical-gallery',
