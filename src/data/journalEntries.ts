@@ -1,4 +1,5 @@
 import hassellAtmospherics from '@/assets/hassell/hassell-atmospherics.jpg';
+import ftmaStage from '@/assets/ftma/ftma-stage.jpg';
 import istanbul1 from '@/assets/istanbul/istanbul-1.jpg';
 import istanbul2 from '@/assets/istanbul/istanbul-2.jpg';
 import istanbul3 from '@/assets/istanbul/istanbul-3.jpg';
@@ -950,6 +951,17 @@ J'ai besoin d'écouter les éléments, un environnement vide d'idées. Watson. F
 « Chez Klee, cet alliage atteint un tel degré de concentration qu'il dégage des exhalaisons parfois vertigineuses. Le peintre avance sur le chemin de l'inconnaissable jusqu'à l'évanouissement de la raison. »
 
 « Ce ne sont pas des couleurs qui habitent les œuvres de Paul Klee, mais le murmure des spectres que nous deviendrons. »`
+  },
+  {
+    date: "2022.10.14",
+    title: "FTMA Festival",
+    content: "Live act along with Romeo Poirier & Jan Jelinek. 3537, Rue des Francs-Bourgeois.",
+    contentBlocks: [
+      {
+        type: 'vertical-gallery',
+        images: [ftmaStage],
+      }
+    ]
   },
   {
     date: "2022.10.07",
