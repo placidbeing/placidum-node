@@ -75,6 +75,7 @@ import ensor6 from '@/assets/bozar/ensor-6.jpg';
 import numbersPalm from '@/assets/numbers/numbers-palm.jpg';
 import numbersAlley from '@/assets/numbers/numbers-alley.jpg';
 import numbersMoon from '@/assets/numbers/numbers-moon.jpg';
+import bossaManha from '@/assets/bossa/bossa-manha.jpg';
 import japanCredits from '@/assets/japan/japan-credits.jpg';
 import japanWindow from '@/assets/japan/japan-window.jpg';
 import japanPurpleClouds from '@/assets/japan/japan-purple-clouds.jpg';
@@ -684,6 +685,20 @@ Memory access time remains the bottleneck. 80 to 90% of machine learning is spen
       {
         type: 'vertical-gallery',
         images: [numbersPalm, numbersAlley]
+      }
+    ]
+  },
+  {
+    date: "2023.11.10",
+    title: "",
+    content: `When I play, I strive to open my heart and senses to incorporate all elements present—be it the space, the audience, or nature—into myself. So, the concept of nature, when I mention it, goes beyond common associations like forests or jungles; it's rooted in more abstract and cosmic perspectives. I engage in this process continuously for about 1 hour and 50 minutes without interruption.`,
+    isFullyItalic: true,
+    media: [
+      {
+        type: 'image' as const,
+        src: bossaManha,
+        size: 'square-medium' as const,
+        position: 'inline' as const
       }
     ]
   },
