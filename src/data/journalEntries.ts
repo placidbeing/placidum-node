@@ -74,6 +74,7 @@ import ensor5 from '@/assets/bozar/ensor-5.jpg';
 import ensor6 from '@/assets/bozar/ensor-6.jpg';
 import numbersPalm from '@/assets/numbers/numbers-palm.jpg';
 import numbersAlley from '@/assets/numbers/numbers-alley.jpg';
+import numbersMoon from '@/assets/numbers/numbers-moon.jpg';
 import japanCredits from '@/assets/japan/japan-credits.jpg';
 import japanWindow from '@/assets/japan/japan-window.jpg';
 import japanPurpleClouds from '@/assets/japan/japan-purple-clouds.jpg';
@@ -687,11 +688,18 @@ Memory access time remains the bottleneck. 80 to 90% of machine learning is spen
     ]
   },
   {
-    date: "2023.08.01",
+    date: "2023.08.03",
     title: "Rick Rubin — The Creative Act",
-    content: `"Nature transcends our tendencies to label and classify, to reduce and limit. The natural world is unfathomably more rich, interwoven, and complicated than we are taught, and so much more mysterious and beautiful."
-
-"The closer we can get to the natural world, the sooner we start to realise we are not separate. And that when we create, we are not just expressing our unique individuality, but our seamless connection to an infinite oneness."
+    content: `"Nature transcends our tendencies to label and classify, to reduce and limit. The natural world is unfathomably more rich, interwoven, and complicated than we are taught, and so much more mysterious and beautiful."`,
+    media: [
+      {
+        type: 'image' as const,
+        src: numbersMoon,
+        size: 'square-medium' as const,
+        position: 'inline' as const
+      }
+    ],
+    contentAfterMedia: `"The closer we can get to the natural world, the sooner we start to realise we are not separate. And that when we create, we are not just expressing our unique individuality, but our seamless connection to an infinite oneness."
 
 "It is said the ocean provides a closer reflection of who we are than any mirror."`
   },
