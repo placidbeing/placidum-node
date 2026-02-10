@@ -46,6 +46,7 @@ import seaJungle1 from '@/assets/sea/sea-jungle-1.jpg';
 import seaDark from '@/assets/sea/sea-dark.jpg';
 import seaFern from '@/assets/sea/sea-fern.jpg';
 import dordogne1 from '@/assets/dordogne/dordogne-1.jpg';
+import dordognePath from '@/assets/dordogne/dordogne-path.jpg';
 import brdcstChurch from '@/assets/brdcst/brdcst-church.jpg';
 import spotbleu1 from '@/assets/spotbleu/spotbleu-1.png';
 import romaNight from '@/assets/roma/roma-night.jpg';
@@ -1381,7 +1382,14 @@ Silver over marine blue. Pleased to contrast the astral lights, pleased to wear 
 
 Wind stopped. Time resets backward, recites common wonders. Perfect circle ruling the thousand sea grooves.
 
-Faint call from the naked angle. My dream has paused, partially lost I suppose. Now eerie is this cotton sphere — its mines are none.`
+Faint call from the naked angle. My dream has paused, partially lost I suppose. Now eerie is this cotton sphere — its mines are none.`,
+    contentBlocks: [
+      {
+        type: 'vertical-gallery',
+        images: [dordognePath],
+        aspectRatio: '16:9'
+      }
+    ]
   },
   {
     date: "2017.05.15",
