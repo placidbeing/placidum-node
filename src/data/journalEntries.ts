@@ -1210,7 +1210,6 @@ When the 23rd passes
 The seventh, check five, four
 Lost in the sublime, the subliminal
 
-Like persistent dreams for coloured sins,
 They praise the cage, delay its pulse, prey on affection,
 Leaving me cold, vague, with sympathy for their melody.`
   },
