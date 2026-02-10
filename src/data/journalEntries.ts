@@ -46,7 +46,7 @@ import seaJungle1 from '@/assets/sea/sea-jungle-1.jpg';
 import seaDark from '@/assets/sea/sea-dark.jpg';
 import seaFern from '@/assets/sea/sea-fern.jpg';
 import dordogne1 from '@/assets/dordogne/dordogne-1.jpg';
-import dordognePath from '@/assets/dordogne/dordogne-path.jpg';
+import pantelleriaPath from '@/assets/pantelleria/pantelleria-path.jpg';
 import brdcstChurch from '@/assets/brdcst/brdcst-church.jpg';
 import spotbleu1 from '@/assets/spotbleu/spotbleu-1.png';
 import romaNight from '@/assets/roma/roma-night.jpg';
@@ -58,7 +58,7 @@ import pigalleNeon4 from '@/assets/pigalle/pigalle-neon-4.jpg';
 import pigalleNeon5 from '@/assets/pigalle/pigalle-neon-5.jpg';
 import pigalleNeon6 from '@/assets/pigalle/pigalle-neon-6.jpg';
 import dubaiCreek from '@/assets/dubai/dubai-creek.jpg';
-import siciliaTerrace from '@/assets/sicilia/sicilia-terrace.jpg';
+import pantelleriaTerrace from '@/assets/pantelleria/pantelleria-terrace.jpg';
 import kleeYoungLady from '@/assets/klee-young-lady.jpg';
 import pacificGarden from '@/assets/pacific/pacific-garden.jpg';
 import newyorkStudio from '@/assets/newyork/newyork-studio.jpg';
@@ -1378,16 +1378,18 @@ Opening for E/tape and Nicolas Lutz. Among others: Jan Jelinek & Masayoshi Fujit
     title: "Lunar Observation",
     content: `Cotton moon, in the naked angle, still remembers it was full. Behind, so far, a star, so strong — thought it was a plane. Then above my lingering place, a screen, white glow on the lava, twice every half a minute. Second lighthouse, truly, in my history. Quarter century.
 
-Silver over marine blue. Pleased to contrast the astral lights, pleased to wear the abyss. Clusters of obscure mines.
-
-Wind stopped. Time resets backward, recites common wonders. Perfect circle ruling the thousand sea grooves.
-
-Faint call from the naked angle. My dream has paused, partially lost I suppose. Now eerie is this cotton sphere — its mines are none.`,
+Silver over marine blue. Pleased to contrast the astral lights, pleased to wear the abyss. Clusters of obscure mines.`,
     contentBlocks: [
       {
         type: 'vertical-gallery',
-        images: [dordognePath],
+        images: [pantelleriaPath],
         aspectRatio: '16:9'
+      },
+      {
+        type: 'text',
+        text: `Wind stopped. Time resets backward, recites common wonders. Perfect circle ruling the thousand sea grooves.
+
+Faint call from the naked angle. My dream has paused, partially lost I suppose. Now eerie is this cotton sphere — its mines are none.`
       }
     ]
   },
@@ -1537,7 +1539,7 @@ Baudelaire, Les Paradis artificiels — Le goût de l'infini:
     contentBlocks: [
       {
         type: 'vertical-gallery',
-        images: [siciliaTerrace]
+        images: [pantelleriaTerrace]
       }
     ]
   },
