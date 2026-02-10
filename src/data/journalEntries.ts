@@ -49,6 +49,12 @@ import dordogne2 from '@/assets/dordogne/dordogne-2.jpg';
 import spotbleu1 from '@/assets/spotbleu/spotbleu-1.png';
 import romaNight from '@/assets/roma/roma-night.jpg';
 import pigallePlants from '@/assets/pigalle/pigalle-plants.jpg';
+import pigalleNeon1 from '@/assets/pigalle/pigalle-neon-1.jpg';
+import pigalleNeon2 from '@/assets/pigalle/pigalle-neon-2.jpg';
+import pigalleNeon3 from '@/assets/pigalle/pigalle-neon-3.jpg';
+import pigalleNeon4 from '@/assets/pigalle/pigalle-neon-4.jpg';
+import pigalleNeon5 from '@/assets/pigalle/pigalle-neon-5.jpg';
+import pigalleNeon6 from '@/assets/pigalle/pigalle-neon-6.jpg';
 import dubaiCreek from '@/assets/dubai/dubai-creek.jpg';
 import siciliaTerrace from '@/assets/sicilia/sicilia-terrace.jpg';
 import kleeYoungLady from '@/assets/klee-young-lady.jpg';
@@ -1352,7 +1358,14 @@ La double mer du Temps et de l'Espace.
 
 Comme la musique, art du nombre qui révèle la loi de l'Ordre Cosmique. Liaison de la langue humaine à celle de Dieu.
 
-Révéler la mesure entre la grande âme obscure de la nature et la simplicité de l'enfance. Faculté d'absorption de la vie extérieure. Sens subtils révélant les abîmes : les poètes voient le mystère partout. ← Exprimer les ténèbres captivantes, l'énigmatique physionomie du mystère. C'est Dieu qui remplit tout."`
+Révéler la mesure entre la grande âme obscure de la nature et la simplicité de l'enfance. Faculté d'absorption de la vie extérieure. Sens subtils révélant les abîmes : les poètes voient le mystère partout. ← Exprimer les ténèbres captivantes, l'énigmatique physionomie du mystère. C'est Dieu qui remplit tout."`,
+    contentBlocks: [
+      {
+        type: 'gallery',
+        images: [pigalleNeon1, pigalleNeon2, pigalleNeon3, pigalleNeon4, pigalleNeon5, pigalleNeon6],
+        aspectRatio: '9:16'
+      }
+    ]
   },
   {
     date: "2017.05.08",
