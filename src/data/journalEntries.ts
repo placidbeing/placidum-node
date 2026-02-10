@@ -46,7 +46,7 @@ import seaJungle1 from '@/assets/sea/sea-jungle-1.jpg';
 import seaDark from '@/assets/sea/sea-dark.jpg';
 import seaFern from '@/assets/sea/sea-fern.jpg';
 import dordogne1 from '@/assets/dordogne/dordogne-1.jpg';
-import dordogne2 from '@/assets/dordogne/dordogne-2.jpg';
+import brdcstChurch from '@/assets/brdcst/brdcst-church.jpg';
 import spotbleu1 from '@/assets/spotbleu/spotbleu-1.png';
 import romaNight from '@/assets/roma/roma-night.jpg';
 import pigallePlants from '@/assets/pigalle/pigalle-plants.jpg';
@@ -528,7 +528,7 @@ The day before: Abel Ghekiere «In de verte, dit uitzicht»`,
     media: [
       {
         type: 'image' as const,
-        src: dordogne2,
+        src: brdcstChurch,
         size: 'square-medium' as const,
         position: 'inline' as const
       }
