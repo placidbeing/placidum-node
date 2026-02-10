@@ -316,13 +316,21 @@ export const journalEntries: JournalEntry[] = [
     ]
   },
   {
-    date: "2024.03.06",
+    date: "2024.03.07",
     title: "James Ensor",
     content: `Bozar, Brussels`,
     contentBlocks: [
       {
         type: 'gallery',
         images: [ensor2, ensor4, ensor5]
+      },
+      {
+        type: 'text',
+        text: 'Anvers — Blauwe Zaal\nJakob Bro / Midori Takada / Jesper Zeuthen / Marilyn Mazur.'
+      },
+      {
+        type: 'gallery',
+        images: [anversStation, anversStage, anversCathedral]
       }
     ]
   },
@@ -660,17 +668,6 @@ Film: The Scent of Green Papaya`,
       {
         type: 'vertical-gallery',
         images: [papaya1, papaya2, papaya3, papaya4]
-      }
-    ]
-  },
-  {
-    date: "2024.03.07",
-    title: "Anvers — Blauwe Zaal",
-    content: "Jakob Bro / Midori Takada / Jesper Zeuthen / Marilyn Mazur.",
-    contentBlocks: [
-      {
-        type: 'gallery',
-        images: [anversStation, anversStage, anversCathedral]
       }
     ]
   },
