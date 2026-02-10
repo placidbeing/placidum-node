@@ -688,17 +688,9 @@ Memory access time remains the bottleneck. 80 to 90% of machine learning is spen
   },
   {
     date: "2023.11.10",
-    title: "",
+    title: "Lost quote, Midori Takada?",
     content: `When I play, I strive to open my heart and senses to incorporate all elements present—be it the space, the audience, or nature—into myself. So, the concept of nature, when I mention it, goes beyond common associations like forests or jungles; it's rooted in more abstract and cosmic perspectives.`,
-    isFullyItalic: true,
-    media: [
-      {
-        type: 'image' as const,
-        src: bossaManha,
-        size: 'square-medium' as const,
-        position: 'inline' as const
-      }
-    ]
+    isFullyItalic: true
   },
   {
     date: "2023.08.03",
