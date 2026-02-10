@@ -947,7 +947,7 @@ J'ai besoin d'écouter les éléments, un environnement vide d'idées. Watson. F
     content: "Shcaa live along with Romeo Poirier & Jan Jelinek. 3537, Rue des Francs-Bourgeois.",
     contentBlocks: [
       {
-        type: 'vertical-gallery',
+        type: 'gallery',
         images: [ftmaStage],
       }
     ]
