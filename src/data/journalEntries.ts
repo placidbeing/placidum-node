@@ -1362,7 +1362,8 @@ Révéler la mesure entre la grande âme obscure de la nature et la simplicité 
     contentBlocks: [
       {
         type: 'gallery',
-        images: [pigalleNeon1, pigalleNeon2, pigalleNeon3, pigalleNeon4, pigalleNeon5, pigalleNeon6]
+        images: [pigalleNeon1, pigalleNeon2, pigalleNeon3, pigalleNeon4, pigalleNeon5, pigalleNeon6],
+        aspectRatio: '9:16'
       }
     ]
   },
