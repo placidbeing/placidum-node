@@ -745,13 +745,11 @@ Memory access time remains the bottleneck. 80 to 90% of machine learning is spen
   {
     date: "2023.07.01",
     title: "Interior Rooms",
-    content: "[PLUM5.](/corpus#plum5) Released.",
-    media: [
+    content: "[PLUM5.](/corpus#plum5)",
+    contentBlocks: [
       {
-        type: 'image' as const,
-        src: intrinsicWaterRoom,
-        size: 'square-medium' as const,
-        position: 'inline' as const
+        type: 'vertical-gallery',
+        images: [intrinsicWaterRoom],
       }
     ]
   },
