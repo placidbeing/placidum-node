@@ -60,7 +60,8 @@ import pigalleNeon6 from '@/assets/pigalle/pigalle-neon-6.jpg';
 import dubaiCreek from '@/assets/dubai/dubai-creek.jpg';
 import pantelleriaTerrace from '@/assets/pantelleria/pantelleria-terrace.jpg';
 import kleeYoungLady from '@/assets/klee-young-lady.jpg';
-import pacificGarden from '@/assets/pacific/pacific-garden.jpg';
+import springGarden from '@/assets/spring/spring-garden.jpg';
+import pacificStreet from '@/assets/pacific/pacific-street.jpg';
 import newyorkStudio from '@/assets/newyork/newyork-studio.jpg';
 import placidumMap from '@/assets/newyork/placidum-map.jpg';
 import tp1 from '@/assets/techno-pessimism/tp-1.png';
@@ -819,7 +820,7 @@ Botanical knowledge increased continually during the 15th and 16th centuries. Lo
     contentBlocks: [
       {
         type: 'vertical-gallery',
-        images: [pacificGarden],
+        images: [springGarden],
         aspectRatio: '16:9'
       }
     ]
@@ -1333,7 +1334,7 @@ Plusieurs fois j'ai tenté d'écrire car mon cœur débordait, mais je restais, 
     contentBlocks: [
       {
         type: 'vertical-gallery',
-        images: [pacificGarden],
+        images: [pacificStreet],
         aspectRatio: '1:1'
       }
     ]
