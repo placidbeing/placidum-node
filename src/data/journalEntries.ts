@@ -1604,6 +1604,11 @@ Stéphane Lambert on Klee:
     ]
   },
   {
+    date: "2015.01.05",
+    title: "La Scala",
+    content: "Schubert, Liszt and Schumann programme, culminating in the Dichterliebe.\nTenor: Ian Bostridge\nPianoforte: Thomas Adès"
+  },
+  {
     date: "2025.04.02",
     title: "Futurewaves",
     content: "",
