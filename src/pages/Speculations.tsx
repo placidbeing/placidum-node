@@ -51,7 +51,7 @@ const Chronicles = () => {
       dateNumerical: "09.08.2016",
       duration: "42:22",
       quote: "Give me that man That is not passion's slave and I will wear him In my heart's core, ay, in my heart of heart, As I do thee.",
-      audioUrl: "https://archive.org/download/placidum-chronicles-a-silent-spectator/Placidum%20Chronicles%20-%20Chapter%20I%20-%20A%20Silent%20Spectator.mp3",
+      audioUrl: "https://archive.org/download/placidum-vestigia-sonora/Chapter%20I%20-%20A%20Silent%20Spectator.mp3",
       artwork: chapterICover,
       artworkMeta: {
         title: "Ad Parnassum",
@@ -69,7 +69,7 @@ const Chronicles = () => {
       dateNumerical: "22.12.2012",
       duration: "01:01:55",
       quote: "The wind has stopped.",
-      audioUrl: "https://archive.org/download/placidum-chronicles-a-silent-spectator/Placidum%20Chronicles%20-%20Preface.mp3",
+      audioUrl: "https://archive.org/download/placidum-vestigia-sonora/Preface.mp3",
       artwork: prefaceCover,
       artworkMeta: {
         title: "The Passage from Virgin to Bride",
