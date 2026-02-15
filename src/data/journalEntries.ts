@@ -1507,7 +1507,7 @@ Baudelaire, Les Paradis artificiels — Le goût de l'infini:
       },
       {
         type: 'audio',
-        audioSrc: 'https://archive.org/download/placidum-chronicles-a-silent-spectator/Shcaa%20Mixtate%20A%20Young%20Lady%27s%20Adventure.mp3',
+        audioSrc: 'https://archive.org/download/placidum-vestigia-sonora/Shcaa%20Mixtate%20A%20Young%20Lady%27s%20Adventure.mp3',
         audioTitle: 'Shcaa - MixTate A Young Lady\'s Adventure',
         audioSubtitle: 'Full mix'
       },
@@ -1616,7 +1616,7 @@ Stéphane Lambert on Klee:
     contentBlocks: [
       {
         type: 'audio',
-        audioSrc: 'https://archive.org/download/placidum-chronicles-a-silent-spectator/shcaa%20futurewaves%20v4.1.mp3',
+        audioSrc: 'https://archive.org/download/placidum-vestigia-sonora/shcaa%20futurewaves%20v4.1.mp3',
         audioTitle: 'Futurewaves',
         audioSubtitle: ''
       }
@@ -1629,7 +1629,7 @@ Stéphane Lambert on Klee:
     contentBlocks: [
       {
         type: 'audio',
-        audioSrc: 'https://archive.org/download/placidum-chronicles-a-silent-spectator/SHCAA%20HKCR2%20v1_01.mp3',
+        audioSrc: 'https://archive.org/download/placidum-vestigia-sonora/SHCAA%20HKCR2%20v1_01.mp3',
         audioTitle: 'HKCR',
         audioSubtitle: ''
       }
@@ -1642,7 +1642,7 @@ Stéphane Lambert on Klee:
     contentBlocks: [
       {
         type: 'audio',
-        audioSrc: 'https://archive.org/download/placidum-chronicles-a-silent-spectator/Shcaa%20XLR8R.mp3',
+        audioSrc: 'https://archive.org/download/placidum-vestigia-sonora/Shcaa%20XLR8R.mp3',
         audioTitle: 'XLR8R',
         audioSubtitle: ''
       }
@@ -1655,7 +1655,7 @@ Stéphane Lambert on Klee:
     contentBlocks: [
       {
         type: 'audio',
-        audioSrc: 'https://archive.org/download/placidum-chronicles-a-silent-spectator/Shcaa%20-%20Paris.mp3',
+        audioSrc: 'https://archive.org/download/placidum-vestigia-sonora/Shcaa%20-%20Paris.mp3',
         audioTitle: 'Paris',
         audioSubtitle: ''
       }
@@ -1668,7 +1668,7 @@ Stéphane Lambert on Klee:
     contentBlocks: [
       {
         type: 'audio',
-        audioSrc: 'https://archive.org/download/placidum-chronicles-a-silent-spectator/Ain°%20Miromx.mp3',
+        audioSrc: 'https://archive.org/download/placidum-vestigia-sonora/Ain%C2%B0%20Miromx.mp3',
         audioTitle: 'Miromx',
         audioSubtitle: ''
       }
@@ -1681,7 +1681,7 @@ Stéphane Lambert on Klee:
     contentBlocks: [
       {
         type: 'audio',
-        audioSrc: 'https://archive.org/download/placidum-chronicles-a-silent-spectator/shcaa%20hazmx.mp3',
+        audioSrc: 'https://archive.org/download/placidum-vestigia-sonora/shcaa%20hazmx.mp3',
         audioTitle: 'Hazmx',
         audioSubtitle: ''
       }
@@ -1694,7 +1694,7 @@ Stéphane Lambert on Klee:
     contentBlocks: [
       {
         type: 'audio',
-        audioSrc: 'https://archive.org/download/placidum-chronicles-a-silent-spectator/Shcaa%20-%20Bird%20Of%20Prey%20%28For%20Phonographe%20Corp%29.mp3',
+        audioSrc: 'https://archive.org/download/placidum-vestigia-sonora/Shcaa%20-%20Bird%20Of%20Prey%20%28For%20Phonographe%20Corp%29.mp3',
         audioTitle: 'Bird Of Prey',
         audioSubtitle: ''
       }
@@ -1712,7 +1712,7 @@ Stéphane Lambert on Klee:
       },
       {
         type: 'audio',
-        audioSrc: 'https://archive.org/download/placidum-chronicles-a-silent-spectator/Shcaa%20-%20Intrinsic%20%28Cut%20%26%20Mastering%29.mp3',
+        audioSrc: 'https://archive.org/download/placidum-vestigia-sonora/Shcaa%20-%20Intrinsic%20%28Cut%20%26%20Mastering%29.mp3',
         audioTitle: 'live at water view room',
         audioSubtitle: ''
       }
@@ -1725,7 +1725,7 @@ Stéphane Lambert on Klee:
     contentBlocks: [
       {
         type: 'audio',
-        audioSrc: 'https://archive.org/download/placidum-chronicles-a-silent-spectator/Lovda%20%28for%20Sharingtones%29.mp3',
+        audioSrc: 'https://archive.org/download/placidum-vestigia-sonora/Lovda%20%28for%20Sharingtones%29.mp3',
         audioTitle: 'Lover, Dancer',
         audioSubtitle: 'For Sharingtones'
       }
@@ -1742,7 +1742,7 @@ Stéphane Lambert on Klee:
       },
       {
         type: 'audio',
-        audioSrc: 'https://archive.org/download/placidum-chronicles-a-silent-spectator/shcaa%20%40%20spot%20bleu%2006.mp3',
+        audioSrc: 'https://archive.org/download/placidum-vestigia-sonora/shcaa%20%40%20spot%20bleu%2006.mp3',
         audioTitle: 'Spot Bleu',
         audioSubtitle: ''
       }
@@ -1768,7 +1768,7 @@ Stéphane Lambert on Klee:
     contentBlocks: [
       {
         type: 'audio',
-        audioSrc: 'https://archive.org/download/placidum-chronicles-a-silent-spectator/Placid%20Strait%20-%20iz%20pepla%20%28for%20Pluie%20Noir%29.mp3',
+        audioSrc: 'https://archive.org/download/placidum-vestigia-sonora/Placid%20Strait%20-%20iz%20pepla%20%28for%20Pluie%20Noir%29.mp3',
         audioTitle: 'Iz Pepla',
         audioSubtitle: 'For Pluie Noir'
       }
