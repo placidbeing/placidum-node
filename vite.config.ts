@@ -7,7 +7,6 @@ import { componentTagger } from "lovable-tagger";
 export default defineConfig(({ mode }) => ({
   base: "/placidum-node/",
   server: {
-  server: {
     host: "::",
     port: 8080,
   },
