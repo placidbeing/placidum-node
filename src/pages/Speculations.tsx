@@ -31,18 +31,6 @@ const Chronicles = () => {
 
   const episodes = [
     {
-      episode: "003",
-      title: "Resonance Fields",
-      chapterNumber: "II",
-      latinTitle: "Campus Resonantiae",
-      dateLatin: "Die X. Decembris MMXXVI.",
-      dateNumerical: "10.12.2026",
-      duration: "45:32",
-      quote: "In silence, all sounds converge.",
-      audioUrl: "#",
-      artwork: null // No artwork yet
-    },
-    {
       episode: "002", 
       title: "A Silent Spectator",
       chapterNumber: "I",
