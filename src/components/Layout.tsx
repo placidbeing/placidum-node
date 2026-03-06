@@ -36,7 +36,7 @@ const Layout = ({ children }: LayoutProps) => {
               </Link>
             ))}
           </nav>
-          <div className="header-year">MMXXIV</div>
+          <div className="header-year">MMXXVI</div>
         </div>
 
         <div className="logo-block">
@@ -66,10 +66,10 @@ const Layout = ({ children }: LayoutProps) => {
             </div>
             <div>
               <h3 className="text-xl">Archives</h3>
-              <p className="marginalia text-ultramarine">Est. MMXXIV</p>
+              <p className="marginalia text-ultramarine">Est. MMXXVI</p>
             </div>
             <div>
-              <p className="marginalia text-ultramarine">© 2024 Placidum</p>
+              <p className="marginalia text-ultramarine">© 2026 Placidum</p>
               <p className="marginalia mt-2 text-ultramarine">
                 Impressions preserved for posterity
               </p>
