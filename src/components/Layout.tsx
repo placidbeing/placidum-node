@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import placidumLogo from "@/assets/placidum-logo-latest.png";
+import placidumWordmark from "@/assets/placidum-wordmark.png";
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -43,9 +44,7 @@ const Layout = ({ children }: LayoutProps) => {
             <div className="flex items-stretch gap-1">
               <img src={placidumLogo} alt="Placidum Logo" className="h-[50px] md:h-[65px] lg:h-[80px] w-auto brightness-[1.2] opacity-70" />
               <div className="flex flex-col justify-end gap-0 pb-1">
-                <div className="logo-wordmark font-garamond tracking-wide leading-none">
-                  PLACIDUM
-                </div>
+                <img src={placidumWordmark} alt="PLACIDUM" className="h-[var(--logo-size)] w-auto" />
                 <div className="logo-motto font-garamond leading-none -mt-3">
                   <em>Observationes circa Impressionum Naturam</em>
                 </div>
