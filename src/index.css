@@ -574,7 +574,7 @@ div[style*="width:"], div[style*="left:"], div[style*="right:"] {
     font-size:var(--motto-size);
     color:hsl(var(--muted-foreground));
     font-style:italic;
-    letter-spacing:.10em;
+    letter-spacing:.18em;
     max-width:60ch;
     display:block;
     width:0;
