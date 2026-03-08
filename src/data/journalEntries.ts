@@ -896,6 +896,12 @@ Sebald: "Those voices that traverse the ether once dusk has fallen, which only a
     ]
   },
   {
+    date: "2023.02.27",
+    title: "Siddhartha",
+    content: `"Dreams and restless thoughts came flowing to him from the river, from the twinkling stars at night, from the sun's melting rays."`,
+    isFullyItalic: true
+  },
+  {
     date: "2023.02.06",
     title: "",
     content: `Bachelard, L'Air et les songes:
