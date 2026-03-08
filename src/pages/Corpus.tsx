@@ -62,7 +62,8 @@ const Catalog = () => {
   const releases = [
     {
       catalog: "PLUM8.",
-      date: "20260104",
+      date: "20260321",
+      displayDate: { latin: "Ver MMXXVI.", numerical: "Spring 2026" },
       artist: "Ain°",
       title: "Latitudes",
       artwork: latitudesCover,
@@ -250,10 +251,10 @@ const Catalog = () => {
                         </div>
                         <div className="font-mono text-sm leading-tight" style={{ letterSpacing: '0.05em', fontWeight: 300 }}>
                           <div className="text-iron-oxide" style={{ opacity: 0.6 }}>
-                            {formatDate(release.date).latin}
+                            {(release as any).displayDate ? (release as any).displayDate.latin : formatDate(release.date).latin}
                           </div>
                           <div className="text-iron-oxide" style={{ opacity: 0.4, fontSize: '0.85rem' }}>
-                            {formatDate(release.date).numerical}
+                            {(release as any).displayDate ? (release as any).displayDate.numerical : formatDate(release.date).numerical}
                           </div>
                         </div>
                       </div>
