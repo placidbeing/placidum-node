@@ -574,6 +574,7 @@ div[style*="width:"], div[style*="left:"], div[style*="right:"] {
     font-size:var(--motto-size);
     color:hsl(var(--muted-foreground));
     font-style:italic;
+    letter-spacing:.28em;
     max-width:60ch;
   }
 }
