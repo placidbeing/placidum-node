@@ -20,9 +20,6 @@ const Principles = () => {
           <h2 className="text-3xl font-garamond font-normal mb-8 text-left codex-title">
             Sonic Traces, Latent Memories
           </h2>
-          <p className="font-mono text-sm text-muted-foreground italic mb-6">
-            Vestigia Sonora, Memoriae Latentes
-          </p>
           <p className="leading-loose text-lg text-foreground">
             To remember is to reconstruct. We are the historians, the interpreters, the readers of our own pasts — and what we find there is never quite what happened. It is something closer to a story of repetitions and recurrences, patterns we half-recognise, places we return to without knowing why. As if our lives were not a haphazard series of episodes but a narration — oblique, patient, circling back on itself.
           </p>
