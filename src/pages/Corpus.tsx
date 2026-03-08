@@ -62,7 +62,7 @@ const Catalog = () => {
   const releases = [
     {
       catalog: "PLUM8.",
-      date: "20260104",
+      date: "20260321",
       artist: "Ain°",
       title: "Latitudes",
       artwork: latitudesCover,
