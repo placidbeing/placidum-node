@@ -63,6 +63,7 @@ const Catalog = () => {
     {
       catalog: "PLUM8.",
       date: "20260321",
+      displayDate: { latin: "Ver MMXXVI.", numerical: "Spring 2026" },
       artist: "Ain°",
       title: "Latitudes",
       artwork: latitudesCover,
