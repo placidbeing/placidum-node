@@ -853,11 +853,7 @@ Nature, raw, blue-grey. Sculpted but not by the wind — from within. Precise, d
       },
       {
         type: 'text',
-        text: `Dream (return flight, above frozen Mongolia): Stopover in Venice. Visiting a building where I would have lived during my student years. The view over the river. The apartments are sublime and spacious. An ideal Venice. Enormous, multicoloured fish.
-
-Sebald: "Those voices that traverse the ether once dusk has fallen, which only a few can pick up, have a life of their own like bats, and shun the light of day."
-
-`
+        text: `Other dream (above frozen Mongolia): Stopover in Venice. Visiting a building where I would have lived during my student years. The view over the river. The apartments are sublime and spacious. An ideal Venice. Enormous, multicoloured fish.`
       },
       {
         type: 'gallery',
