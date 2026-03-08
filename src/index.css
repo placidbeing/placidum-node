@@ -576,6 +576,11 @@ div[style*="width:"], div[style*="left:"], div[style*="right:"] {
     font-style:italic;
     letter-spacing:.28em;
     max-width:60ch;
+    display:block;
+    width:0;
+    min-width:100%;
+    overflow:visible;
+    white-space:nowrap;
   }
 }
 
