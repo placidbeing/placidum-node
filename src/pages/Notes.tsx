@@ -179,10 +179,10 @@ const Notes = () => {
           </p>
           <div className="marginalia">
             Research Updates: <a 
-              href="mailto:notes@placidum.com" 
+              href="mailto:sacha@placidum.com" 
               className="ink-underline"
             >
-              notes@placidum.com
+              sacha@placidum.com
             </a>
           </div>
         </div>
