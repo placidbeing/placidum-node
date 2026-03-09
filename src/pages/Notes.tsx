@@ -183,6 +183,16 @@ const Notes = () => {
               className="ink-underline"
             >
               sacha@placidum.com
+            </a> — <a 
+              href="mailto:sacha@placidum.com?subject=Subscribe" 
+              className="ink-underline"
+            >
+              subscribe
+            </a> / <a 
+              href="mailto:sacha@placidum.com?subject=Unsubscribe" 
+              className="ink-underline"
+            >
+              unsubscribe
             </a>
           </div>
         </div>
