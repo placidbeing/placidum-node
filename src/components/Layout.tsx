@@ -79,6 +79,15 @@ const Layout = ({ children }: LayoutProps) => {
         <div className="marginalia">
           <span className="folio-number">Finis</span>
         </div>
+        <div className="mt-16 pb-4 font-serif text-[10px] leading-relaxed text-muted-foreground/40">
+          <p className="mb-1">Mentions légales</p>
+          <p>Éditeur : Sacha Alexandre Khalifé</p>
+          <p>Statut : SASU — Paris, France</p>
+          <p>SIRET : 894 199 181 00021</p>
+          <p>Contact : sacha@placidum.com</p>
+          <p>Hébergement : GitHub, Inc. — San Francisco, CA, USA</p>
+          <p>Directeur de la publication : Sacha Alexandre Khalifé</p>
+        </div>
       </footer>
     </div>
   );
