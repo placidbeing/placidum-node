@@ -17,7 +17,7 @@ const Principles = () => {
 
         {/* Chapter: Sonic Traces, Latent Memories */}
         <section className="space-y-6">
-          <h2 className="text-3xl font-garamond font-normal mb-8 text-left codex-title uppercase">
+          <h2 className="text-xl font-garamond font-normal mb-8 text-left codex-title uppercase">
             Sonic Traces Latent Memories
           </h2>
           <p className="leading-loose text-lg text-foreground">
