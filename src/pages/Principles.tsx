@@ -4,7 +4,7 @@ const Principles = () => {
       <div className="space-y-16 max-w-2xl">
         {/* Chapter: Aphorisms */}
         <section className="space-y-6">
-          <h1 className="text-3xl font-garamond font-normal mb-8 text-left codex-title uppercase">
+          <h1 className="text-xl font-garamond font-normal mb-8 text-left codex-title uppercase">
             Aphorisms
           </h1>
           <p className="leading-loose text-lg text-foreground font-garamond italic">
