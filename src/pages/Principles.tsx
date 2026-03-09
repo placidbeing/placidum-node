@@ -18,7 +18,7 @@ const Principles = () => {
         {/* Chapter: Sonic Traces, Latent Memories */}
         <section className="space-y-6">
           <h2 className="text-3xl font-garamond font-normal mb-8 text-left codex-title">
-            Sonic Traces, Latent Memories
+            Sonic Traces Latent Memories
           </h2>
           <p className="leading-loose text-lg text-foreground">
             To remember is to reconstruct. We are the historians, the interpreters, the readers of our own pasts — and what we find there is never quite what happened. It is something closer to a story of repetitions and recurrences, patterns we half-recognise, places we return to without knowing why. As if our lives were not a haphazard series of episodes but a narration — oblique, patient, circling back on itself.
@@ -49,7 +49,7 @@ const Principles = () => {
             His expression inhabits a space where blues-informed improvisation meets the patience of electroacoustic composition. While proficient within electronic composition systems — granular attention to sound, unhurried studio practice, autonomy of process — Shcaa's voice could be defined as organic, even naturalistic, and is nourished by a wide inheritance of musical traditions, past and present. His approach is shaped by a poetic sensibility and relies on the correspondances between sound and image to structure a dense and personal language. Recurring themes, cinematic instincts and insistent colour palettes are the threads that hold his work together.
           </p>
           <p className="leading-loose text-lg text-foreground">
-            Shcaa first emerged through rhythm-based electronic music, releasing on labels such as Sharingtones, R&S, Apollo & Archipel. But the pulse was always a carrier for something else — a means of reaching the texture beneath the groove. Over the past decade his work has drifted steadily toward what might be called speculative folk: music that draws on distant cultural memory and recasts it through improvisation and patient accumulation.
+            Shcaa first emerged through rhythm-based electronic music, releasing on labels such as R&S and Apollo. Over the past decade his work has drifted steadily toward what might be called speculative folk or metabolic electronics: music that draws on distant cultural memory and recasts it through improvisation and patient accumulation.
           </p>
         </section>
       </div>
