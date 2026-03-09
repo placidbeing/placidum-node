@@ -39,7 +39,7 @@ const Principles = () => {
 
         {/* Chapter: Shcaa */}
         <section className="space-y-6">
-          <h2 className="text-2xl font-garamond font-normal mb-8 text-left codex-title uppercase">
+          <h2 className="text-[1.75rem] font-garamond font-normal mb-8 text-left codex-title uppercase">
             Shcaa
           </h2>
           <p className="leading-loose text-lg text-foreground">
