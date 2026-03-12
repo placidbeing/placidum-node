@@ -12,8 +12,7 @@ import latitudesCover from "@/assets/Latitudes_Cover.jpg";
 
 const Catalog = () => {
   const location = useLocation();
-  const [viewMode, setViewMode] = useState<'list' | 'gallery'>('gallery');
-  const [expandedRelease, setExpandedRelease] = useState<string | null>(null);
+  const [viewMode, setViewMode] = useState<'list' | 'gallery'>('list');
 
   useEffect(() => {
     if (location.hash) {
@@ -224,14 +223,6 @@ const Catalog = () => {
             </div>
             <div className="flex items-center gap-3 mt-6">
               <button
-                onClick={() => setViewMode('gallery')}
-                className={`p-1.5 transition-opacity ${viewMode === 'gallery' ? 'opacity-100' : 'opacity-35 hover:opacity-60'}`}
-                aria-label="Gallery view"
-                title="Gallery view"
-              >
-                <LayoutGrid size={20} />
-              </button>
-              <button
                 onClick={() => setViewMode('list')}
                 className={`p-1.5 transition-opacity ${viewMode === 'list' ? 'opacity-100' : 'opacity-35 hover:opacity-60'}`}
                 aria-label="List view"
@@ -239,18 +230,25 @@ const Catalog = () => {
               >
                 <List size={20} />
               </button>
+              <button
+                onClick={() => setViewMode('gallery')}
+                className={`p-1.5 transition-opacity ${viewMode === 'gallery' ? 'opacity-100' : 'opacity-35 hover:opacity-60'}`}
+                aria-label="Gallery view"
+                title="Gallery view"
+              >
+                <LayoutGrid size={20} />
+              </button>
             </div>
           </div>
         </div>
 
         {viewMode === 'gallery' ? (
-           <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
             {releases.map((release) => (
               <article
                 key={release.catalog}
                 className="cursor-pointer"
                 onClick={() => {
-                  setExpandedRelease(release.catalog);
                   setViewMode('list');
                   setTimeout(() => {
                     const el = document.getElementById(release.catalog.toLowerCase().replace('.', ''));
@@ -267,13 +265,13 @@ const Catalog = () => {
                   />
                 </div>
                 <div className="space-y-0.5">
-                  <div className="font-mono text-xs text-iron-oxide" style={{ letterSpacing: '0.05em', fontWeight: 300 }}>
+                  <div className="font-mono text-xs text-muted-foreground" style={{ letterSpacing: '0.05em' }}>
                     {release.catalog}
                   </div>
-                  <div className="font-cormorant text-sm text-iron-oxide">
+                  <div className="font-cormorant text-sm">
                     {release.artist} — {release.title}
                   </div>
-                  <div className="font-mono text-xs text-iron-oxide" style={{ opacity: 0.4, fontSize: '0.85rem' }}>
+                  <div className="font-mono text-xs text-muted-foreground" style={{ opacity: 0.5 }}>
                     {(release as any).displayDate ? (release as any).displayDate.numerical : formatDate(release.date).numerical}
                   </div>
                 </div>
@@ -284,10 +282,7 @@ const Catalog = () => {
         <div className="space-y-24">
           {releases.map((release) => (
             <article key={release.catalog} id={release.catalog.toLowerCase().replace('.', '')} className="py-8">
-              <div 
-                className="flex flex-col space-y-8 cursor-pointer"
-                onClick={() => setExpandedRelease(expandedRelease === release.catalog ? null : release.catalog)}
-              >
+              <div className="flex flex-col space-y-8">
                 {/* Folio Image - Full width on mobile */}
                 <div className="w-full">
                   <div 
@@ -302,9 +297,10 @@ const Catalog = () => {
                   </div>
                 </div>
                 
-                {/* Always visible info */}
+                {/* Folio Content - Below image */}
                 <div className="space-y-6 max-w-2xl">
                   <div className="fragment">
+                    {/* Catalog Number and Date */}
                     <div className="mb-6">
                       <div className="mb-1">
                         <div className="font-mono text-sm text-iron-oxide" style={{ letterSpacing: '0.05em', fontWeight: 300 }}>
@@ -324,7 +320,7 @@ const Catalog = () => {
                       </h2>
                     </div>
                     
-                    {/* Leonardo-style Metadata - always visible */}
+                    {/* Leonardo-style Metadata */}
                     <div className="mb-6 space-y-0.5">
                       <div className="font-cormorant italic text-base text-muted-foreground" style={{ letterSpacing: '0.1em' }}>
                         tempus totius operis: {release.totalDuration}
@@ -333,16 +329,8 @@ const Catalog = () => {
                         {release.technicalSpecs}
                       </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Expandable details */}
-              {expandedRelease === release.catalog && (
-                <div className="space-y-6 max-w-2xl mt-6">
-                  <div className="fragment">
                     
-                    {/* Tracklist */}
+                    {/* Tracklist - Leonardo Style */}
                     <div className="space-y-4 mb-6">
                       {release.tracks.map((track, index) => (
                         <div key={index} className="text-ink">
@@ -365,7 +353,7 @@ const Catalog = () => {
                     </div>
                   </div>
                 </div>
-              )}
+              </div>
             </article>
           ))}
         </div>
