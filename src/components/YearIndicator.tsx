@@ -28,7 +28,7 @@ const YearIndicator = ({ entries, entryRefs }: YearIndicatorProps) => {
   const [isVisible, setIsVisible] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [hasScrolled, setHasScrolled] = useState(false);
-  const hideTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const hideTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   // Extract unique years from entries
