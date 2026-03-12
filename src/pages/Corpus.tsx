@@ -12,7 +12,7 @@ import latitudesCover from "@/assets/Latitudes_Cover.jpg";
 
 const Catalog = () => {
   const location = useLocation();
-  const [viewMode, setViewMode] = useState<'list' | 'gallery'>('list');
+  const [viewMode, setViewMode] = useState<'list' | 'gallery'>('gallery');
 
   useEffect(() => {
     if (location.hash) {
