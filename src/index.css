@@ -504,7 +504,7 @@ div[style*="width:"], div[style*="left:"], div[style*="right:"] {
   }
 
   .site-header{
-    padding:18px var(--gutter) 0;
+    padding:12px var(--gutter) 0;
   }
 
   .topline{
@@ -557,8 +557,9 @@ div[style*="width:"], div[style*="left:"], div[style*="right:"] {
   }
 
   .logo-block{
-    margin-top:120px;
-    text-align:left;   /* anchored left under menu */
+    margin-top:100px;
+    margin-bottom:40px;
+    text-align:left;
   }
   .logo-wordmark{
     font-size:var(--logo-size);
