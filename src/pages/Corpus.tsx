@@ -244,12 +244,13 @@ const Catalog = () => {
         </div>
 
         {viewMode === 'gallery' ? (
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+           <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
             {releases.map((release) => (
               <article
                 key={release.catalog}
                 className="cursor-pointer"
                 onClick={() => {
+                  setExpandedRelease(release.catalog);
                   setViewMode('list');
                   setTimeout(() => {
                     const el = document.getElementById(release.catalog.toLowerCase().replace('.', ''));
@@ -266,13 +267,13 @@ const Catalog = () => {
                   />
                 </div>
                 <div className="space-y-0.5">
-                  <div className="font-mono text-xs text-muted-foreground" style={{ letterSpacing: '0.05em' }}>
+                  <div className="font-mono text-xs text-iron-oxide" style={{ letterSpacing: '0.05em', fontWeight: 300 }}>
                     {release.catalog}
                   </div>
-                  <div className="font-cormorant text-sm">
+                  <div className="font-cormorant text-sm text-iron-oxide">
                     {release.artist} — {release.title}
                   </div>
-                  <div className="font-mono text-xs text-muted-foreground" style={{ opacity: 0.5 }}>
+                  <div className="font-mono text-xs text-iron-oxide" style={{ opacity: 0.4, fontSize: '0.85rem' }}>
                     {(release as any).displayDate ? (release as any).displayDate.numerical : formatDate(release.date).numerical}
                   </div>
                 </div>
