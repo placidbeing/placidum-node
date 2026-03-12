@@ -73,14 +73,14 @@ const Shcaa = () => {
               </thead>
               <tbody className="text-foreground">
                 {[
-                  ["PLUM1", "Ain°", "Hearts", "Digital", "2018"],
-                  ["PLUM2", "Shcaa", "Golconde", "Digital (reissue)", "2019"],
-                  ["PLUM3", "Shcaa", "Soft Signs", "Digital", "2022"],
-                  ["PLUM4", "Nocturnal Solutions", "Nocturnal Solutions", "Digital", "2023"],
-                  ["PLUM5", "Ain°", "Interior Rooms", "Digital", "2023"],
-                  ["PLUM6", "Shcaa", "Neptune", "Digital", "2024"],
-                  ["PLUM7", "Shcaa", "Beautiful Situation", "Digital", "2025"],
-                  ["PLUM8", "Ain°", "Latitudes", "Cassette (Ltd. 50) + Digital", "2026"],
+                  ["PLUM1.", "Ain°", "Hearts", "Digital", "2018"],
+                  ["PLUM2.", "Shcaa", "Golconde", "Digital (reissue)", "2019"],
+                  ["PLUM3.", "Shcaa", "Soft Signs", "Digital", "2022"],
+                  ["PLUM4.", "Nocturnal Solutions", "Nocturnal Solutions", "Digital", "2023"],
+                  ["PLUM5.", "Ain°", "Interior Rooms", "Digital", "2023"],
+                  ["PLUM6.", "Shcaa", "Neptune", "Digital", "2024"],
+                  ["PLUM7.", "Shcaa", "Beautiful Situation", "Digital", "2025"],
+                  ["PLUM8.", "Ain°", "Latitudes", "Cassette (Ltd. 50) + Digital", "2026"],
                 ].map(([cat, artist, title, format, year], i) => (
                   <tr key={i} className="border-b border-border/20">
                     <td className="py-2 pr-4 text-muted-foreground font-mono text-xs">{cat}</td>
