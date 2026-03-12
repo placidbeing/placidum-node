@@ -27,11 +27,11 @@ const Layout = ({ children }: LayoutProps) => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`ink-underline font-garamond lowercase tracking-wide transition-colors ${
+                className={`ink-underline font-garamond lowercase tracking-wide transition-colors text-muted-foreground hover:text-iron-oxide ${
                   location.pathname === item.path 
-                    ? "active" 
+                    ? "active text-iron-oxide" 
                     : ""
-                } ${item.path === "/shcaa" ? "text-yellow-500" : ""}`}
+                } ${item.path === "/shcaa" ? "text-verdigris hover:text-verdigris" : ""}`}
               >
                 {item.label}
               </Link>
