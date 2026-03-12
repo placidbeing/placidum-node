@@ -504,12 +504,23 @@ div[style*="width:"], div[style*="left:"], div[style*="right:"] {
   }
 
   .site-header{
+    position:relative;
     padding:48px var(--gutter) 0;
   }
 
+  .header-year-float{
+    position:absolute;
+    top:18px;
+    right:var(--gutter);
+    color:hsl(var(--iron-oxide));
+    letter-spacing:.12em;
+    font-size: 12px;
+    font-family: 'Crimson Text', 'Georgia', serif;
+    text-transform: uppercase;
+  }
+
   .topline{
-    display:grid;
-    grid-template-columns:1fr auto;
+    display:flex;
     align-items:center;
   }
 
@@ -535,7 +546,6 @@ div[style*="width:"], div[style*="left:"], div[style*="right:"] {
   }
 
   .main-menu{
-    justify-self:start;
     display:flex;
     gap:var(--menu-gap);
     font-size:var(--menu-size);
@@ -548,17 +558,12 @@ div[style*="width:"], div[style*="left:"], div[style*="right:"] {
   }
 
   .header-year{
-    justify-self:end;
-    color:hsl(var(--iron-oxide));
-    letter-spacing:.12em;
-    font-size: 12px;
-    font-family: 'Crimson Text', 'Georgia', serif;
-    text-transform: uppercase;
+    display:none;
   }
 
   .logo-block{
-    margin-top:120px;
-    text-align:left;   /* anchored left under menu */
+    margin-top:80px;
+    text-align:left;
   }
   .logo-wordmark{
     font-size:var(--logo-size);
@@ -617,9 +622,18 @@ div[style*="width:"], div[style*="left:"], div[style*="right:"] {
     font-size:var(--menu-size);
   }
 
-  .header-year {
+  .header-year-float {
+    position:static;
+    text-align:right;
+    margin-bottom:8px;
     font-size: 10px;
-    color: hsl(var(--iron-oxide)) !important;
+    color: hsl(var(--iron-oxide));
+    letter-spacing:.12em;
+    font-family: 'Crimson Text', 'Georgia', serif;
+  }
+
+  .header-year {
+    display:none;
   }
 
   .logo-wordmark{
