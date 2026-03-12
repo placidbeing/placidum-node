@@ -445,6 +445,26 @@ div[style*="width:"], div[style*="left:"], div[style*="right:"] {
     width: 100%;
   }
 
+  /* Verdigris underline variant for shcaa link */
+  .ink-underline-verdigris {
+    position: relative;
+  }
+
+  .ink-underline-verdigris::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: hsl(var(--verdigris));
+    transition: width 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  .ink-underline-verdigris:hover::after {
+    width: 100%;
+  }
+
   /* Fragment-style content blocks */
   .fragment {
     margin: 2rem 0;
