@@ -12,7 +12,7 @@ import latitudesCover from "@/assets/Latitudes_Cover.jpg";
 
 const Catalog = () => {
   const location = useLocation();
-  const [viewMode, setViewMode] = useState<'list' | 'gallery'>('list');
+  const [viewMode, setViewMode] = useState<'list' | 'gallery'>('gallery');
 
   useEffect(() => {
     if (location.hash) {
@@ -223,20 +223,20 @@ const Catalog = () => {
             </div>
             <div className="flex items-center gap-3 mt-6">
               <button
-                onClick={() => setViewMode('list')}
-                className={`p-1.5 transition-opacity ${viewMode === 'list' ? 'opacity-100' : 'opacity-35 hover:opacity-60'}`}
-                aria-label="List view"
-                title="List view"
-              >
-                <List size={20} />
-              </button>
-              <button
                 onClick={() => setViewMode('gallery')}
                 className={`p-1.5 transition-opacity ${viewMode === 'gallery' ? 'opacity-100' : 'opacity-35 hover:opacity-60'}`}
                 aria-label="Gallery view"
                 title="Gallery view"
               >
                 <LayoutGrid size={20} />
+              </button>
+              <button
+                onClick={() => setViewMode('list')}
+                className={`p-1.5 transition-opacity ${viewMode === 'list' ? 'opacity-100' : 'opacity-35 hover:opacity-60'}`}
+                aria-label="List view"
+                title="List view"
+              >
+                <List size={20} />
               </button>
             </div>
           </div>
@@ -268,10 +268,10 @@ const Catalog = () => {
                   <div className="font-mono text-xs text-muted-foreground" style={{ letterSpacing: '0.05em' }}>
                     {release.catalog}
                   </div>
-                  <div className="font-cormorant text-sm">
+                  <div className="font-cormorant text-sm text-iron-oxide">
                     {release.artist} — {release.title}
                   </div>
-                  <div className="font-mono text-xs text-muted-foreground" style={{ opacity: 0.5 }}>
+                  <div className="font-mono text-xs text-iron-oxide" style={{ opacity: 0.4 }}>
                     {(release as any).displayDate ? (release as any).displayDate.numerical : formatDate(release.date).numerical}
                   </div>
                 </div>
