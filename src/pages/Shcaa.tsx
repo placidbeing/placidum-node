@@ -73,14 +73,14 @@ const Shcaa = () => {
               </thead>
               <tbody className="text-foreground">
                 {[
-                  ["PLUM1", "Ain°", "Hearts", "Digital", "2018"],
-                  ["PLUM2", "Shcaa", "Golconde", "Digital (reissue)", "2019"],
-                  ["PLUM3", "Shcaa", "Soft Signs", "Digital", "2022"],
-                  ["PLUM4", "Nocturnal Solutions", "Nocturnal Solutions", "Digital", "2023"],
-                  ["PLUM5", "Ain°", "Interior Rooms", "Digital", "2023"],
-                  ["PLUM6", "Shcaa", "Neptune", "Digital", "2024"],
-                  ["PLUM7", "Shcaa", "Beautiful Situation", "Digital", "2025"],
-                  ["PLUM8", "Ain°", "Latitudes", "Cassette (Ltd. 50) + Digital", "2026"],
+                  ["PLUM1.", "Ain°", "Hearts", "Digital", "2018"],
+                  ["PLUM2.", "Shcaa", "Golconde", "Digital (reissue)", "2019"],
+                  ["PLUM3.", "Shcaa", "Soft Signs", "Digital", "2022"],
+                  ["PLUM4.", "Nocturnal Solutions", "Nocturnal Solutions", "Digital", "2023"],
+                  ["PLUM5.", "Ain°", "Interior Rooms", "Digital", "2023"],
+                  ["PLUM6.", "Shcaa", "Neptune", "Digital", "2024"],
+                  ["PLUM7.", "Shcaa", "Beautiful Situation", "Digital", "2025"],
+                  ["PLUM8.", "Ain°", "Latitudes", "Cassette (Ltd. 50) + Digital", "2026"],
                 ].map(([cat, artist, title, format, year], i) => (
                   <tr key={i} className="border-b border-border/20">
                     <td className="py-2 pr-4 text-muted-foreground font-mono text-xs">{cat}</td>
@@ -116,7 +116,8 @@ const Shcaa = () => {
                   ["Dunes", "5050 World", "Digital", "2012"],
                   ["L'écorce des Astres", "Archipel", "Digital", "2013"],
                   ["No Love in Paris", "Chic Marionnette", "Digital", "2013"],
-                  ["Blank Slate 009", "Blank Slate", "Vinyl / Digital", "2015"],
+                  ["Variant EP (Part 2)", "HDNSM", "Digital", "2015"],
+                  ["Blank Slate 009 (I Want You / The Way You Look At Things)", "Blank Slate", "Vinyl / Digital", "2015"],
                   ["Catharsis", "Grow", "Vinyl / Digital", "2015"],
                   ["Camera Obscura", "Archipel", "Digital", "2016"],
                   ["Prelude (with Traian Chereches)", "Oxmose", "Digital", "2017"],
@@ -150,16 +151,15 @@ const Shcaa = () => {
               </thead>
               <tbody className="text-foreground">
                 {[
-                  ["Venise", "Chic Marionnette", "Venise (VA tracks)", "2011"],
                   ["Tulipa027 PETALTWO", "Tulipa Recordings", "Evaporée", "2012"],
                   ["White Ribbon", "Sharingtones", "What Goes On", "2013"],
                   ["Kollektiv Artists Volume 9", "MusicKollektiv", "Atlantic", "2013"],
                   ["Geometric Parts Compilation 2", "Doma Musique", "Syracuse", "2013"],
-                  ["Blank Slate 006", "Blank Slate", "(VA contribution)", "2014"],
-                  ["Variant EP (Part 2)", "—", "Masquée (split with Cleymoore)", "2015"],
+                  ["Blank Slate 006", "Blank Slate", "Remorse", "2014"],
+                  ["Thoughts on Sight and Sound Vol. I", "Pluie Noir", "Chêne (as Placid Strait)", "2014"],
                   ["Pale Fire", "Sharingtones", "An Ungrateful Death", "2016"],
                   ["Billy Milligan Trio", "Lowlife Cartel", "The Sky Was Pearl Grey", "2018"],
-                  ["Scenarii Vol. 2", "Automatic Writing", "(VA contribution)", "2021"],
+                  ["Scenarii Vol. 2", "Automatic Writing", "Muse Tragis", "2021"],
                   ["Eternal Poet", "Misbits Recordings", "Locked Grooves (×2)", "—"],
                 ].map(([release, label, track, year], i) => (
                   <tr key={i} className="border-b border-border/20">
@@ -189,6 +189,7 @@ const Shcaa = () => {
               </thead>
               <tbody className="text-foreground">
                 {[
+                  ["Herzel", "Brown Paper Bag (Shcaa Remix)", "Filter Label", "2013"],
                   ["Kaitaro", "Smoke (Shcaa Cold Fire Visualisation)", "Flügel", "2015"],
                   ["PierroX", "Sad Deepness (Shcaa Remix)", "Schizophrenic Records", "2016"],
                   ["Otzeki", "Touch (Shcaa Remix)", "Discophorus", "2016"],
