@@ -30,7 +30,7 @@ const Layout = ({ children }: LayoutProps) => {
                 className={`font-garamond lowercase tracking-wide transition-colors ${
                   item.path === "/shcaa" 
                     ? location.pathname === "/shcaa"
-                      ? "text-verdigris ink-underline-verdigris italic"
+                      ? "active text-verdigris ink-underline-verdigris italic"
                       : "text-yellow-500 hover:text-verdigris ink-underline-verdigris"
                     : `text-muted-foreground hover:text-iron-oxide ink-underline ${location.pathname === item.path ? "active text-iron-oxide" : ""}`
                 }`}
