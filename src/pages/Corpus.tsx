@@ -273,13 +273,13 @@ const Catalog = () => {
                   />
                 </div>
                 <div className="space-y-0.5">
-                  <div className="font-mono text-sm text-iron-oxide" style={{ letterSpacing: '0.05em', fontWeight: 300 }}>
+                  <div className="font-mono text-sm text-ultramarine" style={{ letterSpacing: '0.05em', fontWeight: 300 }}>
                     {release.catalog}
                   </div>
-                  <div className="font-cormorant text-sm text-iron-oxide">
+                  <div className="font-cormorant text-sm text-white">
                     {release.artist} — {release.title}
                   </div>
-                  <div className="font-mono text-xs text-iron-oxide" style={{ opacity: 0.4 }}>
+                  <div className="font-mono text-xs text-white" style={{ opacity: 0.5 }}>
                     {(release as any).displayDate ? (release as any).displayDate.numerical : formatDate(release.date).numerical}
                   </div>
                 </div>
