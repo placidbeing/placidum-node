@@ -465,6 +465,10 @@ div[style*="width:"], div[style*="left:"], div[style*="right:"] {
     width: 100%;
   }
 
+  /* Active state for shcaa - always show green underline */
+  .ink-underline-verdigris.active::after {
+    width: 100%;
+  }
 
   /* Fragment-style content blocks */
   .fragment {
