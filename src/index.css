@@ -504,23 +504,12 @@ div[style*="width:"], div[style*="left:"], div[style*="right:"] {
   }
 
   .site-header{
-    position:relative;
-    padding:60px var(--gutter) 0;
-  }
-
-  .header-year-float{
-    position:absolute;
-    top:18px;
-    right:var(--gutter);
-    color:hsl(var(--iron-oxide));
-    letter-spacing:.12em;
-    font-size: 12px;
-    font-family: 'Crimson Text', 'Georgia', serif;
-    text-transform: uppercase;
+    padding:18px var(--gutter) 0;
   }
 
   .topline{
-    display:flex;
+    display:grid;
+    grid-template-columns:1fr auto;
     align-items:center;
   }
 
@@ -546,6 +535,7 @@ div[style*="width:"], div[style*="left:"], div[style*="right:"] {
   }
 
   .main-menu{
+    justify-self:start;
     display:flex;
     gap:var(--menu-gap);
     font-size:var(--menu-size);
@@ -558,12 +548,17 @@ div[style*="width:"], div[style*="left:"], div[style*="right:"] {
   }
 
   .header-year{
-    display:none;
+    justify-self:end;
+    color:hsl(var(--iron-oxide));
+    letter-spacing:.12em;
+    font-size: 12px;
+    font-family: 'Crimson Text', 'Georgia', serif;
+    text-transform: uppercase;
   }
 
   .logo-block{
-    margin-top:60px;
-    text-align:left;
+    margin-top:48px;
+    text-align:left;   /* anchored left under menu */
   }
   .logo-wordmark{
     font-size:var(--logo-size);
@@ -622,18 +617,9 @@ div[style*="width:"], div[style*="left:"], div[style*="right:"] {
     font-size:var(--menu-size);
   }
 
-  .header-year-float {
-    position:static;
-    text-align:right;
-    margin-bottom:8px;
-    font-size: 10px;
-    color: hsl(var(--iron-oxide));
-    letter-spacing:.12em;
-    font-family: 'Crimson Text', 'Georgia', serif;
-  }
-
   .header-year {
-    display:none;
+    font-size: 10px;
+    color: hsl(var(--iron-oxide)) !important;
   }
 
   .logo-wordmark{
