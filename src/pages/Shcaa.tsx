@@ -189,6 +189,7 @@ const Shcaa = () => {
               </thead>
               <tbody className="text-foreground">
                 {[
+                  ["Herzel", "Brown Paper Bag (Shcaa Remix)", "Filter Label", "2013"],
                   ["Kaitaro", "Smoke (Shcaa Cold Fire Visualisation)", "Flügel", "2015"],
                   ["PierroX", "Sad Deepness (Shcaa Remix)", "Schizophrenic Records", "2016"],
                   ["Otzeki", "Touch (Shcaa Remix)", "Discophorus", "2016"],
