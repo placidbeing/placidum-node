@@ -11,8 +11,8 @@ const Shcaa = () => {
 
         {/* Bio */}
         <section className="space-y-6">
-          <h1 className="text-3xl font-garamond font-normal codex-title uppercase">Shcaa</h1>
-          <p className="font-mono text-xs tracking-widest uppercase text-muted-foreground">Correspondances</p>
+
+
 
           <div className="space-y-4 text-foreground leading-loose text-lg">
             <p>

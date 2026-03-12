@@ -64,6 +64,9 @@ const Layout = ({ children }: LayoutProps) => {
             <div>
               <h3 className="text-xl">Correspondence</h3>
               <p className="marginalia text-ultramarine">sacha@placidum.com</p>
+              <Link to="/shcaa" className="inline-block mt-3 text-sm font-garamond tracking-wide text-iron-oxide hover:opacity-80 transition-opacity">
+                Shcaa
+              </Link>
             </div>
             <div>
               <h3 className="text-xl">Archives</h3>
@@ -73,11 +76,6 @@ const Layout = ({ children }: LayoutProps) => {
               <p className="marginalia text-ultramarine">© 2026 Placidum</p>
               <p className="marginalia mt-2 text-ultramarine">
                 Impressions preserved for posterity
-              </p>
-              <p className="mt-3">
-                <Link to="/shcaa" className="text-xs text-muted-foreground/50 hover:text-muted-foreground transition-colors font-mono tracking-wider">
-                  Shcaa
-                </Link>
               </p>
             </div>
           </div>
