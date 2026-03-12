@@ -1,5 +1,6 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
+import { List, LayoutGrid } from "lucide-react";
 import beautifulSituationCover from "@/assets/Beautiful_Situation_Cover_LD.jpg";
 import neptuneCover from "@/assets/Neptune_Cover.jpg";
 import interiorRoomsCover from "@/assets/IR_Cover.jpg";
