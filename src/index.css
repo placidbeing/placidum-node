@@ -622,9 +622,18 @@ div[style*="width:"], div[style*="left:"], div[style*="right:"] {
     font-size:var(--menu-size);
   }
 
-  .header-year {
+  .header-year-float {
+    position:static;
+    text-align:right;
+    margin-bottom:8px;
     font-size: 10px;
-    color: hsl(var(--iron-oxide)) !important;
+    color: hsl(var(--iron-oxide));
+    letter-spacing:.12em;
+    font-family: 'Crimson Text', 'Georgia', serif;
+  }
+
+  .header-year {
+    display:none;
   }
 
   .logo-wordmark{
