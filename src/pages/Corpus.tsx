@@ -311,19 +311,19 @@ const Catalog = () => {
                     {/* Catalog Number and Date */}
                     <div className="mb-6">
                       <div className="mb-1">
-                        <div className="font-mono text-sm text-iron-oxide" style={{ letterSpacing: '0.05em', fontWeight: 300 }}>
+                        <div className="font-mono text-sm text-ultramarine" style={{ letterSpacing: '0.05em', fontWeight: 300 }}>
                           {release.catalog}
                         </div>
                         <div className="font-mono text-sm leading-tight" style={{ letterSpacing: '0.05em', fontWeight: 300 }}>
-                          <div className="text-iron-oxide" style={{ opacity: 0.6 }}>
+                          <div className="text-white" style={{ opacity: 0.6 }}>
                             {(release as any).displayDate ? (release as any).displayDate.latin : formatDate(release.date).latin}
                           </div>
-                          <div className="text-iron-oxide" style={{ opacity: 0.4, fontSize: '0.85rem' }}>
+                          <div className="text-white" style={{ opacity: 0.4, fontSize: '0.85rem' }}>
                             {(release as any).displayDate ? (release as any).displayDate.numerical : formatDate(release.date).numerical}
                           </div>
                         </div>
                       </div>
-                      <h2 className="font-cormorant text-2xl text-iron-oxide" style={{ fontWeight: 300, textTransform: 'uppercase' }}>
+                      <h2 className="font-cormorant text-2xl text-yellow-500" style={{ fontWeight: 300, textTransform: 'uppercase' }}>
                         {release.artist} - {release.title}
                       </h2>
                     </div>
