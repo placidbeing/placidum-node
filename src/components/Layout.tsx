@@ -14,6 +14,7 @@ const Layout = ({ children }: LayoutProps) => {
     { path: "/corpus", label: "corpus" },
     { path: "/chronicles", label: "chronicles" },
     { path: "/principles", label: "principles" },
+    { path: "/shcaa", label: "shcaa" },
   ];
 
   return (
