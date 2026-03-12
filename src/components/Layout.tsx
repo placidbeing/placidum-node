@@ -46,7 +46,7 @@ const Layout = ({ children }: LayoutProps) => {
               <img src={placidumLogo} alt="Placidum Logo" className="h-[54px] md:h-[67px] lg:h-[83px] w-auto brightness-[1.2] opacity-70 -mr-2" />
               <div className="flex flex-col justify-end gap-0 pb-1">
                 <img src={placidumWordmark} alt="PLACIDUM" className="h-[var(--logo-size)] w-auto" />
-                <div className="logo-motto font-garamond leading-none -mt-1">
+                <div className="logo-motto font-garamond leading-none -mt-1 text-muted-foreground">
                   <em>Vestigia Sonora, Memoriae Latentes</em>
                 </div>
               </div>
