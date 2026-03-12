@@ -31,7 +31,7 @@ const Layout = ({ children }: LayoutProps) => {
                   location.pathname === item.path 
                     ? "active" 
                     : ""
-                }`}
+                } ${item.path === "/shcaa" ? "text-yellow-500" : ""}`}
               >
                 {item.label}
               </Link>
