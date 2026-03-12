@@ -505,7 +505,7 @@ div[style*="width:"], div[style*="left:"], div[style*="right:"] {
 
   .site-header{
     position:relative;
-    padding:48px var(--gutter) 0;
+    padding:60px var(--gutter) 0;
   }
 
   .header-year-float{
