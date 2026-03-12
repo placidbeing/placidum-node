@@ -323,15 +323,8 @@ const Catalog = () => {
                         {release.artist} - {release.title}
                       </h2>
                     </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Expandable details */}
-              {expandedRelease === release.catalog && (
-                <div className="space-y-6 max-w-2xl mt-6">
-                  <div className="fragment">
-                    {/* Leonardo-style Metadata */}
+                    
+                    {/* Leonardo-style Metadata - always visible */}
                     <div className="mb-6 space-y-0.5">
                       <div className="font-cormorant italic text-base text-muted-foreground" style={{ letterSpacing: '0.1em' }}>
                         tempus totius operis: {release.totalDuration}
@@ -340,6 +333,14 @@ const Catalog = () => {
                         {release.technicalSpecs}
                       </div>
                     </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Expandable details */}
+              {expandedRelease === release.catalog && (
+                <div className="space-y-6 max-w-2xl mt-6">
+                  <div className="fragment">
                     
                     {/* Tracklist */}
                     <div className="space-y-4 mb-6">
