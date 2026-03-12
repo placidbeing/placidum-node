@@ -227,7 +227,7 @@ const Catalog = () => {
                 aria-label="Gallery view"
                 title="Gallery view"
               >
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1" className="text-foreground">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1" className="text-ultramarine">
                   <rect x="2.5" y="2.5" width="6" height="6" />
                   <rect x="11.5" y="2.5" width="6" height="6" />
                   <rect x="2.5" y="11.5" width="6" height="6" />
@@ -240,7 +240,7 @@ const Catalog = () => {
                 aria-label="List view"
                 title="List view"
               >
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1" className="text-foreground">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1" className="text-ultramarine">
                   <line x1="2" y1="5" x2="18" y2="5" />
                   <line x1="2" y1="10" x2="18" y2="10" />
                   <line x1="2" y1="15" x2="18" y2="15" />
