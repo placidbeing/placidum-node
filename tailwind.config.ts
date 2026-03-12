@@ -73,7 +73,16 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Codex palette
+				verdigris: 'hsl(var(--verdigris))',
+				'iron-oxide': 'hsl(var(--iron-oxide))',
+				ultramarine: 'hsl(var(--ultramarine))',
+				ochre: 'hsl(var(--ochre))',
+				sepia: 'hsl(var(--sepia))',
+				graphite: 'hsl(var(--graphite))',
+				parchment: 'hsl(var(--parchment))',
+				ink: 'hsl(var(--ink))'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
