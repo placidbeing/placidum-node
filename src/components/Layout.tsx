@@ -43,7 +43,7 @@ const Layout = ({ children }: LayoutProps) => {
         <div className="logo-block">
           <Link to="/" className="ink-underline inline-block">
             <div className="flex items-stretch -gap-1">
-              <img src={placidumLogo} alt="Placidum Logo" className="h-[58px] md:h-[72px] lg:h-[88px] w-auto brightness-[1.2] opacity-70 -mr-2" />
+              <img src={placidumLogo} alt="Placidum Logo" className="h-[50px] md:h-[62px] lg:h-[78px] w-auto brightness-[1.2] opacity-70 -mr-2" />
               <div className="flex flex-col justify-end gap-0 pb-1">
                 <img src={placidumWordmark} alt="PLACIDUM" className="h-[var(--logo-size)] w-auto" />
                 <div className="logo-motto font-garamond leading-none -mt-1">
