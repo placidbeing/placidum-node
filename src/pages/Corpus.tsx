@@ -311,7 +311,7 @@ const Catalog = () => {
                     {/* Catalog Number and Date */}
                     <div className="mb-6">
                       <div className="mb-1">
-                        <div className="font-mono text-sm text-ultramarine" style={{ letterSpacing: '0.05em', fontWeight: 300 }}>
+                        <div className="font-mono text-sm text-white" style={{ letterSpacing: '0.05em', fontWeight: 300 }}>
                           {release.catalog}
                         </div>
                         <div className="font-mono text-sm leading-tight" style={{ letterSpacing: '0.05em', fontWeight: 300 }}>
