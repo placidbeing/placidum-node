@@ -65,9 +65,7 @@ const Layout = ({ children }: LayoutProps) => {
           <div className="grid cols-3 gap-8">
             <div>
               <h3 className="text-xl">Correspondence</h3>
-              <a href="mailto:sacha@placidum.com" className="marginalia text-ultramarine hover:opacity-70 transition-opacity">
-                sacha@placidum.com
-              </a>
+              <p className="marginalia text-ultramarine">sacha@placidum.com</p>
             </div>
             <div>
               <h3 className="text-xl">Archives</h3>
@@ -89,7 +87,7 @@ const Layout = ({ children }: LayoutProps) => {
           <p>Éditeur : Sacha Alexandre Khalifé</p>
           <p>Statut : SASU — Paris, France</p>
           <p>SIRET : 894 199 181 00021</p>
-          <p>Contact : <a href="mailto:sacha@placidum.com" className="hover:opacity-70 transition-opacity">sacha@placidum.com</a></p>
+          <p>Contact : sacha@placidum.com</p>
           <p>Hébergement : GitHub, Inc. — San Francisco, CA, USA</p>
           <p>Directeur de la publication : Sacha Alexandre Khalifé</p>
         </div>
