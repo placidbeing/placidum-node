@@ -221,9 +221,64 @@ const Catalog = () => {
                 placidum.bandcamp.com
               </a>
             </div>
+            <div className="flex items-center gap-3 mt-6">
+              <button
+                onClick={() => setViewMode('list')}
+                className={`p-1.5 transition-opacity ${viewMode === 'list' ? 'opacity-100' : 'opacity-35 hover:opacity-60'}`}
+                aria-label="List view"
+                title="List view"
+              >
+                <List size={20} />
+              </button>
+              <button
+                onClick={() => setViewMode('gallery')}
+                className={`p-1.5 transition-opacity ${viewMode === 'gallery' ? 'opacity-100' : 'opacity-35 hover:opacity-60'}`}
+                aria-label="Gallery view"
+                title="Gallery view"
+              >
+                <LayoutGrid size={20} />
+              </button>
+            </div>
           </div>
         </div>
 
+        {viewMode === 'gallery' ? (
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+            {releases.map((release) => (
+              <article
+                key={release.catalog}
+                className="cursor-pointer"
+                onClick={() => {
+                  setViewMode('list');
+                  setTimeout(() => {
+                    const el = document.getElementById(release.catalog.toLowerCase().replace('.', ''));
+                    if (el) el.scrollIntoView({ behavior: 'smooth' });
+                  }, 50);
+                }}
+              >
+                <div className="aspect-square bg-muted relative overflow-hidden mb-3">
+                  <img
+                    src={release.artwork}
+                    alt={`${release.artist} - ${release.title}`}
+                    className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="space-y-0.5">
+                  <div className="font-mono text-xs text-muted-foreground" style={{ letterSpacing: '0.05em' }}>
+                    {release.catalog}
+                  </div>
+                  <div className="font-cormorant text-sm">
+                    {release.artist} — {release.title}
+                  </div>
+                  <div className="font-mono text-xs text-muted-foreground" style={{ opacity: 0.5 }}>
+                    {(release as any).displayDate ? (release as any).displayDate.numerical : formatDate(release.date).numerical}
+                  </div>
+                </div>
+              </article>
+            ))}
+          </div>
+        ) : (
         <div className="space-y-24">
           {releases.map((release) => (
             <article key={release.catalog} id={release.catalog.toLowerCase().replace('.', '')} className="py-8">
