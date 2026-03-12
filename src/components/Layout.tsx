@@ -21,6 +21,7 @@ const Layout = ({ children }: LayoutProps) => {
     <div className="min-screen bg-background text-foreground">
       
       <header className="site-header">
+        <div className="header-year-float">MMXXVI</div>
         <div className="topline">
           <nav className="main-menu" aria-label="Primary">
             {navItems.map((item) => (
@@ -37,7 +38,6 @@ const Layout = ({ children }: LayoutProps) => {
               </Link>
             ))}
           </nav>
-          <div className="header-year">MMXXVI</div>
         </div>
 
         <div className="logo-block">
