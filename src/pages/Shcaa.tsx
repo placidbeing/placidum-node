@@ -120,7 +120,7 @@ const Shcaa = () => {
                   ["Blank Slate 009 (I Want You / The Way You Look At Things)", "Blank Slate", "Vinyl / Digital", "2015"],
                   ["Catharsis", "Grow", "Vinyl / Digital", "2015"],
                   ["Camera Obscura", "Archipel", "Digital", "2016"],
-                  ["Prelude (with Traian Chereches)", "Oxmose", "Digital", "2017"],
+                  ["Prelude (with Traian Chereches)", "Oxmose", "Vinyl / Digital", "2017"],
                   ["An Ungrateful Death / Pacific Gold", "R&S Records", "Vinyl / Digital", "2019"],
                   ["Silver EP", "Automatic Writing", "Vinyl / Digital", "2023"],
                 ].map(([title, label, format, year], i) => (
