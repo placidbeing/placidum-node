@@ -11,7 +11,7 @@ const Shcaa = () => {
 
         {/* Bio */}
         <section className="space-y-6">
-
+          <h1 className="text-2xl font-garamond font-normal mb-8 text-left codex-title uppercase">SHCAA</h1>
 
 
           <div className="space-y-4 text-foreground leading-loose text-lg">
