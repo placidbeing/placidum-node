@@ -65,7 +65,9 @@ const Layout = ({ children }: LayoutProps) => {
           <div className="grid cols-3 gap-8">
             <div>
               <h3 className="text-xl">Correspondence</h3>
-              <p className="marginalia text-ultramarine">sacha@placidum.com</p>
+              <a href="mailto:sacha@placidum.com" className="marginalia text-ultramarine hover:opacity-70 transition-opacity">
+                sacha@placidum.com
+              </a>
             </div>
             <div>
               <h3 className="text-xl">Archives</h3>
