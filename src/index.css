@@ -571,6 +571,12 @@ div[style*="width:"], div[style*="left:"], div[style*="right:"] {
     color:hsl(var(--iron-oxide)); 
     font-style:italic; 
   }
+  .main-menu a.active.text-verdigris{
+    color: hsl(var(--verdigris)) !important;
+  }
+  .main-menu a.text-verdigris:hover{
+    color: hsl(var(--verdigris)) !important;
+  }
 
   .header-year{
     justify-self:end;
