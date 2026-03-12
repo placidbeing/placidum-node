@@ -165,7 +165,7 @@ const Notes = () => {
   const entryRefs = useRef<(HTMLElement | null)[]>([]);
 
   return (
-    <div className="notes-section safe-area wrap py-20">
+    <div className="notes-section safe-area wrap py-14">
       {/* Year indicator */}
       <YearIndicator entries={sortedJournalEntries} entryRefs={entryRefs} />
       
