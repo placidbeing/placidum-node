@@ -27,11 +27,13 @@ const Layout = ({ children }: LayoutProps) => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`font-garamond lowercase tracking-wide transition-colors text-muted-foreground hover:text-iron-oxide ${
-                  location.pathname === item.path 
-                    ? item.path === "/shcaa" ? "active text-verdigris ink-underline-verdigris" : "active text-iron-oxide" 
-                    : ""
-                } ${item.path === "/shcaa" && location.pathname !== "/shcaa" ? "text-yellow-500 hover:text-verdigris ink-underline-verdigris" : item.path === "/shcaa" ? "" : "ink-underline"}`}
+                className={`font-garamond lowercase tracking-wide transition-colors ${
+                  item.path === "/shcaa" 
+                    ? location.pathname === "/shcaa"
+                      ? "text-verdigris ink-underline-verdigris"
+                      : "text-yellow-500 hover:text-verdigris ink-underline-verdigris"
+                    : `text-muted-foreground hover:text-iron-oxide ink-underline ${location.pathname === item.path ? "active text-iron-oxide" : ""}`
+                }`}
               >
                 {item.label}
               </Link>
