@@ -284,7 +284,10 @@ const Catalog = () => {
         <div className="space-y-24">
           {releases.map((release) => (
             <article key={release.catalog} id={release.catalog.toLowerCase().replace('.', '')} className="py-8">
-              <div className="flex flex-col space-y-8">
+              <div 
+                className="flex flex-col space-y-8 cursor-pointer"
+                onClick={() => setExpandedRelease(expandedRelease === release.catalog ? null : release.catalog)}
+              >
                 {/* Folio Image - Full width on mobile */}
                 <div className="w-full">
                   <div 
@@ -299,10 +302,9 @@ const Catalog = () => {
                   </div>
                 </div>
                 
-                {/* Folio Content - Below image */}
+                {/* Always visible info */}
                 <div className="space-y-6 max-w-2xl">
                   <div className="fragment">
-                    {/* Catalog Number and Date */}
                     <div className="mb-6">
                       <div className="mb-1">
                         <div className="font-mono text-sm text-iron-oxide" style={{ letterSpacing: '0.05em', fontWeight: 300 }}>
@@ -321,7 +323,14 @@ const Catalog = () => {
                         {release.artist} - {release.title}
                       </h2>
                     </div>
-                    
+                  </div>
+                </div>
+              </div>
+
+              {/* Expandable details */}
+              {expandedRelease === release.catalog && (
+                <div className="space-y-6 max-w-2xl mt-6">
+                  <div className="fragment">
                     {/* Leonardo-style Metadata */}
                     <div className="mb-6 space-y-0.5">
                       <div className="font-cormorant italic text-base text-muted-foreground" style={{ letterSpacing: '0.1em' }}>
@@ -332,7 +341,7 @@ const Catalog = () => {
                       </div>
                     </div>
                     
-                    {/* Tracklist - Leonardo Style */}
+                    {/* Tracklist */}
                     <div className="space-y-4 mb-6">
                       {release.tracks.map((track, index) => (
                         <div key={index} className="text-ink">
@@ -355,7 +364,7 @@ const Catalog = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              )}
             </article>
           ))}
         </div>
