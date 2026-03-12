@@ -242,7 +242,7 @@ const Shcaa = () => {
 
         {/* Notable Performances */}
         <section className="space-y-6">
-          <h2 className="text-xl font-garamond font-normal codex-title italic">Notable Performances & Work</h2>
+          <h2 className="text-xl font-garamond font-normal codex-title italic">Notable Performances & Works</h2>
           <div className="table-wrap">
             <table className="w-full text-sm">
               <thead>
@@ -254,9 +254,11 @@ const Shcaa = () => {
               </thead>
               <tbody className="text-foreground">
                 {[
+                  ["2014", "Spot Bleu", "Performance #06"],
                   ["2016", "Tate Museum — MixTate 14", "Shcaa on Paul Klee. Curated mix responding to Klee's A Young Lady's Adventure (1922)."],
                   ["2016", "Experiment Intrinsic, London", "Live performance alongside Hans-Joachim Roedelius & Christopher Chaplin."],
                   ["2017", "Experiment Intrinsic, Dordogne", "Live performance alongside E/TAPE and Nicholas Lutz."],
+                  ["2018", "Birdland", "Performance in Chapelle Henri-IV."],
                   ["2022", "Fluxus Temporis", "Live performance alongside Romeo Poirier and Jan Jelinek."],
                   ["2024", "XLR8R Podcast 856", "Studio mix and extended interview."],
                 ].map(([year, event, details], i) => (
@@ -275,7 +277,6 @@ const Shcaa = () => {
         <section className="space-y-6">
           <h2 className="text-xl font-garamond font-normal codex-title italic">Selected Press & Features</h2>
           <ul className="space-y-3 text-sm text-foreground">
-            <li><strong className="font-semibold">XLR8R</strong> <span className="text-muted-foreground">— Podcast 856 (2024). Studio mix and interview.</span></li>
             <li><strong className="font-semibold">Gilles Peterson, BBC Radio 6</strong> <span className="text-muted-foreground">— "If You Fall" featured, January 9th 2021.</span></li>
             <li><strong className="font-semibold">Bandcamp</strong> <span className="text-muted-foreground">— Moralia featured in Bandcamp Weekly selection, 13 October 2020.</span></li>
             <li><strong className="font-semibold">FIP</strong> <span className="text-muted-foreground">— Auguries in regular rotation since 2020.</span></li>
