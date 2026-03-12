@@ -587,8 +587,8 @@ div[style*="width:"], div[style*="left:"], div[style*="right:"] {
 /* ===== MOBILE/TABLET: additive only, no hamburger ===== */
 @media (max-width:1023px){
   :root{
-    --logo-size:clamp(28px,6vw,42px);
-    --motto-size:clamp(13px,2.8vw,16px);
+    --logo-size:clamp(32px,7vw,46px);
+    --motto-size:clamp(14px,3.2vw,18px);
     --menu-size:clamp(14px,2.8vw,16px);
     --gutter:20px;
     --menu-gap:18px;

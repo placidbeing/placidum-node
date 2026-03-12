@@ -16,7 +16,7 @@ const Shcaa = () => {
 
           <div className="space-y-4 text-foreground leading-loose text-lg">
             <p>
-              <strong className="font-semibold">Sacha Alexandre Khalifé aka Shcaa</strong> is a French-Lebanese artist and composer based in Paris. He works with guitar, fragments of environmental recordings and digital processing to shape surrealist ballads and impressionist collages.
+              <strong className="font-semibold">Sacha Alexandre Khalifé aka Shcaa</strong> is a French-Lebanese artist and composer based in Paris. He works with guitar, fragments of environmental recordings and digital processing to shape abstract ballads and impressionist collages.
             </p>
             <p>
               His expression inhabits a space where blues-informed improvisation meets the patience of electroacoustic composition. While proficient within electronic composition systems — granular attention to sound, unhurried studio practice, autonomy of process — Shcaa's voice could be defined as organic, even naturalistic, and is nourished by a wide inheritance of musical traditions, past and present. His approach is shaped by a poetic sensibility and relies on the correspondances between sound and image to structure a dense and personal language. Recurring themes, cinematic instincts and insistent colour palettes are the threads that hold his work together.
@@ -276,6 +276,11 @@ const Shcaa = () => {
           <h2 className="text-xl font-garamond font-normal codex-title italic">Selected Press & Features</h2>
           <ul className="space-y-3 text-sm text-foreground">
             <li><strong className="font-semibold">XLR8R</strong> <span className="text-muted-foreground">— Podcast 856 (2024). Studio mix and interview.</span></li>
+            <li><strong className="font-semibold">Gilles Peterson, BBC Radio 6</strong> <span className="text-muted-foreground">— "If You Fall" featured, January 9th 2021.</span></li>
+            <li><strong className="font-semibold">Bandcamp</strong> <span className="text-muted-foreground">— Moralia featured in Bandcamp Weekly selection, 13 October 2020.</span></li>
+            <li><strong className="font-semibold">FIP</strong> <span className="text-muted-foreground">— Auguries in regular rotation since 2020.</span></li>
+            <li><strong className="font-semibold">Radio Nova</strong> <span className="text-muted-foreground">— An Ungrateful Death featured, Nova Club by David Blot.</span></li>
+            <li><strong className="font-semibold">Hotel Costes</strong> <span className="text-muted-foreground">— If You Fall & Siskor featured in "Saint-Honoré Love" & "Costes #1220" playlists.</span></li>
             <li><strong className="font-semibold">Tate Museum</strong> <span className="text-muted-foreground">— MixTate 14: Shcaa on Paul Klee. Essay and mix.</span></li>
             <li><strong className="font-semibold">Phonica Records</strong> <span className="text-muted-foreground">— Featured release: An Ungrateful Death (R&S).</span></li>
             <li><strong className="font-semibold">15 Questions</strong> <span className="text-muted-foreground">— Extended interview on listening, sound, silence, and creative philosophy.</span></li>
