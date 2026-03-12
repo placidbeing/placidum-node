@@ -151,16 +151,15 @@ const Shcaa = () => {
               </thead>
               <tbody className="text-foreground">
                 {[
-                  ["Venise", "Chic Marionnette", "Venise (VA tracks)", "2011"],
                   ["Tulipa027 PETALTWO", "Tulipa Recordings", "Evaporée", "2012"],
                   ["White Ribbon", "Sharingtones", "What Goes On", "2013"],
                   ["Kollektiv Artists Volume 9", "MusicKollektiv", "Atlantic", "2013"],
                   ["Geometric Parts Compilation 2", "Doma Musique", "Syracuse", "2013"],
-                  ["Blank Slate 006", "Blank Slate", "(VA contribution)", "2014"],
-                  ["Variant EP (Part 2)", "—", "Masquée (split with Cleymoore)", "2015"],
+                  ["Blank Slate 006", "Blank Slate", "Remorse", "2014"],
+                  ["Thoughts on Sight and Sound Vol. I", "Pluie Noir", "Chêne (as Placid Strait)", "2014"],
                   ["Pale Fire", "Sharingtones", "An Ungrateful Death", "2016"],
                   ["Billy Milligan Trio", "Lowlife Cartel", "The Sky Was Pearl Grey", "2018"],
-                  ["Scenarii Vol. 2", "Automatic Writing", "(VA contribution)", "2021"],
+                  ["Scenarii Vol. 2", "Automatic Writing", "Muse Tragis", "2021"],
                   ["Eternal Poet", "Misbits Recordings", "Locked Grooves (×2)", "—"],
                 ].map(([release, label, track, year], i) => (
                   <tr key={i} className="border-b border-border/20">
