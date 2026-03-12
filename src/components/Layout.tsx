@@ -29,9 +29,9 @@ const Layout = ({ children }: LayoutProps) => {
                 to={item.path}
                 className={`font-garamond lowercase tracking-wide transition-colors text-muted-foreground hover:text-iron-oxide ${
                   location.pathname === item.path 
-                    ? "active text-iron-oxide" 
+                    ? item.path === "/shcaa" ? "active text-verdigris ink-underline-verdigris" : "active text-iron-oxide" 
                     : ""
-                } ${item.path === "/shcaa" ? "text-yellow-500 hover:text-verdigris ink-underline-verdigris" : "ink-underline"}`}
+                } ${item.path === "/shcaa" && location.pathname !== "/shcaa" ? "text-yellow-500 hover:text-verdigris ink-underline-verdigris" : item.path === "/shcaa" ? "" : "ink-underline"}`}
               >
                 {item.label}
               </Link>
