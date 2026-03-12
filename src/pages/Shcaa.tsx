@@ -160,7 +160,7 @@ const Shcaa = () => {
                   ["Pale Fire", "Sharingtones", "An Ungrateful Death", "2016"],
                   ["Billy Milligan Trio", "Lowlife Cartel", "The Sky Was Pearl Grey", "2018"],
                   ["Scenarii Vol. 2", "Automatic Writing", "Muse Tragis", "2021"],
-                  ["Eternal Poet", "Misbits Recordings", "Locked Grooves (×2)", "—"],
+                  ["Eternal Poet", "Misbits Recordings", "Locked Grooves (×2)", "2022"],
                 ].map(([release, label, track, year], i) => (
                   <tr key={i} className="border-b border-border/20">
                     <td className="py-2 pr-4">{release}</td>
