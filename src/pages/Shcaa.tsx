@@ -11,9 +11,10 @@ const Shcaa = () => {
 
         {/* Bio */}
         <section className="space-y-6">
-          <h1 className="text-2xl font-garamond font-normal codex-title">Shcaa</h1>
+          <h1 className="text-3xl font-garamond font-normal codex-title uppercase">Shcaa</h1>
+          <p className="font-mono text-xs tracking-widest uppercase text-muted-foreground">Correspondances</p>
 
-          <div className="space-y-4 text-foreground leading-loose">
+          <div className="space-y-4 text-foreground leading-loose text-lg">
             <p>
               <strong className="font-semibold">Sacha Alexandre Khalifé aka Shcaa</strong> is a French-Lebanese artist and composer based in Paris. He works with guitar, fragments of environmental recordings and digital processing to shape surrealist ballads and impressionist collages.
             </p>

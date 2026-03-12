@@ -34,24 +34,6 @@ const Principles = () => {
           </p>
         </section>
 
-        {/* Divider */}
-        <div className="text-center text-muted-foreground opacity-40">—</div>
-
-        {/* Chapter: Shcaa */}
-        <section className="space-y-6">
-          <h2 className="text-2xl font-garamond font-normal mb-8 text-left codex-title uppercase">
-            Shcaa
-          </h2>
-          <p className="leading-loose text-lg text-foreground">
-            Sacha Alexandre Khalifé aka Shcaa is a French-Lebanese artist and composer based in Paris. He works with guitar, fragments of environmental recordings and digital processing to shape surrealist ballads and impressionist collages.
-          </p>
-          <p className="leading-loose text-lg text-foreground">
-            His expression inhabits a space where blues-informed improvisation meets the patience of electroacoustic composition. While proficient within electronic composition systems — granular attention to sound, unhurried studio practice, autonomy of process — Shcaa's voice could be defined as organic, even naturalistic, and is nourished by a wide inheritance of musical traditions, past and present. His approach is shaped by a poetic sensibility and relies on the correspondances between sound and image to structure a dense and personal language. Recurring themes, cinematic instincts and insistent colour palettes are the threads that hold his work together.
-          </p>
-          <p className="leading-loose text-lg text-foreground">
-            Shcaa first emerged through rhythm-based electronic music, releasing on labels such as R&S and Apollo. Over the past decade his work has drifted steadily toward what might be called speculative folk or metabolic electronics: music that draws on distant cultural memory and recasts it through improvisation and patient accumulation.
-          </p>
-        </section>
       </div>
     </div>
   );
