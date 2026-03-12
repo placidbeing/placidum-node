@@ -224,20 +224,20 @@ const Catalog = () => {
             </div>
             <div className="flex items-center gap-3 mt-6">
               <button
-                onClick={() => setViewMode('list')}
-                className={`p-1.5 transition-opacity ${viewMode === 'list' ? 'opacity-100' : 'opacity-35 hover:opacity-60'}`}
-                aria-label="List view"
-                title="List view"
-              >
-                <List size={20} />
-              </button>
-              <button
                 onClick={() => setViewMode('gallery')}
                 className={`p-1.5 transition-opacity ${viewMode === 'gallery' ? 'opacity-100' : 'opacity-35 hover:opacity-60'}`}
                 aria-label="Gallery view"
                 title="Gallery view"
               >
                 <LayoutGrid size={20} />
+              </button>
+              <button
+                onClick={() => setViewMode('list')}
+                className={`p-1.5 transition-opacity ${viewMode === 'list' ? 'opacity-100' : 'opacity-35 hover:opacity-60'}`}
+                aria-label="List view"
+                title="List view"
+              >
+                <List size={20} />
               </button>
             </div>
           </div>
