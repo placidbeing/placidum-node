@@ -228,10 +228,10 @@ const Catalog = () => {
                 title="Gallery view"
               >
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1" className="text-foreground">
-                  <rect x="2" y="2" width="7" height="7" />
-                  <rect x="11" y="2" width="7" height="7" />
-                  <rect x="2" y="11" width="7" height="7" />
-                  <rect x="11" y="11" width="7" height="7" />
+                  <rect x="2.5" y="2.5" width="6" height="6" />
+                  <rect x="11.5" y="2.5" width="6" height="6" />
+                  <rect x="2.5" y="11.5" width="6" height="6" />
+                  <rect x="11.5" y="11.5" width="6" height="6" />
                 </svg>
               </button>
               <button
