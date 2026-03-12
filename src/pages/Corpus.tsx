@@ -227,7 +227,12 @@ const Catalog = () => {
                 aria-label="Gallery view"
                 title="Gallery view"
               >
-                <LayoutGrid size={20} />
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1" className="text-foreground">
+                  <rect x="2" y="2" width="7" height="7" />
+                  <rect x="11" y="2" width="7" height="7" />
+                  <rect x="2" y="11" width="7" height="7" />
+                  <rect x="11" y="11" width="7" height="7" />
+                </svg>
               </button>
               <button
                 onClick={() => setViewMode('list')}
@@ -235,7 +240,11 @@ const Catalog = () => {
                 aria-label="List view"
                 title="List view"
               >
-                <List size={20} />
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1" className="text-foreground">
+                  <line x1="2" y1="5" x2="18" y2="5" />
+                  <line x1="2" y1="10" x2="18" y2="10" />
+                  <line x1="2" y1="15" x2="18" y2="15" />
+                </svg>
               </button>
             </div>
           </div>
