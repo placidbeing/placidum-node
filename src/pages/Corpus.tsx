@@ -265,7 +265,7 @@ const Catalog = () => {
                   />
                 </div>
                 <div className="space-y-0.5">
-                  <div className="font-mono text-xs text-muted-foreground" style={{ letterSpacing: '0.05em' }}>
+                  <div className="font-mono text-sm text-iron-oxide" style={{ letterSpacing: '0.05em', fontWeight: 300 }}>
                     {release.catalog}
                   </div>
                   <div className="font-cormorant text-sm text-iron-oxide">
