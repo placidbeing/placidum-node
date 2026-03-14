@@ -154,10 +154,16 @@ table { border-collapse: collapse; width: 100%; }
 .marginalia { font-family: 'Circular', -apple-system, BlinkMacSystemFont, system-ui, sans-serif; font-size: 0.75rem; color: hsl(var(--muted-foreground)); font-style: italic; position: relative; }
 .marginalia::before { content: "⸻ "; opacity: 0.5; }
 .notes-header .marginalia a { color: inherit; }
+footer .marginalia.text-ultramarine { color: hsl(var(--ultramarine)); }
 
 /* ===== Links ===== */
 a { transition: all 0.3s ease; position: relative; text-decoration: none; color: hsl(var(--ultramarine)); }
 a:hover { color: hsl(var(--iron-oxide)); }
+.note-entry a { color: hsl(var(--accent)); }
+.note-entry a:hover { color: hsl(var(--iron-oxide)); }
+.logo-motto, .logo-motto * { color: hsl(var(--muted-foreground)) !important; }
+.legal a { color: inherit; }
+.legal a:hover { color: hsl(var(--ultramarine)); }
 .ink-underline { position: relative; }
 .ink-underline::after { content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 1px; background: hsl(var(--iron-oxide)); transition: width 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
 .ink-underline:hover::after { width: 100%; }
