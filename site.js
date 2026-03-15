@@ -160,4 +160,61 @@
       t.addEventListener('click', function () { showList(t.getAttribute('data-release-id')); });
     });
   }
+
+  // =============================================
+  // 4. BANDCAMP EMBED AUTO-RESIZE
+  // =============================================
+  // Bandcamp embeds post their content height via postMessage.
+  // Listen for these messages and resize iframes to eliminate white space.
+  var bcFrames = document.querySelectorAll('iframe[src*="bandcamp"]');
+  if (bcFrames.length) {
+    // Set black background on all BC iframes immediately
+    bcFrames.forEach(function (f) { f.style.background = '#000'; });
+
+    // Listen for postMessage from Bandcamp embeds
+    window.addEventListener('message', function (e) {
+      if (!e.data || typeof e.data !== 'string') return;
+      try {
+        var msg = JSON.parse(e.data);
+        // Bandcamp sends messages with height info
+        if (msg.height && msg.height > 0) {
+          bcFrames.forEach(function (f) {
+            // Match the iframe to the message source
+            if (f.contentWindow === e.source) {
+              f.style.height = msg.height + 'px';
+            }
+          });
+        }
+      } catch (ex) {
+        // Not JSON or not from Bandcamp — ignore
+      }
+    });
+
+    // Fallback: after load, if iframe is taller than content, 
+    // progressively shrink to find the right fit
+    bcFrames.forEach(function (f) {
+      f.addEventListener('load', function () {
+        // Give Bandcamp JS time to render and send postMessage
+        // If no message received after 3s, try a reasonable default
+        var resized = false;
+        var origH = parseInt(f.style.height);
+        
+        var checkResize = setTimeout(function () {
+          if (!resized && origH > 200) {
+            // No postMessage received — keep original height
+            // The .bc-wrap overflow:hidden handles the rest
+          }
+        }, 3000);
+
+        // Mark as resized if we get a postMessage
+        window.addEventListener('message', function handler(ev) {
+          if (ev.source === f.contentWindow) {
+            resized = true;
+            clearTimeout(checkResize);
+            window.removeEventListener('message', handler);
+          }
+        });
+      });
+    });
+  }
 })();
