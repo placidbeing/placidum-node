@@ -322,6 +322,8 @@ a:hover { color: hsl(var(--iron-oxide)); }
 .media-default { width: 100%; max-width: 28rem; }
 
 /* ===== Footer ===== */
+iframe[src*="bandcamp"] { background: #000; color-scheme: dark; }
+.bc-wrap { background: #000; overflow: hidden; display: inline-block; border-radius: 2px; }
 footer { margin-top: 6rem; }
 footer .footer-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; padding: 3rem 0; }
 @media (min-width: 768px) { footer .footer-grid { grid-template-columns: 1fr 1fr 1fr; } }
