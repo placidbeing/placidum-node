@@ -114,7 +114,7 @@ h3 { font-size: 1.125rem; text-transform: lowercase; font-variant: small-caps; }
 .font-cormorant { font-family: 'Cormorant Garamond', 'EB Garamond', 'Georgia', serif; }
 .font-mono { font-family: 'Circular', -apple-system, BlinkMacSystemFont, system-ui, sans-serif; }
 .font-handwritten { font-family: var(--font-handwritten); }
-.serif { font-family: 'Crimson Text', 'Georgia', serif; }
+
 
 /* ===== Color utilities ===== */
 .text-foreground { color: hsl(var(--foreground)); }
@@ -391,6 +391,7 @@ footer h3 { font-size: 1.25rem; }
 .inline { display: inline; }
 .block { display: block; }
 .hidden { display: none; }
+.overflow-hidden { overflow: hidden; }
 .border-b { border-bottom: 1px solid hsl(var(--border)); }
 .border-l-2 { border-left: 2px solid; }
 
