@@ -184,7 +184,7 @@ a:hover { color: hsl(var(--iron-oxide)); }
 
 /* ===== DESKTOP header ===== */
 @media (min-width: 1024px) {
-  :root { --logo-size:60px; --motto-size:20px; --menu-size:18px; --gutter:56px; --menu-gap:40px; }
+  :root { --logo-size:66px; --motto-size:22px; --menu-size:18px; --gutter:56px; --menu-gap:40px; }
   .site-header { padding: 18px var(--gutter) 0; }
   .topline { display: grid; grid-template-columns: 1fr auto; align-items: center; }
   .main-menu { justify-self: start; display: flex; gap: var(--menu-gap); font-size: var(--menu-size); color: hsl(var(--muted-foreground)); white-space: nowrap; }
@@ -198,7 +198,7 @@ a:hover { color: hsl(var(--iron-oxide)); }
 
 /* ===== MOBILE header ===== */
 @media (max-width: 1023px) {
-  :root { --logo-size:clamp(38px,7vw,54px); --motto-size:clamp(15px,3.2vw,20px); --menu-size:clamp(14px,2.8vw,16px); --gutter:20px; --menu-gap:18px; }
+  :root { --logo-size:clamp(42px,7vw,59px); --motto-size:clamp(16.5px,3.2vw,22px); --menu-size:clamp(14px,2.8vw,16px); --gutter:20px; --menu-gap:18px; }
   .site-header { padding: 14px var(--gutter) 0; display: flex; flex-direction: column; align-items: flex-start; gap: 32px; }
   .topline { width: 100%; display: flex; justify-content: space-between; align-items: center; }
   .main-menu { display: flex; flex-wrap: wrap; gap: var(--menu-gap); font-size: var(--menu-size); }
@@ -221,8 +221,8 @@ a:hover { color: hsl(var(--iron-oxide)); }
 .logo-img { height: 54px; width: auto; opacity: 0.7; filter: brightness(1.2); margin-right: -8px; }
 @media (min-width: 768px) { .logo-img { height: 85px; } }
 @media (min-width: 1024px) { .logo-img { height: 110px; } }
-.logo-text-wrap { display: flex; flex-direction: column; justify-content: flex-end; gap: 0; padding-bottom: 4px; }
-.logo-wordmark-img { height: var(--logo-size); width: auto; }
+.logo-text-wrap { display: flex; flex-direction: column; justify-content: flex-start; gap: 0; padding-bottom: 0; }
+.logo-wordmark-img { height: var(--logo-size); width: auto; margin-top: auto; }
 
 /* ===== Notes section ===== */
 .notes-section { font-family: 'Crimson Text', 'Georgia', serif; }
