@@ -193,7 +193,7 @@ a:hover { color: hsl(var(--iron-oxide)); }
   .main-menu a.nav-shcaa:hover { color: hsl(var(--verdigris)) !important; }
   .header-year { justify-self: end; color: hsl(var(--iron-oxide)); letter-spacing: .12em; font-size: 12px; font-family: 'Crimson Text', 'Georgia', serif; text-transform: uppercase; }
   .logo-block { margin-top: 48px; text-align: left; }
-  .logo-motto { margin-top: -2px; line-height: 1; font-size: var(--motto-size); color: hsl(var(--muted-foreground)); font-style: italic; letter-spacing: .18em; max-width: 60ch; display: block; width: 0; min-width: 100%; overflow: visible; white-space: nowrap; }
+  .logo-motto { position: absolute; top: 100%; left: 0; margin-top: -2px; line-height: 1; font-size: var(--motto-size); color: hsl(var(--muted-foreground)); font-style: italic; letter-spacing: .18em; white-space: nowrap; }
 }
 
 /* ===== MOBILE header ===== */
@@ -203,7 +203,7 @@ a:hover { color: hsl(var(--iron-oxide)); }
   .topline { width: 100%; display: flex; justify-content: space-between; align-items: center; }
   .main-menu { display: flex; flex-wrap: wrap; gap: var(--menu-gap); font-size: var(--menu-size); }
   .header-year { font-size: 10px; color: hsl(var(--iron-oxide)) !important; }
-  .logo-motto { font-size: var(--motto-size); margin-top: -2px; line-height: 1; }
+  .logo-motto { position: absolute; top: 100%; left: 0; margin-top: -2px; line-height: 1; }
 }
 
 .hamburger, .menu-toggle, .mobile-drawer { display: none !important; }
@@ -216,15 +216,13 @@ a:hover { color: hsl(var(--iron-oxide)); }
 .main-menu a.nav-shcaa:hover, .main-menu a.nav-shcaa.active { color: hsl(var(--verdigris)); font-style: italic; }
 
 /* Logo */
-.logo-link { display: inline-flex; align-items: flex-start; gap: 0; }
+.logo-link { display: inline-flex; align-items: stretch; gap: 0; }
 .logo-link:hover { color: inherit; }
 .logo-img { height: 54px; width: auto; opacity: 0.7; filter: brightness(1.2); margin-right: -8px; }
 @media (min-width: 768px) { .logo-img { height: 85px; } }
 @media (min-width: 1024px) { .logo-img { height: 110px; } }
-.logo-text-wrap { display: flex; flex-direction: column; justify-content: flex-start; gap: 0; padding-bottom: 0; }
-.logo-wordmark-img { height: var(--logo-size); width: auto; margin-top: 54px; }
-@media (min-width: 768px) { .logo-wordmark-img { margin-top: 85px; } }
-@media (min-width: 1024px) { .logo-wordmark-img { margin-top: 110px; } }
+.logo-text-wrap { display: flex; flex-direction: column; justify-content: flex-start; gap: 0; padding-bottom: 0; position: relative; }
+.logo-wordmark-img { height: var(--logo-size); width: auto; margin-top: auto; }
 
 /* ===== Notes section ===== */
 .notes-section { font-family: 'Crimson Text', 'Georgia', serif; }
