@@ -216,13 +216,15 @@ a:hover { color: hsl(var(--iron-oxide)); }
 .main-menu a.nav-shcaa:hover, .main-menu a.nav-shcaa.active { color: hsl(var(--verdigris)); font-style: italic; }
 
 /* Logo */
-.logo-link { display: inline-flex; align-items: stretch; gap: 0; }
+.logo-link { display: inline-flex; align-items: flex-start; gap: 0; }
 .logo-link:hover { color: inherit; }
 .logo-img { height: 54px; width: auto; opacity: 0.7; filter: brightness(1.2); margin-right: -8px; }
 @media (min-width: 768px) { .logo-img { height: 85px; } }
 @media (min-width: 1024px) { .logo-img { height: 110px; } }
 .logo-text-wrap { display: flex; flex-direction: column; justify-content: flex-start; gap: 0; padding-bottom: 0; }
-.logo-wordmark-img { height: var(--logo-size); width: auto; margin-top: auto; }
+.logo-wordmark-img { height: var(--logo-size); width: auto; margin-top: 54px; }
+@media (min-width: 768px) { .logo-wordmark-img { margin-top: 85px; } }
+@media (min-width: 1024px) { .logo-wordmark-img { margin-top: 110px; } }
 
 /* ===== Notes section ===== */
 .notes-section { font-family: 'Crimson Text', 'Georgia', serif; }
