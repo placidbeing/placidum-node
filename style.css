@@ -193,12 +193,13 @@ a:hover { color: hsl(var(--iron-oxide)); }
   .main-menu a.nav-shcaa:hover { color: hsl(var(--verdigris)) !important; }
   .header-year { justify-self: end; color: hsl(var(--iron-oxide)); letter-spacing: .12em; font-size: 12px; font-family: 'Crimson Text', 'Georgia', serif; text-transform: uppercase; }
   .logo-block { margin-top: 48px; text-align: left; }
+  .logo-wordmark-img { margin-bottom: 20px; }
   .logo-motto { position: absolute; bottom: 0; left: 0; line-height: 1; font-size: var(--motto-size); color: hsl(var(--muted-foreground)); font-style: italic; letter-spacing: .18em; white-space: nowrap; }
 }
 
 /* ===== MOBILE header ===== */
 @media (max-width: 1023px) {
-  :root { --logo-size:clamp(42px,7vw,59px); --motto-size:clamp(16.5px,3.2vw,22px); --menu-size:clamp(14px,2.8vw,16px); --gutter:20px; --menu-gap:18px; }
+  :root { --logo-size:clamp(28px,5vw,38px); --motto-size:clamp(13px,2.5vw,16px); --menu-size:clamp(14px,2.8vw,16px); --gutter:20px; --menu-gap:18px; }
   .site-header { padding: 14px var(--gutter) 0; display: flex; flex-direction: column; align-items: flex-start; gap: 32px; }
   .topline { width: 100%; display: flex; justify-content: space-between; align-items: center; }
   .main-menu { display: flex; flex-wrap: wrap; gap: var(--menu-gap); font-size: var(--menu-size); }
@@ -218,11 +219,11 @@ a:hover { color: hsl(var(--iron-oxide)); }
 /* Logo */
 .logo-link { display: inline-flex; align-items: stretch; gap: 0; }
 .logo-link:hover { color: inherit; }
-.logo-img { height: 54px; width: auto; opacity: 0.7; filter: brightness(1.2); margin-right: -8px; }
-@media (min-width: 768px) { .logo-img { height: 85px; } }
+.logo-img { height: 40px; width: auto; opacity: 0.7; filter: brightness(1.2); margin-right: -8px; }
+@media (min-width: 768px) { .logo-img { height: 54px; } }
 @media (min-width: 1024px) { .logo-img { height: 110px; } }
 .logo-text-wrap { display: flex; flex-direction: column; justify-content: flex-start; gap: 0; padding-bottom: 0; position: relative; }
-.logo-wordmark-img { height: var(--logo-size); width: auto; margin-top: auto; margin-bottom: 20px; }
+.logo-wordmark-img { height: var(--logo-size); width: auto; margin-top: auto; margin-bottom: 12px; }
 
 /* ===== Notes section ===== */
 .notes-section { font-family: 'Crimson Text', 'Georgia', serif; }
