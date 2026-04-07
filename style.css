@@ -184,7 +184,7 @@ a:hover { color: hsl(var(--iron-oxide)); }
 
 /* ===== DESKTOP header ===== */
 @media (min-width: 1024px) {
-  :root { --logo-size:52px; --motto-size:20px; --menu-size:18px; --gutter:56px; --menu-gap:40px; }
+  :root { --logo-size:70px; --motto-size:20px; --menu-size:18px; --gutter:56px; --menu-gap:40px; }
   .site-header { padding: 18px var(--gutter) 0; }
   .topline { display: grid; grid-template-columns: 1fr auto; align-items: center; }
   .main-menu { justify-self: start; display: flex; gap: var(--menu-gap); font-size: var(--menu-size); color: hsl(var(--muted-foreground)); white-space: nowrap; }
@@ -193,17 +193,17 @@ a:hover { color: hsl(var(--iron-oxide)); }
   .main-menu a.nav-shcaa:hover { color: hsl(var(--verdigris)) !important; }
   .header-year { justify-self: end; color: hsl(var(--iron-oxide)); letter-spacing: .12em; font-size: 12px; font-family: 'Crimson Text', 'Georgia', serif; text-transform: uppercase; }
   .logo-block { margin-top: 48px; text-align: left; }
-  .logo-motto { margin-top: -2px; line-height: 1; font-size: var(--motto-size); color: hsl(var(--muted-foreground)); font-style: italic; letter-spacing: .18em; max-width: 60ch; display: block; width: 0; min-width: 100%; overflow: visible; white-space: nowrap; }
+  .logo-motto { margin-top: 10px; line-height: 1; font-size: var(--motto-size); color: hsl(var(--muted-foreground)); font-style: italic; letter-spacing: .18em; max-width: 60ch; display: block; width: 0; min-width: 100%; overflow: visible; white-space: nowrap; }
 }
 
 /* ===== MOBILE header ===== */
 @media (max-width: 1023px) {
-  :root { --logo-size:clamp(32px,7vw,46px); --motto-size:clamp(15px,3.2vw,20px); --menu-size:clamp(14px,2.8vw,16px); --gutter:20px; --menu-gap:18px; }
+  :root { --logo-size:clamp(42px,7vw,62px); --motto-size:clamp(15px,3.2vw,20px); --menu-size:clamp(14px,2.8vw,16px); --gutter:20px; --menu-gap:18px; }
   .site-header { padding: 14px var(--gutter) 0; display: flex; flex-direction: column; align-items: flex-start; gap: 32px; }
   .topline { width: 100%; display: flex; justify-content: space-between; align-items: center; }
   .main-menu { display: flex; flex-wrap: wrap; gap: var(--menu-gap); font-size: var(--menu-size); }
   .header-year { font-size: 10px; color: hsl(var(--iron-oxide)) !important; }
-  .logo-motto { font-size: var(--motto-size); margin-top: -2px; line-height: 1; }
+  .logo-motto { font-size: var(--motto-size); margin-top: 10px; line-height: 1; }
 }
 
 .hamburger, .menu-toggle, .mobile-drawer { display: none !important; }
@@ -219,8 +219,8 @@ a:hover { color: hsl(var(--iron-oxide)); }
 .logo-link { display: inline-flex; align-items: stretch; gap: 0; }
 .logo-link:hover { color: inherit; }
 .logo-img { height: 54px; width: auto; opacity: 0.7; filter: brightness(1.2); margin-right: -8px; }
-@media (min-width: 768px) { .logo-img { height: 67px; } }
-@media (min-width: 1024px) { .logo-img { height: 83px; } }
+@media (min-width: 768px) { .logo-img { height: 85px; } }
+@media (min-width: 1024px) { .logo-img { height: 110px; } }
 .logo-text-wrap { display: flex; flex-direction: column; justify-content: flex-end; gap: 0; padding-bottom: 4px; }
 .logo-wordmark-img { height: var(--logo-size); width: auto; }
 
