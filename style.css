@@ -184,7 +184,7 @@ a:hover { color: hsl(var(--iron-oxide)); }
 
 /* ===== DESKTOP header ===== */
 @media (min-width: 1024px) {
-  :root { --logo-size:63px; --motto-size:20px; --menu-size:18px; --gutter:56px; --menu-gap:40px; }
+  :root { --logo-size:66px; --motto-size:20px; --menu-size:18px; --gutter:56px; --menu-gap:40px; }
   .site-header { padding: 18px var(--gutter) 0; }
   .topline { display: grid; grid-template-columns: 1fr auto; align-items: center; }
   .main-menu { justify-self: start; display: flex; gap: var(--menu-gap); font-size: var(--menu-size); color: hsl(var(--muted-foreground)); white-space: nowrap; }
@@ -198,7 +198,7 @@ a:hover { color: hsl(var(--iron-oxide)); }
 
 /* ===== MOBILE header ===== */
 @media (max-width: 1023px) {
-  :root { --logo-size:clamp(39px,8.5vw,56px); --motto-size:clamp(15px,3.2vw,20px); --menu-size:clamp(14px,2.8vw,16px); --gutter:20px; --menu-gap:18px; }
+  :root { --logo-size:clamp(41px,8.9vw,59px); --motto-size:clamp(15px,3.2vw,20px); --menu-size:clamp(14px,2.8vw,16px); --gutter:20px; --menu-gap:18px; }
   .site-header { padding: 14px var(--gutter) 0; display: flex; flex-direction: column; align-items: flex-start; gap: 32px; }
   .topline { width: 100%; display: flex; justify-content: space-between; align-items: center; }
   .main-menu { display: flex; flex-wrap: wrap; gap: var(--menu-gap); font-size: var(--menu-size); }
