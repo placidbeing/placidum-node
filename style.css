@@ -282,6 +282,7 @@ a:hover { color: hsl(var(--iron-oxide)); }
 .year-indicator.visible { opacity: 1; pointer-events: auto; }
 .year-indicator-btn { font-family: 'Circular', -apple-system, BlinkMacSystemFont, system-ui, sans-serif; font-size: 0.75rem; letter-spacing: 0.1em; color: hsl(var(--muted-foreground) / 0.6); background: none; border: none; cursor: pointer; writing-mode: vertical-rl; text-orientation: mixed; transition: color 0.3s ease; padding: 0; }
 .year-indicator-btn:hover { color: hsl(var(--muted-foreground)); }
+@media (min-width: 1024px) { .year-indicator { right: 3rem; } }
 .year-dropdown { display: none; position: absolute; right: 1.5rem; top: 50%; transform: translateY(-50%); background: hsl(var(--background) / 0.95); backdrop-filter: blur(4px); border: 1px solid hsl(var(--border) / 0.5); padding: 0.5rem 0.25rem; min-width: 4rem; }
 .year-dropdown.open { display: flex; flex-direction: column; gap: 0.25rem; }
 .year-dropdown button { font-family: 'Circular', -apple-system, BlinkMacSystemFont, system-ui, sans-serif; font-size: 0.75rem; letter-spacing: 0.08em; color: hsl(var(--muted-foreground) / 0.7); background: none; border: none; cursor: pointer; padding: 0.25rem 0.5rem; text-align: right; transition: color 0.2s ease; }
