@@ -162,7 +162,7 @@
   }
 
   // =============================================
-  // 4. BANDCAMP EMBED AUTO-RESIZE
+  // 6. BANDCAMP EMBED AUTO-RESIZE
   // =============================================
   // Bandcamp embeds post their content height via postMessage.
   // Listen for these messages and resize iframes to eliminate white space.
