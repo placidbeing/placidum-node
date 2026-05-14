@@ -9,7 +9,8 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 *, *::before, *::after { box-sizing: inherit; }
-html, body { margin: 0; padding: 0; overflow-x: hidden; }
+html, body { margin: 0; padding: 0; }
+body { overflow-x: hidden; }
 img, svg, video, canvas, audio, iframe { display: block; max-width: 100%; height: auto; }
 picture { display: block; }
 a { color: inherit; text-decoration: none; }
@@ -215,11 +216,11 @@ a:hover { color: hsl(var(--iron-oxide)); }
 .main-menu a.nav-shcaa:hover, .main-menu a.nav-shcaa.active { color: hsl(var(--verdigris)); font-style: italic; }
 
 /* Crescent moon */
-.crescent-moon { position: fixed; top: 10px; right: 10px; width: clamp(60px, 9vw, 120px); opacity: 0.55; pointer-events: none; z-index: 0; }
+.crescent-moon { position: fixed; top: 20px; right: 20px; width: clamp(42px, 6vw, 84px); opacity: 0.55; pointer-events: none; z-index: 0; }
 
 /* Seahorses */
-.seahorse-left  { position: fixed; bottom: 10px; left: 10px;  width: clamp(90px, 12vw, 180px); opacity: 0.55; pointer-events: none; z-index: 0; }
-.seahorse-right { position: fixed; bottom: 10px; right: 10px; width: clamp(90px, 12vw, 180px); opacity: 0.55; pointer-events: none; z-index: 0; transform: scaleX(-1); }
+.seahorse-left  { position: fixed; bottom: 10px; left: 10px;  width: clamp(117px, 16vw, 234px); opacity: 0.55; pointer-events: none; z-index: 0; }
+.seahorse-right { position: fixed; bottom: 10px; right: 10px; width: clamp(117px, 16vw, 234px); opacity: 0.55; pointer-events: none; z-index: 0; transform: scaleX(-1); }
 
 /* Logo */
 .logo-link { display: inline-flex; align-items: stretch; gap: 0; position: relative; }
