@@ -193,7 +193,7 @@ a:hover { color: hsl(var(--iron-oxide)); }
   .main-menu a.active.nav-shcaa { color: hsl(var(--verdigris)) !important; }
   .main-menu a.nav-shcaa:hover { color: hsl(var(--verdigris)) !important; }
   .logo-block { margin-top: 48px; text-align: left; }
-  .logo-motto { position: absolute; top: 100%; right: 0; margin-top: 2px; line-height: 1; font-size: var(--motto-size); color: hsl(var(--muted-foreground)); font-style: italic; letter-spacing: .18em; white-space: nowrap; }
+  .logo-motto { position: absolute; top: 100%; left: 0; margin-top: 2px; line-height: 1; font-size: var(--motto-size); color: hsl(var(--muted-foreground)); font-style: italic; letter-spacing: .18em; white-space: nowrap; }
 }
 
 /* ===== MOBILE header ===== */
@@ -202,7 +202,7 @@ a:hover { color: hsl(var(--iron-oxide)); }
   .site-header { padding: 14px var(--gutter) 0; display: flex; flex-direction: column; align-items: flex-start; gap: 32px; }
   .topline { width: 100%; display: flex; justify-content: space-between; align-items: center; }
   .main-menu { display: flex; flex-wrap: wrap; gap: var(--menu-gap); font-size: var(--menu-size); }
-  .logo-motto { position: absolute; top: 100%; right: 0; margin-top: 2px; line-height: 1; }
+  .logo-motto { position: absolute; top: 100%; left: 0; margin-top: 2px; line-height: 1; }
 }
 
 .hamburger, .menu-toggle, .mobile-drawer { display: none !important; }
