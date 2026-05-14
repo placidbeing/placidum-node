@@ -415,3 +415,7 @@ footer h3 { font-size: 1.25rem; }
 
 /* Bandcamp embed */
 .bandcamp-embed iframe { width: 100%; max-width: 350px; border: 0; }
+
+/* DIAGNOSTIC — remove before committing */
+body::before { display: none; }
+body::after  { display: none; }
