@@ -214,6 +214,13 @@ a:hover { color: hsl(var(--iron-oxide)); }
 .main-menu a.nav-shcaa { color: hsl(35, 80%, 50%); }
 .main-menu a.nav-shcaa:hover, .main-menu a.nav-shcaa.active { color: hsl(var(--verdigris)); font-style: italic; }
 
+/* Crescent moon */
+.crescent-moon { position: fixed; top: 0; right: 0; width: clamp(80px, 12vw, 160px); opacity: 0.55; pointer-events: none; z-index: 0; }
+
+/* Seahorses */
+.seahorse-left  { position: fixed; bottom: 0; left: 0;  width: clamp(60px, 8vw, 120px); opacity: 0.55; pointer-events: none; z-index: 0; }
+.seahorse-right { position: fixed; bottom: 0; right: 0; width: clamp(60px, 8vw, 120px); opacity: 0.55; pointer-events: none; z-index: 0; transform: scaleX(-1); }
+
 /* Logo */
 .logo-link { display: inline-flex; align-items: stretch; gap: 0; position: relative; }
 .logo-link:hover { color: inherit; }
