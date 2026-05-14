@@ -215,11 +215,11 @@ a:hover { color: hsl(var(--iron-oxide)); }
 .main-menu a.nav-shcaa:hover, .main-menu a.nav-shcaa.active { color: hsl(var(--verdigris)); font-style: italic; }
 
 /* Crescent moon */
-.crescent-moon { position: fixed; top: 10px; right: 10px; width: clamp(40px, 6vw, 80px); opacity: 0.55; pointer-events: none; z-index: 0; }
+.crescent-moon { position: fixed; top: 10px; right: 10px; width: clamp(60px, 9vw, 120px); opacity: 0.55; pointer-events: none; z-index: 0; }
 
 /* Seahorses */
-.seahorse-left  { position: fixed; bottom: 10px; left: 10px;  width: clamp(180px, 24vw, 360px); opacity: 0.55; pointer-events: none; z-index: 0; }
-.seahorse-right { position: fixed; bottom: 10px; right: 10px; width: clamp(180px, 24vw, 360px); opacity: 0.55; pointer-events: none; z-index: 0; transform: scaleX(-1); }
+.seahorse-left  { position: fixed; bottom: 10px; left: 10px;  width: clamp(90px, 12vw, 180px); opacity: 0.55; pointer-events: none; z-index: 0; }
+.seahorse-right { position: fixed; bottom: 10px; right: 10px; width: clamp(90px, 12vw, 180px); opacity: 0.55; pointer-events: none; z-index: 0; transform: scaleX(-1); }
 
 /* Logo */
 .logo-link { display: inline-flex; align-items: stretch; gap: 0; position: relative; }
