@@ -154,7 +154,7 @@ table { border-collapse: collapse; width: 100%; }
 .marginalia { font-family: 'Circular', -apple-system, BlinkMacSystemFont, system-ui, sans-serif; font-size: 0.75rem; color: hsl(var(--muted-foreground)); font-style: italic; position: relative; }
 .marginalia::before { content: "⸻ "; opacity: 0.5; }
 .notes-header .marginalia a { color: inherit; }
-footer .marginalia.text-ultramarine { color: hsl(var(--ultramarine)); }
+footer .marginalia.text-ultramarine { color: hsl(var(--muted-foreground)); }
 
 /* ===== Links ===== */
 a { transition: all 0.3s ease; position: relative; text-decoration: none; color: hsl(var(--ultramarine)); }
