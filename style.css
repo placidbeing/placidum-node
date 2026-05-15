@@ -97,9 +97,6 @@ body {
     radial-gradient(circle at 1px 1px, hsl(var(--graphite) / 0.08) 1px, transparent 0);
   background-size: 24px 24px;
 }
-@media (min-width: 1024px) {
-  body { background-attachment: fixed; }
-}
 
 /* ===== Typography ===== */
 h1, h2, h3, h4, h5, h6 {
@@ -217,12 +214,14 @@ a:hover { color: hsl(var(--iron-oxide)); }
 .main-menu a.nav-shcaa { color: hsl(35, 80%, 50%); }
 .main-menu a.nav-shcaa:hover, .main-menu a.nav-shcaa.active { color: hsl(var(--verdigris)); font-style: italic; }
 
-/* Crescent moon */
-.crescent-moon { position: fixed; top: 20px; right: 20px; width: clamp(46px, 6.6vw, 92px); opacity: 0.55; pointer-events: none; z-index: 10001; }
+/* Crescent moon — top-right of site header */
+.site-header { position: relative; }
+.crescent-moon { position: absolute; top: 10px; right: 10px; width: clamp(46px, 6.6vw, 92px); opacity: 0.55; pointer-events: none; }
 
-/* Seahorses */
-.seahorse-left  { position: fixed; bottom: 10px; left: 10px;  width: clamp(111px, 15vw, 222px); opacity: 0.55; pointer-events: none; z-index: 10001; }
-.seahorse-right { position: fixed; bottom: 10px; right: 10px; width: clamp(111px, 15vw, 222px); opacity: 0.55; pointer-events: none; z-index: 10001; transform: scaleX(-1); }
+/* Seahorses — bottom corners of footer */
+footer { position: relative; }
+.seahorse-left  { position: absolute; bottom: 0; left: 0;  width: clamp(111px, 15vw, 222px); opacity: 0.55; pointer-events: none; }
+.seahorse-right { position: absolute; bottom: 0; right: 0; width: clamp(111px, 15vw, 222px); opacity: 0.55; pointer-events: none; transform: scaleX(-1); }
 
 /* Logo */
 .logo-link { display: inline-flex; align-items: stretch; gap: 0; position: relative; }
