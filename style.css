@@ -97,6 +97,9 @@ body {
     radial-gradient(circle at 1px 1px, hsl(var(--graphite) / 0.08) 1px, transparent 0);
   background-size: 24px 24px;
 }
+@media (min-width: 1024px) {
+  body { background-attachment: fixed; }
+}
 
 /* ===== Typography ===== */
 h1, h2, h3, h4, h5, h6 {
@@ -416,6 +419,3 @@ footer h3 { font-size: 1.25rem; }
 /* Bandcamp embed */
 .bandcamp-embed iframe { width: 100%; max-width: 350px; border: 0; }
 
-/* DIAGNOSTIC — remove before committing */
-body::before { display: none; }
-body::after  { display: none; }
