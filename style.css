@@ -334,9 +334,14 @@ footer { position: relative; }
 iframe[src*="bandcamp"] { background: #000; color-scheme: dark; }
 .bc-wrap { background: #000; overflow: hidden; display: inline-block; border-radius: 2px; }
 footer { margin-top: 6rem; }
-footer > div { max-width: min(900px, calc(100% - 300px)); margin-left: auto; margin-right: auto; }
+footer > div { margin-left: auto; margin-right: auto; }
+@media (min-width: 768px) {
+  footer > div { max-width: min(900px, calc(100% - 300px)); }
+}
+@media (max-width: 767px) {
+  .seahorse-left, .seahorse-right { display: none; }
+}
 footer .footer-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; padding: 3rem 0; }
-@media (min-width: 768px) { footer .footer-grid { grid-template-columns: 1fr 1fr 1fr; } }
 footer h3 { font-size: 1.25rem; }
 .legal { margin-top: 4rem; padding-bottom: 1rem; font-family: 'Crimson Text', 'Georgia', serif; font-size: 10px; line-height: 1.6; color: hsl(var(--muted-foreground) / 0.4); text-align: center; }
 .legal p { margin: 0; }
