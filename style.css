@@ -340,7 +340,7 @@ footer > div { margin-left: auto; margin-right: auto; }
   footer .footer-grid { grid-template-columns: 1fr 1fr 1fr; }
 }
 @media (max-width: 767px) {
-  .seahorse-left, .seahorse-right { width: clamp(50px, 14vw, 90px); }
+  .seahorse-left, .seahorse-right { width: clamp(120px, 32vw, 200px); }
 }
 footer .footer-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; padding: 3rem 0; }
 footer h3 { font-size: 1.25rem; }
