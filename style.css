@@ -220,8 +220,8 @@ a:hover { color: hsl(var(--iron-oxide)); }
 
 /* Seahorses — bottom corners of footer */
 footer { position: relative; }
-.seahorse-left  { position: absolute; bottom: 0; left: 0;  width: clamp(111px, 15vw, 222px); opacity: 0.55; pointer-events: none; }
-.seahorse-right { position: absolute; bottom: 0; right: 0; width: clamp(111px, 15vw, 222px); opacity: 0.55; pointer-events: none; transform: scaleX(-1); }
+.seahorse-left  { position: absolute; bottom: 0; left: 0;  width: clamp(75px, 10vw, 150px); opacity: 0.55; pointer-events: none; }
+.seahorse-right { position: absolute; bottom: 0; right: 0; width: clamp(75px, 10vw, 150px); opacity: 0.55; pointer-events: none; transform: scaleX(-1); }
 
 /* Logo */
 .logo-link { display: inline-flex; align-items: stretch; gap: 0; position: relative; }
