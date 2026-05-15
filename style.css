@@ -337,6 +337,7 @@ footer { margin-top: 6rem; }
 footer > div { margin-left: auto; margin-right: auto; }
 @media (min-width: 768px) {
   footer > div { max-width: min(900px, calc(100% - 300px)); }
+  footer .footer-grid { grid-template-columns: 1fr 1fr 1fr; }
 }
 @media (max-width: 767px) {
   .seahorse-left, .seahorse-right { display: none; }
