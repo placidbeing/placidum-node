@@ -159,6 +159,8 @@
     document.querySelectorAll('.corpus-gallery article[data-release-id]').forEach(function (t) {
       t.addEventListener('click', function () { showList(t.getAttribute('data-release-id')); });
     });
+    var hash = window.location.hash.slice(1);
+    if (hash && document.getElementById(hash)) { showList(hash); }
   }
 
   // =============================================
