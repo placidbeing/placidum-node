@@ -82,6 +82,27 @@
   }
 
   // =============================================
+  // 2b. IMAGE PREFETCH
+  // =============================================
+  // Native loading="lazy" only fetches images once they are nearly visible,
+  // so fast scrolling shows blanks. Warm the cache a few screens ahead of
+  // the scroll position instead: when an image comes within rootMargin,
+  // fetch its file via an off-DOM Image. The <img> keeps its real src, so
+  // if this never runs, native lazy loading behaves as before.
+  if ('IntersectionObserver' in window) {
+    var prefetchIO = new IntersectionObserver(function (entries, obs) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        var img = entry.target;
+        obs.unobserve(img);
+        if (img.complete) return;
+        new Image().src = img.currentSrc || img.src;
+      });
+    }, { rootMargin: '2400px 0px' });
+    document.querySelectorAll('img[loading="lazy"]').forEach(function (img) { prefetchIO.observe(img); });
+  }
+
+  // =============================================
   // 3. YEAR INDICATOR
   // =============================================
   var yi = document.getElementById('year-indicator');
