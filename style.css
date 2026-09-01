@@ -2,8 +2,6 @@
 /* Single shared stylesheet for all pages */
 
 /* ===== Base & Reset ===== */
-@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
-
 html {
   box-sizing: border-box;
   -webkit-text-size-adjust: 100%;
@@ -46,7 +44,6 @@ button, input, select, textarea { font: inherit; color: inherit; }
   --sepia: 42 8% 55%;
   --ochre: 35 55% 68%;
 
-  --font-handwritten: 'Kalam', cursive;
   --text-manifesto: var(--iron-oxide);
 
   --veil-color: transparent;
@@ -113,7 +110,6 @@ h3 { font-size: 1.125rem; text-transform: lowercase; font-variant: small-caps; }
 .font-garamond { font-family: 'EB Garamond', 'Crimson Text', 'Georgia', serif; }
 .font-cormorant { font-family: 'Cormorant Garamond', 'EB Garamond', 'Georgia', serif; }
 .font-mono { font-family: 'Circular', -apple-system, BlinkMacSystemFont, system-ui, sans-serif; }
-.font-handwritten { font-family: var(--font-handwritten); }
 
 
 /* ===== Color utilities ===== */
