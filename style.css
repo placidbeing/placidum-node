@@ -222,7 +222,7 @@ footer { position: relative; }
 /* Logo */
 .logo-link { display: inline-flex; align-items: stretch; gap: 0; position: relative; }
 .logo-link:hover { color: inherit; }
-.logo-img { height: 49px; width: auto; opacity: 0.7; filter: brightness(1.2); margin-right: 2px; }
+.logo-img { height: 49px; width: auto; margin-right: 2px; }  /* pale eroded symbol — tone is baked into the asset */
 @media (min-width: 768px) { .logo-img { height: 61px; } }
 @media (min-width: 1024px) { .logo-img { height: 76px; } }
 .logo-text-wrap { display: flex; flex-direction: column; justify-content: flex-start; gap: 0; padding-bottom: 0; }
@@ -420,4 +420,19 @@ footer h3 { font-size: 1.25rem; }
 
 /* Bandcamp embed */
 .bandcamp-embed iframe { width: 100%; max-width: 350px; border: 0; }
+
+/* ===== Mare Latens — fragment layer ===== */
+/* Decorative traces from assets/mare-latens/, placed by site.js in the margins
+   beside entries. A page opts in with <div id="mare" aria-hidden="true"></div>
+   as the first child of .min-screen. Never put content inside #mare. Hidden
+   below 768px, in print, and without JS (site.js creates the layer). */
+:root { --ml-opacity: .14; --ml-scale: .46; --ml-blend: screen; }
+.min-screen { position: relative; isolation: isolate; }
+#mare { position: absolute; inset: 0; overflow: hidden; z-index: -1; pointer-events: none; }
+.ml-frag { position: absolute; background-size: contain; background-repeat: no-repeat; mix-blend-mode: var(--ml-blend); opacity: 0; transition: opacity 1.6s ease; }
+.ml-frag.surfaced { opacity: calc(var(--ml-opacity) * var(--depth, 1)); }
+#mare.mare-notes { --ml-opacity: .17; }   /* Notes carries the sea a little more strongly than the other pages */
+@media (max-width: 767px) { #mare { display: none; } }
+@media (prefers-reduced-motion: reduce) { .ml-frag { transition: none; } }
+@media print { #mare { display: none; } }
 

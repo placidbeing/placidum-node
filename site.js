@@ -240,4 +240,141 @@
       });
     });
   }
+
+  // =============================================
+  // 7. MARE LATENS — FRAGMENT LAYER
+  // =============================================
+  // Decorative traces (assets/mare-latens/) in the margins beside entries.
+  // A page opts in with <div id="mare" aria-hidden="true"> as the first child
+  // of .min-screen. Placement is deterministic: one fixed shuffled deck, dealt
+  // from the OLDEST entry upward, so an existing entry keeps its fragments
+  // when a newer one is added at the top. Images are fetched only near the
+  // viewport. Nothing here is required by the page: without JS the layer
+  // simply does not exist.
+  var mare = document.getElementById('mare');
+  if (mare && 'IntersectionObserver' in window && 'fetch' in window) {
+    var ML_BASE = 'assets/mare-latens/';
+    var mlDesktop = window.matchMedia('(min-width: 768px)');
+    var mlFrags = [];        // { el, anchor, side, u, v, s, meta }
+    var mlSlots = null;      // virtual anchors for pages without entries
+    var mlT = null;
+
+    function mlRng(seed) {
+      return function () {
+        seed = seed + 0x6D2B79F5 | 0;
+        var t = Math.imul(seed ^ seed >>> 15, 1 | seed);
+        t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t;
+        return ((t ^ t >>> 14) >>> 0) / 4294967296;
+      };
+    }
+    function mlHash(s) { var h = 5381; for (var i = 0; i < s.length; i++) h = (h * 33) ^ s.charCodeAt(i); return h >>> 0; }
+
+    // Entries oldest -> newest, keyed by date so the key survives new entries
+    // above; pages without entries get evenly spaced slots below the heading.
+    function mlAnchors() {
+      var entries = Array.prototype.slice.call(document.querySelectorAll('.note-entry')).reverse();
+      if (entries.length) {
+        var seen = {};
+        return entries.map(function (el) {
+          var d = el.querySelector('.date-numeric');
+          var key = d ? d.textContent.trim() : '';
+          seen[key] = (seen[key] || 0) + 1;
+          return { el: el, key: key + '#' + seen[key] };
+        });
+      }
+      if (!mlSlots) {
+        var main = document.querySelector('main');
+        if (!main) return [];
+        var h1 = main.querySelector('h1'), m = mare.getBoundingClientRect();
+        var top = (h1 ? h1.getBoundingClientRect().bottom : main.getBoundingClientRect().top) - m.top + 160;
+        var bottom = main.getBoundingClientRect().bottom - m.top;
+        mlSlots = [];
+        for (var y = top, i = 0; y < bottom - 120; y += 480, i++) {
+          mlSlots.push({ top: y, height: Math.min(420, bottom - y), key: 'slot' + i });
+        }
+      }
+      return mlSlots;
+    }
+
+    function mlDeal(manifest) {
+      var deck = [], i, j, tmp, r = mlRng(1789);
+      for (i = 0; i < manifest.length; i++) deck.push(i);
+      for (i = deck.length - 1; i > 0; i--) { j = Math.floor(r() * (i + 1)); tmp = deck[i]; deck[i] = deck[j]; deck[j] = tmp; }
+      var dealt = 0;
+      mlAnchors().forEach(function (a, idx) {
+        var rng = mlRng(mlHash(a.key));
+        // Fragments per anchor scale with its height (about one per 900px), so a
+        // long image-rich entry and a short note get the same density per screen.
+        var ah = a.el ? a.el.getBoundingClientRect().height : a.height;
+        var n = Math.min(4, 1 + Math.floor((ah + rng() * 900) / 900));
+        for (var k = 0; k < n; k++) {
+          var el = document.createElement('div');
+          el.className = 'ml-frag';
+          var meta = manifest[deck[dealt++ % deck.length]];
+          el.setAttribute('data-src', ML_BASE + meta.f);
+          mare.appendChild(el);
+          mlFrags.push({ el: el, anchor: a, side: (idx + k) % 2 ? 'right' : 'left', k: k, n: n,
+                         u: rng(), v: rng(), s: 0.7 + rng() * 0.6, meta: meta });
+        }
+      });
+    }
+
+    // Geometry only — assignment never changes, so a relayout never reshuffles.
+    function mlLayout() {
+      if (!mlFrags.length) return;
+      var m = mare.getBoundingClientRect(), W = mare.clientWidth, docH = Math.max(1, mare.clientHeight);
+      var wrap = Math.min(1100, W * 0.92), wl = (W - wrap) / 2, wr = wl + wrap;
+      var scale = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--ml-scale')) || 0.46;
+      mlFrags.forEach(function (f) {
+        var a = f.anchor, top, height;
+        if (a.el) {
+          if (a.el.classList.contains('filtered-out')) { f.el.style.display = 'none'; return; }
+          var r = a.el.getBoundingClientRect(); top = r.top - m.top; height = Math.max(r.height, 200);
+        } else { top = a.top; height = a.height; }
+        f.el.style.display = '';
+        // Left traces may reach into the date column (up to wl + 200px); right
+        // traces never cross the content edge — they bleed off-screen instead.
+        var w = 560 * scale * f.s * Math.min(1, Math.sqrt(f.meta.ar));
+        w = f.side === 'left' ? Math.min(w, wl + 200) : Math.min(w, (W - wr + 12) * 1.6);
+        var h = w / f.meta.ar;
+        var y = top + height * ((f.k + f.u) / f.n) * 0.9;   // spread the anchor's fragments down its height
+        var x = f.side === 'left'
+          ? -w * 0.35 + f.v * ((wl + 200 - w) + w * 0.35)
+          : (wr - 12) + f.v * Math.max(0, (W - w * 0.65) - (wr - 12));
+        f.el.style.left = x + 'px'; f.el.style.top = y + 'px';
+        f.el.style.width = w + 'px'; f.el.style.height = h + 'px';
+        f.el.style.setProperty('--depth', (0.9 + 0.25 * (y / docH)).toFixed(2));   // deepens gently as you descend
+      });
+    }
+
+    var mlIO = new IntersectionObserver(function (entries, obs) {
+      entries.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        var el = e.target, src = el.getAttribute('data-src');
+        obs.unobserve(el);
+        if (!src) return;
+        el.removeAttribute('data-src');
+        var img = new Image();
+        img.onload = function () { el.style.backgroundImage = 'url(' + src + ')'; el.classList.add('surfaced'); };
+        img.src = src;
+      });
+    }, { rootMargin: '900px 0px' });
+
+    function mlInit() {
+      if (mlFrags.length || !mlDesktop.matches) return;
+      fetch(ML_BASE + 'fragments.json').then(function (r) { return r.json(); }).then(function (manifest) {
+        if (!manifest || !manifest.length) return;
+        mlDeal(manifest);
+        mlLayout();
+        mlFrags.forEach(function (f) { mlIO.observe(f.el); });
+      }).catch(function () {});
+    }
+
+    window.addEventListener('resize', function () { clearTimeout(mlT); mlT = setTimeout(function () { mlInit(); mlLayout(); }, 250); });
+    if (fBtn) fBtn.addEventListener('click', function () { setTimeout(mlLayout, 0); });
+    if ('ResizeObserver' in window) {
+      new ResizeObserver(function () { clearTimeout(mlT); mlT = setTimeout(mlLayout, 250); }).observe(mare.parentNode);
+    }
+    mlInit();
+  }
 })();
