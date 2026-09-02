@@ -212,7 +212,9 @@ a:hover { color: hsl(var(--iron-oxide)); }
 
 /* Crescent moon — top-right of site header */
 .site-header { position: relative; }
-.crescent-moon { position: absolute; top: 10px; right: 10px; width: clamp(46px, 6.6vw, 92px); opacity: 0.55; pointer-events: none; }
+.crescent-link { position: absolute; top: 10px; right: 10px; width: clamp(46px, 6.6vw, 92px); display: block; opacity: 0.55; z-index: 1; }
+.crescent-link:hover { opacity: 0.85; }
+.crescent-moon { display: block; width: 100%; height: auto; }
 
 /* Seahorses — bottom corners of footer */
 footer { position: relative; }
@@ -423,12 +425,47 @@ footer h3 { font-size: 1.25rem; }
 /* Bandcamp embed */
 .bandcamp-embed iframe { width: 100%; max-width: 350px; border: 0; }
 
+/* ===== Crabs (Shcaa bio) ===== */
+/* Twelve crabs from the plate, cut whole and finished like the old strip. They
+   live where the strip used to be — a band below the bio — and wander up around
+   the paragraph: a few in each margin, two above the title. `.crab-field` is the
+   bio <section>; `.crab-band` is the empty room at its foot. */
+.crab-field { position: relative; }
+.crab { position: absolute; pointer-events: none; height: auto; opacity: .85; margin: 0 !important; }
+.crab-band { height: 220px; margin-top: 0 !important; }
+.crab-1  { top: -86px;  left: -88px;   width: 100px; transform: rotate(-6deg); }
+.crab-2  { top: -96px;  right: -16px;  width: 118px; transform: rotate(5deg); }
+.crab-3  { top: 22%;    left: -180px;  width: 146px; transform: rotate(3deg); }
+.crab-4  { top: 16%;    right: -196px; width: 160px; transform: rotate(-4deg); }
+.crab-5  { top: 48%;    left: -160px;  width: 134px; transform: rotate(-9deg); }
+.crab-6  { top: 44%;    right: -176px; width: 144px; transform: rotate(7deg); }
+.crab-7  { bottom: 96px;  left: -110px; width: 150px; transform: rotate(4deg); }
+.crab-8  { bottom: 40px;  left: 8%;     width: 140px; transform: rotate(-7deg); }
+.crab-9  { bottom: 110px; left: 30%;    width: 128px; transform: rotate(3deg); }
+.crab-10 { bottom: 24px;  left: 50%;    width: 156px; transform: rotate(-3deg); }
+.crab-11 { bottom: 96px;  right: 8%;    width: 136px; transform: rotate(8deg); }
+.crab-12 { bottom: 36px;  right: -120px; width: 150px; transform: rotate(-5deg); }
+@media (max-width: 1023px) {
+  .crab-3, .crab-5 { left: -104px; width: 110px; } .crab-4, .crab-6 { right: -112px; width: 118px; }
+  .crab-7 { left: -60px; } .crab-12 { right: -70px; }
+}
+@media (max-width: 767px) {
+  .crab-band { height: 130px; }
+  .crab-3, .crab-4, .crab-5, .crab-6, .crab-7, .crab-12 { display: none; }
+  .crab-1 { top: -84px; left: -8px; width: 96px; }
+  .crab-2 { top: -72px; right: -6px; width: 84px; }
+  .crab-8  { bottom: 14px; left: 0;   width: 84px; }
+  .crab-9  { bottom: 44px; left: 32%; width: 76px; }
+  .crab-10 { bottom: 8px;  left: 56%; width: 92px; }
+  .crab-11 { bottom: 40px; right: 0;  width: 80px; }
+}
+
 /* ===== Mare Latens — fragment layer ===== */
 /* Decorative traces from assets/mare-latens/, placed by site.js in the margins
    beside entries. A page opts in with <div id="mare" aria-hidden="true"></div>
    as the first child of .min-screen. Never put content inside #mare. Hidden
    below 768px, in print, and without JS (site.js creates the layer). */
-:root { --ml-opacity: .14; --ml-scale: .46; --ml-blend: screen; }
+:root { --ml-opacity: .14; --ml-scale: .69; --ml-blend: screen; }
 .min-screen { position: relative; isolation: isolate; }
 #mare { position: absolute; inset: 0; overflow: hidden; z-index: -1; pointer-events: none; }
 .ml-frag { position: absolute; background-size: contain; background-repeat: no-repeat; mix-blend-mode: var(--ml-blend); opacity: 0; transition: opacity 1.6s ease; }
@@ -437,4 +474,5 @@ footer h3 { font-size: 1.25rem; }
 /* Phones: site.js places one wide trace in the empty row beside each date block / short heading */
 @media (prefers-reduced-motion: reduce) { .ml-frag { transition: none; } }
 @media print { #mare { display: none; } }
+
 

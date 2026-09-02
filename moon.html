@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Ephemeris Lunae — Placidum</title>
+  <meta name="description" content="Ephemeris Lunae — the moon this night at 36° 49′ N, 12° 01′ E, after Tobias Mayer's Tabula Selenographica (1748).">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#171411">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Cormorant+Garamond:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    :root { --g: #171411; --ink: #a9a396; --dim: #6e695f; --gold: #d6ac76; --rule: #2e2924; }
+    html, body { margin: 0; background: var(--g); color: var(--ink); font: 16px/1.65 'EB Garamond', Georgia, serif; }
+    .page { max-width: 920px; margin: 0 auto; padding: 56px 24px 96px; }
+    a { color: var(--dim); text-decoration: none; transition: color .3s ease; }
+    a:hover { color: var(--gold); }
+    .exit { font-variant: small-caps; letter-spacing: .16em; font-size: .8rem; display: inline-block; margin-bottom: 64px; }
+    h1 { font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: 2.2rem; letter-spacing: .08em; font-variant: small-caps; color: var(--gold); margin: 0 0 .2em; }
+    .coords { color: var(--dim); letter-spacing: .12em; font-size: .9rem; font-variant-numeric: tabular-nums; margin-bottom: 8px; }
+    h2 { font-variant: small-caps; letter-spacing: .16em; font-weight: 400; font-size: .85rem; color: var(--gold); margin: 56px 0 18px; border-top: 1px solid var(--rule); padding-top: 18px; }
+    h2 span { color: var(--dim); letter-spacing: .06em; font-variant: normal; font-style: italic; margin-left: .6em; }
+    .hac-nocte { display: grid; grid-template-columns: minmax(220px, 340px) 1fr; gap: 40px; align-items: center; }
+    #moon-seal { width: 100%; height: auto; opacity: .55; transition: transform 1.2s ease; }
+    .big { font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: 1.9rem; font-variant: small-caps; letter-spacing: .06em; color: var(--gold); margin: 0 0 12px; }
+    dl { display: grid; grid-template-columns: max-content 1fr; gap: 6px 22px; margin: 0; }
+    dt { color: var(--dim); font-variant: small-caps; letter-spacing: .08em; font-size: .85rem; }
+    dd { margin: 0; font-variant-numeric: tabular-nums; }
+    .dim { color: var(--dim); }
+    .reading { margin: 0; padding: 18px 22px; border: 1px solid var(--rule); font-size: 1.1rem; line-height: 1.7; }
+    .reading b { color: var(--gold); font-weight: 400; font-variant: small-caps; }
+    .all { display: grid; grid-template-columns: repeat(10, 1fr); gap: 8px 10px; margin-top: 12px; }
+    .moon-night { margin: 0; text-align: center; }
+    .moon-night img { width: 100%; height: auto; opacity: .3; transition: opacity .4s ease; }
+    .moon-night figcaption { font-size: .62rem; letter-spacing: .06em; color: var(--dim); margin-top: 2px; }
+    .moon-night.tonight img { opacity: .8; outline: 1px solid #d6ac7644; outline-offset: 3px; }
+    .moon-night.tonight figcaption { color: var(--gold); }
+    table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+    td, th { padding: 5px 10px 5px 0; vertical-align: top; border-bottom: 1px solid var(--rule); }
+    th { text-align: left; font-weight: 400; color: var(--dim); font-variant: small-caps; letter-spacing: .08em; font-size: .8rem; }
+    td.k { color: var(--gold); font-variant: small-caps; width: 2.2em; }
+    td.n { color: var(--dim); width: 2.6em; font-variant-numeric: tabular-nums; }
+    .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 0 40px; align-items: start; }
+    .note { color: var(--dim); font-size: .85rem; font-style: italic; margin-top: 14px; }
+    .colophon { margin-top: 80px; color: var(--dim); font-style: italic; }
+    @media (max-width: 640px) { .hac-nocte { grid-template-columns: 1fr; } #moon-seal { max-width: 260px; display: block; margin: 0 auto; } .cols { grid-template-columns: 1fr; } .all { grid-template-columns: repeat(6, 1fr); } }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <a href="/" class="exit">placidum</a>
+    <h1>Ephemeris Lunae</h1>
+    <div class="coords">36° 49′ 27.2″ N &nbsp;·&nbsp; 12° 00′ 44.8″ E</div>
+
+    <h2>I · Luna hac nocte <span>tonight</span></h2>
+    <div class="hac-nocte">
+      <img id="moon-seal" width="512" height="512" src="assets/moon/moon-00.webp" alt="The moon tonight, as a worn seal, turned as the sky turns it">
+      <div>
+        <div class="big" id="moon-phase"></div>
+        <dl id="moon-data"></dl>
+      </div>
+    </div>
+    <div class="note">Reckoned at 21 h 30, Europe/Rome. The seal is turned as the eye sees it from the station — the bright limb at its true position angle, the zenith upward; when the moon is below the horizon it is shown as it will stand at meridian passage. Places from a low-precision lunar theory, to a few tenths of a degree; risings to a few minutes. Next syzygies in mean lunations of 29 d 12 h 44 m 02.9 s.</div>
+
+    <h2>II · Lectio tabulae <span>a reading from the plate</span></h2>
+    <p class="reading" id="moon-reading"></p>
+    <div class="note">One macula per night, in the order of the plate — a rota, not an observation.</div>
+
+    <h2>III · Tricenarium <span>the thirty nights</span></h2>
+    <div class="all" id="moon-nights"><figure class="moon-night" data-n="0"><img loading="lazy" decoding="async" width="128" height="128" src="assets/moon/thumb-00.webp" alt=""><figcaption>00</figcaption></figure><figure class="moon-night" data-n="1"><img loading="lazy" decoding="async" width="128" height="128" src="assets/moon/thumb-01.webp" alt=""><figcaption>01</figcaption></figure><figure class="moon-night" data-n="2"><img loading="lazy" decoding="async" width="128" height="128" src="assets/moon/thumb-02.webp" alt=""><figcaption>02</figcaption></figure><figure class="moon-night" data-n="3"><img loading="lazy" decoding="async" width="128" height="128" src="assets/moon/thumb-03.webp" alt=""><figcaption>03</figcaption></figure><figure class="moon-night" data-n="4"><img loading="lazy" decoding="async" width="128" height="128" src="assets/moon/thumb-04.webp" alt=""><figcaption>04</figcaption></figure><figure class="moon-night" data-n="5"><img loading="lazy" decoding="async" width="128" height="128" src="assets/moon/thumb-05.webp" alt=""><figcaption>05</figcaption></figure><figure class="moon-night" data-n="6"><img loading="lazy" decoding="async" width="128" height="128" src="assets/moon/thumb-06.webp" alt=""><figcaption>06</figcaption></figure><figure class="moon-night" data-n="7"><img loading="lazy" decoding="async" width="128" height="128" src="assets/moon/thumb-07.webp" alt=""><figcaption>07</figcaption></figure><figure class="moon-night" data-n="8"><img loading="lazy" decoding="async" width="128" height="128" src="assets/moon/thumb-08.webp" alt=""><figcaption>08</figcaption></figure><figure class="moon-night" data-n="9"><img loading="lazy" decoding="async" width="128" height="128" src="assets/moon/thumb-09.webp" alt=""><figcaption>09</figcaption></figure><figure class="moon-night" data-n="10"><img loading="lazy" decoding="async" width="128" height="128" src="assets/moon/thumb-10.webp" alt=""><figcaption>10</figcaption></figure><figure class="moon-night" data-n="11"><img loading="lazy" decoding="async" width="128" height="128" src="assets/moon/thumb-11.webp" alt=""><figcaption>11</figcaption></figure><figure class="moon-night" data-n="12"><img loading="lazy" decoding="async" width="128" height="128" src="assets/moon/thumb-12.webp" alt=""><figcaption>12</figcaption></figure><figure class="moon-night" data-n="13"><img loading="lazy" decoding="async" width="128" height="128" src="assets/moon/thumb-13.webp" alt=""><figcaption>13</figcaption></figure><figure class="moon-night" data-n="14"><img loading="lazy" decoding="async" width="128" height="128" src="assets/moon/thumb-14.webp" alt=""><figcaption>14</figcaption></figure><figure class="moon-night" data-n="15"><img loading="lazy" decoding="async" width="128" height="128" src="assets/moon/thumb-15.webp" alt=""><figcaption>15</figcaption></figure><figure class="moon-night" data-n="16"><img loading="lazy" decoding="async" width="128" height="128" src="assets/moon/thumb-16.webp" alt=""><figcaption>16</figcaption></figure><figure class="moon-night" data-n="17"><img loading="lazy" decoding="async" width="128" height="128" src="assets/moon/thumb-17.webp" alt=""><figcaption>17</figcaption></figure><figure class="moon-night" data-n="18"><img loading="lazy" decoding="async" width="128" height="128" src="assets/moon/thumb-18.webp" alt=""><figcaption>18</figcaption></figure><figure class="moon-night" data-n="19"><img loading="lazy" decoding="async" width="128" height="128" src="assets/moon/thumb-19.webp" alt=""><figcaption>19</figcaption></figure><figure class="moon-night" data-n="20"><img loading="lazy" decoding="async" width="128" height="128" src="assets/moon/thumb-20.webp" alt=""><figcaption>20</figcaption></figure><figure class="moon-night" data-n="21"><img loading="lazy" decoding="async" width="128" height="128" src="assets/moon/thumb-21.webp" alt=""><figcaption>21</figcaption></figure><figure class="moon-night" data-n="22"><img loading="lazy" decoding="async" width="128" height="128" src="assets/moon/thumb-22.webp" alt=""><figcaption>22</figcaption></figure><figure class="moon-night" data-n="23"><img loading="lazy" decoding="async" width="128" height="128" src="assets/moon/thumb-23.webp" alt=""><figcaption>23</figcaption></figure><figure class="moon-night" data-n="24"><img loading="lazy" decoding="async" width="128" height="128" src="assets/moon/thumb-24.webp" alt=""><figcaption>24</figcaption></figure><figure class="moon-night" data-n="25"><img loading="lazy" decoding="async" width="128" height="128" src="assets/moon/thumb-25.webp" alt=""><figcaption>25</figcaption></figure><figure class="moon-night" data-n="26"><img loading="lazy" decoding="async" width="128" height="128" src="assets/moon/thumb-26.webp" alt=""><figcaption>26</figcaption></figure><figure class="moon-night" data-n="27"><img loading="lazy" decoding="async" width="128" height="128" src="assets/moon/thumb-27.webp" alt=""><figcaption>27</figcaption></figure><figure class="moon-night" data-n="28"><img loading="lazy" decoding="async" width="128" height="128" src="assets/moon/thumb-28.webp" alt=""><figcaption>28</figcaption></figure><figure class="moon-night" data-n="29"><img loading="lazy" decoding="async" width="128" height="128" src="assets/moon/thumb-29.webp" alt=""><figcaption>29</figcaption></figure></div>
+
+    <h2 style="margin-top:80px">IV · Nomina macularum insigniorum <span>after Riccioli · after Hevelius</span></h2>
+    <div class="cols">
+      <table><tr><th></th><th>Riccioli, 1651</th><th>Hevelius, 1647</th></tr><tr><td class="k">A</td><td>Mare Crisium</td><td><i>Palus Maeotis</i></td></tr><tr><td class="k">B</td><td>Mare Foecunditatis</td><td><i>Mare Caspium</i></td></tr><tr><td class="k">C</td><td>Mare Nectaris</td><td><i>Sinus Athen. et Sin. extr. Ponti</i></td></tr><tr><td class="k">D</td><td>Mare Tranquillitatis</td><td><i>Pontus Euxinus</i></td></tr><tr><td class="k">E</td><td>Mare Serenitatis</td><td><i>Pontus Euxinus</i></td></tr><tr><td class="k">F</td><td>Lacus Somniorum</td><td><i>Sinus Cercinites</i></td></tr><tr><td class="k">G</td><td>Lacus Mortis</td><td><i>Montes Peuce</i></td></tr><tr><td class="k">H</td><td>Palus Somni</td><td><i>Lacus Corocondametis</i></td></tr><tr><td class="k">I</td><td>Mare Frigoris</td><td><i>Mare Hyperboreum</i></td></tr><tr><td class="k">K</td><td>Mare Vaporum</td><td><i>Propontis</i></td></tr><tr><td class="k">L</td><td>Sinus Aestuum</td><td><i>Mare Adriaticum</i></td></tr><tr><td class="k">M</td><td>Mare Nubium</td><td><i>Mare Pamphilium</i></td></tr><tr><td class="k">N</td><td>Mare Humorum</td><td><i>Sinus Sirbonis et Mare Aegyptiacum</i></td></tr><tr><td class="k">O</td><td>Sinus Epidemiarum</td><td><i>Insulae Didymae</i></td></tr><tr><td class="k">P</td><td>Oceanus Procellarum</td><td><i>Mare Eoum et Maris Mediterranei pars</i></td></tr><tr><td class="k">Q</td><td>Mare Imbrium</td><td><i>Maris Mediterranei pars septentrionalis</i></td></tr><tr><td class="k">R</td><td>Sinus Iridum</td><td><i>Sinus Apollinis</i></td></tr><tr><td class="k">S</td><td>Sinus Roris</td><td><i>Sinus Hyperboreus</i></td></tr></table>
+      <table><tr><th></th><th>Riccioli, 1651</th><th>Hevelius, 1647</th></tr><tr><td class="n">4</td><td>Langrenus</td><td><i>Insula maior</i></td></tr><tr><td class="n">8</td><td>Petavius</td><td><i>Petra Sogdiana</i></td></tr><tr><td class="n">10</td><td>Endymion</td><td><i>Lacus Hyperboreus superior</i></td></tr><tr><td class="n">13</td><td>Atlas</td><td><i>Pars Montium Macrocemniorum</i></td></tr><tr><td class="n">15</td><td>Hercules</td><td><i>Pars Montium Macrocemniorum</i></td></tr><tr><td class="n">20</td><td>Posidonius</td><td><i>Insula Macra</i></td></tr><tr><td class="n">22</td><td>Theophilus</td><td><i>Pars Montis Moschi</i></td></tr><tr><td class="n">27</td><td>Aristoteles</td><td><i>Mons Serrorum</i></td></tr><tr><td class="n">28</td><td>Eudoxus</td><td><i>Mons Carpathes</i></td></tr><tr><td class="n">29</td><td>Menelaus</td><td><i>Byzantium</i></td></tr><tr><td class="n">33</td><td>Manilius</td><td><i>Insula Besbicus</i></td></tr><tr><td class="n">39</td><td>Hipparchus</td><td><i>Mons Olympus</i></td></tr><tr><td class="n">46</td><td>Archimedes</td><td><i>Mons Argentarius</i></td></tr><tr><td class="n">47</td><td>Ptolemaeus</td><td><i>Mons Sipylus</i></td></tr><tr><td class="n">48</td><td>Arzachel</td><td><i>Mons Cragus</i></td></tr><tr><td class="n">49</td><td>Alphonsus</td><td><i>Mons Masicytus</i></td></tr><tr><td class="n">53</td><td>Plato</td><td><i>Lacus Niger maior</i></td></tr><tr><td class="n">54</td><td>Tycho</td><td><i>Mons Sinai</i></td></tr><tr><td class="n">55</td><td>Eratosthenes</td><td><i>Insula Vulcania</i></td></tr><tr><td class="n">59</td><td>Clavius</td><td><i>Desertum Hevila</i></td></tr><tr><td class="n">62</td><td>Landsbergius</td><td><i>Insula Malta</i></td></tr><tr><td class="n">64</td><td>Copernicus</td><td><i>Mons Aetna</i></td></tr><tr><td class="n">66</td><td>Pytheas</td><td><i>Insula Sardinia</i></td></tr><tr><td class="n">68</td><td>Bullialdus</td><td><i>Insula Creta</i></td></tr><tr><td class="n">70</td><td>Reinhold</td><td><i>Mons Neptunus</i></td></tr><tr><td class="n">75</td><td>Kepler</td><td><i>Loca paludosa</i></td></tr><tr><td class="n">76</td><td>Gassendus</td><td><i>Mons Cataractes</i></td></tr><tr><td class="n">78</td><td>Aristarchus</td><td><i>Mons Porphyrites</i></td></tr><tr><td class="n">84</td><td>Pythagoras</td><td><i>ad Sinum Hyperboreum</i></td></tr><tr><td class="n">86</td><td>Grimaldus</td><td><i>Palus Maraeotis</i></td></tr></table>
+    </div>
+    <div class="note">Transcribed from the plate's margins. Mayer engraved the disc with the meridian at the top, as the telescope shows it.</div>
+
+    <p class="colophon">after Tobias Mayer's <i>Tabula Selenographica</i>, drawn 1748</p>
+    <a href="/" class="exit" style="margin:24px 0 0">placidum</a>
+  </div>
+  <script>
+  (function () {
+    var D2R = Math.PI / 180, R2D = 180 / Math.PI, P = 29.530588, REF = Date.UTC(2000, 0, 6, 18, 14); // new moon, lunation 953 (Brown)
+    var LAT = 36.824222, LON = 12.012444, J2000 = Date.UTC(2000, 0, 1, 12);
+    var MARIA = [["A", "Mare Crisium", "Palus Maeotis"], ["B", "Mare Foecunditatis", "Mare Caspium"], ["C", "Mare Nectaris", "Sinus Athen. et Sin. extr. Ponti"], ["D", "Mare Tranquillitatis", "Pontus Euxinus"], ["E", "Mare Serenitatis", "Pontus Euxinus"], ["F", "Lacus Somniorum", "Sinus Cercinites"], ["G", "Lacus Mortis", "Montes Peuce"], ["H", "Palus Somni", "Lacus Corocondametis"], ["I", "Mare Frigoris", "Mare Hyperboreum"], ["K", "Mare Vaporum", "Propontis"], ["L", "Sinus Aestuum", "Mare Adriaticum"], ["M", "Mare Nubium", "Mare Pamphilium"], ["N", "Mare Humorum", "Sinus Sirbonis et Mare Aegyptiacum"], ["O", "Sinus Epidemiarum", "Insulae Didymae"], ["P", "Oceanus Procellarum", "Mare Eoum et Maris Mediterranei pars"], ["Q", "Mare Imbrium", "Maris Mediterranei pars septentrionalis"], ["R", "Sinus Iridum", "Sinus Apollinis"], ["S", "Sinus Roris", "Sinus Hyperboreus"]], CRATERS = [[4, "Langrenus", "Insula maior"], [8, "Petavius", "Petra Sogdiana"], [10, "Endymion", "Lacus Hyperboreus superior"], [13, "Atlas", "Pars Montium Macrocemniorum"], [15, "Hercules", "Pars Montium Macrocemniorum"], [20, "Posidonius", "Insula Macra"], [22, "Theophilus", "Pars Montis Moschi"], [27, "Aristoteles", "Mons Serrorum"], [28, "Eudoxus", "Mons Carpathes"], [29, "Menelaus", "Byzantium"], [33, "Manilius", "Insula Besbicus"], [39, "Hipparchus", "Mons Olympus"], [46, "Archimedes", "Mons Argentarius"], [47, "Ptolemaeus", "Mons Sipylus"], [48, "Arzachel", "Mons Cragus"], [49, "Alphonsus", "Mons Masicytus"], [53, "Plato", "Lacus Niger maior"], [54, "Tycho", "Mons Sinai"], [55, "Eratosthenes", "Insula Vulcania"], [59, "Clavius", "Desertum Hevila"], [62, "Landsbergius", "Insula Malta"], [64, "Copernicus", "Mons Aetna"], [66, "Pytheas", "Insula Sardinia"], [68, "Bullialdus", "Insula Creta"], [70, "Reinhold", "Mons Neptunus"], [75, "Kepler", "Loca paludosa"], [76, "Gassendus", "Mons Cataractes"], [78, "Aristarchus", "Mons Porphyrites"], [84, "Pythagoras", "ad Sinum Hyperboreum"], [86, "Grimaldus", "Palus Maraeotis"]];
+    var ROME = { timeZone: 'Europe/Rome' };
+    function romeParts(t) {
+      var out = {};
+      try {
+        var parts = new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Rome', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' }).formatToParts(new Date(t));
+        for (var i = 0; i < parts.length; i++) out[parts[i].type] = +parts[i].value;
+      } catch (e) { var d = new Date(t); out = { year: d.getFullYear(), month: d.getMonth() + 1, day: d.getDate(), hour: d.getHours(), minute: d.getMinutes() }; }
+      return out;
+    }
+    function stationNight() {                 // 21 h 30 local, tonight, as UTC ms
+      var p = romeParts(Date.now()), noon = Date.UTC(p.year, p.month - 1, p.day, 12);
+      var offset = romeParts(noon).hour - 12;  // +1 CET, +2 CEST
+      return Date.UTC(p.year, p.month - 1, p.day, 21, 30) - offset * 36e5;
+    }
+    function fmt(t, withTime) {
+      var o = { timeZone: 'Europe/Rome', day: 'numeric', month: 'long', year: 'numeric' };
+      if (withTime) { o.hour = '2-digit'; o.minute = '2-digit'; }
+      try { return new Date(t).toLocaleString('en-GB', o); } catch (e) { return new Date(t).toDateString(); }
+    }
+    function hm(t) { var p = romeParts(t); return pad(p.hour) + ' h ' + pad(p.minute); }
+    function pad(n) { return (n < 10 ? '0' : '') + n; }
+    function norm(a) { return ((a % 360) + 360) % 360; }
+    // --- places: low-precision Sun and Moon (Astronomical Almanac), equatorial of date
+    function eq(lam, bet, eps) {
+      return { ra: Math.atan2(Math.sin(lam) * Math.cos(eps) - Math.tan(bet) * Math.sin(eps), Math.cos(lam)),
+               dec: Math.asin(Math.sin(bet) * Math.cos(eps) + Math.cos(bet) * Math.sin(eps) * Math.sin(lam)), lam: lam };
+    }
+    function sun(t) {
+      var n = (t - J2000) / 864e5, L = 280.460 + 0.9856474 * n, g = (357.528 + 0.9856003 * n) * D2R;
+      return eq((L + 1.915 * Math.sin(g) + 0.020 * Math.sin(2 * g)) * D2R, 0, (23.439 - 0.0000004 * n) * D2R);
+    }
+    function moon(t) {
+      var T = (t - J2000) / 864e5 / 36525;
+      var s = function (a, b) { return Math.sin((a + b * T) * D2R); }, c = function (a, b) { return Math.cos((a + b * T) * D2R); };
+      var lam = 218.32 + 481267.881 * T + 6.29 * s(135.0, 477198.87) - 1.27 * s(259.3, -413335.36) + 0.66 * s(235.7, 890534.22)
+              + 0.21 * s(269.9, 954397.74) - 0.19 * s(357.5, 35999.05) - 0.11 * s(186.5, 966404.03);
+      var bet = 5.13 * s(93.3, 483202.02) + 0.28 * s(228.2, 960400.89) - 0.28 * s(318.3, 6003.15) - 0.17 * s(217.6, -407332.21);
+      var par = 0.9508 + 0.0518 * c(135.0, 477198.87) + 0.0095 * c(259.3, -413335.36) + 0.0078 * c(235.7, 890534.22) + 0.0028 * c(269.9, 954397.74);
+      var m = eq(lam * D2R, bet * D2R, (23.439 - 0.0000004 * T * 36525) * D2R); m.par = par * D2R; return m;
+    }
+    function lst(t) { var n = (t - J2000) / 864e5; return norm(280.46061837 + 360.98564736629 * n + LON) * D2R; }
+    function topo(t) {                        // the moon over the station
+      var m = moon(t), H = lst(t) - m.ra, phi = LAT * D2R;
+      var alt = Math.asin(Math.sin(phi) * Math.sin(m.dec) + Math.cos(phi) * Math.cos(m.dec) * Math.cos(H));
+      var az = Math.atan2(Math.sin(H), Math.cos(H) * Math.sin(phi) - Math.tan(m.dec) * Math.cos(phi)) * R2D + 180;
+      var q = Math.atan2(Math.sin(H), Math.tan(phi) * Math.cos(m.dec) - Math.sin(m.dec) * Math.cos(H));
+      return { alt: alt * R2D, az: norm(az), q: q * R2D, H: Math.atan2(Math.sin(H), Math.cos(H)) };
+    }
+    function limb(t) {                        // bright limb position angle, illuminated fraction, waxing
+      var s = sun(t), m = moon(t), dA = s.ra - m.ra;
+      var chi = Math.atan2(Math.cos(s.dec) * Math.sin(dA), Math.sin(s.dec) * Math.cos(m.dec) - Math.cos(s.dec) * Math.sin(m.dec) * Math.cos(dA));
+      var psi = Math.acos(Math.sin(s.dec) * Math.sin(m.dec) + Math.cos(s.dec) * Math.cos(m.dec) * Math.cos(dA));
+      var Delta = 6378.14 / Math.sin(m.par), R = 149597870.7;
+      var i = Math.atan2(R * Math.sin(psi), Delta - R * Math.cos(psi));
+      return { chi: norm(chi * R2D), k: (1 + Math.cos(i)) / 2, waxing: norm((m.lam - s.lam) * R2D) < 180 };
+    }
+    function horizon(night) {                 // rise / transit / set between local noon and noon
+      var t0 = night - 9.5 * 36e5, step = 4 * 6e4, h0 = 0.125, ev = { rise: null, set: null, transit: null }, prev = topo(t0);
+      for (var t = t0 + step; t <= t0 + 864e5; t += step) {
+        var cur = topo(t);
+        if (prev.alt < h0 && cur.alt >= h0 && !ev.rise) ev.rise = t - step * (cur.alt - h0) / (cur.alt - prev.alt);
+        if (prev.alt >= h0 && cur.alt < h0 && !ev.set) ev.set = t - step * (cur.alt - h0) / (cur.alt - prev.alt);
+        if (prev.H < 0 && cur.H >= 0 && !ev.transit) ev.transit = t - step * cur.H / (cur.H - prev.H);
+        prev = cur;
+      }
+      return ev;
+    }
+    function compass(az) { return ['N', 'NNE', 'NE', 'ENE', 'E', 'ESE', 'SE', 'SSE', 'S', 'SSW', 'SW', 'WSW', 'W', 'WNW', 'NW', 'NNW'][Math.round(az / 22.5) % 16]; }
+    function render() {
+      var t = stationNight(), L = limb(t), sky = topo(t), ev = horizon(t);
+      var age = P / (2 * Math.PI) * Math.acos(Math.max(-1, Math.min(1, 1 - 2 * L.k))); if (!L.waxing) age = P - age;
+      var night = Math.round(age / P * 30) % 30, lit = L.k;
+      var name = lit < 0.03 ? 'new moon' : lit > 0.97 ? 'full moon' : Math.abs(lit - 0.5) < 0.04 ? (L.waxing ? 'first quarter' : 'last quarter')
+               : lit < 0.5 ? (L.waxing ? 'waxing crescent' : 'waning crescent') : (L.waxing ? 'waxing gibbous' : 'waning gibbous');
+      var days = (t - REF) / 864e5, n = Math.floor(days / P), a = days - n * P;
+      var nextNew = REF + (n + 1) * P * 864e5, nextFull = REF + (n + (a < P / 2 ? 0.5 : 1.5)) * P * 864e5;
+      var sincePlate = Math.floor((t - Date.UTC(1748, 0, 1)) / 864e5 / P);
+      // turn the seal: its bright limb sits at 270° (waxing) or 90° (waning); the zenith at the parallactic angle
+      var up = sky.alt > 0, q = up ? sky.q : 0, rot = q - (L.chi - (L.waxing ? 270 : 90));
+      rot = ((rot + 180) % 360 + 360) % 360 - 180;
+      var seal = document.getElementById('moon-seal');
+      seal.src = 'assets/moon/moon-' + pad(night) + '.webp';
+      seal.style.transform = 'rotate(' + rot.toFixed(1) + 'deg)';
+      document.getElementById('moon-phase').textContent = name;
+      var where = up ? 'altitude ' + (sky.alt < 0 ? '−' : '+') + Math.abs(sky.alt).toFixed(0) + '° · azimuth ' + sky.az.toFixed(0) + '° ' + compass(sky.az)
+                     : 'below the horizon';
+      var rows = [['Date', fmt(t) + ' · night ' + pad(night)], ['Age', age.toFixed(1) + ' days'],
+        ['Illuminated', Math.round(lit * 100) + ' % of the disc'], ['Bright limb', 'position angle ' + L.chi.toFixed(0) + '°'],
+        ['At 21 h 30', where + (up ? ' · parallactic angle ' + (sky.q < 0 ? '−' : '+') + Math.abs(sky.q).toFixed(0) + '°' : '')],
+        ['Turned', (rot < 0 ? '−' : '+') + Math.abs(rot).toFixed(0) + '° from north-up'],
+        ['Horizon', 'rises ' + (ev.rise ? hm(ev.rise) : '—') + ' · passes the meridian ' + (ev.transit ? hm(ev.transit) : '—') + ' · sets ' + (ev.set ? hm(ev.set) : '—')],
+        ['Lunation', (953 + n) + ' (Brown)'],
+        ['Next new moon', fmt(nextNew, true) + ' local'], ['Next full moon', fmt(nextFull, true) + ' local'],
+        ['Since the plate', sincePlate.toLocaleString('en-GB') + ' lunations since 1748']];
+      var html = '';
+      for (var i = 0; i < rows.length; i++) html += '<dt>' + rows[i][0] + '</dt><dd>' + rows[i][1] + '</dd>';
+      document.getElementById('moon-data').innerHTML = html;
+      var m = MARIA[night % MARIA.length], c = CRATERS[night % CRATERS.length];
+      document.getElementById('moon-reading').innerHTML = '<b>' + m[0] + '</b>&nbsp; ' + m[1] + ' — <em>' + m[2] + '</em> <span class="dim">(Hevelius)</span><br><span class="dim">' + c[0] + '</span>&nbsp; ' + c[1] + ' — <em>' + c[2] + '</em>';
+      var figs = document.getElementById('moon-nights').children;
+      for (var j = 0; j < figs.length; j++) figs[j].className = 'moon-night' + (j === night ? ' tonight' : '');
+    }
+    render(); setInterval(render, 60 * 60 * 1000);
+  })();
+  </script>
+</body>
+</html>

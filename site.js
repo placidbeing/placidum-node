@@ -318,6 +318,11 @@
       var main = document.querySelector('main'); if (!main) return [];
       if (mlMobile()) {
         var out = [];
+        // Chronicles: its episodes have date blocks, so they take a trace like Notes entries
+        Array.prototype.forEach.call(main.querySelectorAll('.chronicle-entry'), function (el, i) {
+          var d = el.querySelector('.date-numeric');
+          out.push({ el: el, key: 'chron' + i + (d ? d.textContent.trim() : '') });
+        });
         Array.prototype.forEach.call(main.querySelectorAll('h1, h2'), function (h, i) {
           var t = mlText(h);
           if (t && t.lines === 1) out.push({ el: h, key: 'h' + i + h.textContent.trim().slice(0, 24) });
@@ -346,8 +351,16 @@
         }
         return manifest[deck[0]];
       }
+      // The tide: geometry (side jitter, position, size) re-rolls once a day at
+      // local midnight; which fragment belongs to which entry never changes,
+      // so nothing new is downloaded when the sea moves.
+      // The day is Pantelleria's day (Europe/Rome): the sea turns with the same
+      // tide for every visitor, wherever they read from.
+      var tide;
+      try { tide = new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Rome', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date()); }
+      catch (e) { var d = new Date(); tide = d.getFullYear() + '-' + (d.getMonth() + 1) + '-' + d.getDate(); }
       mlAnchors().forEach(function (a, idx) {
-        var rng = mlRng(mlHash(a.key)), n = 1;
+        var rng = mlRng(mlHash(a.key)), tideRng = mlRng(mlHash(a.key + '|' + tide)), n = 1;
         if (!mobile) {
           // Fragments per anchor scale with its height (about one per 900px), so a
           // long image-rich entry and a short note get the same density per screen.
@@ -365,7 +378,7 @@
           el.setAttribute('data-src', ML_BASE + meta.f);
           mare.appendChild(el);
           mlFrags.push({ el: el, anchor: a, side: (idx + k) % 2 ? 'right' : 'left', k: k, n: n,
-                         u: rng(), v: rng(), s: 0.7 + rng() * 0.6, meta: meta });
+                         u: tideRng(), v: tideRng(), s: 0.7 + tideRng() * 0.6, meta: meta });
         }
       });
       mlFrags.forEach(function (f) { mlIO.observe(f.el); });
@@ -411,7 +424,6 @@
           // Left traces may reach into the date column (up to wl + 200px); right
           // traces never cross the content edge — they bleed off-screen instead.
           w = 560 * scale * f.s * Math.min(1, Math.sqrt(f.meta.ar));
-          w *= Math.min(2, Math.max(1, (W - wr) / 170));   // wider margins (big displays) carry bigger traces
           w = f.side === 'left' ? Math.min(w, wl + 200) : Math.min(w, (W - wr + 12) * 1.6);
           h = w / f.meta.ar;
           y = top + height * ((f.k + f.u) / f.n) * 0.9;   // spread the anchor's fragments down its height
