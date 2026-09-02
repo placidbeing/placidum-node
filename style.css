@@ -212,9 +212,11 @@ a:hover { color: hsl(var(--iron-oxide)); }
 
 /* Crescent moon — top-right of site header */
 .site-header { position: relative; }
-.crescent-link { position: absolute; top: 10px; right: 10px; width: clamp(46px, 6.6vw, 92px); display: block; opacity: 0.55; z-index: 1; }
+.crescent-link { position: absolute; top: 10px; right: 12px; width: clamp(83px, 11.9vw, 166px); display: block; opacity: 0.55; z-index: 1; }
 .crescent-link:hover { opacity: 0.85; }
-.crescent-moon { display: block; width: 100%; height: auto; }
+.crescent-moon { display: block; width: 100%; height: auto; opacity: 0; transition: opacity 0.8s ease, transform 1.2s ease; }
+.crescent-moon.risen { opacity: 1; }
+@media (max-width: 767px) { .crescent-link { top: 6px; right: 6px; width: 60px; } }
 
 /* Seahorses — bottom corners of footer */
 footer { position: relative; }
@@ -426,38 +428,31 @@ footer h3 { font-size: 1.25rem; }
 .bandcamp-embed iframe { width: 100%; max-width: 350px; border: 0; }
 
 /* ===== Crabs (Shcaa bio) ===== */
-/* Twelve crabs from the plate, cut whole and finished like the old strip. They
-   live where the strip used to be — a band below the bio — and wander up around
-   the paragraph: a few in each margin, two above the title. `.crab-field` is the
-   bio <section>; `.crab-band` is the empty room at its foot. */
+/* Eight crabs cut whole from the plate, in the traces' ink. They keep to the room
+   below the bio (`.crab-band`) and just surround its last paragraph: a tight
+   cluster in the band, two at the paragraph's middle in the margins, one
+   bridging. Nothing above the title. `.crab-field` is the bio <section>. */
 .crab-field { position: relative; }
 .crab { position: absolute; pointer-events: none; height: auto; opacity: .85; margin: 0 !important; }
-.crab-band { height: 220px; margin-top: 0 !important; }
-.crab-1  { top: -86px;  left: -88px;   width: 100px; transform: rotate(-6deg); }
-.crab-2  { top: -96px;  right: -16px;  width: 118px; transform: rotate(5deg); }
-.crab-3  { top: 22%;    left: -180px;  width: 146px; transform: rotate(3deg); }
-.crab-4  { top: 16%;    right: -196px; width: 160px; transform: rotate(-4deg); }
-.crab-5  { top: 48%;    left: -160px;  width: 134px; transform: rotate(-9deg); }
-.crab-6  { top: 44%;    right: -176px; width: 144px; transform: rotate(7deg); }
-.crab-7  { bottom: 96px;  left: -110px; width: 150px; transform: rotate(4deg); }
-.crab-8  { bottom: 40px;  left: 8%;     width: 140px; transform: rotate(-7deg); }
-.crab-9  { bottom: 110px; left: 30%;    width: 128px; transform: rotate(3deg); }
-.crab-10 { bottom: 24px;  left: 50%;    width: 156px; transform: rotate(-3deg); }
-.crab-11 { bottom: 96px;  right: 8%;    width: 136px; transform: rotate(8deg); }
-.crab-12 { bottom: 36px;  right: -120px; width: 150px; transform: rotate(-5deg); }
+.crab-band { height: 200px; margin-top: 0 !important; }
+.crab-1 { bottom: 26px;  left: 5%;     width: 146px; transform: rotate(-4deg); }
+.crab-2 { bottom: 82px;  left: 22%;    width: 126px; transform: rotate(6deg); }
+.crab-3 { bottom: 18px;  left: 40%;    width: 150px; transform: rotate(-3deg); }
+.crab-4 { bottom: 86px;  left: 58%;    width: 130px; transform: rotate(4deg); }
+.crab-5 { bottom: 22px;  right: 3%;    width: 150px; transform: rotate(-5deg); }
+.crab-6 { bottom: 196px; right: -148px; width: 148px; transform: rotate(6deg); }
+.crab-7 { bottom: 198px; left: -122px; width: 118px; transform: rotate(-5deg); }
+.crab-8 { bottom: 104px; left: -120px; width: 132px; transform: rotate(7deg); }
 @media (max-width: 1023px) {
-  .crab-3, .crab-5 { left: -104px; width: 110px; } .crab-4, .crab-6 { right: -112px; width: 118px; }
-  .crab-7 { left: -60px; } .crab-12 { right: -70px; }
+  .crab-6 { right: -108px; width: 112px; } .crab-7 { left: -96px; width: 96px; } .crab-8 { left: -88px; width: 100px; }
 }
 @media (max-width: 767px) {
-  .crab-band { height: 130px; }
-  .crab-3, .crab-4, .crab-5, .crab-6, .crab-7, .crab-12 { display: none; }
-  .crab-1 { top: -84px; left: -8px; width: 96px; }
-  .crab-2 { top: -72px; right: -6px; width: 84px; }
-  .crab-8  { bottom: 14px; left: 0;   width: 84px; }
-  .crab-9  { bottom: 44px; left: 32%; width: 76px; }
-  .crab-10 { bottom: 8px;  left: 56%; width: 92px; }
-  .crab-11 { bottom: 40px; right: 0;  width: 80px; }
+  .crab-band { height: 120px; }
+  .crab-2, .crab-6, .crab-7, .crab-8 { display: none; }
+  .crab-1 { bottom: 10px; left: 0;   width: 88px; }
+  .crab-3 { bottom: 40px; left: 28%; width: 84px; }
+  .crab-4 { bottom: 6px;  left: 54%; width: 76px; }
+  .crab-5 { bottom: 34px; right: 0;  width: 86px; }
 }
 
 /* ===== Mare Latens — fragment layer ===== */

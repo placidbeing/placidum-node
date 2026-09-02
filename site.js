@@ -472,4 +472,22 @@
     }
     mlInit();
   }
+
+  // ===== 8. THE HEADER MOON =====
+  // Tonight's seal takes the crescent's place, top right, sized to the disc the
+  // old crescent belonged to, and turned as the sky turns it (see moon.js).
+  (function () {
+    var img = document.querySelector('.crescent-moon');
+    if (!img || !window.Luna) return;
+    function rise() {
+      var r = Luna.reckon(), n = r.night < 10 ? '0' + r.night : '' + r.night;
+      img.style.transform = 'rotate(' + r.rot.toFixed(1) + 'deg)';
+      if (img.getAttribute('data-night') !== n) {
+        img.setAttribute('data-night', n);
+        img.onload = function () { img.classList.add('risen'); };
+        img.src = 'assets/moon/moon-' + n + '.webp';
+      }
+    }
+    rise(); setInterval(rise, 60 * 60 * 1000);
+  })();
 })();
