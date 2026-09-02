@@ -297,11 +297,23 @@
       var entries = Array.prototype.slice.call(document.querySelectorAll('.note-entry')).reverse();
       if (entries.length) {
         var seen = {};
-        return entries.map(function (el) {
+        var list = entries.map(function (el) {
           var d = el.querySelector('.date-numeric'), key = d ? d.textContent.trim() : '';
           seen[key] = (seen[key] || 0) + 1;
           return { el: el, key: key + '#' + seen[key] };
         });
+        // Desktop: a band beside the intro, rising a little above the title, down
+        // to the first entry. Appended LAST so existing entries keep their cards.
+        if (!mlMobile()) {
+          var title = document.querySelector('main h1'), first = entries[entries.length - 1];
+          if (title && first) {
+            var mr = mare.getBoundingClientRect();
+            var bt = title.getBoundingClientRect().top - mr.top - 140;
+            var bh = first.getBoundingClientRect().top - mr.top - bt;
+            if (bh > 200) list.push({ top: bt, height: bh, key: 'intro', intro: true });
+          }
+        }
+        return list;
       }
       var main = document.querySelector('main'); if (!main) return [];
       if (mlMobile()) {
@@ -313,7 +325,8 @@
         return out;
       }
       var h1 = main.querySelector('h1'), m = mare.getBoundingClientRect();
-      var top = (h1 ? h1.getBoundingClientRect().bottom : main.getBoundingClientRect().top) - m.top + 160;
+      // start a little above the title, as on Notes, so the top is not left empty
+      var top = (h1 ? h1.getBoundingClientRect().top - 140 : main.getBoundingClientRect().top) - m.top;
       var bottom = main.getBoundingClientRect().bottom - m.top, slots = [];
       for (var y = top, i = 0; y < bottom - 120; y += 480, i++) {
         slots.push({ top: y, height: Math.min(420, bottom - y), key: 'slot' + i });
@@ -339,7 +352,8 @@
           // Fragments per anchor scale with its height (about one per 900px), so a
           // long image-rich entry and a short note get the same density per screen.
           var ah = a.el ? a.el.getBoundingClientRect().height : a.height;
-          n = Math.min(4, 1 + Math.floor((ah + rng() * 900) / 900));
+          n = a.intro ? Math.min(4, 3 + Math.floor(ah / 700))               // the band beside the intro: a few more
+                      : Math.min(4, 1 + Math.floor((ah + rng() * 900) / 900));
         } else if (a.el && rng() < 0.65) {
           n = 2;   // phones: a second, larger trace hanging off the left edge
         }
@@ -397,6 +411,7 @@
           // Left traces may reach into the date column (up to wl + 200px); right
           // traces never cross the content edge — they bleed off-screen instead.
           w = 560 * scale * f.s * Math.min(1, Math.sqrt(f.meta.ar));
+          w *= Math.min(2, Math.max(1, (W - wr) / 170));   // wider margins (big displays) carry bigger traces
           w = f.side === 'left' ? Math.min(w, wl + 200) : Math.min(w, (W - wr + 12) * 1.6);
           h = w / f.meta.ar;
           y = top + height * ((f.k + f.u) / f.n) * 0.9;   // spread the anchor's fragments down its height
