@@ -421,8 +421,7 @@ footer h3 { font-size: 1.25rem; }
 
 /* Audio filter */
 .audio-filter-btn { font-family: 'Circular', -apple-system, BlinkMacSystemFont, system-ui, sans-serif; font-size: 0.875rem; background: none; border: none; cursor: pointer; transition: opacity 0.3s ease; padding: 0; }
-.vs-mark { display: inline-block; height: 26px; aspect-ratio: 1600 / 184; vertical-align: -8px; background: currentColor; -webkit-mask: url(assets/vestigia-mark.png) center / contain no-repeat; mask: url(assets/vestigia-mark.png) center / contain no-repeat; }   /* Bremontier's wave (1809) and the words in the site's italic, worn like the logo */
-.vs-text { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.vs-mark { display: inline-block; width: 14px; height: 14px; vertical-align: -2px; margin-right: 6px; background: currentColor; -webkit-mask: url(assets/vestigia-mark.png) center / contain no-repeat; mask: url(assets/vestigia-mark.png) center / contain no-repeat; }   /* Chladni's ringing plate, two rings and a line (Tab. III, fig. 27, 1787) */
 .audio-filter-btn.inactive { color: hsl(var(--muted-foreground)); opacity: 0.6; }
 .audio-filter-btn.inactive:hover { opacity: 1; }
 .audio-filter-btn.active { color: hsl(var(--accent)); opacity: 1; }
