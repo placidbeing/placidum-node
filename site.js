@@ -255,7 +255,8 @@
   // Nothing here is required by the page: without JS the layer does not exist.
   var mare = document.getElementById('mare');
   if (mare && 'IntersectionObserver' in window && 'fetch' in window) {
-    var ML_BASE = 'assets/mare-latens/';
+    // the sphere: which pool of traces the page draws from (assets/<sphere>/ + fragments.json)
+    var ML_BASE = 'assets/' + (mare.getAttribute('data-sphere') || 'mare-latens') + '/';
     var mlDesktopMQ = window.matchMedia('(min-width: 768px)');
     var mlManifest = null, mlFrags = [], mlMode = null, mlT = null;
 
@@ -341,7 +342,18 @@
 
     function mlDeal() {
       mare.innerHTML = ''; mlFrags = [];
-      var manifest = mlManifest, deck = [], i, j, tmp, r = mlRng(1789), dealt = 0, mobile = mlMobile();
+      // The day is Pantelleria's day (Europe/Rome): the sea turns with the same
+      // tide for every visitor, wherever they read from.
+      var tide;
+      try { tide = new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Rome', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date()); }
+      catch (e) { var d = new Date(); tide = d.getFullYear() + '-' + (d.getMonth() + 1) + '-' + d.getDate(); }
+      // Notes deals one fixed deck from the oldest entry upward (growth-stable).
+      // Every other page draws its own hand from the pool each day: the deck is
+      // shuffled by page and tide, so premises, corpus and chronicles never
+      // share a sea, and each gets a new one at midnight.
+      var notes = !!document.querySelector('.note-entry');
+      var page = (location.pathname.split('/').pop() || 'index.html');
+      var manifest = mlManifest, deck = [], i, j, tmp, r = mlRng(notes ? 1789 : mlHash(page + '|' + tide)), dealt = 0, mobile = mlMobile();
       for (i = 0; i < manifest.length; i++) deck.push(i);
       for (i = deck.length - 1; i > 0; i--) { j = Math.floor(r() * (i + 1)); tmp = deck[i]; deck[i] = deck[j]; deck[j] = tmp; }
       function next(minAr) {                // next card with at least this aspect ratio
@@ -351,14 +363,9 @@
         }
         return manifest[deck[0]];
       }
-      // The tide: geometry (side jitter, position, size) re-rolls once a day at
-      // local midnight; which fragment belongs to which entry never changes,
-      // so nothing new is downloaded when the sea moves.
-      // The day is Pantelleria's day (Europe/Rome): the sea turns with the same
-      // tide for every visitor, wherever they read from.
-      var tide;
-      try { tide = new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Rome', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date()); }
-      catch (e) { var d = new Date(); tide = d.getFullYear() + '-' + (d.getMonth() + 1) + '-' + d.getDate(); }
+      // The tide: geometry (side jitter, position, size) re-rolls once a day;
+      // on Notes which fragment belongs to which entry never changes, so
+      // nothing new is downloaded when the sea moves.
       mlAnchors().forEach(function (a, idx) {
         var rng = mlRng(mlHash(a.key)), tideRng = mlRng(mlHash(a.key + '|' + tide)), n = 1;
         if (!mobile) {

@@ -214,7 +214,7 @@ a:hover { color: hsl(var(--iron-oxide)); }
 .site-header { position: relative; }
 .crescent-link { position: absolute; top: 10px; right: 12px; width: clamp(83px, 11.9vw, 166px); display: block; opacity: 0.55; z-index: 1; }
 .crescent-link:hover { opacity: 0.85; }
-.crescent-moon { display: block; width: 100%; height: auto; opacity: 0; transition: opacity 0.8s ease, transform 1.2s ease; }
+.crescent-moon { display: block; width: 100%; height: auto; opacity: 0; transition: opacity 0.8s ease; }
 .crescent-moon.risen { opacity: 1; }
 @media (max-width: 767px) { .crescent-link { top: 6px; right: 6px; width: 60px; } }
 
@@ -428,23 +428,24 @@ footer h3 { font-size: 1.25rem; }
 .bandcamp-embed iframe { width: 100%; max-width: 350px; border: 0; }
 
 /* ===== Crabs (Shcaa bio) ===== */
-/* Eight crabs cut whole from the plate, in the traces' ink. They keep to the room
-   below the bio (`.crab-band`) and just surround its last paragraph: a tight
-   cluster in the band, two at the paragraph's middle in the margins, one
-   bridging. Nothing above the title. `.crab-field` is the bio <section>. */
+/* Six crabs cut from the plate, every limb intact, in the traces' ink with the
+   seahorse's dusty finish, dealt eight times, upright, some mirrored. They keep to the room below the bio
+   (`.crab-band`) and just surround its last paragraph: a cluster in the band, two
+   at the paragraph's middle in the margins, one bridging. Nothing above the
+   title. `.crab-field` is the bio <section>. */
 .crab-field { position: relative; }
-.crab { position: absolute; pointer-events: none; height: auto; opacity: .85; margin: 0 !important; }
+.crab { position: absolute; pointer-events: none; height: auto; opacity: .6; margin: 0 !important; }
 .crab-band { height: 200px; margin-top: 0 !important; }
 .crab-1 { bottom: 26px;  left: 5%;     width: 146px; transform: rotate(-4deg); }
-.crab-2 { bottom: 82px;  left: 22%;    width: 126px; transform: rotate(6deg); }
-.crab-3 { bottom: 18px;  left: 40%;    width: 150px; transform: rotate(-3deg); }
-.crab-4 { bottom: 86px;  left: 58%;    width: 130px; transform: rotate(4deg); }
-.crab-5 { bottom: 22px;  right: 3%;    width: 150px; transform: rotate(-5deg); }
-.crab-6 { bottom: 196px; right: -148px; width: 148px; transform: rotate(6deg); }
-.crab-7 { bottom: 198px; left: -122px; width: 118px; transform: rotate(-5deg); }
-.crab-8 { bottom: 104px; left: -120px; width: 132px; transform: rotate(7deg); }
+.crab-2 { bottom: 84px;  left: 22%;    width: 124px; transform: rotate(3deg) scaleX(-1); }
+.crab-3 { bottom: 18px;  left: 40%;    width: 150px; transform: rotate(-2deg); }
+.crab-4 { bottom: 88px;  left: 58%;    width: 122px; transform: rotate(4deg) scaleX(-1); }
+.crab-5 { bottom: 22px;  right: 3%;    width: 142px; transform: rotate(-5deg); }
+.crab-6 { bottom: 196px; right: -118px; width: 148px; transform: rotate(5deg) scaleX(-1); }
+.crab-7 { bottom: 200px; left: -120px; width: 110px; transform: rotate(-5deg); }
+.crab-8 { bottom: 106px; left: -118px; width: 118px; transform: rotate(6deg) scaleX(-1); }
 @media (max-width: 1023px) {
-  .crab-6 { right: -108px; width: 112px; } .crab-7 { left: -96px; width: 96px; } .crab-8 { left: -88px; width: 100px; }
+  .crab-6 { right: -86px; width: 112px; } .crab-7 { left: -92px; width: 90px; } .crab-8 { left: -86px; width: 92px; }
 }
 @media (max-width: 767px) {
   .crab-band { height: 120px; }
