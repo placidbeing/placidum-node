@@ -231,7 +231,7 @@ footer { position: relative; }
 @media (min-width: 1024px) { .logo-img { height: 76px; } }
 .logo-text-wrap { display: flex; flex-direction: column; justify-content: flex-start; gap: 0; padding-bottom: 0; }
 /* the sea under the name: a Mare Latens trace (ml-015) tapered wide to narrow, in the motto's colour, under symbol and name alike; absolute, so the header keeps its height */
-.logo-sea { position: absolute; top: 100%; left: 0; width: 100%; aspect-ratio: 1200 / 132; margin-top: 2px; background: hsl(var(--muted-foreground)); -webkit-mask: url(assets/logo-sea.png) left top / 100% 100% no-repeat; mask: url(assets/logo-sea.png) left top / 100% 100% no-repeat; pointer-events: none; }
+.logo-sea { position: absolute; top: 100%; left: -4%; width: 108%; aspect-ratio: 1200 / 88; margin-top: 1px; background: hsl(var(--muted-foreground)); -webkit-mask: url(assets/logo-sea.png) left top / 100% 100% no-repeat; mask: url(assets/logo-sea.png) left top / 100% 100% no-repeat; pointer-events: none; }
 .logo-wordmark-img { height: var(--logo-size); width: auto; margin-top: auto; }
 
 /* ===== Notes section ===== */
@@ -421,7 +421,7 @@ footer h3 { font-size: 1.25rem; }
 
 /* Audio filter */
 .audio-filter-btn { font-family: 'Circular', -apple-system, BlinkMacSystemFont, system-ui, sans-serif; font-size: 0.875rem; background: none; border: none; cursor: pointer; transition: opacity 0.3s ease; padding: 0; }
-.vs-mark { display: inline-block; height: 20px; aspect-ratio: 1515 / 194; vertical-align: -5px; background: currentColor; -webkit-mask: url(assets/vestigia-mark.png) center / contain no-repeat; mask: url(assets/vestigia-mark.png) center / contain no-repeat; }   /* Bremontier's wave (1809) and the words in the site's italic, worn like the logo */
+.vs-mark { display: inline-block; height: 26px; aspect-ratio: 1600 / 184; vertical-align: -8px; background: currentColor; -webkit-mask: url(assets/vestigia-mark.png) center / contain no-repeat; mask: url(assets/vestigia-mark.png) center / contain no-repeat; }   /* Bremontier's wave (1809) and the words in the site's italic, worn like the logo */
 .vs-text { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .audio-filter-btn.inactive { color: hsl(var(--muted-foreground)); opacity: 0.6; }
 .audio-filter-btn.inactive:hover { opacity: 1; }
