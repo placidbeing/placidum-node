@@ -156,7 +156,7 @@
         else e.classList.remove('filtered-out');
       });
       if (filtered) {
-        fBtn.innerHTML = '✕ Show all entries';
+        fBtn.innerHTML = '<span class="vs-x" aria-hidden="true">✕</span> Show all entries';   // the cross in the mark's slot: the words stay where Vestigia Sonora stood
         fBtn.classList.remove('inactive'); fBtn.classList.add('active');
       } else {
         fBtn.innerHTML = '<span class="vs-mark" aria-hidden="true"></span> Vestigia Sonora';   // the same mark the page loads with
