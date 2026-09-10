@@ -226,9 +226,9 @@ footer { position: relative; }
 /* Logo */
 .logo-link { display: inline-flex; align-items: stretch; gap: 0; position: relative; }
 .logo-link:hover { color: inherit; }
-.logo-img { height: 42px; width: auto; margin-right: 2px; }  /* pale eroded symbol — tone is baked into the asset */
-@media (min-width: 768px) { .logo-img { height: 60px; } }
-@media (min-width: 1024px) { .logo-img { height: 68px; } }
+.logo-img { height: 45px; width: auto; margin-right: 2px; }  /* pale eroded symbol — tone is baked into the asset */
+@media (min-width: 768px) { .logo-img { height: 65px; } }
+@media (min-width: 1024px) { .logo-img { height: 73px; } }
 .logo-text-wrap { display: flex; flex-direction: column; justify-content: flex-start; gap: 0; padding-bottom: 0; }
 /* the sea under the name: a Mare Latens trace (ml-015) tapered wide to narrow, in the motto's colour, under symbol and name alike; absolute, so the header keeps its height */
 .logo-sea { position: absolute; top: 100%; left: -4%; width: 108%; aspect-ratio: 1200 / 88; margin-top: 1px; background: hsl(var(--muted-foreground)); -webkit-mask: url(assets/logo-sea.png) left top / 100% 100% no-repeat; mask: url(assets/logo-sea.png) left top / 100% 100% no-repeat; pointer-events: none; }
