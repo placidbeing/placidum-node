@@ -12,9 +12,7 @@
     return r;
   }
 
-  // =============================================
-  // 1. AUDIO PLAYER
-  // =============================================
+  // ===== 1. AUDIO PLAYER =====
   var currentAudio = null;
   var allAudioBlocks = document.querySelectorAll('.audio-block');
 
@@ -60,9 +58,7 @@
     btn.textContent = (playing ? '⏸ ' : '▶ ') + title;
   }
 
-  // =============================================
-  // 2. IMAGE LIGHTBOX
-  // =============================================
+  // ===== 2. IMAGE LIGHTBOX =====
   var overlay = document.getElementById('lightbox-overlay');
   var lbImg = document.getElementById('lightbox-img');
   if (overlay && lbImg) {
@@ -81,9 +77,7 @@
     });
   }
 
-  // =============================================
-  // 2b. IMAGE PREFETCH
-  // =============================================
+  // ===== 2b. IMAGE PREFETCH =====
   // Native loading="lazy" only fetches images once they are nearly visible,
   // so fast scrolling shows blanks. Warm the cache a few screens ahead of
   // the scroll position instead: when an image comes within rootMargin,
@@ -102,9 +96,7 @@
     document.querySelectorAll('img[loading="lazy"]').forEach(function (img) { prefetchIO.observe(img); });
   }
 
-  // =============================================
-  // 3. YEAR INDICATOR
-  // =============================================
+  // ===== 3. YEAR INDICATOR =====
   var yi = document.getElementById('year-indicator');
   var yBtn = document.getElementById('year-indicator-btn');
   var yDrop = document.getElementById('year-dropdown');
@@ -143,9 +135,7 @@
     }
   }
 
-  // =============================================
-  // 4. AUDIO FILTER
-  // =============================================
+  // ===== 4. AUDIO FILTER =====
   var fBtn = document.getElementById('audio-filter-btn');
   if (fBtn) {
     var filtered = false;
@@ -165,9 +155,7 @@
     });
   }
 
-  // =============================================
-  // 5. CORPUS VIEW TOGGLE
-  // =============================================
+  // ===== 5. CORPUS VIEW TOGGLE =====
   var gv = document.getElementById('gallery-view');
   var lv = document.getElementById('list-view');
   var gBtn = document.getElementById('btn-gallery');
@@ -184,9 +172,7 @@
     if (hash && document.getElementById(hash)) { showList(hash); }
   }
 
-  // =============================================
-  // 6. BANDCAMP EMBED AUTO-RESIZE
-  // =============================================
+  // ===== 6. BANDCAMP EMBED AUTO-RESIZE =====
   // Bandcamp embeds post their content height via postMessage.
   // Listen for these messages and resize iframes to eliminate white space.
   var bcFrames = document.querySelectorAll('iframe[src*="bandcamp"]');
@@ -241,9 +227,7 @@
     });
   }
 
-  // =============================================
-  // 7. MARE LATENS — FRAGMENT LAYER
-  // =============================================
+  // ===== 7. MARE LATENS — FRAGMENT LAYER =====
   // Decorative traces (assets/mare-latens/) in the dead space of the page.
   // A page opts in with <div id="mare" aria-hidden="true"> as the first child
   // of .min-screen. Desktop: the margins beside entries (or evenly spaced
