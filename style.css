@@ -201,7 +201,7 @@ footer { position: relative; margin-top: 6rem; }
 /* Logo */
 .logo-link { display: inline-flex; align-items: stretch; gap: 0; position: relative; }
 .logo-link:hover { color: inherit; }
-.logo-img { height: 45px; width: auto; margin-right: 2px; }  /* pale eroded symbol — tone is baked into the asset */
+.logo-img { height: 45px; width: auto; margin-right: 2px; }  /* traced symbol, bone 206 — tone is baked into the asset */
 @media (min-width: 768px) { .logo-img { height: 65px; } }
 @media (min-width: 1024px) { .logo-img { height: 73px; } }
 .logo-text-wrap { display: flex; flex-direction: column; justify-content: flex-start; gap: 0; padding-bottom: 0; }
