@@ -108,8 +108,6 @@
       document.getElementById('moon-data').innerHTML = html;
       var m = MARIA[night % MARIA.length], c = CRATERS[night % CRATERS.length];
       document.getElementById('moon-reading').innerHTML = '<b>' + m[0] + '</b>&nbsp; ' + m[1] + ' — <em>' + m[2] + '</em> <span class="dim">(Hevelius)</span><br><span class="dim">' + c[0] + '</span>&nbsp; ' + c[1] + ' — <em>' + c[2] + '</em>';
-      var figs = document.getElementById('moon-nights').children;
-      for (var j = 0; j < figs.length; j++) figs[j].className = 'moon-night' + (j === night ? ' tonight' : '');
     }
     window.Luna = { reckon: reckon, render: render };
   })();
