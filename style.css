@@ -205,8 +205,8 @@ footer { position: relative; margin-top: 6rem; }
 @media (min-width: 768px) { .logo-img { height: 65px; } }
 @media (min-width: 1024px) { .logo-img { height: 73px; } }
 .logo-text-wrap { display: flex; flex-direction: column; justify-content: flex-start; gap: 0; padding-bottom: 0; }
-/* the sea under the name: a Mare Latens trace (ml-015) tapered wide to narrow, in the motto's colour, under symbol and name alike; absolute, so the header keeps its height */
-.logo-sea { position: absolute; top: 100%; left: -4%; width: 108%; aspect-ratio: 1200 / 88; margin-top: 1px; background: hsl(var(--muted-foreground)); -webkit-mask: url(assets/logo-sea.png) left top / 100% 100% no-repeat; mask: url(assets/logo-sea.png) left top / 100% 100% no-repeat; pointer-events: none; }
+/* the sea under the name: a Mare Latens trace (ml-015) tapered wide to narrow, in the symbol's lichen hue at the old grey's depth, under symbol and name alike; absolute, so the header keeps its height */
+.logo-sea { position: absolute; top: 100%; left: -4%; width: 108%; aspect-ratio: 1200 / 88; margin-top: 1px; background: rgb(160, 153, 143); -webkit-mask: url(assets/logo-sea.png) left top / 100% 100% no-repeat; mask: url(assets/logo-sea.png) left top / 100% 100% no-repeat; pointer-events: none; }
 .logo-wordmark-img { height: var(--logo-size); width: auto; margin-top: auto; }
 
 /* ===== Notes section ===== */
