@@ -380,7 +380,7 @@
       if (!mlFrags.length) return;
       var m = mare.getBoundingClientRect(), W = mare.clientWidth, docH = Math.max(1, mare.clientHeight);
       var wrap = Math.min(1100, W * 0.92), wl = (W - wrap) / 2, wr = wl + wrap, mobile = mlMobile();
-      var scale = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--ml-scale')) || 0.46;
+      var scale = parseFloat(getComputedStyle(mare).getPropertyValue('--ml-scale')) || 0.46;   // inherited from :root, a sphere may set its own
       mlFrags.forEach(function (f) {
         var a = f.anchor, x, y, w, h;
         if (a.el && a.el.classList.contains('filtered-out')) { f.el.style.display = 'none'; return; }

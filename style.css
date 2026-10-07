@@ -427,7 +427,7 @@ footer h3 { font-size: 1.25rem; }
 .ml-frag.surfaced { opacity: calc(var(--ml-opacity) * var(--depth, 1)); }
 #mare.mare-notes { --ml-opacity: .17; }   /* Notes carries the sea a little more strongly than the other pages */
 #mare.mare-palms { --ml-opacity: .16; }   /* Shcaa: the palms a touch less faded */
-#mare.mare-lucernae { --ml-opacity: .16; }   /* Chronicles: the lamps of Paris at night */
+#mare.mare-lucernae { --ml-opacity: .24; --ml-scale: .95; }   /* Chronicles: the lamps of Paris at night, larger and less faded than the sea */
 /* Phones: site.js places one wide trace in the empty row beside each date block / short heading */
 @media (prefers-reduced-motion: reduce) { .ml-frag { transition: none; } }
 @media print { #mare { display: none; } }
