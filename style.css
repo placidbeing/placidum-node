@@ -47,6 +47,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
 
   --veil-color: transparent;
   --veil-opacity: 0;
+  --ml-opacity: .14; --ml-scale: .69; --ml-blend: screen;   /* the fragment layer's tuning (see Mare Latens below) */
 
   --step: clamp(1rem, 2.2vw, 1.125rem);
   --space: clamp(12px, 2.2vw, 20px);
@@ -164,9 +165,6 @@ a:hover { color: hsl(var(--iron-oxide)); }
   .site-header { padding: 18px var(--gutter) 0; }
   .topline { display: grid; grid-template-columns: 1fr auto; align-items: center; }
   .main-menu { justify-self: start; display: flex; gap: var(--menu-gap); font-size: var(--menu-size); color: hsl(var(--muted-foreground)); white-space: nowrap; }
-  .main-menu a.active { color: hsl(var(--iron-oxide)); font-style: italic; }
-  .main-menu a.active.nav-shcaa { color: hsl(var(--verdigris)) !important; }
-  .main-menu a.nav-shcaa:hover { color: hsl(var(--verdigris)) !important; }
   .logo-block { margin-top: 48px; text-align: left; }
 }
 
@@ -271,7 +269,6 @@ footer { position: relative; margin-top: 6rem; }
 .year-dropdown.open { display: flex; flex-direction: column; gap: 0.25rem; }
 .year-dropdown button { font-family: -apple-system, BlinkMacSystemFont, system-ui, sans-serif; font-size: 0.75rem; letter-spacing: 0.08em; color: hsl(var(--muted-foreground) / 0.7); background: none; border: none; cursor: pointer; padding: 0.25rem 0.5rem; text-align: right; transition: color 0.2s ease; }
 .year-dropdown button:hover { color: hsl(var(--foreground)); }
-.year-dropdown button.current { color: hsl(var(--iron-oxide)); }
 
 /* ===== Corpus ===== */
 .corpus-gallery { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
@@ -282,9 +279,14 @@ footer { position: relative; margin-top: 6rem; }
 .corpus-gallery article:hover .artwork-thumb img { transform: scale(1.05); }
 
 .catalog-artwork { aspect-ratio: 1/1; background: hsl(var(--muted)); overflow: hidden; max-width: 28rem; }
-@media (max-width: 768px) { .catalog-artwork { max-width: none !important; width: 100% !important; } }
+@media (max-width: 768px) { .catalog-artwork { max-width: none; width: 100%; } }
 .catalog-artwork img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; cursor: zoom-in; }
 .catalog-artwork:hover img { transform: scale(1.05); }
+.corpus-date { opacity: 0.4; }
+.corpus-title { font-weight: 300; text-transform: uppercase; font-style: normal; }
+.corpus-duration { letter-spacing: 0.1em; }
+.corpus-format { letter-spacing: 0.05em; }
+.bandcamp-player { border: 0; width: 350px; height: 42px; }
 
 .view-toggle { display: flex; align-items: center; gap: 0.75rem; margin-top: 1.5rem; }
 .view-toggle button { padding: 0.375rem; background: none; border: none; cursor: pointer; transition: opacity 0.3s ease; opacity: 0.35; }
@@ -372,6 +374,7 @@ footer h3 { font-size: 1.25rem; }
 .border-soft { border-color: hsl(var(--border) / 0.2); }
 .border-firm { border-color: hsl(var(--border) / 0.4); }
 .track-note { margin-left: 0.5rem; opacity: 0.7; }
+.audio-note { color: hsl(var(--muted-foreground)); margin-top: 0.5rem; }
 .border-l-2 { border-left: 2px solid; }
 
 /* Audio filter */
@@ -392,8 +395,8 @@ footer h3 { font-size: 1.25rem; }
    at the paragraph's middle in the margins, one bridging. Nothing above the
    title. `.crab-field` is the bio <section>. */
 .crab-field { position: relative; }
-.crab { position: absolute; pointer-events: none; height: auto; opacity: .6; margin: 0 !important; }
-.crab-band { height: 200px; margin-top: 0 !important; }
+.crab { position: absolute; pointer-events: none; height: auto; opacity: .6; margin: 0; }
+.crab-band { height: 200px; margin-top: 0; }
 .crab-1 { bottom: 26px;  left: 5%;     width: 146px; transform: rotate(-4deg); }
 .crab-2 { bottom: 84px;  left: 22%;    width: 124px; transform: rotate(3deg) scaleX(-1); }
 .crab-3 { bottom: 18px;  left: 40%;    width: 150px; transform: rotate(-2deg); }
@@ -419,7 +422,6 @@ footer h3 { font-size: 1.25rem; }
    beside entries. A page opts in with <div id="mare" aria-hidden="true"></div>
    as the first child of .min-screen. Never put content inside #mare. Hidden
    below 768px, in print, and without JS (site.js creates the layer). */
-:root { --ml-opacity: .14; --ml-scale: .69; --ml-blend: screen; }
 #mare { position: absolute; inset: 0; overflow: hidden; z-index: -1; pointer-events: none; }
 .ml-frag { position: absolute; background-size: contain; background-repeat: no-repeat; mix-blend-mode: var(--ml-blend); opacity: 0; transition: opacity 1.6s ease; }
 .ml-frag.surfaced { opacity: calc(var(--ml-opacity) * var(--depth, 1)); }
