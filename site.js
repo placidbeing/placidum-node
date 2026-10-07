@@ -96,7 +96,16 @@
     document.querySelectorAll('img[loading="lazy"]').forEach(function (img) { prefetchIO.observe(img); });
   }
 
-  // ===== 3. YEAR INDICATOR =====
+    // Downloads are counted as events by the same counter that counts the pages
+  // (window.goatcounter is there only when count.js has loaded; nothing else changes).
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a.audio-download');
+    if (!a || !window.goatcounter || !goatcounter.count) return;
+    var file = decodeURIComponent(a.getAttribute('href').split('/').pop());
+    goatcounter.count({ path: 'download/' + file, title: 'download: ' + file, event: true });
+  });
+
+// ===== 3. YEAR INDICATOR =====
   var yi = document.getElementById('year-indicator');
   var yBtn = document.getElementById('year-indicator-btn');
   var yDrop = document.getElementById('year-dropdown');
