@@ -201,9 +201,7 @@ footer { position: relative; margin-top: 6rem; }
 /* Logo */
 .logo-link { display: inline-flex; align-items: stretch; gap: 0; position: relative; }
 .logo-link:hover { color: inherit; }
-.logo-img { height: 45px; width: auto; margin-right: 2px; }  /* traced symbol, lichen at 206 — tone is baked into the asset */
-@media (min-width: 768px) { .logo-img { height: 65px; } }
-@media (min-width: 1024px) { .logo-img { height: 73px; } }
+.logo-img { height: calc(var(--logo-size) * 1.106); width: auto; margin-right: 2px; }  /* traced symbol, lichen at 206 — tone is baked into the asset; always 1.106 × the wordmark, so the tip of its right branch meets the top of the P at every width (45 / 65 / 73 px at the three breakpoints, and in between) */
 .logo-text-wrap { display: flex; flex-direction: column; justify-content: flex-start; gap: 0; padding-bottom: 0; }
 /* the sea under the name: a Mare Latens trace (ml-015) tapered wide to narrow, in the symbol's lichen hue at the old grey's depth, under symbol and name alike; absolute, so the header keeps its height */
 .logo-sea { position: absolute; top: 100%; left: -4%; width: 108%; aspect-ratio: 1200 / 88; margin-top: 1px; background: rgb(160, 153, 143); -webkit-mask: url(assets/logo-sea.png) left top / 100% 100% no-repeat; mask: url(assets/logo-sea.png) left top / 100% 100% no-repeat; pointer-events: none; }
@@ -428,7 +426,7 @@ footer h3 { font-size: 1.25rem; }
 #mare.mare-notes { --ml-opacity: .17; }   /* Notes carries the sea a little more strongly than the other pages */
 #mare.mare-palms { --ml-opacity: .16; }   /* Shcaa: the palms a touch less faded */
 #mare.mare-lucernae { --ml-opacity: .24; --ml-scale: .95; }   /* Chronicles: the lamps of Paris at night, larger and less faded than the sea */
-#mare.mare-arenae { --ml-opacity: .2; --ml-scale: .85; }   /* Corpus: the sand of the desert */
+#mare.mare-arenae { --ml-opacity: .2; --ml-scale: .85; }   /* Premises: the sand of the desert */
 /* Phones: site.js places one wide trace in the empty row beside each date block / short heading */
 @media (prefers-reduced-motion: reduce) { .ml-frag { transition: none; } }
 @media print { #mare { display: none; } }
