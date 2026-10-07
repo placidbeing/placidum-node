@@ -99,7 +99,9 @@
         ['Illuminated', Math.round(lit * 100) + ' % of the disc'], ['Bright limb', 'position angle ' + L.chi.toFixed(0) + '°'],
         ['At 21 h 30', where + (up ? ' · parallactic angle ' + (sky.q < 0 ? '−' : '+') + Math.abs(sky.q).toFixed(0) + '°' : '')],
         ['Turned', (rot < 0 ? '−' : '+') + Math.abs(rot).toFixed(0) + '° from north-up'],
-        ['Horizon', 'rises ' + (ev.rise ? hm(ev.rise) : '—') + ' · passes the meridian ' + (ev.transit ? hm(ev.transit) : '—') + ' · sets ' + (ev.set ? hm(ev.set) : '—')],
+        ['Moonrise', ev.rise ? hm(ev.rise) + ' · bearing ' + topo(ev.rise).az.toFixed(0) + '° ' + compass(topo(ev.rise).az) : 'none this night'],
+        ['Meridian', ev.transit ? hm(ev.transit) + ' · altitude +' + topo(ev.transit).alt.toFixed(0) + '°' : 'none this night'],
+        ['Moonset', ev.set ? hm(ev.set) + ' · bearing ' + topo(ev.set).az.toFixed(0) + '° ' + compass(topo(ev.set).az) : 'none this night'],
         ['Lunation', (953 + n) + ' (Brown)'],
         ['Next new moon', fmt(nextNew, true) + ' local'], ['Next full moon', fmt(nextFull, true) + ' local'],
         ['Since the plate', sincePlate.toLocaleString('en-GB') + ' lunations since 1748']];
