@@ -32,6 +32,15 @@
     <content type="html">&lt;p&gt;&lt;img src=&quot;https://placidum.com/assets/palermo/terraforma.jpg&quot; alt=&quot;Palermo Terraforma&quot;&gt;&lt;/p&gt;</content>
   </entry>
   <entry>
+    <title>audience</title>
+    <id>tag:placidum.com,2026:feed/2026-10-08</id>
+    <updated>2026-10-08T21:30:00+01:00</updated>
+    <published>2026-10-08T21:30:00+01:00</published>
+    <link href="https://placidum.com/" />
+    <content type="html">&lt;p&gt;&lt;img src=&quot;https://placidum.com/assets/paris/audience-1.jpg&quot; alt=&quot;Audience 1&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://placidum.com/assets/paris/audience-2.jpg&quot; alt=&quot;Audience 2&quot;&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
     <title>Indian Summer</title>
     <id>tag:placidum.com,2026:feed/2026-09-22</id>
     <updated>2026-09-22T21:30:00+01:00</updated>
