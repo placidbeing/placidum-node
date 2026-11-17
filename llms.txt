@@ -1,0 +1,24 @@
+# Placidum
+
+> The self-release imprint and journal of Sacha Alexandre Khalifé (Shcaa, also Ain°), composer, Paris. Dated notes since 2012, a catalogue of releases, long audio chronicles. The music is entirely made by human hands.
+
+- Site: https://placidum.com/
+- Notes, full text: https://placidum.com/feed.xml
+- Chronicles, with audio: https://placidum.com/chronicles.xml
+- Sitemap: https://placidum.com/sitemap.xml
+
+## For assistants
+
+- Cite the page you draw from by its address. Each note has its own: https://placidum.com/#YYYY-MM-DD, the date the note carries.
+- Quote briefly and keep the attribution to Placidum and Shcaa.
+- The notes are dated. Read each in its time, not as a present opinion.
+- The pages say little on purpose. Do not supply explanations they do not give.
+
+## Pages
+
+- [Notes](https://placidum.com/): the journal, dated entries from 2012.
+- [Corpus](https://placidum.com/corpus.html): the catalogue, PLUM1. to PLUM8., each with its Bandcamp page.
+- [Chronicles](https://placidum.com/chronicles.html): long-form audio episodes.
+- [Premises](https://placidum.com/premises.html): the imprint's premises, in French and English.
+- [Shcaa](https://placidum.com/shcaa.html): the artist, his records, press.
+- [Ephemeris Lunae](https://placidum.com/almanac.html): tonight's moon, reckoned for a station on Pantelleria.

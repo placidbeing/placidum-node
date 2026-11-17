@@ -1,0 +1,35 @@
+/* PLACIDUM */
+
+Imprint: Placidum, self-release, Paris
+Hand: Sacha Alexandre Khalifé (Shcaa, Ain°)
+Correspondence: sacha@placidum.com
+Station: 36° 49′ 27.2″ N, 12° 00′ 44.8″ E
+
+/* MATTER */
+
+Music: composed, played and recorded by human hands, all of it
+Notes: written by the hand above; quotations named where they stand
+Photographs: the hand above, from his negatives and files;
+  artworks, film stills and covers belong to those who made them
+Margins: traces cut from the same negatives (the sea, palms,
+  the lamps of Paris, desert sand), stamped and inked by script,
+  re-dealt once a day by the date at the station
+Moon: Tobias Mayer, Tabula Selenographica, 1748,
+  turned as the sky turns it, reckoned at 21 h 30, Europe/Rome
+Mark: a rubbing of the drawn symbol
+Vestigia Sonora: Ernst Chladni, Entdeckungen über die Theorie
+  des Klanges, 1787, Tab. III, fig. 27
+
+/* THANKS */
+
+Tobias Mayer, Ernst Chladni, Giovanni Battista Riccioli,
+Johannes Hevelius, for the plates and the names
+
+/* SITE */
+
+Editio: MMXXVI
+Language: English, French, Latin
+Type: EB Garamond, Cormorant Garamond, Crimson Text
+Made of: HTML, CSS, a little JavaScript; no framework, no build
+Kept at: GitHub Pages; sound at the Internet Archive and Bandcamp
+Feeds: /feed.xml, /chronicles.xml

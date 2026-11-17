@@ -1,4 +1,15 @@
 User-agent: *
 Allow: /
-Sitemap: https://placidum.com/sitemap.xml
 
+# The work is not offered for the training of models.
+User-agent: GPTBot
+User-agent: ClaudeBot
+User-agent: anthropic-ai
+User-agent: CCBot
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: meta-externalagent
+User-agent: Bytespider
+Disallow: /
+
+Sitemap: https://placidum.com/sitemap.xml
